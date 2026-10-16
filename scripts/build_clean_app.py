@@ -87,7 +87,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p, span, label {
-    color: #44403C !important;
+    color: #44403C;
 }
 
 /* Brand Header in Sidebar */
@@ -534,20 +534,107 @@ p, span, label {
 }
 
 /* Buttons Styling */
-.stButton>button {
-    background-color: #C84B2F !important;
-    color: #FFFFFF !important;
-    border: none !important;
-    border-radius: 8px !important;
-    font-weight: 600 !important;
-    padding: 8px 18px !important;
-    transition: all 0.2s ease !important;
+.stButton > button {
+    border-radius: 10px !important;
+    padding: 10px 18px !important;
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    letter-spacing: -0.01em !important;
 }
 
-.stButton>button:hover {
-    background-color: #B33E24 !important;
-    box-shadow: 0 4px 12px rgba(200, 75, 47, 0.25) !important;
-    transform: translateY(-1px) !important;
+.stButton > button p,
+.stButton > button span,
+.stButton > button div {
+    color: inherit !important;
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    font-size: inherit !important;
+    line-height: inherit !important;
+}
+
+/* PRIMARY BUTTON: The Active Menu Highlighter & Main Actions */
+.stButton > button[kind="primary"],
+.stButton > button[data-testid="baseButton-primary"] {
+    background: linear-gradient(135deg, #C84B2F 0%, #A8351D 100%) !important;
+    color: #FFFFFF !important;
+    border: 1px solid #8F2B15 !important;
+    font-weight: 800 !important;
+    box-shadow: 0 6px 20px -2px rgba(200, 75, 47, 0.45), 0 2px 6px -1px rgba(200, 75, 47, 0.25) !important;
+    transform: translateY(-2px) !important;
+}
+
+.stButton > button[kind="primary"] p,
+.stButton > button[data-testid="baseButton-primary"] p {
+    color: #FFFFFF !important;
+    font-weight: 800 !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25) !important;
+}
+
+.stButton > button[kind="primary"]:hover,
+.stButton > button[data-testid="baseButton-primary"]:hover {
+    background: linear-gradient(135deg, #B33E24 0%, #942E17 100%) !important;
+    box-shadow: 0 8px 24px -2px rgba(200, 75, 47, 0.55), 0 3px 8px -1px rgba(200, 75, 47, 0.35) !important;
+    transform: translateY(-3px) !important;
+}
+
+/* SECONDARY BUTTON: Inactive Navigation Menu Cards */
+.stButton > button[kind="secondary"],
+.stButton > button[data-testid="baseButton-secondary"] {
+    background-color: #FFFFFF !important;
+    color: #1C1917 !important;
+    border: 1.5px solid #DDD8CD !important;
+    font-weight: 700 !important;
+    box-shadow: 0 2px 8px -1px rgba(45, 35, 25, 0.06), 0 1px 3px rgba(45, 35, 25, 0.03) !important;
+}
+
+.stButton > button[kind="secondary"] p,
+.stButton > button[data-testid="baseButton-secondary"] p {
+    color: #1C1917 !important;
+    font-weight: 700 !important;
+}
+
+.stButton > button[kind="secondary"]:hover,
+.stButton > button[data-testid="baseButton-secondary"]:hover {
+    border-color: #C84B2F !important;
+    background-color: #FFFDFB !important;
+    color: #C84B2F !important;
+    box-shadow: 0 6px 18px -2px rgba(45, 35, 25, 0.12), 0 2px 6px -1px rgba(45, 35, 25, 0.06) !important;
+    transform: translateY(-2px) !important;
+}
+
+.stButton > button[kind="secondary"]:hover p,
+.stButton > button[data-testid="baseButton-secondary"]:hover p {
+    color: #C84B2F !important;
+}
+
+/* Download Buttons Styling */
+.stDownloadButton > button {
+    background-color: #FFFFFF !important;
+    color: #1C1917 !important;
+    border: 1.5px solid #DDD8CD !important;
+    border-radius: 10px !important;
+    font-weight: 700 !important;
+    padding: 10px 18px !important;
+    box-shadow: 0 2px 8px -1px rgba(45, 35, 25, 0.06) !important;
+    transition: all 0.22s ease !important;
+}
+
+.stDownloadButton > button p {
+    color: #1C1917 !important;
+    font-weight: 700 !important;
+}
+
+.stDownloadButton > button:hover {
+    border-color: #C84B2F !important;
+    background-color: #FFFDFB !important;
+    box-shadow: 0 6px 18px -2px rgba(45, 35, 25, 0.12) !important;
+    transform: translateY(-2px) !important;
+}
+
+.stDownloadButton > button:hover p {
+    color: #C84B2F !important;
 }
 
 /* Top Synchronized Navigation Bar */
@@ -836,7 +923,7 @@ with st.sidebar:
         new_rev_text = st.text_area("Kalimat Ulasan Konsumen:", height=75, placeholder="Contoh: Ayam alot dan sambalnya sedikit...")
         new_rev_menu = st.text_input("Menu Terkait:", value="Menu Favorit")
         
-        if st.button("Simpan & Perbarui Dashboard"):
+        if st.button("Simpan & Perbarui Dashboard", type="primary", use_container_width=True):
             if new_rev_text.strip():
                 infer_res = pipeline.analyze_single_review(new_rev_text)
                 new_row = {
@@ -933,6 +1020,26 @@ with st.container():
     )
 
 # Synchronized Top Module Selector (Highlighter Visual Bar)
+st.markdown(
+    f"""
+    <div style='display: flex; justify-content: space-between; align-items: center; margin: 16px 0 12px 0;'>
+        <div style='font-size: 0.78rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: #78716C; display: flex; align-items: center; gap: 8px;'>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#C84B2F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="7" height="7"></rect>
+                <rect x="14" y="3" width="7" height="7"></rect>
+                <rect x="14" y="14" width="7" height="7"></rect>
+                <rect x="3" y="14" width="7" height="7"></rect>
+            </svg>
+            NAVIGASI MODUL DIAGNOSTIK
+        </div>
+        <div style='font-size: 0.78rem; color: #57534E;'>
+            Modul Aktif: <b style='color: #C84B2F; font-weight: 800;'>{st.session_state.active_module_name}</b>
+        </div>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
 col_top_nav1, col_top_nav2, col_top_nav3, col_top_nav4 = st.columns(4)
 top_cols = [col_top_nav1, col_top_nav2, col_top_nav3, col_top_nav4]
 short_labels = ["1. Ringkasan Eksekutif", "2. Deep-Dive Aspek", "3. Checklist & SOP", "4. Review Simulator"]
@@ -941,9 +1048,19 @@ for idx, (t_col, full_title, s_label) in enumerate(zip(top_cols, MODULE_CHOICES,
     with t_col:
         is_cur = (st.session_state.active_module_name == full_title)
         if is_cur:
-            st.button(f"[AKTIF] {s_label}", key=f"top_btn_{idx}", disabled=True, use_container_width=True)
+            st.button(
+                f"AKTIF: {s_label}",
+                key=f"top_btn_{idx}",
+                type="primary",
+                use_container_width=True
+            )
         else:
-            if st.button(s_label, key=f"top_btn_{idx}", use_container_width=True):
+            if st.button(
+                s_label,
+                key=f"top_btn_{idx}",
+                type="secondary",
+                use_container_width=True
+            ):
                 st.session_state.active_module_name = full_title
                 st.rerun()
 
@@ -1366,7 +1483,7 @@ elif current_module == "AI Kitchen Action Checklist":
     # Form Tambah Tindakan Kustom
     with st.expander("Tambah Tindakan Dapur Kustom", expanded=False):
         custom_act_text = st.text_input("Tindakan Baru:", placeholder="Contoh: Kalibrasi ulang termometer minyak fryer setiap jam 10 pagi...")
-        if st.button("Tambahkan ke Checklist"):
+        if st.button("Tambahkan ke Checklist", type="primary"):
             if custom_act_text.strip():
                 st.session_state.custom_checklist_items.append(custom_act_text.strip())
                 st.success("Tindakan kustom berhasil ditambahkan ke checklist!")
@@ -1489,22 +1606,22 @@ elif current_module == "Single Review Simulator (Live Demo)":
     }
 
     with p_col1:
-        if st.button("Mixed: Rasa vs Kemasan"):
+        if st.button("Mixed: Rasa vs Kemasan", key="sim_preset_1", type="secondary", use_container_width=True):
             st.session_state.simulator_text = preset_texts["p1"]
             st.rerun()
 
     with p_col2:
-        if st.button("Porsi & Harga"):
+        if st.button("Porsi & Harga", key="sim_preset_2", type="secondary", use_container_width=True):
             st.session_state.simulator_text = preset_texts["p2"]
             st.rerun()
 
     with p_col3:
-        if st.button("Pelayanan & Suhu"):
+        if st.button("Pelayanan & Suhu", key="sim_preset_3", type="secondary", use_container_width=True):
             st.session_state.simulator_text = preset_texts["p3"]
             st.rerun()
 
     with p_col4:
-        if st.button("Puas Bintang 5"):
+        if st.button("Puas Bintang 5", key="sim_preset_4", type="secondary", use_container_width=True):
             st.session_state.simulator_text = preset_texts["p4"]
             st.rerun()
 
@@ -1516,7 +1633,7 @@ elif current_module == "Single Review Simulator (Live Demo)":
         height=100
     )
 
-    if st.button("Bedah Aspek Ulasan Sekarang"):
+    if st.button("Bedah Aspek Ulasan Sekarang", key="sim_analyze_btn", type="primary", use_container_width=True):
         st.session_state.simulator_text = sim_input
         sim_res = pipeline.analyze_single_review(sim_input)
         

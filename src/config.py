@@ -7,27 +7,47 @@ from typing import Dict
 # 5 Aspek Utama Analisis Ulasan Restoran / Dapur
 ASPECTS = [
     "Rasa",         # Food Quality & Taste
-    "Kebersihan",   # Hygiene & Sanitation
-    "Pelayanan",    # Service & Speed
+    "Porsi",        # Portion Size & Quantity
     "Harga",        # Value for Money
-    "Suasana",      # Ambiance & Cleanliness of Dining Area
+    "Kemasan",      # Packaging & Delivery Integrity
+    "Pelayanan",    # Service Speed & Staff Behavior
 ]
 
 # Bobot Kitchen Health Score (Total = 1.0)
-# Aspek Dapur Inti (Rasa & Kebersihan) mendapatkan prioritas tertinggi
 ASPECT_WEIGHTS: Dict[str, float] = {
-    "Rasa": 0.30,
-    "Kebersihan": 0.25,
-    "Pelayanan": 0.20,
+    "Rasa": 0.35,
+    "Porsi": 0.20,
+    "Kemasan": 0.15,
     "Harga": 0.15,
-    "Suasana": 0.10,
+    "Pelayanan": 0.15,
+}
+
+ASPECT_WEIGHTS_LOWER: Dict[str, float] = {
+    "rasa": 0.35,
+    "porsi": 0.20,
+    "kemasan": 0.15,
+    "harga": 0.15,
+    "pelayanan": 0.15,
 }
 
 # Skala Kategori Health Score
 HEALTH_THRESHOLDS = {
-    "PRIMA": 85.0,     # >= 85: Dapur dalam kondisi prima
-    "WASPADA": 70.0,   # 70 - 84.9: Butuh perhatian pada aspek tertentu
-    "KRITIS": 0.0,     # < 70: Kondisi darurat dapur / komplain tinggi
+    "PRIMA": 80.0,     # >= 80: Dapur dalam kondisi prima
+    "WASPADA": 65.0,   # 65 - 79.9: Butuh perhatian pada aspek tertentu
+    "KRITIS": 0.0,     # < 65: Kondisi darurat dapur / komplain tinggi
+}
+
+# Palet Tema Hangat (Warm Off-White / Alabaster Cream)
+THEME_PALETTE = {
+    "bg_main": "#FAF9F5",        # Warm Off-White Alabaster
+    "bg_card": "#FFFFFF",        # Soft White Card
+    "bg_card_alt": "#F5F3ED",    # Subtle Warm Neutral
+    "border": "#EAE6DE",         # Warm Stone Border
+    "text_primary": "#1C1917",   # Warm Stone 900
+    "text_muted": "#57534E",     # Warm Stone 600
+    "accent_primary": "#C84B2F", # Terracotta Culinary Brick
+    "accent_hover": "#B33E24",   # Deep Terracotta
+    "accent_light": "#FDF2EE",   # Terracotta Soft Pastel
 }
 
 # Label Sentimen

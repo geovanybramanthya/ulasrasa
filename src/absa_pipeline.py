@@ -90,15 +90,41 @@ class ABSAPipeline:
             "aspects": results
         }
 
-    def evaluate_dataframe(self, df: pd.DataFrame) -> Dict[str, Any]:
-        """Menghitung metrik kepuasan dan skor kesehatan dapur (Kitchen Health Score)."""
+    def evaluate_dataframe(self, df: pd.DataFrame, progress_callback=None) -> Dict[str, Any]:
+        """
+        Menghitung metrik kepuasan dan skor kesehatan dapur (Kitchen Health Score).
+        Mendukung dataframe beranotasi lengkap maupun ulasan teks mentah ('review_text').
+        Jika kolom aspek belum ada, pipeline otomatis melakukan inferensi on-the-fly.
+        """
+        eval_df = df.copy()
+        
+        # Cek apakah kolom 5 aspek sudah lengkap
+        aspects_present = all(asp in eval_df.columns for asp in self.aspects)
+        
+        # Jika belum ada kolom aspek, lakukan auto-inferensi pada teks ulasan
+        if not aspects_present and "review_text" in eval_df.columns:
+            total_rows = len(eval_df)
+            inferred_aspects = {asp: [] for asp in self.aspects}
+            
+            for i, text in enumerate(eval_df["review_text"]):
+                res = self.analyze_single_review(str(text))
+                for asp in self.aspects:
+                    inferred_aspects[asp].append(res["aspects"][asp]["sentiment"])
+                if progress_callback:
+                    progress_callback((i + 1) / total_rows)
+                    
+            for asp in self.aspects:
+                eval_df[asp] = inferred_aspects[asp]
+                
         aspect_summary = {}
-        total_reviews = len(df)
+        total_reviews = len(eval_df)
         
         for aspect in self.aspects:
-            if aspect not in df.columns:
-                continue
-            series = df[aspect].astype(str).str.lower()
+            if aspect not in eval_df.columns:
+                series = pd.Series(["not_mentioned"] * total_reviews)
+            else:
+                series = eval_df[aspect].astype(str).str.lower()
+                
             pos = int((series == "positive").sum())
             neu = int((series == "neutral").sum())
             neg = int((series == "negative").sum())
@@ -128,5 +154,6 @@ class ABSAPipeline:
         return {
             "total_reviews": total_reviews,
             "kitchen_health_score": round(float(khs), 2),
-            "aspect_breakdown": aspect_summary
+            "aspect_breakdown": aspect_summary,
+            "evaluated_df": eval_df
         }

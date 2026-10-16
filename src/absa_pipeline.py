@@ -2,6 +2,7 @@
 Mendukung 5 aspek: Rasa, Porsi, Harga, Kemasan, Pelayanan.
 """
 
+import re
 from typing import Dict, List, Any
 import numpy as np
 import pandas as pd
@@ -17,16 +18,18 @@ DEFAULT_WEIGHTS = {
 
 SENTIMENT_POLARITY = {
     "positive": [
-        "enak", "lezat", "sedap", "gurih", "mantap", "empuk", "crispy", "garing",
+        "enak", "lezat", "sedap", "gurih", "mantap", "empuk", "crispy", "garing", "renyah",
         "juicy", "banyak", "melimpah", "jumbo", "kenyang", "puas", "murah",
         "terjangkau", "miring", "worth", "sebanding", "rapi", "aman", "segel",
-        "cepat", "ramah", "bersahabat", "nagih", "kental", "pas", "seger", "juara"
+        "cepat", "ramah", "bersahabat", "nagih", "kental", "pas", "seger", "juara",
+        "gokil", "maknyus", "bersih"
     ],
     "negative": [
         "asin", "keasinan", "hambar", "alot", "amis", "dingin", "gosong", "enek",
         "pahit", "kemanisan", "ciut", "dikit", "sedikit", "kecil", "kurang", "imut",
-        "mahal", "kemahalan", "rugi", "tumpah", "bocor", "basah", "rembes", "penyok",
-        "pecah", "jebol", "lama", "lambat", "salah", "kecewa", "judes", "keteteran", "encer"
+        "mungil", "seuprit", "mahal", "kemahalan", "rugi", "tumpah", "bocor", "basah",
+        "rembes", "penyok", "pecah", "jebol", "lama", "lambat", "salah", "kecewa",
+        "judes", "jutek", "keteteran", "encer"
     ]
 }
 
@@ -39,9 +42,13 @@ class ABSAPipeline:
         self.weights = DEFAULT_WEIGHTS
 
     def analyze_single_review(self, raw_text: str) -> Dict[str, Any]:
-        """Menganalisis teks ulasan tunggal ke dalam 5 aspek."""
+        """Menganalisis teks ulasan tunggal ke dalam 5 aspek menggunakan analisis klausa lokal."""
         cleaned = clean_text(raw_text)
         tokens = cleaned.split()
+        
+        # Pisahkan klausa berdasarkan tanda baca dan konjungsi kontrastif
+        clauses = re.split(r"[,;\.!?]|(?:\b(?:tetapi|tapi|namun|sedangkan|padahal|trs|lalu)\b)", cleaned)
+        clauses = [c.strip() for c in clauses if c and c.strip()]
         
         results = {}
         for aspect in self.aspects:
@@ -57,26 +64,44 @@ class ABSAPipeline:
                 }
                 continue
             
-            # Hitung polaritas sentimen berbasis konteks leksikal
-            pos_matches = sum(1 for p in SENTIMENT_POLARITY["positive"] if p in cleaned)
-            neg_matches = sum(1 for n in SENTIMENT_POLARITY["negative"] if n in cleaned)
+            # Cari klausa spesifik yang memuat kata kunci aspek ini
+            target_clauses = [c for c in clauses if any(kw in c.split() or kw in c for kw in keywords)]
+            eval_text = " ".join(target_clauses) if target_clauses else cleaned
+            clause_tokens = eval_text.split()
             
-            # Deteksi negasi sederhana
-            has_negation = any(neg in tokens for neg in ["tidak", "kurang", "bukan", "ga", "gak"])
+            pos_score = 0
+            neg_score = 0
+            negation_words = {"tidak", "kurang", "bukan", "ga", "gak", "tanpa", "belum"}
             
-            if neg_matches > pos_matches:
+            for i, word in enumerate(clause_tokens):
+                prev_window = set(clause_tokens[max(0, i-3):i])
+                is_negated = bool(prev_window.intersection(negation_words))
+                
+                if word in SENTIMENT_POLARITY["positive"]:
+                    if is_negated:
+                        neg_score += 1
+                    else:
+                        pos_score += 1
+                elif word in SENTIMENT_POLARITY["negative"]:
+                    if is_negated:
+                        pos_score += 1
+                    else:
+                        neg_score += 1
+                        
+            # Cek pola frasa khusus F&B
+            if "tidak antre lama" in eval_text or "tidak lama" in eval_text or "tidak antri" in eval_text:
+                pos_score += 1
+                neg_score = max(0, neg_score - 1)
+                
+            if neg_score > pos_score:
                 sentiment = "negative"
-                conf = min(0.95, 0.65 + 0.1 * neg_matches)
-            elif pos_matches > neg_matches:
-                if has_negation and aspect in ["rasa", "pelayanan", "harga"]:
-                    sentiment = "negative"
-                    conf = 0.75
-                else:
-                    sentiment = "positive"
-                    conf = min(0.95, 0.65 + 0.1 * pos_matches)
+                conf = min(0.95, 0.70 + 0.1 * neg_score)
+            elif pos_score > neg_score:
+                sentiment = "positive"
+                conf = min(0.95, 0.70 + 0.1 * pos_score)
             else:
                 sentiment = "neutral"
-                conf = 0.60
+                conf = 0.65
                 
             results[aspect] = {
                 "mentioned": True,

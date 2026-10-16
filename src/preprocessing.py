@@ -58,17 +58,32 @@ SLANG_DICTIONARY = {
     "worth": "sebanding",
     "ciut": "kecil",
     "porsi kuli": "porsi sangat banyak",
+    "gk": "tidak",
+    "trs": "terus",
+    "tp": "tetapi",
+    "dikasi": "dikasih",
+    "pesen": "pesan",
+    "dateng": "datang",
+    "abis": "habis",
+    "irengnya": "hitamnya",
+    "seuprit": "sedikit",
+    "jutek": "judes",
+    "asik": "enak",
+    "gokil": "mantap",
+    "parah": "banget",
 }
 
 ASPECT_KEYWORDS = {
     "rasa": [
         "rasa", "asin", "hambar", "manis", "pedas", "gurih", "alot", "empuk",
         "enak", "sedap", "lezat", "bumbu", "kematangan", "gosong", "amis", "enek",
-        "keasinan", "kemanisan", "dingin", "pahit", "asam", "seger", "crispy", "garing"
+        "keasinan", "kemanisan", "dingin", "pahit", "asam", "seger", "crispy", "garing",
+        "renyah", "juara", "maknyus", "tekstur"
     ],
     "porsi": [
         "porsi", "banyak", "dikit", "sedikit", "kenyang", "kurang", "ciut",
-        "melimpah", "jumbo", "imut", "kecil", "besar", "tebal", "tipis", "ruah"
+        "melimpah", "jumbo", "imut", "kecil", "besar", "tebal", "tipis", "ruah",
+        "seuprit", "mungil"
     ],
     "harga": [
         "harga", "mahal", "murah", "kemahalan", "terjangkau", "worth", "sebanding",
@@ -76,12 +91,13 @@ ASPECT_KEYWORDS = {
     ],
     "kemasan": [
         "kemasan", "bungkus", "packaging", "tumpah", "bocor", "segel", "rapi",
-        "plastik", "box", "kotak", "mangkok", "mika", "basah", "rembes", "penyok"
+        "plastik", "box", "kotak", "mangkok", "mika", "basah", "rembes", "penyok",
+        "pecah", "jebol", "wadah", "besek", "kantong"
     ],
     "pelayanan": [
         "pelayanan", "layanan", "lama", "cepat", "lambat", "driver", "tunggu",
         "nunggu", "antre", "antrian", "salah", "pesanan", "ramah", "judes",
-        "kasir", "koki", "sendok", "garpu", "alat makan"
+        "kasir", "koki", "sendok", "garpu", "alat makan", "jutek", "kirim", "antar"
     ]
 }
 
@@ -105,8 +121,9 @@ def clean_text(text: str) -> str:
     # 3. Hapus emoji dan simbol aneh
     text = remove_emojis(text)
     
-    # 4. Hapus tanda baca berlebih tapi simpan spasi
-    text = re.sub(r"[^\w\s]", " ", text)
+    # 4. Normalisasi tanda baca untuk pemisah klausa
+    text = re.sub(r"([,\.!?;])", r" \1 ", text)
+    text = re.sub(r"[^\w\s,\.!?;]", " ", text)
     
     # 5. Normalisasi slang words
     tokens = text.split()

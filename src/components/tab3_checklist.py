@@ -71,7 +71,7 @@ def render_tab3(df: pd.DataFrame):
     """Merender Tab 3: AI Kitchen Action Checklist Interaktif."""
     init_checklist_state()
 
-    st.markdown("### 📋 AI Kitchen Action Checklist")
+    st.markdown("### AI Kitchen Action Checklist")
     st.caption("Daftar instruksi tugas operasional dapur yang dihasilkan otomatis dari sentimen ulasan. Centang tugas yang telah diselesaikan.")
 
     aspect_df = calculate_aspect_metrics(df)
@@ -92,9 +92,9 @@ def render_tab3(df: pd.DataFrame):
         st.progress(progress_val)
     with stat_col:
         if completed_tasks == total_tasks and total_tasks > 0:
-            st.success("🎉 Seluruh Tugas Selesai!")
+            st.success("Seluruh Tugas Selesai!")
         else:
-            st.info(f"⏳ {total_tasks - completed_tasks} Tugas Pending")
+            st.info(f"{total_tasks - completed_tasks} Tugas Pending")
 
     st.markdown("---")
 
@@ -118,12 +118,12 @@ def render_tab3(df: pd.DataFrame):
             title_prefix = "~~" if is_checked else ""
             title_suffix = "~~ (SELESAI)" if is_checked else ""
             st.markdown(f"**{title_prefix}{idx+1}. [{item['aspect']}] {item['title']}{title_suffix}**")
-            st.caption(f"👤 **PIC:** `{item['target_pic']}` | ⏰ **Deadline:** `{item['deadline']}`")
+            st.caption(f"**PIC:** `{item['target_pic']}` | **Deadline:** `{item['deadline']}`")
             st.write(f"*{item['instruction']}*")
             st.markdown("<hr style='margin: 8px 0;'/>", unsafe_allow_html=True)
 
     # 2. Export Section (PDF & Text)
-    st.markdown("#### 📥 Ekspor Laporan Action Plan")
+    st.markdown("#### Ekspor Laporan Action Plan")
     st.write("Unduh ringkasan tindakan operasional ini untuk dibagikan kepada Chef dan Tim Kitchen.")
 
     col_btn_txt, col_btn_pdf, col_reset = st.columns([1, 1, 1])
@@ -136,7 +136,7 @@ def render_tab3(df: pd.DataFrame):
             critical_alerts=alerts
         )
         st.download_button(
-            label="📄 Download Laporan (TXT)",
+            label="Download Laporan (TXT)",
             data=txt_content,
             file_name="UlasRasa_Kitchen_Action_Plan.txt",
             mime="text/plain",
@@ -152,7 +152,7 @@ def render_tab3(df: pd.DataFrame):
                 critical_alerts=alerts
             )
             st.download_button(
-                label="📑 Download Laporan (PDF)",
+                label="Download Laporan (PDF)",
                 data=pdf_bytes,
                 file_name="UlasRasa_Kitchen_Action_Plan.pdf",
                 mime="application/pdf",
@@ -162,7 +162,7 @@ def render_tab3(df: pd.DataFrame):
             st.warning(f"Ekspor PDF opsional: {e}")
 
     with col_reset:
-        if st.button("🔄 Reset Status Checklist", use_container_width=True):
+        if st.button("Reset Status Checklist", use_container_width=True):
             for itm in st.session_state.kitchen_actions:
                 itm["checked"] = False
             st.rerun()

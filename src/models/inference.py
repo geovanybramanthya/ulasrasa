@@ -159,28 +159,28 @@ class UlasRasaInferenceEngine:
         """Membuat instruksi tindakan taktis untuk tim operasional dapur."""
         text_lower = text.lower()
         if sentiment == "Positif":
-            return f"✅ Pertahankan standar konsistensi menu pada aspek {aspect}. Berikan apresiasi kepada tim dapur/layanan yang bertugas!"
+            return f"[OPTIMAL] Pertahankan standar konsistensi menu pada aspek {aspect}. Berikan apresiasi kepada tim dapur/layanan yang bertugas!"
         
         if sentiment == "Netral":
-            return f"ℹ️ Lakukan review berkala pada aspek {aspect} untuk meningkatkan persepsi pelanggan menuju rating 5 bintang."
+            return f"[INFO] Lakukan review berkala pada aspek {aspect} untuk meningkatkan persepsi pelanggan menuju rating 5 bintang."
 
         # Negatif Actions
         if aspect == "Kebersihan":
             if "rambut" in text_lower or "kotor" in text_lower:
-                return "🚨 CRITICAL: Instruksikan penggunaan hairnet wajib, sarung tangan steril, dan lakukan audit kebersihan piring saji sekarang!"
-            return "⚠️ Evaluasi prosedur pencucian alat makan dan sanitasi area dapur secara menyeluruh."
+                return "[CRITICAL] CRITICAL: Instruksikan penggunaan hairnet wajib, sarung tangan steril, dan lakukan audit kebersihan piring saji sekarang!"
+            return "[WARNING] Evaluasi prosedur pencucian alat makan dan sanitasi area dapur secara menyeluruh."
         elif aspect == "Rasa":
             if "asin" in text_lower or "keasinan" in text_lower:
-                return "🧂 Kalibrasi ulang takaran garam & bumbu dasar sup/kuah. Cek catatan SOP seasoning."
+                return "Kalibrasi ulang takaran garam & bumbu dasar sup/kuah. Cek catatan SOP seasoning."
             elif "dingin" in text_lower:
-                return "🌡️ Periksa food warmer & lampu pemanas di pick-up counter. Makanan harus keluar minimal 65°C."
-            return "🍲 Periksa kesegaran bahan baku batch hari ini dan lakukan blind tasting internal oleh Head Chef."
+                return "Periksa food warmer & lampu pemanas di pick-up counter. Makanan harus keluar minimal 65°C."
+            return "Periksa kesegaran bahan baku batch hari ini dan lakukan blind tasting internal oleh Head Chef."
         elif aspect == "Pelayanan":
-            return "⏱️ Analisis bottleneck alur tiket pesanan antara POS kasir dan display koki dapur untuk memangkas lead time."
+            return "Analisis bottleneck alur tiket pesanan antara POS kasir dan display koki dapur untuk memangkas lead time."
         elif aspect == "Harga":
-            return "💰 Review porsi (gramatur) dan bandingkan dengan standar food costing agar pelanggan merasa sepadan."
+            return "Review porsi (gramatur) dan bandingkan dengan standar food costing agar pelanggan merasa sepadan."
         else:
-            return "🛋️ Periksa exhaust fan ventilasi udara atau sesuaikan volume musik latar di area makan."
+            return "Periksa exhaust fan ventilasi udara atau sesuaikan volume musik latar di area makan."
 
 @st.cache_resource
 def get_inference_engine() -> UlasRasaInferenceEngine:

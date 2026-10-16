@@ -29,7 +29,7 @@ def render_tab4():
     init_simulator_state()
     engine = get_inference_engine()
 
-    st.markdown("### 🧪 Single Review Simulator")
+    st.markdown("### Single Review Simulator")
     st.caption("Uji coba inferensi real-time untuk memprediksi aspek kuliner, polaritas sentimen, dan respon dapur otomatis.")
 
     # 1. Preset Selector & Text Input Area
@@ -48,7 +48,7 @@ def render_tab4():
 
     col_btn, col_clear = st.columns([1, 4])
     with col_btn:
-        analyze_clicked = st.button("⚡ Analisis Ulasan", type="primary", use_container_width=True)
+        analyze_clicked = st.button("Analisis Ulasan", type="primary", use_container_width=True)
 
     if analyze_clicked and review_input.strip():
         # Lakukan inferensi
@@ -65,7 +65,7 @@ def render_tab4():
         })
 
         st.markdown("---")
-        st.markdown("#### 🎯 Hasil Prediksi Model")
+        st.markdown("#### Hasil Prediksi Model")
 
         # 2. Output KPI Metric Cards
         col_res1, col_res2, col_res3 = st.columns(3)
@@ -92,7 +92,7 @@ def render_tab4():
                 st.progress(val)
 
         # 3. Rekomendasi Respon AI Kitchen
-        st.markdown("#### 👨‍🍳 Rekomendasi Tindakan Operasional Dapur:")
+        st.markdown("#### Rekomendasi Tindakan Operasional Dapur:")
         if result["sentiment"] == "Negatif":
             st.error(result["recommendation"])
         elif result["sentiment"] == "Positif":
@@ -102,6 +102,6 @@ def render_tab4():
 
     # 4. Riwayat Simulasi
     if st.session_state.sim_history:
-        with st.expander(f"📜 Riwayat Simulasi ({len(st.session_state.sim_history)} item)", expanded=False):
+        with st.expander(f"Riwayat Simulasi ({len(st.session_state.sim_history)} item)", expanded=False):
             for item in st.session_state.sim_history[:5]:
                 st.markdown(f"**[{item['timestamp']}]** `{item['aspect']}` | `{item['sentiment']}` ({int(item['conf']*100)}%) — *\"{item['text']}\"*")

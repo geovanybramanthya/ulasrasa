@@ -30,11 +30,12 @@ from src.config import (
 from src.utils.exporter import export_action_plan_text, export_action_plan_pdf
 
 # ==============================================================================
-# 1. KONFIGURASI HALAMAN STREAMLIT
+# 1. KONFIGURASI HALAMAN STREAMLIT (ZERO EMOJI - ASSET FAVICON)
 # ==============================================================================
+favicon_path = os.path.join(os.path.dirname(__file__), "assets", "favicon.png")
 st.set_page_config(
     page_title="UlasRasa - Kitchen Intelligence Dashboard",
-    page_icon="🍲",
+    page_icon=favicon_path if os.path.exists(favicon_path) else "UR",
     layout="wide",
     initial_sidebar_state="expanded",
 )
@@ -67,7 +68,7 @@ html, body, [data-testid="stAppViewContainer"] {
 
 [data-testid="stSidebar"] hr {
     border-color: #E2DDD3 !important;
-    margin: 1rem 0 !important;
+    margin: 0.85rem 0 !important;
 }
 
 /* Typography Hierarchy */
@@ -80,6 +81,245 @@ h1, h2, h3, h4, h5, h6 {
 
 p, span, label {
     color: #44403C !important;
+}
+
+/* Brand Header in Sidebar */
+.brand-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 6px 0 12px 0;
+}
+
+.brand-logo-badge {
+    width: 38px;
+    height: 38px;
+    background: #C84B2F;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(200, 75, 47, 0.25);
+    flex-shrink: 0;
+}
+
+.brand-text-title {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: #1C1917;
+    letter-spacing: -0.01em;
+    line-height: 1.1;
+}
+
+.brand-text-sub {
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #78716C;
+}
+
+/* Pulsing Status Dot (Living UI Effect) */
+.live-status-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #FFFFFF;
+    border: 1px solid #E2DDD3;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: #15803D;
+    margin-bottom: 14px;
+    box-shadow: 0 1px 3px rgba(45, 35, 25, 0.03);
+}
+
+.pulse-dot {
+    width: 7px;
+    height: 7px;
+    background-color: #15803D;
+    border-radius: 50%;
+    box-shadow: 0 0 0 0 rgba(21, 128, 61, 0.5);
+    animation: pulse 1.8s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(21, 128, 61, 0.6);
+    }
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 6px rgba(21, 128, 61, 0);
+    }
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(21, 128, 61, 0);
+    }
+}
+
+/* Section Header in Sidebar */
+.sidebar-section-header {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #78716C;
+    margin: 14px 0 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* THE HIGHLIGHTER: Navigation Menu Styling */
+[data-testid="stSidebar"] [data-testid="stRadio"] div[role="radiogroup"] > label {
+    background: #FFFFFF !important;
+    border: 1px solid #EAE6DE !important;
+    border-radius: 10px !important;
+    padding: 10px 14px !important;
+    margin-bottom: 6px !important;
+    transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    cursor: pointer !important;
+    box-shadow: 0 1px 3px rgba(45, 35, 25, 0.02) !important;
+}
+
+[data-testid="stSidebar"] [data-testid="stRadio"] div[role="radiogroup"] > label:hover {
+    border-color: #C84B2F !important;
+    background: #FFFDFB !important;
+    transform: translateX(4px) !important;
+    box-shadow: 0 4px 12px rgba(45, 35, 25, 0.05) !important;
+}
+
+/* HIGHLIGHTER AKTIF: Border Kiri Tebal & Background Lembut */
+[data-testid="stSidebar"] [data-testid="stRadio"] div[role="radiogroup"] > label:has(input:checked) {
+    background: linear-gradient(90deg, #FFF4EE 0%, #FAF0E8 100%) !important;
+    border-color: #C84B2F !important;
+    border-left: 5px solid #C84B2F !important;
+    box-shadow: 0 4px 14px rgba(200, 75, 47, 0.12) !important;
+    transform: translateX(4px) !important;
+}
+
+[data-testid="stSidebar"] [data-testid="stRadio"] div[role="radiogroup"] > label:has(input:checked) p {
+    color: #C84B2F !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.01em !important;
+}
+
+[data-testid="stSidebar"] [data-testid="stRadio"] input[type="radio"]:checked + div {
+    background-color: #C84B2F !important;
+    border-color: #C84B2F !important;
+}
+
+/* Live Reactive Outlet Micro-Card in Sidebar */
+.sidebar-outlet-card {
+    background: #FFFFFF;
+    border: 1px solid #EAE6DE;
+    border-radius: 12px;
+    padding: 14px 16px;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 8px rgba(45, 35, 25, 0.03);
+    position: relative;
+    border-left: 4px solid #C84B2F;
+}
+
+.sidebar-outlet-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 6px;
+}
+
+.sidebar-outlet-name {
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: #1C1917;
+    line-height: 1.25;
+}
+
+.sidebar-outlet-score-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 8px;
+    margin-bottom: 4px;
+}
+
+.sidebar-score-label {
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #78716C;
+}
+
+.sidebar-score-val {
+    font-size: 1.25rem;
+    font-weight: 800;
+}
+
+.sidebar-progress-track {
+    background: #EAE6DE;
+    border-radius: 4px;
+    height: 5px;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+.sidebar-outlet-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 8px;
+}
+
+.outlet-chip {
+    background: #F5F3ED;
+    border: 1px solid #E2DDD3;
+    padding: 2px 7px;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #57534E;
+}
+
+.outlet-chip-alert {
+    background: #FEF2F2;
+    border-color: #FEE2E2;
+    color: #B91C1C;
+    font-weight: 700;
+}
+
+/* Sidebar Weighted Composition Card */
+.sidebar-weights-card {
+    background: #FFFFFF;
+    border: 1px solid #EAE6DE;
+    border-radius: 10px;
+    padding: 12px 14px;
+    margin-top: 8px;
+}
+
+.weights-bar-composite {
+    display: flex;
+    height: 6px;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 8px 0;
+}
+
+.weights-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+    font-size: 0.72rem;
+    color: #57534E;
+}
+
+.weight-item {
+    background: #FAF8F5;
+    border: 1px solid #EAE6DE;
+    padding: 3px 6px;
+    border-radius: 4px;
 }
 
 /* Glass & Card Surfaces */
@@ -116,10 +356,10 @@ p, span, label {
 }
 
 .kpi-title {
-    font-size: 0.82rem;
-    font-weight: 600;
+    font-size: 0.8rem;
+    font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.06em;
     color: #78716C;
     margin-bottom: 4px;
 }
@@ -133,11 +373,11 @@ p, span, label {
 }
 
 .kpi-subtitle {
-    font-size: 0.82rem;
+    font-size: 0.8rem;
     color: #57534E;
 }
 
-/* Pill Badges */
+/* Pill Badges (Semantic, Zero Emoji) */
 .badge-prima {
     background-color: #F0FDF4;
     color: #15803D;
@@ -145,9 +385,10 @@ p, span, label {
     padding: 4px 10px;
     border-radius: 20px;
     font-weight: 700;
-    font-size: 0.78rem;
+    font-size: 0.76rem;
     display: inline-flex;
     align-items: center;
+    letter-spacing: 0.02em;
 }
 
 .badge-waspada {
@@ -157,9 +398,10 @@ p, span, label {
     padding: 4px 10px;
     border-radius: 20px;
     font-weight: 700;
-    font-size: 0.78rem;
+    font-size: 0.76rem;
     display: inline-flex;
     align-items: center;
+    letter-spacing: 0.02em;
 }
 
 .badge-kritis {
@@ -169,9 +411,10 @@ p, span, label {
     padding: 4px 10px;
     border-radius: 20px;
     font-weight: 700;
-    font-size: 0.78rem;
+    font-size: 0.76rem;
     display: inline-flex;
     align-items: center;
+    letter-spacing: 0.02em;
 }
 
 .badge-aspek {
@@ -181,6 +424,37 @@ p, span, label {
     padding: 3px 8px;
     border-radius: 6px;
     font-weight: 600;
+    font-size: 0.74rem;
+}
+
+/* Micro-Pills for Breakdown Cards */
+.metric-pill-pos {
+    background: #F0FDF4;
+    color: #15803D;
+    border: 1px solid #DCFCE7;
+    padding: 2px 7px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 0.75rem;
+}
+
+.metric-pill-neu {
+    background: #FEFCE8;
+    color: #B45309;
+    border: 1px solid #FEF08A;
+    padding: 2px 7px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 0.75rem;
+}
+
+.metric-pill-neg {
+    background: #FEF2F2;
+    color: #B91C1C;
+    border: 1px solid #FEE2E2;
+    padding: 2px 7px;
+    border-radius: 4px;
+    font-weight: 700;
     font-size: 0.75rem;
 }
 
@@ -269,29 +543,46 @@ p, span, label {
     transform: translateY(-1px) !important;
 }
 
-/* Tabs Header Styling */
-.stTabs [data-baseweb="tab-list"] {
+/* Top Synchronized Navigation Bar */
+.top-nav-bar {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 8px;
-    background-color: #F5F3ED;
+    background-color: #F4F1EA;
     padding: 6px;
     border-radius: 12px;
     border: 1px solid #EAE6DE;
+    margin-bottom: 20px;
 }
 
-.stTabs [data-baseweb="tab"] {
-    height: 42px;
-    background-color: transparent;
+.top-nav-pill {
+    padding: 10px 14px;
     border-radius: 8px;
-    color: #57534E;
+    text-align: center;
+    font-size: 0.85rem;
     font-weight: 600;
-    font-size: 0.88rem;
-    padding: 0 16px;
+    color: #57534E;
+    background: transparent;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all 0.2s ease;
 }
 
-.stTabs [aria-selected="true"] {
-    background-color: #FFFFFF !important;
+.top-nav-pill-active {
+    background: #FFFFFF !important;
     color: #C84B2F !important;
+    border: 1px solid #EAE6DE !important;
+    font-weight: 700 !important;
     box-shadow: 0 2px 8px rgba(45, 35, 25, 0.06) !important;
+}
+
+.active-nav-indicator {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: #C84B2F;
+    border-radius: 50%;
+    margin-right: 6px;
 }
 </style>
 """
@@ -322,6 +613,9 @@ if "custom_reviews_df" not in st.session_state:
 if "custom_checklist_items" not in st.session_state:
     st.session_state.custom_checklist_items = []
 
+if "active_module_name" not in st.session_state:
+    st.session_state.active_module_name = "Ringkasan Eksekutif & Health Score"
+
 if "simulator_text" not in st.session_state:
     st.session_state.simulator_text = (
         "Ayamnya gurih renyah bumbunya mantap meresap, tapi kemasan mangkok tumpah kuah "
@@ -329,37 +623,88 @@ if "simulator_text" not in st.session_state:
     )
 
 # ==============================================================================
-# 4. SIDEBAR: PENGENDALIAN DATASET & PANDUAN PITCHING
+# 4. SIDEBAR: PENGENDALIAN DATASET, NAVIGASI DENGAN HIGHLIGHTER & OUTLET CARD
 # ==============================================================================
 with st.sidebar:
-    st.markdown("### UlasRasa Hub")
-    st.caption("AI Kitchen Diagnostic & Evaluation System")
+    # 4.1 Brand Header & Live Pulse Status
+    st.markdown(
+        """
+        <div class='brand-container'>
+            <div class='brand-logo-badge'>
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 16C4 19.5 7.5 21 12 21C16.5 21 20 19.5 20 16H4Z" fill="#FAF8F5"/>
+                    <path d="M12 4L14.5 10H9.5L12 4Z" fill="#FAF8F5"/>
+                    <line x1="3" y1="15" x2="21" y2="15" stroke="#FAF8F5" stroke-width="1.8" stroke-linecap="round"/>
+                    <line x1="9" y1="21.5" x2="15" y2="21.5" stroke="#FAF8F5" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div>
+                <div class='brand-text-title'>ULASRASA</div>
+                <div class='brand-text-sub'>Kitchen Diagnostics AI</div>
+            </div>
+        </div>
+        <div class='live-status-pill'>
+            <span class='pulse-dot'></span>
+            <span>Engine Siap &bull; Latensi &lt; 1ms</span>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
+    # 4.2 Navigasi Modul dengan HIGHLIGHTER
+    st.markdown(
+        """
+        <div class='sidebar-section-header'>
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#C84B2F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="7" height="7"></rect>
+                <rect x="14" y="3" width="7" height="7"></rect>
+                <rect x="14" y="14" width="7" height="7"></rect>
+                <rect x="3" y="14" width="7" height="7"></rect>
+            </svg>
+            MODUL KERJA AKTIF
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
+    MODULE_CHOICES = [
+        "Ringkasan Eksekutif & Health Score",
+        "Deep-Dive Aspek & Sentimen",
+        "AI Kitchen Action Checklist",
+        "Single Review Simulator (Live Demo)"
+    ]
+
+    selected_nav = st.radio(
+        "Pilih Modul Analisis:",
+        MODULE_CHOICES,
+        index=MODULE_CHOICES.index(st.session_state.active_module_name) if st.session_state.active_module_name in MODULE_CHOICES else 0,
+        label_visibility="collapsed",
+        key="sidebar_module_radio"
+    )
+    st.session_state.active_module_name = selected_nav
+
     st.markdown("---")
 
-    # Mode Presentasi / Pitching Guide
-    with st.expander("Panduan Pitching Mentor (3 Menit)", expanded=False):
-        st.markdown(
-            """
-            **1. Fenomena & Masalah (Menit 0:00 - 0:45):**
-            - Ribuan ulasan liar masuk setiap hari di GoFood/GrabFood/Google Maps.
-            - Analisis sentimen konvensional gagal karena cuma biner (+/-), padahal komplain kuliner selalu *mixed sentiment* (rasa enak tapi kemasan bocor).
+    # 4.3 Konfigurasi Sumber Data Ulasan
+    st.markdown(
+        """
+        <div class='sidebar-section-header'>
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#78716C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+            </svg>
+            SUMBER DATA & PROFIL RESTORAN
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
 
-            **2. Solusi Hybrid AI (Menit 0:45 - 2:00):**
-            - **IndoBERT NLP**: Membedah teks ke 5 Aspek Kunci (Rasa, Porsi, Harga, Kemasan, Pelayanan) secara deterministik dan cepat (<100ms).
-            - **Kitchen Health Score (KHS)**: Metrik komposit terbobot 0-100%.
-            - **Generative LLM**: Mengubah temuan komplain menjadi RCA (5-Why) dan checklist tindakan dapur siap cetak.
-
-            **3. Dampak Bisnis (Menit 2:00 - 3:00):**
-            - Memangkas waktu audit pemilik resto dari 10 jam/minggu jadi instan.
-            - Mencegah kehilangan rating bintang yang memicu penurunan omzet delivery.
-            """
-        )
-
-    st.markdown("#### Sumber Data Ulasan")
     data_source_mode = st.radio(
-        "Pilih Sumber Data:",
+        "Mode Pengambilan Data:",
         ["Outlet Bawaan (Preset)", "Upload Dataset Real (CSV)"],
         index=0,
+        label_visibility="collapsed",
         help="Pilih preset restoran lokal atau unggah file ulasan GoFood/GrabFood/Google Maps milikmu sendiri."
     )
 
@@ -375,11 +720,11 @@ with st.sidebar:
             try:
                 user_csv = pd.read_csv(uploaded_file)
                 if "review_text" in user_csv.columns:
-                    st.success(f"File berhasil dimuat ({len(user_csv)} baris)!")
+                    st.success(f"File berhasil dimuat ({len(user_csv)} baris)")
                     active_df = user_csv
                     selected_resto = user_csv.get("restaurant_name", pd.Series(["Outlet Kustom"])).iloc[0]
                 else:
-                    st.error("CSV wajib memiliki kolom 'review_text'!")
+                    st.error("CSV wajib memiliki kolom 'review_text'")
             except Exception as e:
                 st.error(f"Gagal membaca CSV: {e}")
         else:
@@ -398,15 +743,87 @@ with st.sidebar:
         else:
             selected_resto = "Ayam Geprek Sambal Korek Barokah"
 
-    # Filter Dataframe Aktif
+    # Filter Dataframe Aktif Berdasarkan Pilihan Outlet
     if selected_resto != "Semua Outlet (Benchmark Industri)" and "restaurant_name" in active_df.columns:
         filtered_df = active_df[active_df["restaurant_name"] == selected_resto].copy()
     else:
         filtered_df = active_df.copy()
 
+    # Evaluasi Dataframe untuk Mendapatkan Skor Nyata Restoran
+    eval_results = pipeline.evaluate_dataframe(filtered_df)
+    khs = eval_results.get("kitchen_health_score", 0.0)
+    breakdown = eval_results.get("aspect_breakdown", {})
+
+    # Status KHS
+    if khs >= HEALTH_THRESHOLDS["PRIMA"]:
+        status_label = "PRIMA (Optimal)"
+        status_class = "badge-prima"
+        status_color = "#15803D"
+    elif khs >= HEALTH_THRESHOLDS["WASPADA"]:
+        status_label = "WASPADA (Perhatian)"
+        status_class = "badge-waspada"
+        status_color = "#B45309"
+    else:
+        status_label = "KRITIS (Audit Segera)"
+        status_class = "badge-kritis"
+        status_color = "#B91C1C"
+
+    weakest_aspect = min(breakdown.items(), key=lambda x: x[1].get("satisfaction_score", 100.0))[0] if breakdown else "kemasan"
+    weakest_score = breakdown.get(weakest_aspect, {}).get("satisfaction_score", 100.0)
+
+    # 4.4 DYNAMIC LIVE OUTLET PROFILE CARD DI SIDEBAR (UX HIDUP)
+    st.markdown(
+        f"""
+        <div class='sidebar-outlet-card'>
+            <div class='sidebar-outlet-header'>
+                <div class='sidebar-outlet-name'>{selected_resto}</div>
+                <span class='{status_class}'>{status_label.split()[0]}</span>
+            </div>
+            <div class='sidebar-outlet-score-row'>
+                <span class='sidebar-score-label'>Kitchen Health Score</span>
+                <span class='sidebar-score-val' style='color: {status_color};'>{khs:.1f}%</span>
+            </div>
+            <div class='sidebar-progress-track'>
+                <div style='width: {min(khs, 100):.1f}%; height: 100%; background: {status_color};'></div>
+            </div>
+            <div class='sidebar-outlet-chips'>
+                <span class='outlet-chip'>{len(filtered_df)} Ulasan Aktif</span>
+                <span class='outlet-chip outlet-chip-alert'>Kritis: {weakest_aspect.capitalize()} ({weakest_score:.0f}%)</span>
+            </div>
+            <div style='font-size: 0.68rem; color: #78716C; margin-top: 6px; display: flex; align-items: center; gap: 4px;'>
+                <span class='pulse-dot' style='width: 5px; height: 5px;'></span>
+                <span>Konteks Outlet Terpilih Aktif</span>
+            </div>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
     st.markdown("---")
-    
-    # Form Tambah Ulasan Baru Langsung (Interaktif)
+
+    # 4.5 Mode Presentasi / Pitching Guide (Tanpa Emoji)
+    with st.expander("Panduan Pitching Mentor (3 Menit)", expanded=False):
+        st.markdown(
+            """
+            <div style='font-size: 0.8rem; color: #44403C; line-height: 1.45;'>
+                <div style='background: #FAF8F5; border-left: 3px solid #C84B2F; padding: 6px 10px; margin-bottom: 6px; border-radius: 4px;'>
+                    <b>Menit 00:00 - 00:45 | Masalah Riil</b><br>
+                    Pemilik resto kewalahan memilah ribuan ulasan liar di GoFood/GrabFood. Sentimen konvensional (+/-) gagal karena komplain kuliner selalu <i>mixed sentiment</i>.
+                </div>
+                <div style='background: #FAF8F5; border-left: 3px solid #D97706; padding: 6px 10px; margin-bottom: 6px; border-radius: 4px;'>
+                    <b>Menit 00:45 - 02:00 | Solusi Hybrid AI</b><br>
+                    IndoBERT ABSA membedah 5 aspek deterministik (&lt;1ms). KHS mengukur kesehatan dapur 0-100%, lalu Generative LLM merumuskan RCA & checklist fisik.
+                </div>
+                <div style='background: #FAF8F5; border-left: 3px solid #15803D; padding: 6px 10px; border-radius: 4px;'>
+                    <b>Menit 02:00 - 03:00 | Dampak Bisnis</b><br>
+                    Memangkas audit operasional dari 10 jam/minggu jadi instan dan mencegah penurunan rating delivery toko.
+                </div>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+
+    # 4.6 Form Tambah Ulasan Baru Langsung
     with st.expander("Input Ulasan Baru ke Outlet Ini", expanded=False):
         st.caption("Uji coba menambahkan komplain baru secara live ke database aktif.")
         new_rev_text = st.text_area("Kalimat Ulasan Konsumen:", height=75, placeholder="Contoh: Ayam alot dan sambalnya sedikit...")
@@ -414,7 +831,6 @@ with st.sidebar:
         
         if st.button("Simpan & Perbarui Dashboard"):
             if new_rev_text.strip():
-                # Jalankan inferensi langsung pada ulasan baru
                 infer_res = pipeline.analyze_single_review(new_rev_text)
                 new_row = {
                     "review_id": len(st.session_state.custom_reviews_df) + 1,
@@ -428,20 +844,35 @@ with st.sidebar:
                     "pelayanan": infer_res["aspects"]["pelayanan"]["sentiment"],
                 }
                 st.session_state.custom_reviews_df = pd.concat([st.session_state.custom_reviews_df, pd.DataFrame([new_row])], ignore_index=True)
-                st.success("Ulasan berhasil ditambahkan! Dashboard terbarui.")
+                st.success("Ulasan baru berhasil ditambahkan! Dashboard terbarui.")
                 st.rerun()
             else:
                 st.warning("Teks ulasan tidak boleh kosong.")
 
     st.markdown("---")
+
+    # 4.7 Bobot Komposit KHS (Visual Meter Bar)
     st.markdown(
         """
-        <div style='font-size: 0.78rem; color: #78716C;'>
-            <b>Bobot Komposit KHS:</b><br>
-            • Rasa: 35% | Porsi: 20%<br>
-            • Kemasan: 15% | Harga: 15%<br>
-            • Pelayanan: 15%<br>
-            <i>Total Pembobotan: 100%</i>
+        <div class='sidebar-weights-card'>
+            <div style='display: flex; justify-content: space-between; align-items: center; font-size: 0.72rem; font-weight: 700; color: #78716C;'>
+                <span>BOBOT KOMPOSIT KHS</span>
+                <span style='background: #EAE6DE; padding: 1px 6px; border-radius: 4px;'>TOTAL 100%</span>
+            </div>
+            <div class='weights-bar-composite'>
+                <div style='width: 35%; background: #C84B2F;' title='Rasa: 35%'></div>
+                <div style='width: 20%; background: #D97706;' title='Porsi: 20%'></div>
+                <div style='width: 15%; background: #2563EB;' title='Kemasan: 15%'></div>
+                <div style='width: 15%; background: #7C3AED;' title='Harga: 15%'></div>
+                <div style='width: 15%; background: #059669;' title='Pelayanan: 15%'></div>
+            </div>
+            <div class='weights-grid'>
+                <div class='weight-item' style='border-left: 3px solid #C84B2F;'>Rasa <b>35%</b></div>
+                <div class='weight-item' style='border-left: 3px solid #D97706;'>Porsi <b>20%</b></div>
+                <div class='weight-item' style='border-left: 3px solid #2563EB;'>Kemasan <b>15%</b></div>
+                <div class='weight-item' style='border-left: 3px solid #7C3AED;'>Harga <b>15%</b></div>
+                <div class='weight-item' style='border-left: 3px solid #059669; grid-column: span 2;'>Pelayanan <b>15%</b></div>
+            </div>
         </div>
         """,
         unsafe_allow_html=True
@@ -457,16 +888,16 @@ st.markdown(
     f"(Target Analisis: **{selected_resto}** | **{len(filtered_df)}** Ulasan Konsumen Aktif)"
 )
 
-# Interactive Workflow Step Indicator
+# Interactive Workflow Step Indicator (Zero Emoji)
 with st.container():
     st.markdown(
         """
-        <div style='margin-bottom: 24px;'>
+        <div style='margin-bottom: 20px;'>
             <div style='display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px;'>
                 <div class='workflow-step'>
                     <div class='workflow-num'>1</div>
                     <div class='workflow-title'>Ingestion & Slang</div>
-                    <div class='workflow-desc'>Pembersihan teks ulasan & normalisasi bahasa gaul F&B</div>
+                    <div class='workflow-desc'>Pembersihan ulasan & normalisasi bahasa gaul F&B</div>
                 </div>
                 <div class='workflow-step'>
                     <div class='workflow-num'>2</div>
@@ -476,7 +907,7 @@ with st.container():
                 <div class='workflow-step'>
                     <div class='workflow-num'>3</div>
                     <div class='workflow-title'>Health Scoring</div>
-                    <div class='workflow-desc'>Perhitungan KHS terbobot & pemetaan Spider Chart</div>
+                    <div class='workflow-desc'>Kalkulasi KHS terbobot & pemetaan Spider Chart</div>
                 </div>
                 <div class='workflow-step'>
                     <div class='workflow-num'>4</div>
@@ -494,43 +925,27 @@ with st.container():
         unsafe_allow_html=True
     )
 
-# Evaluasi Dataframe Lengkap via Pipeline
-eval_results = pipeline.evaluate_dataframe(filtered_df)
-khs = eval_results.get("kitchen_health_score", 0.0)
-breakdown = eval_results.get("aspect_breakdown", {})
+# Synchronized Top Module Selector (Highlighter Visual Bar)
+col_top_nav1, col_top_nav2, col_top_nav3, col_top_nav4 = st.columns(4)
+top_cols = [col_top_nav1, col_top_nav2, col_top_nav3, col_top_nav4]
+short_labels = ["1. Ringkasan Eksekutif", "2. Deep-Dive Aspek", "3. Checklist & SOP", "4. Review Simulator"]
 
-# Tentukan Status Operasional KHS
-if khs >= HEALTH_THRESHOLDS["PRIMA"]:
-    status_label = "PRIMA (Dapur Optimal)"
-    status_class = "badge-prima"
-    status_color = "#15803D"
-elif khs >= HEALTH_THRESHOLDS["WASPADA"]:
-    status_label = "WASPADA (Perlu Perhatian)"
-    status_class = "badge-waspada"
-    status_color = "#B45309"
-else:
-    status_label = "KRITIS (Audit Dapur Segera!)"
-    status_class = "badge-kritis"
-    status_color = "#B91C1C"
+for idx, (t_col, full_title, s_label) in enumerate(zip(top_cols, MODULE_CHOICES, short_labels)):
+    with t_col:
+        is_cur = (st.session_state.active_module_name == full_title)
+        if is_cur:
+            st.button(f"[AKTIF] {s_label}", key=f"top_btn_{idx}", disabled=True, use_container_width=True)
+        else:
+            if st.button(s_label, key=f"top_btn_{idx}", use_container_width=True):
+                st.session_state.active_module_name = full_title
+                st.rerun()
 
-# Aspek dengan kepuasan paling rendah
-weakest_aspect = min(breakdown.items(), key=lambda x: x[1].get("satisfaction_score", 100.0))[0] if breakdown else "kemasan"
-weakest_score = breakdown.get(weakest_aspect, {}).get("satisfaction_score", 100.0)
+current_module = st.session_state.active_module_name
 
 # ==============================================================================
-# 6. TAB NAVIGASI UTAMA
+# MODUL 1: RINGKASAN EKSEKUTIF & HEALTH SCORE
 # ==============================================================================
-tab1, tab2, tab3, tab4 = st.tabs([
-    "1. Ringkasan Eksekutif & Health Score",
-    "2. Deep-Dive Aspek & Sentimen",
-    "3. AI Kitchen Action Checklist",
-    "4. Single Review Simulator (Live Demo)"
-])
-
-# ==============================================================================
-# TAB 1: RINGKASAN EKSEKUTIF & HEALTH SCORE
-# ==============================================================================
-with tab1:
+if current_module == "Ringkasan Eksekutif & Health Score":
     st.markdown("### Ringkasan Kesehatan Dapur (Executive Overview)")
     st.caption("Visualisasi komprehensif kepuasan pelanggan lintas 5 aspek kunci dan evaluasi skor dapur.")
 
@@ -591,28 +1006,37 @@ with tab1:
 
     st.markdown("<div style='height: 12px;'></div>", unsafe_allow_html=True)
 
-    # Priority Kitchen Alert Banner jika di bawah ambang batas
+    # Priority Kitchen Alert Banner jika di bawah ambang batas (Zero Emoji, Clean SVG)
     if weakest_score < 75.0:
         st.markdown(
             f"""
-            <div class='ulas-card ulas-card-accent'>
+            <div class='ulas-card ulas-card-accent' style='border-left: 4px solid #B91C1C;'>
                 <div style='display: flex; justify-content: space-between; align-items: center;'>
-                    <div>
-                        <b style='color: #C84B2F; font-size: 0.95rem;'>🚨 Peringatan Prioritas Dapur: Aspek {weakest_aspect.capitalize()} Kritis!</b>
-                        <p style='margin: 4px 0 0 0; font-size: 0.85rem; color: #57534E;'>
-                            Tingkat komplain pada aspek <b>{weakest_aspect.capitalize()}</b> mencapai 
-                            <b>{breakdown.get(weakest_aspect, {}).get('negative_rate', 0.0):.1f}%</b>. 
-                            Diperlukan tindakan segera di stasiun assembling/packing dapur agar rating toko tidak anjlok di aplikasi food delivery.
-                        </p>
+                    <div style='display: flex; gap: 12px; align-items: center;'>
+                        <div style='width: 36px; height: 36px; background: #FEE2E2; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;'>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B91C1C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+                                <line x1="12" y1="9" x2="12" y2="13"></line>
+                                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                            </svg>
+                        </div>
+                        <div>
+                            <b style='color: #B91C1C; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.03em;'>Peringatan Prioritas Dapur: Aspek {weakest_aspect.capitalize()} Kritis</b>
+                            <p style='margin: 4px 0 0 0; font-size: 0.85rem; color: #57534E;'>
+                                Tingkat komplain pada aspek <b>{weakest_aspect.capitalize()}</b> mencapai 
+                                <b>{breakdown.get(weakest_aspect, {}).get('negative_rate', 0.0):.1f}%</b>. 
+                                Diperlukan tindakan segera di stasiun assembling/packing dapur agar rating toko tidak anjlok di aplikasi food delivery.
+                            </p>
+                        </div>
                     </div>
-                    <span class='badge-kritis'>Action Required</span>
+                    <span class='badge-kritis'>Tindakan Diperlukan</span>
                 </div>
             </div>
             """,
             unsafe_allow_html=True
         )
 
-    # Visualisasi Spider Radar Chart & Penjelasan Komponen
+    # Visualisasi Spider Radar Chart & Rincian Aspek
     col_radar, col_breakdown_cards = st.columns([1.1, 1.3])
 
     with col_radar:
@@ -672,14 +1096,12 @@ with tab1:
 
     with col_breakdown_cards:
         st.markdown("#### Rincian Kinerja 5 Aspek Kunci")
-        st.caption("Tingkat kepuasan dihitung dengan formulasi: (Positif + 0.5 × Netral) ÷ Total Disebut × 100%.")
+        st.caption("Tingkat kepuasan dihitung dengan formulasi: (Positif + 0.5 x Netral) / Total Disebut x 100%.")
 
         for asp_name, m in breakdown.items():
             asp_cap = asp_name.capitalize()
             score = m["satisfaction_score"]
             weight = ASPECT_WEIGHTS.get(asp_cap, 0.15) * 100
-            
-            # Progress bar color
             p_color = "#15803D" if score >= 80 else ("#B45309" if score >= 65 else "#B91C1C")
             
             st.markdown(
@@ -699,9 +1121,9 @@ with tab1:
                     </div>
                     <div style='display: flex; justify-content: space-between; font-size: 0.78rem; color: #78716C;'>
                         <span>Disebut: <b>{m['total_mentioned']}</b> kali</span>
-                        <span>👍 Positif: <b style='color: #15803D;'>{m['positive']}</b></span>
-                        <span>✋ Netral: <b style='color: #B45309;'>{m['neutral']}</b></span>
-                        <span>👎 Komplain: <b style='color: #B91C1C;'>{m['negative']} ({m['negative_rate']:.0f}%)</b></span>
+                        <span class='metric-pill-pos'>Positif: <b>{m['positive']}</b></span>
+                        <span class='metric-pill-neu'>Netral: <b>{m['neutral']}</b></span>
+                        <span class='metric-pill-neg'>Komplain: <b>{m['negative']} ({m['negative_rate']:.0f}%)</b></span>
                     </div>
                 </div>
                 """,
@@ -709,9 +1131,9 @@ with tab1:
             )
 
 # ==============================================================================
-# TAB 2: DEEP-DIVE ASPEK & SENTIMEN
+# MODUL 2: DEEP-DIVE ASPEK & SENTIMEN
 # ==============================================================================
-with tab2:
+elif current_module == "Deep-Dive Aspek & Sentimen":
     st.markdown("### Deep-Dive Analisis Sentimen & Keluhan Pelanggan")
     st.caption("Bedah distribusi sentimen lintas aspek, frekuensi kata kunci komplain, dan kutipan ulasan langsung.")
 
@@ -823,7 +1245,6 @@ with tab2:
             all_menus += sorted(list(filtered_df["menu_item"].dropna().unique()))
         menu_filter = st.selectbox("Filter Berdasarkan Menu:", all_menus)
 
-    # Filtering Data
     sub_df = filtered_df.copy()
     if selected_aspect in sub_df.columns:
         if sent_filter == "Hanya Negatif (Komplain)":
@@ -874,13 +1295,12 @@ with tab2:
         st.info("Tidak ada ulasan yang memenuhi kriteria filter.")
 
 # ==============================================================================
-# TAB 3: AI KITCHEN ACTION CHECKLIST & SOP
+# MODUL 3: AI KITCHEN ACTION CHECKLIST & SOP
 # ==============================================================================
-with tab3:
+elif current_module == "AI Kitchen Action Checklist":
     st.markdown("### AI Kitchen Action Checklist & Rekomendasi SOP")
     st.caption("Dihasilkan secara otomatis oleh Generative LLM Engine berbasis sintesis pola ulasan komplain.")
 
-    # Ekstraksi keluhan ulasan nyata untuk generator
     sample_complaints = []
     for asp in ["kemasan", "rasa", "porsi", "harga", "pelayanan"]:
         if asp in filtered_df.columns:
@@ -918,7 +1338,6 @@ with tab3:
     st.markdown("#### 2. Checklist Perbaikan Dapur Siap Cetak")
     st.caption("Centang setiap tindakan yang sudah diverifikasi oleh Head Cook / Manajer Dapur saat shift kerja:")
 
-    # Gabungkan item bawaan + item kustom dari session_state
     all_checklist = list(plan.get("kitchen_action_checklist", []))
     for custom_item in st.session_state.custom_checklist_items:
         if custom_item not in all_checklist:
@@ -956,7 +1375,7 @@ with tab3:
         st.markdown(
             f"""
             <div class='ulas-card' style='border-left: 4px solid #15803D; padding: 12px 18px; margin-bottom: 8px;'>
-                <b style='color: #15803D; font-size: 0.85rem;'>SOP Operasional Terverifikasi:</b>
+                <b style='color: #15803D; font-size: 0.85rem; text-transform: uppercase;'>SOP Operasional Terverifikasi:</b>
                 <p style='margin: 4px 0 0 0; font-size: 0.85rem; color: #44403C;'>{sop_item}</p>
             </div>
             """,
@@ -965,13 +1384,12 @@ with tab3:
 
     st.markdown("---")
 
-    # 4. Export & Download Center
+    # 4. Export & Download Center (Zero Emoji)
     st.markdown("#### Unduh Dokumen Checklist Dapur")
     st.caption("Ekspor checklist tindakan untuk dicetak dan ditempel di meja dapur atau dibagikan ke kru:")
 
     col_btn1, col_btn2, col_btn3 = st.columns(3)
 
-    # Generate Text Report
     checklist_text_content = export_action_plan_text(
         overall_score=khs,
         status=status_label,
@@ -994,7 +1412,7 @@ with tab3:
 
     with col_btn1:
         st.download_button(
-            label="📄 Unduh Format Teks (.txt)",
+            label="Unduh Format Teks (.txt)",
             data=checklist_text_content,
             file_name=f"checklist_dapur_{selected_resto.lower().replace(' ', '_')}.txt",
             mime="text/plain",
@@ -1024,7 +1442,7 @@ with tab3:
                 ]
             )
             st.download_button(
-                label="📑 Unduh Dokumen Resmi PDF (.pdf)",
+                label="Unduh Dokumen Resmi PDF (.pdf)",
                 data=pdf_bytes,
                 file_name=f"checklist_dapur_{selected_resto.lower().replace(' ', '_')}.pdf",
                 mime="application/pdf",
@@ -1034,13 +1452,12 @@ with tab3:
             st.caption(f"PDF Generator Notice: {e}")
 
     with col_btn3:
-        # CSV Export
         action_export_df = pd.DataFrame([
             {"No": i+1, "Tindakan": item, "Status_Selesai": checked_status.get(i, False), "PIC": "Kru Dapur"}
             for i, item in enumerate(all_checklist)
         ])
         st.download_button(
-            label="📊 Unduh Tabel CSV (.csv)",
+            label="Unduh Tabel CSV (.csv)",
             data=action_export_df.to_csv(index=False),
             file_name=f"checklist_dapur_{selected_resto.lower().replace(' ', '_')}.csv",
             mime="text/csv",
@@ -1048,9 +1465,9 @@ with tab3:
         )
 
 # ==============================================================================
-# TAB 4: SINGLE REVIEW SIMULATOR (LIVE AI DEMO UNTUK PITCHING)
+# MODUL 4: SINGLE REVIEW SIMULATOR (LIVE AI DEMO)
 # ==============================================================================
-with tab4:
+elif current_module == "Single Review Simulator (Live Demo)":
     st.markdown("### Simulator Diagnostik Ulasan Tunggal (Live AI Demo)")
     st.caption("Uji coba model inferensi IndoBERT ABSA secara instan pada teks ulasan bebas:")
 
@@ -1099,7 +1516,6 @@ with tab4:
         st.markdown("---")
         st.markdown("#### 2. Hasil Ekstraksi NLP & Normalisasi Slang")
 
-        # Perbandingan Raw vs Cleaned Text
         c_raw, c_clean = st.columns(2)
         with c_raw:
             st.markdown("**Teks Mentah Asli:**")
@@ -1124,7 +1540,7 @@ with tab4:
                 if not is_mentioned:
                     badge_html = "<span class='badge-aspek'>Tidak Disebut</span>"
                     box_border = "#EAE6DE"
-                    stat_msg = "Aspek tidak dibahas dalam kalimat ulasan."
+                    stat_msg = "Aspek tidak dibahas dalam ulasan."
                 elif sent == "positive":
                     badge_html = f"<span class='badge-prima'>Positif ({conf*100:.0f}%)</span>"
                     box_border = "#15803D"
@@ -1149,17 +1565,25 @@ with tab4:
                     unsafe_allow_html=True
                 )
 
-        # Rekomendasi Instan untuk Ulasan Ini
         neg_detected = [asp.capitalize() for asp, d in aspects_map.items() if d["mentioned"] and d["sentiment"] == "negative"]
         if neg_detected:
             st.markdown(
                 f"""
                 <div class='ulas-card' style='background: #FFFDFB; border-left: 4px solid #C84B2F; margin-top: 14px;'>
-                    <b style='color: #C84B2F;'>💡 Rekomendasi Tindakan Cepat (Instant Mitigation):</b>
-                    <p style='margin: 4px 0 0 0; font-size: 0.85rem; color: #44403C;'>
-                        Terdeteksi komplain operasional pada aspek <b>{', '.join(neg_detected)}</b>. 
-                        Kru dapur disarankan segera memverifikasi SOP pengemasan anti-bocor dan memastikan suhu makanan sebelum diserahkan ke kurir pengantar.
-                    </p>
+                    <div style='display: flex; gap: 10px; align-items: flex-start;'>
+                        <div style='width: 32px; height: 32px; background: #FFF0EB; border-radius: 6px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;'>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C84B2F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                            </svg>
+                        </div>
+                        <div>
+                            <b style='color: #C84B2F; font-size: 0.9rem; text-transform: uppercase;'>Rekomendasi Tindakan Cepat (Instant Mitigation):</b>
+                            <p style='margin: 4px 0 0 0; font-size: 0.85rem; color: #44403C;'>
+                                Terdeteksi komplain operasional pada aspek <b>{', '.join(neg_detected)}</b>. 
+                                Kru dapur disarankan segera memverifikasi SOP pengemasan anti-bocor dan memastikan suhu makanan sebelum diserahkan ke kurir pengantar.
+                            </p>
+                        </div>
+                    </div>
                 </div>
                 """,
                 unsafe_allow_html=True
@@ -1168,10 +1592,20 @@ with tab4:
             st.markdown(
                 """
                 <div class='ulas-card' style='background: #FDFEFD; border-left: 4px solid #15803D; margin-top: 14px;'>
-                    <b style='color: #15803D;'>✅ Ulasan Sangat Positif:</b>
-                    <p style='margin: 4px 0 0 0; font-size: 0.85rem; color: #44403C;'>
-                        Tidak terdeteksi komplain operasional. Pertahankan konsistensi resep dan standar pelayanan dapur saat ini.
-                    </p>
+                    <div style='display: flex; gap: 10px; align-items: flex-start;'>
+                        <div style='width: 32px; height: 32px; background: #DCFCE7; border-radius: 6px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;'>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#15803D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                        </div>
+                        <div>
+                            <b style='color: #15803D; font-size: 0.9rem; text-transform: uppercase;'>Status Operasional Optimal:</b>
+                            <p style='margin: 4px 0 0 0; font-size: 0.85rem; color: #44403C;'>
+                                Tidak terdeteksi komplain operasional. Pertahankan konsistensi resep dan standar pelayanan dapur saat ini.
+                            </p>
+                        </div>
+                    </div>
                 </div>
                 """,
                 unsafe_allow_html=True
@@ -1184,7 +1618,7 @@ st.markdown("---")
 st.markdown(
     """
     <div style='display: flex; justify-content: space-between; align-items: center; font-size: 0.78rem; color: #78716C;'>
-        <span><b>UlasRasa</b> - AI Engineering Final Project (Batch 13) | Student ID: <b>REAENG13TQJLN</b> (Azura)</span>
+        <span><b>UlasRasa</b> &bull; AI Engineering Final Project (Batch 13) | Student ID: <b>REAENG13TQJLN</b> (Azura)</span>
         <span>Arsitektur: <b>IndoBERT Base (ABSA) + Generative LLM Action Engine</b></span>
     </div>
     """,

@@ -12,7 +12,7 @@ from src.analytics.text_mining import extract_top_complaints_ngrams, generate_co
 
 def render_tab2(df: pd.DataFrame):
     """Merender Tab 2: Deep-Dive Aspek, Distribusi Sentimen & Analisis N-Gram Keluhan."""
-    st.markdown("### 🔍 Deep-Dive Aspek & Sentimen Pelanggan")
+    st.markdown("### Deep-Dive Aspek & Sentimen Pelanggan")
     st.caption("Eksplorasi mendalam sentimen ulasan dan identifikasi akar masalah (root cause) keluhan.")
 
     if df.empty:
@@ -43,7 +43,7 @@ def render_tab2(df: pd.DataFrame):
     col_sentiment_bar, col_ngram = st.columns([1, 1])
 
     with col_sentiment_bar:
-        st.markdown("#### 📊 Distribusi Sentimen per Aspek")
+        st.markdown("#### Distribusi Sentimen per Aspek")
         # Agregasi data untuk stacked bar chart
         dist_df = df.groupby(["aspect", "sentiment"]).size().reset_index().rename(columns={0: "count"})
         
@@ -65,7 +65,7 @@ def render_tab2(df: pd.DataFrame):
 
     with col_ngram:
         ngram_title = f"Top Keluhan {selected_aspect} ({ngram_size}-gram)"
-        st.markdown(f"#### 🏷️ {ngram_title}")
+        st.markdown(f"#### {ngram_title}")
         ngrams_data = extract_top_complaints_ngrams(
             df=df,
             aspect=selected_aspect if selected_aspect != "Semua Aspek" else None,
@@ -76,7 +76,7 @@ def render_tab2(df: pd.DataFrame):
         st.plotly_chart(fig_ngram, use_container_width=True)
 
     # 3. Data Table Ulasan yang Difilter
-    st.markdown("#### 📝 Data Ulasan Pelanggan")
+    st.markdown("#### Data Ulasan Pelanggan")
     search_query = st.text_input("Cari ulasan berdasarkan kata kunci:", placeholder="Contoh: asin, piring, pelayan, lama...")
     
     table_df = filtered_df
@@ -91,7 +91,7 @@ def render_tab2(df: pd.DataFrame):
             "customer_name": "Pelanggan",
             "aspect": "Aspek",
             "sentiment": "Sentimen",
-            "rating": st.column_config.NumberColumn("Rating", format="%d ⭐"),
+            "rating": st.column_config.NumberColumn("Rating", format="%d Bintang"),
             "order_channel": "Channel",
             "review_text": st.column_config.TextColumn("Ulasan", width="large")
         },

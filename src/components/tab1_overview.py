@@ -15,7 +15,7 @@ from src.analytics.health_score import (
 
 def render_tab1(df: pd.DataFrame):
     """Merender Tab 1: Ringkasan Eksekutif & Spider Chart Health Score."""
-    st.markdown("### 📊 Ringkasan Eksekutif & Health Score Dapur")
+    st.markdown("### Ringkasan Eksekutif & Health Score Dapur")
     st.caption("Monitoring performa operasional 5 dimensi kuliner secara real-time.")
 
     # Kalkulasi Metrik
@@ -53,20 +53,20 @@ def render_tab1(df: pd.DataFrame):
     if alerts:
         for alert in alerts:
             if alert["level"] == "danger":
-                st.error(f"🚨 **{alert['title']}** — {alert['message']}")
+                st.error(f"[CRITICAL] **{alert['title']}** — {alert['message']}")
             else:
-                st.warning(f"⚠️ **{alert['title']}** — {alert['message']}")
+                st.warning(f"[WARNING] **{alert['title']}** — {alert['message']}")
 
     # 3. Main Visualization: Spider Chart + Aspect Score Cards
     col_chart, col_breakdown = st.columns([3, 2])
 
     with col_chart:
-        st.markdown("#### 🕸️ Spider Chart: Performa 5 Dimensi Dapur")
+        st.markdown("#### Spider Chart: Performa 5 Dimensi Dapur")
         radar_fig = generate_radar_chart(aspect_df)
         st.plotly_chart(radar_fig, use_container_width=True)
 
     with col_breakdown:
-        st.markdown("#### 🎯 Skor Dimensi & Target Operasional")
+        st.markdown("#### Skor Dimensi & Target Operasional")
         for record in aspect_df.to_dict(orient="records"):
             asp_name = str(record["aspect"])
             asp_score = float(record["score"])
@@ -77,7 +77,7 @@ def render_tab1(df: pd.DataFrame):
             st.progress(min(max(int(asp_score), 0), 100) / 100)
 
     # 4. Rekomendasi Eksekutif
-    with st.expander("💡 Rekomendasi Tindakan Strategis untuk Manajemen", expanded=True):
+    with st.expander("Rekomendasi Tindakan Strategis untuk Manajemen", expanded=True):
         st.markdown(f"""
         - **Status Saat Ini:** `{status}` dengan indeks kesehatan dapur **{overall_score}%**.
         - **Prioritas Intervensi:** Fokus pembenahan pada aspek **{lowest_aspect}** guna mencegah churn pelanggan.

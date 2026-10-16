@@ -5,5 +5,4 @@ __pycache__/
 venv/
 .pytest_cache/
 *.pdf
-*.txt
 .DS_Store

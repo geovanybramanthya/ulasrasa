@@ -3,7 +3,7 @@ Unit Tests for UlasRasa ABSA Pipeline & Kitchen Health Score
 """
 
 import os
-import pytest
+import unittest
 import pandas as pd
 from src.absa_pipeline import ABSAPipeline
 from src.action_engine import ActionPlanEngine
@@ -61,3 +61,20 @@ def test_action_plan_engine():
     assert len(plan["kitchen_action_checklist"]) > 0
     assert "root_cause_analysis" in plan
     assert "sop_recommendations" in plan
+
+class TestUlasRasaPipeline(unittest.TestCase):
+    def test_clean_text(self):
+        test_clean_text()
+
+    def test_analyze_single_review(self):
+        test_analyze_single_review()
+
+    def test_evaluate_dataframe(self):
+        test_evaluate_dataframe()
+
+    def test_action_plan_engine(self):
+        test_action_plan_engine()
+
+if __name__ == "__main__":
+    unittest.main()
+

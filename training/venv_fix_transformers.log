@@ -1,0 +1,56 @@
+Collecting transformers==4.57.3
+  Downloading transformers-4.57.3-py3-none-any.whl.metadata (43 kB)
+Requirement already satisfied: filelock in .\training\venv\Lib\site-packages (from transformers==4.57.3) (4.2.4)
+Collecting huggingface-hub<1.0,>=0.34.0 (from transformers==4.57.3)
+  Using cached huggingface_hub-0.36.2-py3-none-any.whl.metadata (15 kB)
+Requirement already satisfied: numpy>=1.17 in .\training\venv\Lib\site-packages (from transformers==4.57.3) (2.4.6)
+Requirement already satisfied: packaging>=20.0 in .\training\venv\Lib\site-packages (from transformers==4.57.3) (26.3)
+Requirement already satisfied: pyyaml>=5.1 in .\training\venv\Lib\site-packages (from transformers==4.57.3) (6.0.3)
+Requirement already satisfied: regex!=2019.12.17 in .\training\venv\Lib\site-packages (from transformers==4.57.3) (2026.9.29)
+WARNING: Cache entry deserialization failed, entry ignored
+WARNING: Cache entry deserialization failed, entry ignored
+Collecting requests (from transformers==4.57.3)
+  Using cached requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+Collecting tokenizers<=0.23.0,>=0.22.0 (from transformers==4.57.3)
+  Using cached tokenizers-0.22.2-cp39-abi3-win_amd64.whl.metadata (7.4 kB)
+Requirement already satisfied: safetensors>=0.4.3 in .\training\venv\Lib\site-packages (from transformers==4.57.3) (0.8.0)
+Requirement already satisfied: tqdm>=4.27 in .\training\venv\Lib\site-packages (from transformers==4.57.3) (4.70.1)
+Requirement already satisfied: fsspec>=2023.5.0 in .\training\venv\Lib\site-packages (from huggingface-hub<1.0,>=0.34.0->transformers==4.57.3) (2026.9.0)
+Requirement already satisfied: typing-extensions>=3.7.4.3 in .\training\venv\Lib\site-packages (from huggingface-hub<1.0,>=0.34.0->transformers==4.57.3) (4.16.0)
+Requirement already satisfied: colorama in .\training\venv\Lib\site-packages (from tqdm>=4.27->transformers==4.57.3) (0.4.6)
+WARNING: Cache entry deserialization failed, entry ignored
+WARNING: Cache entry deserialization failed, entry ignored
+Collecting charset_normalizer<4,>=2 (from requests->transformers==4.57.3)
+  Downloading charset_normalizer-3.5.2-cp311-cp311-win_amd64.whl.metadata (47 kB)
+Requirement already satisfied: idna<4,>=2.5 in .\training\venv\Lib\site-packages (from requests->transformers==4.57.3) (3.20)
+WARNING: Cache entry deserialization failed, entry ignored
+WARNING: Cache entry deserialization failed, entry ignored
+Collecting urllib3<3,>=1.26 (from requests->transformers==4.57.3)
+  Downloading urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+WARNING: Cache entry deserialization failed, entry ignored
+WARNING: Cache entry deserialization failed, entry ignored
+Collecting certifi>=2023.5.7 (from requests->transformers==4.57.3)
+  Downloading certifi-2026.10.19-py3-none-any.whl.metadata (2.5 kB)
+Downloading transformers-4.57.3-py3-none-any.whl (12.0 MB)
+   ---------------------------------------- 12.0/12.0 MB 1.6 MB/s  0:00:07
+Using cached huggingface_hub-0.36.2-py3-none-any.whl (566 kB)
+Using cached tokenizers-0.22.2-cp39-abi3-win_amd64.whl (2.7 MB)
+Using cached requests-2.34.2-py3-none-any.whl (73 kB)
+Downloading charset_normalizer-3.5.2-cp311-cp311-win_amd64.whl (214 kB)
+Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+Downloading certifi-2026.10.19-py3-none-any.whl (136 kB)
+Installing collected packages: urllib3, charset_normalizer, certifi, requests, huggingface-hub, tokenizers, transformers
+  Attempting uninstall: huggingface-hub
+    Found existing installation: huggingface_hub 2.2.0
+    Uninstalling huggingface_hub-2.2.0:
+      Successfully uninstalled huggingface_hub-2.2.0
+  Attempting uninstall: tokenizers
+    Found existing installation: tokenizers 0.23.3
+    Uninstalling tokenizers-0.23.3:
+      Successfully uninstalled tokenizers-0.23.3
+  Attempting uninstall: transformers
+    Found existing installation: transformers 5.20.2
+    Uninstalling transformers-5.20.2:
+      Successfully uninstalled transformers-5.20.2
+
+Successfully installed certifi-2026.10.19 charset_normalizer-3.5.2 huggingface-hub-0.36.2 requests-2.34.2 tokenizers-0.22.2 transformers-4.57.3 urllib3-2.8.0

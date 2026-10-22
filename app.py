@@ -680,10 +680,23 @@ st.markdown(CUSTOM_CSS, unsafe_allow_html=True)
 # ==============================================================================
 @st.cache_resource
 def load_ai_engines():
-    """Memuat modul inferensi NLP dan Action Plan Engine."""
-    return ABSAPipeline(), ActionPlanEngine()
+    """Memuat engine ABSA utama dan Action Plan Engine.
 
-pipeline, action_engine = load_ai_engines()
+    Engine utama adalah IndoBERT Base hasil fine-tune lokal
+    (models/indobert-base-absa). Bila model tidak tersedia atau gagal
+    dimuat, aplikasi jatuh kembali ke engine lexicon (baseline).
+    """
+    absa_engine = ABSAPipeline()
+    engine_label = "Lexicon (fallback)"
+    try:
+        from src.models.transformer_engine import TransformerABSAPipeline
+        absa_engine = TransformerABSAPipeline()
+        engine_label = getattr(absa_engine, "engine_name", "IndoBERT (fine-tuned)")
+    except Exception:
+        pass
+    return absa_engine, ActionPlanEngine(), engine_label
+
+pipeline, action_engine, ACTIVE_ABSA_ENGINE_LABEL = load_ai_engines()
 
 @st.cache_data
 def load_default_dataset() -> pd.DataFrame:
@@ -732,11 +745,12 @@ with st.sidebar:
         </div>
         <div class='live-status-pill'>
             <span class='pulse-dot'></span>
-            <span>Engine Siap &bull; Latensi &lt; 1ms</span>
+            <span>Engine Siap &bull; Analisis 5 Aspek</span>
         </div>
         """,
         unsafe_allow_html=True
     )
+    st.caption(f"Engine ABSA: {ACTIVE_ABSA_ENGINE_LABEL}")
 
     # 4.2 Navigasi Modul dengan HIGHLIGHTER
     st.markdown(
@@ -806,7 +820,9 @@ with st.sidebar:
         if uploaded_file is not None:
             try:
                 user_csv = pd.read_csv(uploaded_file)
-                if "review_text" in user_csv.columns:
+                if len(user_csv) > 200:
+                    st.error(f"File berisi {len(user_csv)} baris, melebihi batas maksimum 200 baris ulasan per analisis. Perkecil file terlebih dahulu, lalu unggah kembali.")
+                elif "review_text" in user_csv.columns:
                     st.success(f"File berhasil dimuat ({len(user_csv)} baris)")
                     active_df = user_csv
                     selected_resto = user_csv.get("restaurant_name", pd.Series(["Outlet Kustom"])).iloc[0]
@@ -899,7 +915,7 @@ with st.sidebar:
                 </div>
                 <div style='background: #FAF8F5; border-left: 3px solid #D97706; padding: 6px 10px; margin-bottom: 6px; border-radius: 4px;'>
                     <b>Menit 00:45 - 02:00 | Solusi Hybrid AI</b><br>
-                    IndoBERT ABSA membedah 5 aspek deterministik (&lt;1ms). KHS mengukur kesehatan dapur 0-100%, lalu Generative LLM merumuskan RCA & checklist fisik.
+                    IndoBERT Base hasil fine-tune membedah 5 aspek per ulasan (lexicon menjadi baseline & fallback). KHS mengukur kesehatan dapur 0-100%, lalu LLM Gemini (bila API key tersedia) atau katalog template merumuskan RCA & checklist fisik.
                 </div>
                 <div style='background: #FAF8F5; border-left: 3px solid #15803D; padding: 6px 10px; border-radius: 4px;'>
                     <b>Menit 02:00 - 03:00 | Dampak Bisnis</b><br>
@@ -1416,19 +1432,26 @@ elif current_module == "Deep-Dive Aspek & Sentimen":
 # ==============================================================================
 elif current_module == "AI Kitchen Action Checklist":
     st.markdown("### AI Kitchen Action Checklist & Rekomendasi SOP")
-    st.caption("Dihasilkan secara otomatis oleh Generative LLM Engine berbasis sintesis pola ulasan komplain.")
+    st.caption("Dihasilkan oleh LLM (Gemini/Groq) bila API key tersedia; tanpa key, digunakan katalog template terstruktur berbasis pola keluhan.")
 
-    sample_complaints = []
+    sample_complaints = {}
     for asp in ["kemasan", "rasa", "porsi", "harga", "pelayanan"]:
         if asp in filtered_df.columns:
             negs = filtered_df[filtered_df[asp] == "negative"]["review_text"].tolist()
-            sample_complaints.extend(negs[:3])
+            if negs:
+                sample_complaints[asp] = [str(t) for t in negs[:3]]
 
     plan = action_engine.generate_action_plan(
         restaurant_name=selected_resto,
         evaluation_results=eval_results,
         sample_complaints=sample_complaints
     )
+
+    if plan.get("generation_mode") == "llm":
+        mode_label = f"LLM ({plan.get('llm_provider') or '-'})"
+    else:
+        mode_label = "Template (offline)"
+    st.caption(f"Mode rekomendasi: {mode_label}")
 
     # 1. Root Cause Analysis (5-Why Ishikawa)
     st.markdown("#### 1. Ringkasan Akar Masalah Operasional (Root Cause Analysis)")
@@ -1586,7 +1609,7 @@ elif current_module == "AI Kitchen Action Checklist":
 # ==============================================================================
 elif current_module == "Single Review Simulator (Live Demo)":
     st.markdown("### Simulator Diagnostik Ulasan Tunggal (Live AI Demo)")
-    st.caption("Uji coba model inferensi IndoBERT ABSA secara instan pada teks ulasan bebas:")
+    st.caption(f"Uji coba engine ABSA aktif ({ACTIVE_ABSA_ENGINE_LABEL}) secara instan pada teks ulasan bebas:")
 
     st.markdown("#### 1. Pilih Preset Ulasan Simulasi Pitching:")
     p_col1, p_col2, p_col3, p_col4 = st.columns(4)

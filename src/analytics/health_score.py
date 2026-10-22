@@ -162,16 +162,16 @@ def get_critical_kitchen_alerts(df: pd.DataFrame, aspect_df: pd.DataFrame) -> li
     """
     alerts = []
     
-    # Cek Aspek Kebersihan
-    kebersihan_row = aspect_df[aspect_df["aspect"] == "Kebersihan"]
-    if not kebersihan_row.empty:
-        score = float(list(kebersihan_row["score"])[0])
+    # Cek Aspek Kemasan
+    kemasan_row = aspect_df[aspect_df["aspect"] == "Kemasan"]
+    if not kemasan_row.empty:
+        score = float(list(kemasan_row["score"])[0])
         if score < 75.0:
             alerts.append({
                 "level": "danger",
-                "aspect": "Kebersihan",
-                "title": "Peringatan Sanitasi & Higienitas Dapur!",
-                "message": f"Skor kebersihan berada di angka {score}% (< 75%). Ulasan negatif mengindikasikan masalah sanitasi alat makan atau area dapur."
+                "aspect": "Kemasan",
+                "title": "Peringatan Integritas Kemasan Pengiriman!",
+                "message": f"Skor kemasan berada di angka {score}% (< 75%). Ulasan negatif mengindikasikan kemasan bocor, tumpah, penyok, atau tidak tersegel selama pengantaran."
             })
 
     # Cek Aspek Rasa

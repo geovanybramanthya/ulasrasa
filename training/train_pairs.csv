@@ -1,0 +1,376 @@
+review_id,aspect,text,label
+47,harga,"Ukuran cup menyusut dari yang biasa, harga tetap sama. Isinya dikit banget kebanyakan batu es.",negative
+8,kemasan,"Lama banget proses di dapurnya, nunggu makanan 40 menit padahal antrean sepi. Pas datang ayam udah dingin.",not_mentioned
+4,rasa,"Kulit ayamnya garing kriuk juara, porsi pas kenyang, cuma sausnya bocor kemana-mana di bungkus plastik. Kurang isolasi tutupnya.",positive
+88,porsi,"Rasa rica kemanginya wangi sedap pedes nampol, porsi pas buat makan malam berdua. Selalu puas disini.",positive
+15,harga,Minta ekstra sambal di note aplikasi tapi ga dikasih sama sekali. Pelayanannya kurang teliti baca catatan orderan.,not_mentioned
+80,porsi,"Kemasan kardus tebal laminasi anti minyak ga ada bocor sama sekali, lalapan timun kemangi seger bersih.",not_mentioned
+23,porsi,"Harga murah rasa resto bintang lima, sambal korek mantul pedesnya pas di lidah. Selalu repeat order tiap minggu.",positive
+31,pelayanan,"Roti bakarnya kering alot, cokelatnya dikit ga lumer. Harganya overprice banget untuk rasa standar warung kopi.",not_mentioned
+77,rasa,Porsi bebek setengah ekor kenyang pol nasi pulen anget sambal mangga seger. Packaging rapi besek bambu bersih.,positive
+34,porsi,"Kemasan cup bagus ga gampang tumpah di motor, toastnya dibungkus box karton tebal bersih.",not_mentioned
+61,pelayanan,"Antrean takeaway berantakan, pesanan saya dilewati 3 orang padahal udah bayar duluan. Kasir ga teliti.",negative
+9,pelayanan,"Mantap pol sambelnya pedes gila, ayam matang sempurna sampe ke tulang. Porsi nasi banyak, kemasan rapi ada segel.",positive
+73,pelayanan,"Bumbu mie ayam terlalu manis kayak kolak, minyak ayamnya kebanyakan bikin mual di lidah.",not_mentioned
+15,rasa,Minta ekstra sambal di note aplikasi tapi ga dikasih sama sekali. Pelayanannya kurang teliti baca catatan orderan.,not_mentioned
+78,pelayanan,"Daging bebek empuk banget gampang lepas dari tulang, bumbu hitamnya meresap sampai ke serat daging terdalam.",positive
+82,harga,"Harga 38rb dapet paket komplit bebek empuk nasi sambal lalapan kremesan melimpah, sangat worth it!",positive
+1,rasa,"Ayamnya gurih renyah bumbunya mantap meresap, tapi kemasan mangkok tumpah kuah dan minyak sambal rembes ke kantong plastik. Driver nunggu 30 menit.",positive
+61,harga,"Antrean takeaway berantakan, pesanan saya dilewati 3 orang padahal udah bayar duluan. Kasir ga teliti.",not_mentioned
+93,harga,"Besek bambu pembungkusnya estetik dan rapi, makanan tetap hangat pas tiba di rumah. Rasa 10/10!",positive
+28,porsi,"Toast smoked beefnya enak bgt gurih, tapi potongan dagingnya makin tipis dibanding bulan lalu. Shrinkflation ya?",negative
+2,pelayanan,"Rasa sambal koreknya nampol bikin nagih, ayam crispy bgt, sayangnya pas nyampe udah dingin anyep dan box kertas basah kuyup kena uap.",not_mentioned
+50,porsi,Barista ramah dan informatif rekomendasiin beans yang ga asam. Pelayanan sangat memuaskan.,not_mentioned
+21,harga,Packaging sangat aman pake mangkok paper bowl tebal dan ada solasi rapat. Ayam masih anget gurih enak.,not_mentioned
+63,kemasan,"Daging rusuknya tipis banyakan tulangnya doang, porsi bakso cuma dapet 3 biji kecil. Agak mengecewakan untuk harga 40rb.",not_mentioned
+70,porsi,Pelayanannya sangat cekatan biarpun resto lagi rame pelanggan. Makanan datang dalam 10 menit panas-panas.,not_mentioned
+41,harga,Tutup cup kurang rapat pas diambil driver ada rembesan kopi basahin kantong kertas. Rasa kopi standar.,not_mentioned
+90,kemasan,Minyak bebeknya berlebihan basah kuyup di nasi sampai lembek. Bumbu hitam agak asin hari ini.,negative
+48,harga,Kombinasi kopi dan toast beef keju lumer sempurna di lidah. Rasa bintang 5 harga kaki lima.,positive
+44,harga,"Harga bersahabat untuk tempat nongkrong senyaman ini, kopi enak dan toastnya renyah empuk.",positive
+100,porsi,Pesanan sambal mangga tidak dikirimkan padahal di struk tertulis jelas. Staf packing tolong lebih teliti.,not_mentioned
+7,rasa,"Ayam gepreknya agak keasinan hari ini, ga kayak biasanya. Sambal juga sedikit, harga 28rb jadi kerasa kemahalan.",negative
+29,kemasan,Kopi kemanisan parah sirup gulanya mendominasi ga kerasa kopinya sama sekali. Toastnya juga gosong pinggirannya.,not_mentioned
+11,harga,"Rasa biasa aja bumbu kurang meresap, ayam terasa hambar di bagian dada. Porsi dikit, sambal cuma satu sendok teh.",not_mentioned
+98,harga,Kemasan kertas minyak robek kena tulang bebek dan minyak tembus ke kantong kresek kurir.,not_mentioned
+45,harga,"Lama bgt bikin kopinya padahal cuma pesan 1 es kopi susu, barista sibuk ngobrol sendiri.",not_mentioned
+30,pelayanan,"Packaging super aesthetic cup anti bocor dan ada seal tape rapi. Barista ramah senyum, pelayanan cepat 5 menit jadi.",positive
+17,kemasan,Ayamnya bau apek kayak minyak jelantah bekas goreng berkali-kali. Tenggorokan langsung gatal. Kecewa parah.,not_mentioned
+5,harga,"Bumbunya asin gurih nikmat, keju lumernya banyak. Tapi boxnya penyok pas diterima kurir, minyak sambal tembus ke dasar kardus.",not_mentioned
+44,kemasan,"Harga bersahabat untuk tempat nongkrong senyaman ini, kopi enak dan toastnya renyah empuk.",not_mentioned
+49,harga,"Roti bakarnya gosong pahit, kejunya pelit cuma seupil. Kecewa banget sama kualitas dapurnya.",negative
+68,rasa,"Bakso rusuk porsi raksasa mengenyangkan, harga bersahabat di kantong. Bakal jadi langganan tetap.",positive
+72,porsi,"Porsi bakso banyak banget ngenyangin, daging sapi berasa pol ga pelit bumbu kuah. Mantap!",positive
+8,rasa,"Lama banget proses di dapurnya, nunggu makanan 40 menit padahal antrean sepi. Pas datang ayam udah dingin.",negative
+59,rasa,"Sambal dan saus dipisah rapi dalam klip kecil, kuah dibungkus plastik dobel anti jebol. Pengemasan top!",not_mentioned
+29,pelayanan,Kopi kemanisan parah sirup gulanya mendominasi ga kerasa kopinya sama sekali. Toastnya juga gosong pinggirannya.,not_mentioned
+33,pelayanan,Pesan less sugar tapi dikasih manis banget kayak air gula. Driver nunggu 25 menit katanya antrean online numpuk.,negative
+26,rasa,"Kopi susunya creamy pas kopinya wangi ga bikin asam lambung, toast renyah keju lumer. Kemasan cup tebal rapi.",positive
+15,porsi,Minta ekstra sambal di note aplikasi tapi ga dikasih sama sekali. Pelayanannya kurang teliti baca catatan orderan.,not_mentioned
+2,rasa,"Rasa sambal koreknya nampol bikin nagih, ayam crispy bgt, sayangnya pas nyampe udah dingin anyep dan box kertas basah kuyup kena uap.",positive
+12,rasa,"Packaging kacau balau, minyak sambal tumpah ngotorin plastik sama minuman. Padahal ayamnya sebenernya enak bgt.",positive
+63,pelayanan,"Daging rusuknya tipis banyakan tulangnya doang, porsi bakso cuma dapet 3 biji kecil. Agak mengecewakan untuk harga 40rb.",not_mentioned
+43,rasa,"Kopi asam bikin kembung, susunya kayak udah mau basi baunya agak asam aneh. Langsung saya buang.",negative
+78,harga,"Daging bebek empuk banget gampang lepas dari tulang, bumbu hitamnya meresap sampai ke serat daging terdalam.",positive
+58,pelayanan,"Pangsit gorengnya tengik bau minyak lama, baksonya ada bagian urat yang keras ga bisa dikunyah.",not_mentioned
+56,kemasan,"Kuah baksonya dingin pas dianter, lemak sapi udah beku di permukaan kuah jadi enek dimakan.",negative
+95,rasa,Bebek goreng terenak di Jakarta Timur! Bumbu hitam autentik gurih rempah Madura asli bukan kaleng-kaleng.,positive
+26,kemasan,"Kopi susunya creamy pas kopinya wangi ga bikin asam lambung, toast renyah keju lumer. Kemasan cup tebal rapi.",positive
+1,kemasan,"Ayamnya gurih renyah bumbunya mantap meresap, tapi kemasan mangkok tumpah kuah dan minyak sambal rembes ke kantong plastik. Driver nunggu 30 menit.",negative
+52,harga,"Lama banget pelayanannya, order mie ayam bakso nunggu 50 menit pas jam makan siang. Pelayan jutek ga ada senyum.",not_mentioned
+23,harga,"Harga murah rasa resto bintang lima, sambal korek mantul pedesnya pas di lidah. Selalu repeat order tiap minggu.",positive
+36,harga,"Toast beef and egg juara sarapan, saus mentainya nagih gurih asam pas. Porsi mengenyangkan buat ganjal perut.",positive
+80,pelayanan,"Kemasan kardus tebal laminasi anti minyak ga ada bocor sama sekali, lalapan timun kemangi seger bersih.",positive
+23,kemasan,"Harga murah rasa resto bintang lima, sambal korek mantul pedesnya pas di lidah. Selalu repeat order tiap minggu.",not_mentioned
+12,porsi,"Packaging kacau balau, minyak sambal tumpah ngotorin plastik sama minuman. Padahal ayamnya sebenernya enak bgt.",not_mentioned
+93,porsi,"Besek bambu pembungkusnya estetik dan rapi, makanan tetap hangat pas tiba di rumah. Rasa 10/10!",positive
+21,kemasan,Packaging sangat aman pake mangkok paper bowl tebal dan ada solasi rapat. Ayam masih anget gurih enak.,positive
+66,harga,Citarasa khas Solo beneran autentik kuah bening gurih seger tanpa micin berlebihan. Recommended!,positive
+45,rasa,"Lama bgt bikin kopinya padahal cuma pesan 1 es kopi susu, barista sibuk ngobrol sendiri.",not_mentioned
+56,pelayanan,"Kuah baksonya dingin pas dianter, lemak sapi udah beku di permukaan kuah jadi enek dimakan.",not_mentioned
+24,harga,"Pelayan jutek pas ditanya soal pesanan takeaway, nunggunya lama banget hampir 45 menit. Makanan standar.",not_mentioned
+26,pelayanan,"Kopi susunya creamy pas kopinya wangi ga bikin asam lambung, toast renyah keju lumer. Kemasan cup tebal rapi.",positive
+54,porsi,Mangkok kertasnya penyok di jalan kuah bakso tumpah separuh ke kresek. Tolong ganti wadah yang lebih kokoh.,not_mentioned
+96,rasa,"Sambalnya kurang pedes buat lidah pecinta pedas, tapi rasa bebeknya sendiri udah gurih empuk sedap.",positive
+87,harga,"Pelayanan ramah bgt kasir cekatan, bebek siap dalam 8 menit masih panas ngepul pas diambil.",not_mentioned
+95,pelayanan,Bebek goreng terenak di Jakarta Timur! Bumbu hitam autentik gurih rempah Madura asli bukan kaleng-kaleng.,positive
+52,kemasan,"Lama banget pelayanannya, order mie ayam bakso nunggu 50 menit pas jam makan siang. Pelayan jutek ga ada senyum.",not_mentioned
+23,rasa,"Harga murah rasa resto bintang lima, sambal korek mantul pedesnya pas di lidah. Selalu repeat order tiap minggu.",positive
+24,pelayanan,"Pelayan jutek pas ditanya soal pesanan takeaway, nunggunya lama banget hampir 45 menit. Makanan standar.",negative
+98,kemasan,Kemasan kertas minyak robek kena tulang bebek dan minyak tembus ke kantong kresek kurir.,negative
+4,porsi,"Kulit ayamnya garing kriuk juara, porsi pas kenyang, cuma sausnya bocor kemana-mana di bungkus plastik. Kurang isolasi tutupnya.",positive
+19,porsi,Renyah kriuk bumbu pas ga keasinan. Pengiriman cepat dan kemasan rapi tersegel cable tie.,not_mentioned
+77,pelayanan,Porsi bebek setengah ekor kenyang pol nasi pulen anget sambal mangga seger. Packaging rapi besek bambu bersih.,positive
+2,harga,"Rasa sambal koreknya nampol bikin nagih, ayam crispy bgt, sayangnya pas nyampe udah dingin anyep dan box kertas basah kuyup kena uap.",not_mentioned
+30,kemasan,"Packaging super aesthetic cup anti bocor dan ada seal tape rapi. Barista ramah senyum, pelayanan cepat 5 menit jadi.",positive
+31,porsi,"Roti bakarnya kering alot, cokelatnya dikit ga lumer. Harganya overprice banget untuk rasa standar warung kopi.",negative
+92,porsi,Driver ojol nunggu lama banget di resto hampir 40 menit karena bebek digoreng dadakan saat orderan masuk.,not_mentioned
+91,rasa,Porsi bebek jumbo daging tebal kulit krispi gurih. Sambal mangga mudanya seger pol ga ada obat!,positive
+74,rasa,Alat makan sendok garpu ga dikasih padahal udah centang minta alat makan di aplikasi ojol. Repot makannya.,not_mentioned
+55,harga,Porsi kuli beneran rusuknya gede banget daging tebel harga 42rb sangat worth it. Sambalnya pedas mantap.,positive
+30,rasa,"Packaging super aesthetic cup anti bocor dan ada seal tape rapi. Barista ramah senyum, pelayanan cepat 5 menit jadi.",not_mentioned
+74,harga,Alat makan sendok garpu ga dikasih padahal udah centang minta alat makan di aplikasi ojol. Repot makannya.,not_mentioned
+17,rasa,Ayamnya bau apek kayak minyak jelantah bekas goreng berkali-kali. Tenggorokan langsung gatal. Kecewa parah.,negative
+45,kemasan,"Lama bgt bikin kopinya padahal cuma pesan 1 es kopi susu, barista sibuk ngobrol sendiri.",not_mentioned
+72,rasa,"Porsi bakso banyak banget ngenyangin, daging sapi berasa pol ga pelit bumbu kuah. Mantap!",positive
+59,kemasan,"Sambal dan saus dipisah rapi dalam klip kecil, kuah dibungkus plastik dobel anti jebol. Pengemasan top!",positive
+65,harga,Kuahnya tumpah basah kuyup boxnya jebol. Sayang bgt kurir bawa hati-hati tapi mangkok emang ga diisolasi.,not_mentioned
+42,porsi,Porsi toast tebal daging melimpah saus keju tumpe-tumpe. Puas banget makan siang disini.,positive
+4,harga,"Kulit ayamnya garing kriuk juara, porsi pas kenyang, cuma sausnya bocor kemana-mana di bungkus plastik. Kurang isolasi tutupnya.",not_mentioned
+52,pelayanan,"Lama banget pelayanannya, order mie ayam bakso nunggu 50 menit pas jam makan siang. Pelayan jutek ga ada senyum.",negative
+5,pelayanan,"Bumbunya asin gurih nikmat, keju lumernya banyak. Tapi boxnya penyok pas diterima kurir, minyak sambal tembus ke dasar kardus.",not_mentioned
+55,kemasan,Porsi kuli beneran rusuknya gede banget daging tebel harga 42rb sangat worth it. Sambalnya pedas mantap.,not_mentioned
+91,harga,Porsi bebek jumbo daging tebal kulit krispi gurih. Sambal mangga mudanya seger pol ga ada obat!,positive
+99,porsi,Potongan bebeknya besar daging empuk gurih sampai ke serat dalam. Nasi bebek bumbu hitam nomor 1!,positive
+58,kemasan,"Pangsit gorengnya tengik bau minyak lama, baksonya ada bagian urat yang keras ga bisa dikunyah.",not_mentioned
+42,rasa,Porsi toast tebal daging melimpah saus keju tumpe-tumpe. Puas banget makan siang disini.,positive
+85,harga,"Bebek masih banyak bulu halus di bagian sayap dan paha, agak jijik makannya. Tolong proses pencabutan bulu diperbaiki.",not_mentioned
+95,harga,Bebek goreng terenak di Jakarta Timur! Bumbu hitam autentik gurih rempah Madura asli bukan kaleng-kaleng.,positive
+100,rasa,Pesanan sambal mangga tidak dikirimkan padahal di struk tertulis jelas. Staf packing tolong lebih teliti.,not_mentioned
+85,rasa,"Bebek masih banyak bulu halus di bagian sayap dan paha, agak jijik makannya. Tolong proses pencabutan bulu diperbaiki.",negative
+65,pelayanan,Kuahnya tumpah basah kuyup boxnya jebol. Sayang bgt kurir bawa hati-hati tapi mangkok emang ga diisolasi.,not_mentioned
+73,harga,"Bumbu mie ayam terlalu manis kayak kolak, minyak ayamnya kebanyakan bikin mual di lidah.",not_mentioned
+48,kemasan,Kombinasi kopi dan toast beef keju lumer sempurna di lidah. Rasa bintang 5 harga kaki lima.,not_mentioned
+96,porsi,"Sambalnya kurang pedes buat lidah pecinta pedas, tapi rasa bebeknya sendiri udah gurih empuk sedap.",not_mentioned
+4,pelayanan,"Kulit ayamnya garing kriuk juara, porsi pas kenyang, cuma sausnya bocor kemana-mana di bungkus plastik. Kurang isolasi tutupnya.",not_mentioned
+90,pelayanan,Minyak bebeknya berlebihan basah kuyup di nasi sampai lembek. Bumbu hitam agak asin hari ini.,not_mentioned
+23,pelayanan,"Harga murah rasa resto bintang lima, sambal korek mantul pedesnya pas di lidah. Selalu repeat order tiap minggu.",positive
+47,kemasan,"Ukuran cup menyusut dari yang biasa, harga tetap sama. Isinya dikit banget kebanyakan batu es.",not_mentioned
+4,kemasan,"Kulit ayamnya garing kriuk juara, porsi pas kenyang, cuma sausnya bocor kemana-mana di bungkus plastik. Kurang isolasi tutupnya.",negative
+92,kemasan,Driver ojol nunggu lama banget di resto hampir 40 menit karena bebek digoreng dadakan saat orderan masuk.,not_mentioned
+28,pelayanan,"Toast smoked beefnya enak bgt gurih, tapi potongan dagingnya makin tipis dibanding bulan lalu. Shrinkflation ya?",not_mentioned
+78,porsi,"Daging bebek empuk banget gampang lepas dari tulang, bumbu hitamnya meresap sampai ke serat daging terdalam.",not_mentioned
+31,kemasan,"Roti bakarnya kering alot, cokelatnya dikit ga lumer. Harganya overprice banget untuk rasa standar warung kopi.",not_mentioned
+46,kemasan,Packaging ramah lingkungan tanpa sedotan plastik tapi ada lid sippy cup praktis anti tumpah. Mantap!,positive
+8,porsi,"Lama banget proses di dapurnya, nunggu makanan 40 menit padahal antrean sepi. Pas datang ayam udah dingin.",not_mentioned
+9,porsi,"Mantap pol sambelnya pedes gila, ayam matang sempurna sampe ke tulang. Porsi nasi banyak, kemasan rapi ada segel.",positive
+47,rasa,"Ukuran cup menyusut dari yang biasa, harga tetap sama. Isinya dikit banget kebanyakan batu es.",not_mentioned
+59,pelayanan,"Sambal dan saus dipisah rapi dalam klip kecil, kuah dibungkus plastik dobel anti jebol. Pengemasan top!",positive
+60,harga,"Harga murah rasa juara, bakso rusuk terenak se-kota! Daging rusuknya empuk banget ga alot sama sekali.",positive
+73,porsi,"Bumbu mie ayam terlalu manis kayak kolak, minyak ayamnya kebanyakan bikin mual di lidah.",not_mentioned
+41,pelayanan,Tutup cup kurang rapat pas diambil driver ada rembesan kopi basahin kantong kertas. Rasa kopi standar.,not_mentioned
+49,rasa,"Roti bakarnya gosong pahit, kejunya pelit cuma seupil. Kecewa banget sama kualitas dapurnya.",negative
+49,porsi,"Roti bakarnya gosong pahit, kejunya pelit cuma seupil. Kecewa banget sama kualitas dapurnya.",negative
+15,pelayanan,Minta ekstra sambal di note aplikasi tapi ga dikasih sama sekali. Pelayanannya kurang teliti baca catatan orderan.,negative
+30,porsi,"Packaging super aesthetic cup anti bocor dan ada seal tape rapi. Barista ramah senyum, pelayanan cepat 5 menit jadi.",not_mentioned
+97,kemasan,"Porsi pas di perut, harga sebanding kualitas daging bebek premium. Pelayanan ramah bintang lima.",not_mentioned
+2,porsi,"Rasa sambal koreknya nampol bikin nagih, ayam crispy bgt, sayangnya pas nyampe udah dingin anyep dan box kertas basah kuyup kena uap.",not_mentioned
+72,kemasan,"Porsi bakso banyak banget ngenyangin, daging sapi berasa pol ga pelit bumbu kuah. Mantap!",not_mentioned
+69,kemasan,Daging rusuk masih bau prengus sapi kurang bersih pas perebusan awal. Kuahnya hambar kurang bumbu.,not_mentioned
+3,rasa,"Ayam geprek terenak di area ini bumbu medok, tapi sambalnya dikit banget ga cukup buat nasi seporsi. Tolong sendok jangan lupa dimasukin.",positive
+54,rasa,Mangkok kertasnya penyok di jalan kuah bakso tumpah separuh ke kresek. Tolong ganti wadah yang lebih kokoh.,neutral
+28,kemasan,"Toast smoked beefnya enak bgt gurih, tapi potongan dagingnya makin tipis dibanding bulan lalu. Shrinkflation ya?",not_mentioned
+24,porsi,"Pelayan jutek pas ditanya soal pesanan takeaway, nunggunya lama banget hampir 45 menit. Makanan standar.",not_mentioned
+50,kemasan,Barista ramah dan informatif rekomendasiin beans yang ga asam. Pelayanan sangat memuaskan.,not_mentioned
+83,harga,Bumbu hitamnya sedikit banget cuma dapet 1 sendok makan padahal beli porsi bebek utuh. Pelit bgt.,negative
+61,porsi,"Antrean takeaway berantakan, pesanan saya dilewati 3 orang padahal udah bayar duluan. Kasir ga teliti.",not_mentioned
+87,rasa,"Pelayanan ramah bgt kasir cekatan, bebek siap dalam 8 menit masih panas ngepul pas diambil.",not_mentioned
+43,kemasan,"Kopi asam bikin kembung, susunya kayak udah mau basi baunya agak asam aneh. Langsung saya buang.",not_mentioned
+69,rasa,Daging rusuk masih bau prengus sapi kurang bersih pas perebusan awal. Kuahnya hambar kurang bumbu.,negative
+63,harga,"Daging rusuknya tipis banyakan tulangnya doang, porsi bakso cuma dapet 3 biji kecil. Agak mengecewakan untuk harga 40rb.",negative
+43,harga,"Kopi asam bikin kembung, susunya kayak udah mau basi baunya agak asam aneh. Langsung saya buang.",not_mentioned
+88,kemasan,"Rasa rica kemanginya wangi sedap pedes nampol, porsi pas buat makan malam berdua. Selalu puas disini.",not_mentioned
+26,harga,"Kopi susunya creamy pas kopinya wangi ga bikin asam lambung, toast renyah keju lumer. Kemasan cup tebal rapi.",positive
+19,pelayanan,Renyah kriuk bumbu pas ga keasinan. Pengiriman cepat dan kemasan rapi tersegel cable tie.,positive
+68,kemasan,"Bakso rusuk porsi raksasa mengenyangkan, harga bersahabat di kantong. Bakal jadi langganan tetap.",not_mentioned
+27,porsi,"Gelas kopinya kecil banget es batunya penuh 80%, 2 kali sruput udah abis. Harga 28rb kemahalan buat porsi segini.",negative
+42,kemasan,Porsi toast tebal daging melimpah saus keju tumpe-tumpe. Puas banget makan siang disini.,not_mentioned
+77,harga,Porsi bebek setengah ekor kenyang pol nasi pulen anget sambal mangga seger. Packaging rapi besek bambu bersih.,positive
+27,harga,"Gelas kopinya kecil banget es batunya penuh 80%, 2 kali sruput udah abis. Harga 28rb kemahalan buat porsi segini.",negative
+97,porsi,"Porsi pas di perut, harga sebanding kualitas daging bebek premium. Pelayanan ramah bintang lima.",positive
+19,kemasan,Renyah kriuk bumbu pas ga keasinan. Pengiriman cepat dan kemasan rapi tersegel cable tie.,positive
+5,kemasan,"Bumbunya asin gurih nikmat, keju lumernya banyak. Tapi boxnya penyok pas diterima kurir, minyak sambal tembus ke dasar kardus.",negative
+9,harga,"Mantap pol sambelnya pedes gila, ayam matang sempurna sampe ke tulang. Porsi nasi banyak, kemasan rapi ada segel.",positive
+42,pelayanan,Porsi toast tebal daging melimpah saus keju tumpe-tumpe. Puas banget makan siang disini.,positive
+33,harga,Pesan less sugar tapi dikasih manis banget kayak air gula. Driver nunggu 25 menit katanya antrean online numpuk.,not_mentioned
+19,harga,Renyah kriuk bumbu pas ga keasinan. Pengiriman cepat dan kemasan rapi tersegel cable tie.,positive
+91,pelayanan,Porsi bebek jumbo daging tebal kulit krispi gurih. Sambal mangga mudanya seger pol ga ada obat!,positive
+96,kemasan,"Sambalnya kurang pedes buat lidah pecinta pedas, tapi rasa bebeknya sendiri udah gurih empuk sedap.",not_mentioned
+82,pelayanan,"Harga 38rb dapet paket komplit bebek empuk nasi sambal lalapan kremesan melimpah, sangat worth it!",positive
+93,pelayanan,"Besek bambu pembungkusnya estetik dan rapi, makanan tetap hangat pas tiba di rumah. Rasa 10/10!",positive
+34,rasa,"Kemasan cup bagus ga gampang tumpah di motor, toastnya dibungkus box karton tebal bersih.",not_mentioned
+43,porsi,"Kopi asam bikin kembung, susunya kayak udah mau basi baunya agak asam aneh. Langsung saya buang.",not_mentioned
+57,porsi,"Mie ayamnya manis pas bumbu ayam gurih melimpah, bakso halusnya lembut. Pelayanan ramah cepet saji.",positive
+25,porsi,Ayam dingin alot kulitnya lemes kena uap. Sayang banget padahal racikan sambel koreknya enak seger.,not_mentioned
+87,pelayanan,"Pelayanan ramah bgt kasir cekatan, bebek siap dalam 8 menit masih panas ngepul pas diambil.",positive
+50,harga,Barista ramah dan informatif rekomendasiin beans yang ga asam. Pelayanan sangat memuaskan.,not_mentioned
+91,porsi,Porsi bebek jumbo daging tebal kulit krispi gurih. Sambal mangga mudanya seger pol ga ada obat!,positive
+80,harga,"Kemasan kardus tebal laminasi anti minyak ga ada bocor sama sekali, lalapan timun kemangi seger bersih.",positive
+77,porsi,Porsi bebek setengah ekor kenyang pol nasi pulen anget sambal mangga seger. Packaging rapi besek bambu bersih.,positive
+50,rasa,Barista ramah dan informatif rekomendasiin beans yang ga asam. Pelayanan sangat memuaskan.,not_mentioned
+90,rasa,Minyak bebeknya berlebihan basah kuyup di nasi sampai lembek. Bumbu hitam agak asin hari ini.,neutral
+99,pelayanan,Potongan bebeknya besar daging empuk gurih sampai ke serat dalam. Nasi bebek bumbu hitam nomor 1!,positive
+70,harga,Pelayanannya sangat cekatan biarpun resto lagi rame pelanggan. Makanan datang dalam 10 menit panas-panas.,not_mentioned
+34,pelayanan,"Kemasan cup bagus ga gampang tumpah di motor, toastnya dibungkus box karton tebal bersih.",not_mentioned
+9,kemasan,"Mantap pol sambelnya pedes gila, ayam matang sempurna sampe ke tulang. Porsi nasi banyak, kemasan rapi ada segel.",positive
+3,porsi,"Ayam geprek terenak di area ini bumbu medok, tapi sambalnya dikit banget ga cukup buat nasi seporsi. Tolong sendok jangan lupa dimasukin.",negative
+66,porsi,Citarasa khas Solo beneran autentik kuah bening gurih seger tanpa micin berlebihan. Recommended!,positive
+51,rasa,"Kuah kaldunya gurih ngaldu banget seger, rusuk sapinya empuk copot dari tulang, porsi jumbo kenyang pol!",positive
+54,kemasan,Mangkok kertasnya penyok di jalan kuah bakso tumpah separuh ke kresek. Tolong ganti wadah yang lebih kokoh.,negative
+30,harga,"Packaging super aesthetic cup anti bocor dan ada seal tape rapi. Barista ramah senyum, pelayanan cepat 5 menit jadi.",not_mentioned
+49,pelayanan,"Roti bakarnya gosong pahit, kejunya pelit cuma seupil. Kecewa banget sama kualitas dapurnya.",not_mentioned
+66,rasa,Citarasa khas Solo beneran autentik kuah bening gurih seger tanpa micin berlebihan. Recommended!,positive
+61,kemasan,"Antrean takeaway berantakan, pesanan saya dilewati 3 orang padahal udah bayar duluan. Kasir ga teliti.",not_mentioned
+31,harga,"Roti bakarnya kering alot, cokelatnya dikit ga lumer. Harganya overprice banget untuk rasa standar warung kopi.",negative
+95,porsi,Bebek goreng terenak di Jakarta Timur! Bumbu hitam autentik gurih rempah Madura asli bukan kaleng-kaleng.,positive
+98,rasa,Kemasan kertas minyak robek kena tulang bebek dan minyak tembus ke kantong kresek kurir.,neutral
+98,pelayanan,Kemasan kertas minyak robek kena tulang bebek dan minyak tembus ke kantong kresek kurir.,not_mentioned
+93,kemasan,"Besek bambu pembungkusnya estetik dan rapi, makanan tetap hangat pas tiba di rumah. Rasa 10/10!",positive
+46,pelayanan,Packaging ramah lingkungan tanpa sedotan plastik tapi ada lid sippy cup praktis anti tumpah. Mantap!,positive
+60,rasa,"Harga murah rasa juara, bakso rusuk terenak se-kota! Daging rusuknya empuk banget ga alot sama sekali.",positive
+41,porsi,Tutup cup kurang rapat pas diambil driver ada rembesan kopi basahin kantong kertas. Rasa kopi standar.,not_mentioned
+44,pelayanan,"Harga bersahabat untuk tempat nongkrong senyaman ini, kopi enak dan toastnya renyah empuk.",positive
+54,pelayanan,Mangkok kertasnya penyok di jalan kuah bakso tumpah separuh ke kresek. Tolong ganti wadah yang lebih kokoh.,not_mentioned
+54,harga,Mangkok kertasnya penyok di jalan kuah bakso tumpah separuh ke kresek. Tolong ganti wadah yang lebih kokoh.,not_mentioned
+99,harga,Potongan bebeknya besar daging empuk gurih sampai ke serat dalam. Nasi bebek bumbu hitam nomor 1!,positive
+1,harga,"Ayamnya gurih renyah bumbunya mantap meresap, tapi kemasan mangkok tumpah kuah dan minyak sambal rembes ke kantong plastik. Driver nunggu 30 menit.",not_mentioned
+100,kemasan,Pesanan sambal mangga tidak dikirimkan padahal di struk tertulis jelas. Staf packing tolong lebih teliti.,not_mentioned
+31,rasa,"Roti bakarnya kering alot, cokelatnya dikit ga lumer. Harganya overprice banget untuk rasa standar warung kopi.",negative
+57,rasa,"Mie ayamnya manis pas bumbu ayam gurih melimpah, bakso halusnya lembut. Pelayanan ramah cepet saji.",positive
+82,kemasan,"Harga 38rb dapet paket komplit bebek empuk nasi sambal lalapan kremesan melimpah, sangat worth it!",not_mentioned
+7,porsi,"Ayam gepreknya agak keasinan hari ini, ga kayak biasanya. Sambal juga sedikit, harga 28rb jadi kerasa kemahalan.",negative
+33,rasa,Pesan less sugar tapi dikasih manis banget kayak air gula. Driver nunggu 25 menit katanya antrean online numpuk.,negative
+78,rasa,"Daging bebek empuk banget gampang lepas dari tulang, bumbu hitamnya meresap sampai ke serat daging terdalam.",positive
+96,pelayanan,"Sambalnya kurang pedes buat lidah pecinta pedas, tapi rasa bebeknya sendiri udah gurih empuk sedap.",positive
+90,porsi,Minyak bebeknya berlebihan basah kuyup di nasi sampai lembek. Bumbu hitam agak asin hari ini.,not_mentioned
+34,harga,"Kemasan cup bagus ga gampang tumpah di motor, toastnya dibungkus box karton tebal bersih.",not_mentioned
+21,pelayanan,Packaging sangat aman pake mangkok paper bowl tebal dan ada solasi rapat. Ayam masih anget gurih enak.,positive
+83,rasa,Bumbu hitamnya sedikit banget cuma dapet 1 sendok makan padahal beli porsi bebek utuh. Pelit bgt.,positive
+7,pelayanan,"Ayam gepreknya agak keasinan hari ini, ga kayak biasanya. Sambal juga sedikit, harga 28rb jadi kerasa kemahalan.",not_mentioned
+24,kemasan,"Pelayan jutek pas ditanya soal pesanan takeaway, nunggunya lama banget hampir 45 menit. Makanan standar.",not_mentioned
+97,harga,"Porsi pas di perut, harga sebanding kualitas daging bebek premium. Pelayanan ramah bintang lima.",positive
+29,harga,Kopi kemanisan parah sirup gulanya mendominasi ga kerasa kopinya sama sekali. Toastnya juga gosong pinggirannya.,not_mentioned
+59,harga,"Sambal dan saus dipisah rapi dalam klip kecil, kuah dibungkus plastik dobel anti jebol. Pengemasan top!",not_mentioned
+60,pelayanan,"Harga murah rasa juara, bakso rusuk terenak se-kota! Daging rusuknya empuk banget ga alot sama sekali.",positive
+36,kemasan,"Toast beef and egg juara sarapan, saus mentainya nagih gurih asam pas. Porsi mengenyangkan buat ganjal perut.",not_mentioned
+50,pelayanan,Barista ramah dan informatif rekomendasiin beans yang ga asam. Pelayanan sangat memuaskan.,positive
+83,pelayanan,Bumbu hitamnya sedikit banget cuma dapet 1 sendok makan padahal beli porsi bebek utuh. Pelit bgt.,not_mentioned
+11,pelayanan,"Rasa biasa aja bumbu kurang meresap, ayam terasa hambar di bagian dada. Porsi dikit, sambal cuma satu sendok teh.",not_mentioned
+97,rasa,"Porsi pas di perut, harga sebanding kualitas daging bebek premium. Pelayanan ramah bintang lima.",positive
+19,rasa,Renyah kriuk bumbu pas ga keasinan. Pengiriman cepat dan kemasan rapi tersegel cable tie.,positive
+96,harga,"Sambalnya kurang pedes buat lidah pecinta pedas, tapi rasa bebeknya sendiri udah gurih empuk sedap.",positive
+25,rasa,Ayam dingin alot kulitnya lemes kena uap. Sayang banget padahal racikan sambel koreknya enak seger.,neutral
+51,porsi,"Kuah kaldunya gurih ngaldu banget seger, rusuk sapinya empuk copot dari tulang, porsi jumbo kenyang pol!",positive
+21,rasa,Packaging sangat aman pake mangkok paper bowl tebal dan ada solasi rapat. Ayam masih anget gurih enak.,positive
+45,pelayanan,"Lama bgt bikin kopinya padahal cuma pesan 1 es kopi susu, barista sibuk ngobrol sendiri.",negative
+3,harga,"Ayam geprek terenak di area ini bumbu medok, tapi sambalnya dikit banget ga cukup buat nasi seporsi. Tolong sendok jangan lupa dimasukin.",not_mentioned
+9,rasa,"Mantap pol sambelnya pedes gila, ayam matang sempurna sampe ke tulang. Porsi nasi banyak, kemasan rapi ada segel.",positive
+7,kemasan,"Ayam gepreknya agak keasinan hari ini, ga kayak biasanya. Sambal juga sedikit, harga 28rb jadi kerasa kemahalan.",not_mentioned
+48,rasa,Kombinasi kopi dan toast beef keju lumer sempurna di lidah. Rasa bintang 5 harga kaki lima.,positive
+42,harga,Porsi toast tebal daging melimpah saus keju tumpe-tumpe. Puas banget makan siang disini.,positive
+82,porsi,"Harga 38rb dapet paket komplit bebek empuk nasi sambal lalapan kremesan melimpah, sangat worth it!",positive
+66,kemasan,Citarasa khas Solo beneran autentik kuah bening gurih seger tanpa micin berlebihan. Recommended!,not_mentioned
+44,rasa,"Harga bersahabat untuk tempat nongkrong senyaman ini, kopi enak dan toastnya renyah empuk.",positive
+60,kemasan,"Harga murah rasa juara, bakso rusuk terenak se-kota! Daging rusuknya empuk banget ga alot sama sekali.",not_mentioned
+59,porsi,"Sambal dan saus dipisah rapi dalam klip kecil, kuah dibungkus plastik dobel anti jebol. Pengemasan top!",not_mentioned
+36,porsi,"Toast beef and egg juara sarapan, saus mentainya nagih gurih asam pas. Porsi mengenyangkan buat ganjal perut.",positive
+66,pelayanan,Citarasa khas Solo beneran autentik kuah bening gurih seger tanpa micin berlebihan. Recommended!,positive
+14,porsi,"Sambal bawangnya sedap gila, ayamnya garing kriuk. Cuma lalapannya layu dan ada potongan daun kotor ga dicuci.",not_mentioned
+65,rasa,Kuahnya tumpah basah kuyup boxnya jebol. Sayang bgt kurir bawa hati-hati tapi mangkok emang ga diisolasi.,not_mentioned
+74,kemasan,Alat makan sendok garpu ga dikasih padahal udah centang minta alat makan di aplikasi ojol. Repot makannya.,negative
+27,rasa,"Gelas kopinya kecil banget es batunya penuh 80%, 2 kali sruput udah abis. Harga 28rb kemahalan buat porsi segini.",neutral
+77,kemasan,Porsi bebek setengah ekor kenyang pol nasi pulen anget sambal mangga seger. Packaging rapi besek bambu bersih.,positive
+49,kemasan,"Roti bakarnya gosong pahit, kejunya pelit cuma seupil. Kecewa banget sama kualitas dapurnya.",not_mentioned
+55,pelayanan,Porsi kuli beneran rusuknya gede banget daging tebel harga 42rb sangat worth it. Sambalnya pedas mantap.,positive
+33,kemasan,Pesan less sugar tapi dikasih manis banget kayak air gula. Driver nunggu 25 menit katanya antrean online numpuk.,not_mentioned
+11,porsi,"Rasa biasa aja bumbu kurang meresap, ayam terasa hambar di bagian dada. Porsi dikit, sambal cuma satu sendok teh.",negative
+25,pelayanan,Ayam dingin alot kulitnya lemes kena uap. Sayang banget padahal racikan sambel koreknya enak seger.,not_mentioned
+78,kemasan,"Daging bebek empuk banget gampang lepas dari tulang, bumbu hitamnya meresap sampai ke serat daging terdalam.",not_mentioned
+56,porsi,"Kuah baksonya dingin pas dianter, lemak sapi udah beku di permukaan kuah jadi enek dimakan.",not_mentioned
+68,pelayanan,"Bakso rusuk porsi raksasa mengenyangkan, harga bersahabat di kantong. Bakal jadi langganan tetap.",positive
+87,porsi,"Pelayanan ramah bgt kasir cekatan, bebek siap dalam 8 menit masih panas ngepul pas diambil.",not_mentioned
+1,pelayanan,"Ayamnya gurih renyah bumbunya mantap meresap, tapi kemasan mangkok tumpah kuah dan minyak sambal rembes ke kantong plastik. Driver nunggu 30 menit.",negative
+69,porsi,Daging rusuk masih bau prengus sapi kurang bersih pas perebusan awal. Kuahnya hambar kurang bumbu.,not_mentioned
+92,pelayanan,Driver ojol nunggu lama banget di resto hampir 40 menit karena bebek digoreng dadakan saat orderan masuk.,negative
+28,rasa,"Toast smoked beefnya enak bgt gurih, tapi potongan dagingnya makin tipis dibanding bulan lalu. Shrinkflation ya?",positive
+60,porsi,"Harga murah rasa juara, bakso rusuk terenak se-kota! Daging rusuknya empuk banget ga alot sama sekali.",positive
+93,rasa,"Besek bambu pembungkusnya estetik dan rapi, makanan tetap hangat pas tiba di rumah. Rasa 10/10!",positive
+57,kemasan,"Mie ayamnya manis pas bumbu ayam gurih melimpah, bakso halusnya lembut. Pelayanan ramah cepet saji.",not_mentioned
+48,porsi,Kombinasi kopi dan toast beef keju lumer sempurna di lidah. Rasa bintang 5 harga kaki lima.,positive
+27,kemasan,"Gelas kopinya kecil banget es batunya penuh 80%, 2 kali sruput udah abis. Harga 28rb kemahalan buat porsi segini.",not_mentioned
+58,rasa,"Pangsit gorengnya tengik bau minyak lama, baksonya ada bagian urat yang keras ga bisa dikunyah.",negative
+17,porsi,Ayamnya bau apek kayak minyak jelantah bekas goreng berkali-kali. Tenggorokan langsung gatal. Kecewa parah.,not_mentioned
+12,harga,"Packaging kacau balau, minyak sambal tumpah ngotorin plastik sama minuman. Padahal ayamnya sebenernya enak bgt.",not_mentioned
+8,harga,"Lama banget proses di dapurnya, nunggu makanan 40 menit padahal antrean sepi. Pas datang ayam udah dingin.",not_mentioned
+72,harga,"Porsi bakso banyak banget ngenyangin, daging sapi berasa pol ga pelit bumbu kuah. Mantap!",positive
+55,rasa,Porsi kuli beneran rusuknya gede banget daging tebel harga 42rb sangat worth it. Sambalnya pedas mantap.,positive
+92,harga,Driver ojol nunggu lama banget di resto hampir 40 menit karena bebek digoreng dadakan saat orderan masuk.,not_mentioned
+7,harga,"Ayam gepreknya agak keasinan hari ini, ga kayak biasanya. Sambal juga sedikit, harga 28rb jadi kerasa kemahalan.",negative
+80,rasa,"Kemasan kardus tebal laminasi anti minyak ga ada bocor sama sekali, lalapan timun kemangi seger bersih.",positive
+61,rasa,"Antrean takeaway berantakan, pesanan saya dilewati 3 orang padahal udah bayar duluan. Kasir ga teliti.",not_mentioned
+70,rasa,Pelayanannya sangat cekatan biarpun resto lagi rame pelanggan. Makanan datang dalam 10 menit panas-panas.,positive
+46,harga,Packaging ramah lingkungan tanpa sedotan plastik tapi ada lid sippy cup praktis anti tumpah. Mantap!,not_mentioned
+88,harga,"Rasa rica kemanginya wangi sedap pedes nampol, porsi pas buat makan malam berdua. Selalu puas disini.",positive
+41,kemasan,Tutup cup kurang rapat pas diambil driver ada rembesan kopi basahin kantong kertas. Rasa kopi standar.,negative
+17,harga,Ayamnya bau apek kayak minyak jelantah bekas goreng berkali-kali. Tenggorokan langsung gatal. Kecewa parah.,negative
+41,rasa,Tutup cup kurang rapat pas diambil driver ada rembesan kopi basahin kantong kertas. Rasa kopi standar.,neutral
+34,kemasan,"Kemasan cup bagus ga gampang tumpah di motor, toastnya dibungkus box karton tebal bersih.",positive
+2,kemasan,"Rasa sambal koreknya nampol bikin nagih, ayam crispy bgt, sayangnya pas nyampe udah dingin anyep dan box kertas basah kuyup kena uap.",negative
+17,pelayanan,Ayamnya bau apek kayak minyak jelantah bekas goreng berkali-kali. Tenggorokan langsung gatal. Kecewa parah.,not_mentioned
+3,pelayanan,"Ayam geprek terenak di area ini bumbu medok, tapi sambalnya dikit banget ga cukup buat nasi seporsi. Tolong sendok jangan lupa dimasukin.",negative
+45,porsi,"Lama bgt bikin kopinya padahal cuma pesan 1 es kopi susu, barista sibuk ngobrol sendiri.",not_mentioned
+11,rasa,"Rasa biasa aja bumbu kurang meresap, ayam terasa hambar di bagian dada. Porsi dikit, sambal cuma satu sendok teh.",negative
+94,harga,Daging bebeknya amis bau bebek basah kurang rempah perebusan. Bumbu hitamnya ga bisa nutupin bau amisnya.,negative
+83,porsi,Bumbu hitamnya sedikit banget cuma dapet 1 sendok makan padahal beli porsi bebek utuh. Pelit bgt.,negative
+58,porsi,"Pangsit gorengnya tengik bau minyak lama, baksonya ada bagian urat yang keras ga bisa dikunyah.",not_mentioned
+74,pelayanan,Alat makan sendok garpu ga dikasih padahal udah centang minta alat makan di aplikasi ojol. Repot makannya.,negative
+90,harga,Minyak bebeknya berlebihan basah kuyup di nasi sampai lembek. Bumbu hitam agak asin hari ini.,not_mentioned
+63,porsi,"Daging rusuknya tipis banyakan tulangnya doang, porsi bakso cuma dapet 3 biji kecil. Agak mengecewakan untuk harga 40rb.",negative
+56,harga,"Kuah baksonya dingin pas dianter, lemak sapi udah beku di permukaan kuah jadi enek dimakan.",not_mentioned
+57,harga,"Mie ayamnya manis pas bumbu ayam gurih melimpah, bakso halusnya lembut. Pelayanan ramah cepet saji.",positive
+82,rasa,"Harga 38rb dapet paket komplit bebek empuk nasi sambal lalapan kremesan melimpah, sangat worth it!",positive
+94,rasa,Daging bebeknya amis bau bebek basah kurang rempah perebusan. Bumbu hitamnya ga bisa nutupin bau amisnya.,negative
+68,porsi,"Bakso rusuk porsi raksasa mengenyangkan, harga bersahabat di kantong. Bakal jadi langganan tetap.",positive
+99,rasa,Potongan bebeknya besar daging empuk gurih sampai ke serat dalam. Nasi bebek bumbu hitam nomor 1!,positive
+94,porsi,Daging bebeknya amis bau bebek basah kurang rempah perebusan. Bumbu hitamnya ga bisa nutupin bau amisnya.,not_mentioned
+83,kemasan,Bumbu hitamnya sedikit banget cuma dapet 1 sendok makan padahal beli porsi bebek utuh. Pelit bgt.,not_mentioned
+72,pelayanan,"Porsi bakso banyak banget ngenyangin, daging sapi berasa pol ga pelit bumbu kuah. Mantap!",positive
+55,porsi,Porsi kuli beneran rusuknya gede banget daging tebel harga 42rb sangat worth it. Sambalnya pedas mantap.,positive
+46,porsi,Packaging ramah lingkungan tanpa sedotan plastik tapi ada lid sippy cup praktis anti tumpah. Mantap!,not_mentioned
+11,kemasan,"Rasa biasa aja bumbu kurang meresap, ayam terasa hambar di bagian dada. Porsi dikit, sambal cuma satu sendok teh.",not_mentioned
+58,harga,"Pangsit gorengnya tengik bau minyak lama, baksonya ada bagian urat yang keras ga bisa dikunyah.",negative
+52,rasa,"Lama banget pelayanannya, order mie ayam bakso nunggu 50 menit pas jam makan siang. Pelayan jutek ga ada senyum.",not_mentioned
+85,pelayanan,"Bebek masih banyak bulu halus di bagian sayap dan paha, agak jijik makannya. Tolong proses pencabutan bulu diperbaiki.",negative
+69,pelayanan,Daging rusuk masih bau prengus sapi kurang bersih pas perebusan awal. Kuahnya hambar kurang bumbu.,not_mentioned
+29,rasa,Kopi kemanisan parah sirup gulanya mendominasi ga kerasa kopinya sama sekali. Toastnya juga gosong pinggirannya.,negative
+14,kemasan,"Sambal bawangnya sedap gila, ayamnya garing kriuk. Cuma lalapannya layu dan ada potongan daun kotor ga dicuci.",not_mentioned
+1,porsi,"Ayamnya gurih renyah bumbunya mantap meresap, tapi kemasan mangkok tumpah kuah dan minyak sambal rembes ke kantong plastik. Driver nunggu 30 menit.",neutral
+12,pelayanan,"Packaging kacau balau, minyak sambal tumpah ngotorin plastik sama minuman. Padahal ayamnya sebenernya enak bgt.",not_mentioned
+24,rasa,"Pelayan jutek pas ditanya soal pesanan takeaway, nunggunya lama banget hampir 45 menit. Makanan standar.",neutral
+56,rasa,"Kuah baksonya dingin pas dianter, lemak sapi udah beku di permukaan kuah jadi enek dimakan.",negative
+8,pelayanan,"Lama banget proses di dapurnya, nunggu makanan 40 menit padahal antrean sepi. Pas datang ayam udah dingin.",negative
+70,kemasan,Pelayanannya sangat cekatan biarpun resto lagi rame pelanggan. Makanan datang dalam 10 menit panas-panas.,positive
+26,porsi,"Kopi susunya creamy pas kopinya wangi ga bikin asam lambung, toast renyah keju lumer. Kemasan cup tebal rapi.",not_mentioned
+14,harga,"Sambal bawangnya sedap gila, ayamnya garing kriuk. Cuma lalapannya layu dan ada potongan daun kotor ga dicuci.",not_mentioned
+70,pelayanan,Pelayanannya sangat cekatan biarpun resto lagi rame pelanggan. Makanan datang dalam 10 menit panas-panas.,positive
+65,porsi,Kuahnya tumpah basah kuyup boxnya jebol. Sayang bgt kurir bawa hati-hati tapi mangkok emang ga diisolasi.,not_mentioned
+3,kemasan,"Ayam geprek terenak di area ini bumbu medok, tapi sambalnya dikit banget ga cukup buat nasi seporsi. Tolong sendok jangan lupa dimasukin.",not_mentioned
+88,rasa,"Rasa rica kemanginya wangi sedap pedes nampol, porsi pas buat makan malam berdua. Selalu puas disini.",positive
+25,kemasan,Ayam dingin alot kulitnya lemes kena uap. Sayang banget padahal racikan sambel koreknya enak seger.,negative
+73,kemasan,"Bumbu mie ayam terlalu manis kayak kolak, minyak ayamnya kebanyakan bikin mual di lidah.",not_mentioned
+47,porsi,"Ukuran cup menyusut dari yang biasa, harga tetap sama. Isinya dikit banget kebanyakan batu es.",negative
+91,kemasan,Porsi bebek jumbo daging tebal kulit krispi gurih. Sambal mangga mudanya seger pol ga ada obat!,not_mentioned
+99,kemasan,Potongan bebeknya besar daging empuk gurih sampai ke serat dalam. Nasi bebek bumbu hitam nomor 1!,not_mentioned
+36,pelayanan,"Toast beef and egg juara sarapan, saus mentainya nagih gurih asam pas. Porsi mengenyangkan buat ganjal perut.",positive
+85,porsi,"Bebek masih banyak bulu halus di bagian sayap dan paha, agak jijik makannya. Tolong proses pencabutan bulu diperbaiki.",not_mentioned
+98,porsi,Kemasan kertas minyak robek kena tulang bebek dan minyak tembus ke kantong kresek kurir.,not_mentioned
+88,pelayanan,"Rasa rica kemanginya wangi sedap pedes nampol, porsi pas buat makan malam berdua. Selalu puas disini.",positive
+65,kemasan,Kuahnya tumpah basah kuyup boxnya jebol. Sayang bgt kurir bawa hati-hati tapi mangkok emang ga diisolasi.,negative
+14,pelayanan,"Sambal bawangnya sedap gila, ayamnya garing kriuk. Cuma lalapannya layu dan ada potongan daun kotor ga dicuci.",negative
+14,rasa,"Sambal bawangnya sedap gila, ayamnya garing kriuk. Cuma lalapannya layu dan ada potongan daun kotor ga dicuci.",positive
+48,pelayanan,Kombinasi kopi dan toast beef keju lumer sempurna di lidah. Rasa bintang 5 harga kaki lima.,positive
+51,pelayanan,"Kuah kaldunya gurih ngaldu banget seger, rusuk sapinya empuk copot dari tulang, porsi jumbo kenyang pol!",positive
+100,harga,Pesanan sambal mangga tidak dikirimkan padahal di struk tertulis jelas. Staf packing tolong lebih teliti.,not_mentioned
+51,harga,"Kuah kaldunya gurih ngaldu banget seger, rusuk sapinya empuk copot dari tulang, porsi jumbo kenyang pol!",positive
+47,pelayanan,"Ukuran cup menyusut dari yang biasa, harga tetap sama. Isinya dikit banget kebanyakan batu es.",not_mentioned
+15,kemasan,Minta ekstra sambal di note aplikasi tapi ga dikasih sama sekali. Pelayanannya kurang teliti baca catatan orderan.,not_mentioned
+12,kemasan,"Packaging kacau balau, minyak sambal tumpah ngotorin plastik sama minuman. Padahal ayamnya sebenernya enak bgt.",negative
+94,pelayanan,Daging bebeknya amis bau bebek basah kurang rempah perebusan. Bumbu hitamnya ga bisa nutupin bau amisnya.,not_mentioned
+63,rasa,"Daging rusuknya tipis banyakan tulangnya doang, porsi bakso cuma dapet 3 biji kecil. Agak mengecewakan untuk harga 40rb.",negative
+68,harga,"Bakso rusuk porsi raksasa mengenyangkan, harga bersahabat di kantong. Bakal jadi langganan tetap.",positive
+5,porsi,"Bumbunya asin gurih nikmat, keju lumernya banyak. Tapi boxnya penyok pas diterima kurir, minyak sambal tembus ke dasar kardus.",positive
+87,kemasan,"Pelayanan ramah bgt kasir cekatan, bebek siap dalam 8 menit masih panas ngepul pas diambil.",positive
+46,rasa,Packaging ramah lingkungan tanpa sedotan plastik tapi ada lid sippy cup praktis anti tumpah. Mantap!,not_mentioned
+74,porsi,Alat makan sendok garpu ga dikasih padahal udah centang minta alat makan di aplikasi ojol. Repot makannya.,not_mentioned
+52,porsi,"Lama banget pelayanannya, order mie ayam bakso nunggu 50 menit pas jam makan siang. Pelayan jutek ga ada senyum.",not_mentioned
+80,kemasan,"Kemasan kardus tebal laminasi anti minyak ga ada bocor sama sekali, lalapan timun kemangi seger bersih.",positive
+94,kemasan,Daging bebeknya amis bau bebek basah kurang rempah perebusan. Bumbu hitamnya ga bisa nutupin bau amisnya.,not_mentioned
+69,harga,Daging rusuk masih bau prengus sapi kurang bersih pas perebusan awal. Kuahnya hambar kurang bumbu.,negative
+85,kemasan,"Bebek masih banyak bulu halus di bagian sayap dan paha, agak jijik makannya. Tolong proses pencabutan bulu diperbaiki.",not_mentioned
+43,pelayanan,"Kopi asam bikin kembung, susunya kayak udah mau basi baunya agak asam aneh. Langsung saya buang.",not_mentioned
+36,rasa,"Toast beef and egg juara sarapan, saus mentainya nagih gurih asam pas. Porsi mengenyangkan buat ganjal perut.",positive
+44,porsi,"Harga bersahabat untuk tempat nongkrong senyaman ini, kopi enak dan toastnya renyah empuk.",not_mentioned
+97,pelayanan,"Porsi pas di perut, harga sebanding kualitas daging bebek premium. Pelayanan ramah bintang lima.",positive
+27,pelayanan,"Gelas kopinya kecil banget es batunya penuh 80%, 2 kali sruput udah abis. Harga 28rb kemahalan buat porsi segini.",not_mentioned
+25,harga,Ayam dingin alot kulitnya lemes kena uap. Sayang banget padahal racikan sambel koreknya enak seger.,not_mentioned
+92,rasa,Driver ojol nunggu lama banget di resto hampir 40 menit karena bebek digoreng dadakan saat orderan masuk.,positive
+57,pelayanan,"Mie ayamnya manis pas bumbu ayam gurih melimpah, bakso halusnya lembut. Pelayanan ramah cepet saji.",positive
+33,porsi,Pesan less sugar tapi dikasih manis banget kayak air gula. Driver nunggu 25 menit katanya antrean online numpuk.,not_mentioned
+100,pelayanan,Pesanan sambal mangga tidak dikirimkan padahal di struk tertulis jelas. Staf packing tolong lebih teliti.,negative
+5,rasa,"Bumbunya asin gurih nikmat, keju lumernya banyak. Tapi boxnya penyok pas diterima kurir, minyak sambal tembus ke dasar kardus.",positive
+51,kemasan,"Kuah kaldunya gurih ngaldu banget seger, rusuk sapinya empuk copot dari tulang, porsi jumbo kenyang pol!",not_mentioned
+21,porsi,Packaging sangat aman pake mangkok paper bowl tebal dan ada solasi rapat. Ayam masih anget gurih enak.,not_mentioned
+29,porsi,Kopi kemanisan parah sirup gulanya mendominasi ga kerasa kopinya sama sekali. Toastnya juga gosong pinggirannya.,not_mentioned
+73,rasa,"Bumbu mie ayam terlalu manis kayak kolak, minyak ayamnya kebanyakan bikin mual di lidah.",negative
+95,kemasan,Bebek goreng terenak di Jakarta Timur! Bumbu hitam autentik gurih rempah Madura asli bukan kaleng-kaleng.,not_mentioned
+28,harga,"Toast smoked beefnya enak bgt gurih, tapi potongan dagingnya makin tipis dibanding bulan lalu. Shrinkflation ya?",negative

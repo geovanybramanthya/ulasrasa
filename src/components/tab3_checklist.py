@@ -1,4 +1,4 @@
-"""
+﻿"""
 Tab 3 Component: AI Kitchen Action Checklist
 Interactive tickable checklist with Session State & PDF/Text export
 """
@@ -17,20 +17,20 @@ from src.utils.exporter import export_action_plan_text, export_action_plan_pdf
 DEFAULT_KITCHEN_ACTIONS = [
     {
         "id": "ACT-101",
-        "aspect": "Kebersihan",
-        "title": "Audit Sterilisasi Cutlery & Piring Saji",
-        "target_pic": "Supervisor Dishwasher",
+        "aspect": "Kemasan",
+        "title": "Audit Higienitas & Kualitas Wadah Kemasan",
+        "target_pic": "Supervisor Packing",
         "deadline": "Hari ini (Sebelum Shift Malam)",
-        "instruction": "Pastikan suhu mesin dishwashing minimal 75°C dan rendam alat makan dengan larutan sanitasi standar Depkes.",
+        "instruction": "Pastikan wadah kemasan food-grade bersih, kering, dan bebas bau sebelum dipakai; wadah yang retak atau berubah bentuk wajib dibuang, bukan dipakai ulang.",
         "checked": False
     },
     {
         "id": "ACT-102",
-        "aspect": "Kebersihan",
-        "title": "Pemeriksaan Wajib Hairnet & Sarung Tangan Koki",
+        "aspect": "Kemasan",
+        "title": "Pemeriksaan Segel Kemasan & Higienitas Area Packing",
         "target_pic": "Head Chef",
         "deadline": "Setiap Awal Shift",
-        "instruction": "Lakukan briefing 5 menit sebelum service dimulai untuk memastikan zero-hair falling ke mangkuk penyajian.",
+        "instruction": "Briefing 5 menit di awal shift: staf packing wajib memakai sarung tangan dan hairnet, lalu melakukan tilt-test segel pada setiap wadah berkuah sebelum diserahkan ke driver.",
         "checked": False
     },
     {

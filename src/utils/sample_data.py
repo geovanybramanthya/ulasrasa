@@ -22,17 +22,17 @@ SAMPLE_REVIEWS_POOL = [
     ("Sambal matahnya terlalu asam dan terasa minyak jelantah bekas.", "Rasa", "Negatif", 2),
     ("Soto daging terlalu asin, potongan daging banyak lemak liat.", "Rasa", "Negatif", 2),
 
-    # Kebersihan - Positif
-    ("Piring, sendok, dan meja makan sangat steril dan bersih berkilau.", "Kebersihan", "Positif", 5),
-    ("Dapur terbuka terlihat sangat higienis, koki pakai sarung tangan dan hairnet.", "Kebersihan", "Positif", 5),
-    ("Toilet harum dan lantai ruang makan selalu disapu berkala.", "Kebersihan", "Positif", 5),
-    # Kebersihan - Netral
-    ("Kebersihan standar, meja agak berminyak sedikit setelah dibersihkan.", "Kebersihan", "Netral", 3),
-    # Kebersihan - Negatif
-    ("Ditemukan rambut di dalam mangkuk mie kuah! Tolong tingkatkan sanitasi.", "Kebersihan", "Negatif", 1),
-    ("Gelas minum ada noda lipstik bekas pengunjung sebelumnya, jorok sekali.", "Kebersihan", "Negatif", 1),
-    ("Lantai dapur licin dan terlihat lalat berterbangan dekat display lauk.", "Kebersihan", "Negatif", 1),
-    ("Alat makan bau amis sisa cucian sebelumnya.", "Kebersihan", "Negatif", 2),
+    # Kemasan - Positif
+    ("Kemasan rapi dan tersegel rapat, kuah tidak tumpah sama sekali.", "Kemasan", "Positif", 5),
+    ("Mangkuknya pakai segel plastik dan sendok dibungkus higienis, aman sampai rumah.", "Kemasan", "Positif", 5),
+    ("Kardus tebal dan kering, gorengan tetap renyah tidak berminyak di kertasnya.", "Kemasan", "Positif", 5),
+    # Kemasan - Netral
+    ("Kemasan standar plastik biasa, cukup aman tapi tidak ada segel khusus.", "Kemasan", "Netral", 3),
+    # Kemasan - Negatif
+    ("Kuah tumpah membasahi kantong plastik, kemasan mangkuknya bocor!", "Kemasan", "Negatif", 1),
+    ("Tutup wadah tidak rapat, sambal rembes ke mana-mana.", "Kemasan", "Negatif", 1),
+    ("Kemasan penyok dan styrofoamnya retak saat dibuka.", "Kemasan", "Negatif", 1),
+    ("Sendok tidak dibungkus plastik dan kemasan terlihat kotor berminyak.", "Kemasan", "Negatif", 2),
 
     # Pelayanan - Positif
     ("Pelayanan ramah sekali, makanan datang kurang dari 10 menit.", "Pelayanan", "Positif", 5),
@@ -54,14 +54,14 @@ SAMPLE_REVIEWS_POOL = [
     ("Porsi sangat sedikit untuk harga semahal itu, tidak sebanding kualitas.", "Harga", "Negatif", 2),
     ("Pajak dan service charge terlalu tinggi untuk resto kelas cepat saji.", "Harga", "Negatif", 2),
 
-    # Suasana - Positif
-    ("Interior estetik, pencahayaan hangat dan musik latar tenang nyaman.", "Suasana", "Positif", 5),
-    ("AC sejuk dan tempat duduk sofa nyaman untuk makan bersama keluarga.", "Suasana", "Positif", 5),
-    # Suasana - Netral
-    ("Suasana biasa saja khas warung tenda modern, agak sempit.", "Suasana", "Netral", 3),
-    # Suasana - Negatif
-    ("Musik terlalu keras memekakkan telinga, tidak cocok untuk mengobrol santai.", "Suasana", "Negatif", 2),
-    ("Udara ruangan panas pengap karena exhaust fan dapur sepertinya mati.", "Suasana", "Negatif", 2),
+    # Porsi - Positif
+    ("Porsinya jumbo, nasi dan lauknya melimpah bikin kenyang.", "Porsi", "Positif", 5),
+    ("Porsi pas untuk harga segini, potongan ayamnya besar-besar.", "Porsi", "Positif", 5),
+    # Porsi - Netral
+    ("Porsi standar warung pada umumnya, tidak banyak tidak sedikit.", "Porsi", "Netral", 3),
+    # Porsi - Negatif
+    ("Porsinya sedikit banget, nasi cuma seuprit untuk harga segitu.", "Porsi", "Negatif", 2),
+    ("Potongan ayamnya kecil-kecil, porsi tidak konsisten antar kunjungan.", "Porsi", "Negatif", 2),
 ]
 
 def generate_sample_reviews(n: int = 120, output_path: str = "data/sample_reviews.csv") -> pd.DataFrame:

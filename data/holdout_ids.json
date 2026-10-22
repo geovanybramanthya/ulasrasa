@@ -1,0 +1,81 @@
+{
+  "seed": 42,
+  "created_at": "2026-10-22T23:25:23+07:00",
+  "n": 25,
+  "dataset": "data/sample_reviews.csv",
+  "method": "Deterministic split, seed 42. Quota per restaurant allocated proportionally by largest remainder (25 hold-out of 100 reviews, 4 restaurants x 25). Within each restaurant, reviews were picked greedily to minimise the absolute deviation between the hold-out label distribution (5 aspects x 4 classes) and the restaurant's own label distribution; ties broken by a seed-42 shuffle. This file is FROZEN: make_holdout.py refuses to overwrite it.",
+  "per_restaurant": {
+    "Ayam Geprek Sambal Korek Barokah": {
+      "quota": 7,
+      "review_ids": [
+        6,
+        10,
+        13,
+        16,
+        18,
+        20,
+        22
+      ]
+    },
+    "Bakso Rusuk Solo Pak Ndut": {
+      "quota": 6,
+      "review_ids": [
+        53,
+        62,
+        64,
+        67,
+        71,
+        75
+      ]
+    },
+    "Bebek Goreng Madura Cak Roni": {
+      "quota": 6,
+      "review_ids": [
+        76,
+        79,
+        81,
+        84,
+        86,
+        89
+      ]
+    },
+    "Kopi Susu Senja & Toast": {
+      "quota": 6,
+      "review_ids": [
+        32,
+        35,
+        37,
+        38,
+        39,
+        40
+      ]
+    }
+  },
+  "review_ids": [
+    6,
+    10,
+    13,
+    16,
+    18,
+    20,
+    22,
+    32,
+    35,
+    37,
+    38,
+    39,
+    40,
+    53,
+    62,
+    64,
+    67,
+    71,
+    75,
+    76,
+    79,
+    81,
+    84,
+    86,
+    89
+  ]
+}

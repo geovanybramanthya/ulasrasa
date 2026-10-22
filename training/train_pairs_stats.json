@@ -1,0 +1,51 @@
+{
+  "seed": 42,
+  "n_train_reviews": 75,
+  "n_holdout_reviews": 25,
+  "pairs_before_subsample": 375,
+  "pairs_after_subsample": 375,
+  "mentioned_pairs": 205,
+  "not_mentioned_before": 170,
+  "not_mentioned_cap": 246,
+  "distribution_before": {
+    "not_mentioned": 170,
+    "positive": 132,
+    "negative": 65,
+    "neutral": 8
+  },
+  "distribution_after": {
+    "not_mentioned": 170,
+    "positive": 132,
+    "negative": 65,
+    "neutral": 8
+  },
+  "distribution_after_per_aspect": {
+    "rasa": {
+      "positive": 38,
+      "negative": 16,
+      "not_mentioned": 14,
+      "neutral": 7
+    },
+    "porsi": {
+      "not_mentioned": 42,
+      "positive": 22,
+      "negative": 10,
+      "neutral": 1
+    },
+    "harga": {
+      "not_mentioned": 37,
+      "positive": 26,
+      "negative": 12
+    },
+    "kemasan": {
+      "not_mentioned": 49,
+      "negative": 13,
+      "positive": 13
+    },
+    "pelayanan": {
+      "positive": 33,
+      "not_mentioned": 28,
+      "negative": 14
+    }
+  }
+}

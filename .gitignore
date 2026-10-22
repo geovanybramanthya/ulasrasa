@@ -6,3 +6,10 @@ venv/
 .pytest_cache/
 *.pdf
 .DS_Store
+
+# --- UlasRasa deploy-prep: artefak besar / khusus lokal ---
+training/venv/
+training/wheels/
+/models/
+*.pyc
+.streamlit/secrets.toml

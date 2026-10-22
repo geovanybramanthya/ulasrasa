@@ -1,0 +1,1103 @@
+{
+  "results": {
+    "lexicon_baseline": {
+      "per_aspect": {
+        "rasa": {
+          "precision_per_class": {
+            "positive": 0.875,
+            "neutral": 0.1667,
+            "negative": 1.0,
+            "not_mentioned": 0.7143
+          },
+          "recall_per_class": {
+            "positive": 0.5,
+            "neutral": 0.5,
+            "negative": 1.0,
+            "not_mentioned": 1.0
+          },
+          "f1_per_class": {
+            "positive": 0.6364,
+            "neutral": 0.25,
+            "negative": 1.0,
+            "not_mentioned": 0.8333
+          },
+          "macro_f1": 0.6799,
+          "macro_f1_classes": [
+            "positive",
+            "neutral",
+            "negative",
+            "not_mentioned"
+          ],
+          "macro_f1_note": "Macro-F1 averaged over classes present in gold and/or predictions (scikit-learn convention); classes absent from both are excluded.",
+          "confusion_matrix": [
+            [
+              7,
+              5,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              4,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              5
+            ]
+          ],
+          "class_order": [
+            "positive",
+            "neutral",
+            "negative",
+            "not_mentioned"
+          ],
+          "support_gold": {
+            "positive": 14,
+            "neutral": 2,
+            "negative": 4,
+            "not_mentioned": 5
+          },
+          "support_pred": {
+            "positive": 8,
+            "neutral": 6,
+            "negative": 4,
+            "not_mentioned": 7
+          }
+        },
+        "porsi": {
+          "precision_per_class": {
+            "positive": 1.0,
+            "neutral": 0.0,
+            "negative": 0.5,
+            "not_mentioned": 0.7647
+          },
+          "recall_per_class": {
+            "positive": 0.1429,
+            "neutral": 0.0,
+            "negative": 0.6667,
+            "not_mentioned": 0.9286
+          },
+          "f1_per_class": {
+            "positive": 0.25,
+            "neutral": 0.0,
+            "negative": 0.5714,
+            "not_mentioned": 0.8387
+          },
+          "macro_f1": 0.415,
+          "macro_f1_classes": [
+            "positive",
+            "neutral",
+            "negative",
+            "not_mentioned"
+          ],
+          "macro_f1_note": "Macro-F1 averaged over classes present in gold and/or predictions (scikit-learn convention); classes absent from both are excluded.",
+          "confusion_matrix": [
+            [
+              1,
+              3,
+              0,
+              3
+            ],
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              1
+            ],
+            [
+              0,
+              0,
+              1,
+              13
+            ]
+          ],
+          "class_order": [
+            "positive",
+            "neutral",
+            "negative",
+            "not_mentioned"
+          ],
+          "support_gold": {
+            "positive": 7,
+            "neutral": 1,
+            "negative": 3,
+            "not_mentioned": 14
+          },
+          "support_pred": {
+            "positive": 1,
+            "neutral": 3,
+            "negative": 4,
+            "not_mentioned": 17
+          }
+        },
+        "harga": {
+          "precision_per_class": {
+            "positive": 1.0,
+            "neutral": 0.0,
+            "negative": 1.0,
+            "not_mentioned": 0.65
+          },
+          "recall_per_class": {
+            "positive": 0.3333,
+            "neutral": 0.0,
+            "negative": 0.3333,
+            "not_mentioned": 1.0
+          },
+          "f1_per_class": {
+            "positive": 0.5,
+            "neutral": 0.0,
+            "negative": 0.5,
+            "not_mentioned": 0.7879
+          },
+          "macro_f1": 0.447,
+          "macro_f1_classes": [
+            "positive",
+            "neutral",
+            "negative",
+            "not_mentioned"
+          ],
+          "macro_f1_note": "Macro-F1 averaged over classes present in gold and/or predictions (scikit-learn convention); classes absent from both are excluded.",
+          "confusion_matrix": [
+            [
+              3,
+              0,
+              0,
+              6
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              13
+            ]
+          ],
+          "class_order": [
+            "positive",
+            "neutral",
+            "negative",
+            "not_mentioned"
+          ],
+          "support_gold": {
+            "positive": 9,
+            "neutral": 0,
+            "negative": 3,
+            "not_mentioned": 13
+          },
+          "support_pred": {
+            "positive": 3,
+            "neutral": 1,
+            "negative": 1,
+            "not_mentioned": 20
+          }
+        },
+        "kemasan": {
+          "precision_per_class": {
+            "positive": 1.0,
+            "neutral": 0.0,
+            "negative": 0.0,
+            "not_mentioned": 0.8333
+          },
+          "recall_per_class": {
+            "positive": 0.6667,
+            "neutral": 0.0,
+            "negative": 0.0,
+            "not_mentioned": 0.9375
+          },
+          "f1_per_class": {
+            "positive": 0.8,
+            "neutral": 0.0,
+            "negative": 0.0,
+            "not_mentioned": 0.8824
+          },
+          "macro_f1": 0.4206,
+          "macro_f1_classes": [
+            "positive",
+            "neutral",
+            "negative",
+            "not_mentioned"
+          ],
+          "macro_f1_note": "Macro-F1 averaged over classes present in gold and/or predictions (scikit-learn convention); classes absent from both are excluded.",
+          "confusion_matrix": [
+            [
+              4,
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              2
+            ],
+            [
+              0,
+              0,
+              1,
+              15
+            ]
+          ],
+          "class_order": [
+            "positive",
+            "neutral",
+            "negative",
+            "not_mentioned"
+          ],
+          "support_gold": {
+            "positive": 6,
+            "neutral": 0,
+            "negative": 3,
+            "not_mentioned": 16
+          },
+          "support_pred": {
+            "positive": 4,
+            "neutral": 2,
+            "negative": 1,
+            "not_mentioned": 18
+          }
+        },
+        "pelayanan": {
+          "precision_per_class": {
+            "positive": 1.0,
+            "neutral": 0.0,
+            "negative": 1.0,
+            "not_mentioned": 0.5263
+          },
+          "recall_per_class": {
+            "positive": 0.1,
+            "neutral": 0.0,
+            "negative": 0.75,
+            "not_mentioned": 0.9091
+          },
+          "f1_per_class": {
+            "positive": 0.1818,
+            "neutral": 0.0,
+            "negative": 0.8571,
+            "not_mentioned": 0.6667
+          },
+          "macro_f1": 0.4264,
+          "macro_f1_classes": [
+            "positive",
+            "neutral",
+            "negative",
+            "not_mentioned"
+          ],
+          "macro_f1_note": "Macro-F1 averaged over classes present in gold and/or predictions (scikit-learn convention); classes absent from both are excluded.",
+          "confusion_matrix": [
+            [
+              1,
+              1,
+              0,
+              8
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              3,
+              1
+            ],
+            [
+              0,
+              1,
+              0,
+              10
+            ]
+          ],
+          "class_order": [
+            "positive",
+            "neutral",
+            "negative",
+            "not_mentioned"
+          ],
+          "support_gold": {
+            "positive": 10,
+            "neutral": 0,
+            "negative": 4,
+            "not_mentioned": 11
+          },
+          "support_pred": {
+            "positive": 1,
+            "neutral": 2,
+            "negative": 3,
+            "not_mentioned": 19
+          }
+        }
+      },
+      "overall_macro_f1": 0.4778,
+      "source": "src.absa_pipeline.ABSAPipeline (lexicon/keyword)",
+      "caveat": "Lexicon dikembangkan terhadap keseluruhan dataset sebelum hold-out dibekukan; angka ini perbandingan internal, bukan estimasi generalisasi murni."
+    },
+    "indobert_lite": {
+      "per_aspect": {
+        "rasa": {
+          "precision_per_class": {
+            "positive": 0.56,
+            "neutral": 0.0,
+            "negative": 0.0,
+            "not_mentioned": 0.0
+          },
+          "recall_per_class": {
+            "positive": 1.0,
+            "neutral": 0.0,
+            "negative": 0.0,
+            "not_mentioned": 0.0
+          },
+          "f1_per_class": {
+            "positive": 0.7179,
+            "neutral": 0.0,
+            "negative": 0.0,
+            "not_mentioned": 0.0
+          },
+          "macro_f1": 0.1795,
+          "macro_f1_classes": [
+            "positive",
+            "neutral",
+            "negative",
+            "not_mentioned"
+          ],
+          "macro_f1_note": "Macro-F1 averaged over classes present in gold and/or predictions (scikit-learn convention); classes absent from both are excluded.",
+          "confusion_matrix": [
+            [
+              14,
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              0,
+              0,
+              0
+            ],
+            [
+              5,
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_order": [
+            "positive",
+            "neutral",
+            "negative",
+            "not_mentioned"
+          ],
+          "support_gold": {
+            "positive": 14,
+            "neutral": 2,
+            "negative": 4,
+            "not_mentioned": 5
+          },
+          "support_pred": {
+            "positive": 25,
+            "neutral": 0,
+            "negative": 0,
+            "not_mentioned": 0
+          }
+        },
+        "porsi": {
+          "precision_per_class": {
+            "positive": 0.28,
+            "neutral": 0.0,
+            "negative": 0.0,
+            "not_mentioned": 0.0
+          },
+          "recall_per_class": {
+            "positive": 1.0,
+            "neutral": 0.0,
+            "negative": 0.0,
+            "not_mentioned": 0.0
+          },
+          "f1_per_class": {
+            "positive": 0.4375,
+            "neutral": 0.0,
+            "negative": 0.0,
+            "not_mentioned": 0.0
+          },
+          "macro_f1": 0.1094,
+          "macro_f1_classes": [
+            "positive",
+            "neutral",
+            "negative",
+            "not_mentioned"
+          ],
+          "macro_f1_note": "Macro-F1 averaged over classes present in gold and/or predictions (scikit-learn convention); classes absent from both are excluded.",
+          "confusion_matrix": [
+            [
+              7,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0,
+              0
+            ],
+            [
+              14,
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_order": [
+            "positive",
+            "neutral",
+            "negative",
+            "not_mentioned"
+          ],
+          "support_gold": {
+            "positive": 7,
+            "neutral": 1,
+            "negative": 3,
+            "not_mentioned": 14
+          },
+          "support_pred": {
+            "positive": 25,
+            "neutral": 0,
+            "negative": 0,
+            "not_mentioned": 0
+          }
+        },
+        "harga": {
+          "precision_per_class": {
+            "positive": 0.36,
+            "neutral": 0.0,
+            "negative": 0.0,
+            "not_mentioned": 0.0
+          },
+          "recall_per_class": {
+            "positive": 1.0,
+            "neutral": 0.0,
+            "negative": 0.0,
+            "not_mentioned": 0.0
+          },
+          "f1_per_class": {
+            "positive": 0.5294,
+            "neutral": 0.0,
+            "negative": 0.0,
+            "not_mentioned": 0.0
+          },
+          "macro_f1": 0.1765,
+          "macro_f1_classes": [
+            "positive",
+            "negative",
+            "not_mentioned"
+          ],
+          "macro_f1_note": "Macro-F1 averaged over classes present in gold and/or predictions (scikit-learn convention); classes absent from both are excluded.",
+          "confusion_matrix": [
+            [
+              9,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0,
+              0
+            ],
+            [
+              13,
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_order": [
+            "positive",
+            "neutral",
+            "negative",
+            "not_mentioned"
+          ],
+          "support_gold": {
+            "positive": 9,
+            "neutral": 0,
+            "negative": 3,
+            "not_mentioned": 13
+          },
+          "support_pred": {
+            "positive": 25,
+            "neutral": 0,
+            "negative": 0,
+            "not_mentioned": 0
+          }
+        },
+        "kemasan": {
+          "precision_per_class": {
+            "positive": 0.24,
+            "neutral": 0.0,
+            "negative": 0.0,
+            "not_mentioned": 0.0
+          },
+          "recall_per_class": {
+            "positive": 1.0,
+            "neutral": 0.0,
+            "negative": 0.0,
+            "not_mentioned": 0.0
+          },
+          "f1_per_class": {
+            "positive": 0.3871,
+            "neutral": 0.0,
+            "negative": 0.0,
+            "not_mentioned": 0.0
+          },
+          "macro_f1": 0.129,
+          "macro_f1_classes": [
+            "positive",
+            "negative",
+            "not_mentioned"
+          ],
+          "macro_f1_note": "Macro-F1 averaged over classes present in gold and/or predictions (scikit-learn convention); classes absent from both are excluded.",
+          "confusion_matrix": [
+            [
+              6,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0,
+              0
+            ],
+            [
+              16,
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_order": [
+            "positive",
+            "neutral",
+            "negative",
+            "not_mentioned"
+          ],
+          "support_gold": {
+            "positive": 6,
+            "neutral": 0,
+            "negative": 3,
+            "not_mentioned": 16
+          },
+          "support_pred": {
+            "positive": 25,
+            "neutral": 0,
+            "negative": 0,
+            "not_mentioned": 0
+          }
+        },
+        "pelayanan": {
+          "precision_per_class": {
+            "positive": 0.4,
+            "neutral": 0.0,
+            "negative": 0.0,
+            "not_mentioned": 0.0
+          },
+          "recall_per_class": {
+            "positive": 1.0,
+            "neutral": 0.0,
+            "negative": 0.0,
+            "not_mentioned": 0.0
+          },
+          "f1_per_class": {
+            "positive": 0.5714,
+            "neutral": 0.0,
+            "negative": 0.0,
+            "not_mentioned": 0.0
+          },
+          "macro_f1": 0.1905,
+          "macro_f1_classes": [
+            "positive",
+            "negative",
+            "not_mentioned"
+          ],
+          "macro_f1_note": "Macro-F1 averaged over classes present in gold and/or predictions (scikit-learn convention); classes absent from both are excluded.",
+          "confusion_matrix": [
+            [
+              10,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              0,
+              0,
+              0
+            ],
+            [
+              11,
+              0,
+              0,
+              0
+            ]
+          ],
+          "class_order": [
+            "positive",
+            "neutral",
+            "negative",
+            "not_mentioned"
+          ],
+          "support_gold": {
+            "positive": 10,
+            "neutral": 0,
+            "negative": 4,
+            "not_mentioned": 11
+          },
+          "support_pred": {
+            "positive": 25,
+            "neutral": 0,
+            "negative": 0,
+            "not_mentioned": 0
+          }
+        }
+      },
+      "overall_macro_f1": 0.157,
+      "source": "predictions file: predictions_indobert_lite.csv"
+    },
+    "indobert_base": {
+      "per_aspect": {
+        "rasa": {
+          "precision_per_class": {
+            "positive": 0.7,
+            "neutral": 0.0,
+            "negative": 0.25,
+            "not_mentioned": 0.0
+          },
+          "recall_per_class": {
+            "positive": 1.0,
+            "neutral": 0.0,
+            "negative": 0.25,
+            "not_mentioned": 0.0
+          },
+          "f1_per_class": {
+            "positive": 0.8235,
+            "neutral": 0.0,
+            "negative": 0.25,
+            "not_mentioned": 0.0
+          },
+          "macro_f1": 0.2684,
+          "macro_f1_classes": [
+            "positive",
+            "neutral",
+            "negative",
+            "not_mentioned"
+          ],
+          "macro_f1_note": "Macro-F1 averaged over classes present in gold and/or predictions (scikit-learn convention); classes absent from both are excluded.",
+          "confusion_matrix": [
+            [
+              14,
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              3,
+              0
+            ]
+          ],
+          "class_order": [
+            "positive",
+            "neutral",
+            "negative",
+            "not_mentioned"
+          ],
+          "support_gold": {
+            "positive": 14,
+            "neutral": 2,
+            "negative": 4,
+            "not_mentioned": 5
+          },
+          "support_pred": {
+            "positive": 20,
+            "neutral": 1,
+            "negative": 4,
+            "not_mentioned": 0
+          }
+        },
+        "porsi": {
+          "precision_per_class": {
+            "positive": 0.75,
+            "neutral": 0.0,
+            "negative": 1.0,
+            "not_mentioned": 0.7
+          },
+          "recall_per_class": {
+            "positive": 0.4286,
+            "neutral": 0.0,
+            "negative": 0.3333,
+            "not_mentioned": 1.0
+          },
+          "f1_per_class": {
+            "positive": 0.5455,
+            "neutral": 0.0,
+            "negative": 0.5,
+            "not_mentioned": 0.8235
+          },
+          "macro_f1": 0.4672,
+          "macro_f1_classes": [
+            "positive",
+            "neutral",
+            "negative",
+            "not_mentioned"
+          ],
+          "macro_f1_note": "Macro-F1 averaged over classes present in gold and/or predictions (scikit-learn convention); classes absent from both are excluded.",
+          "confusion_matrix": [
+            [
+              3,
+              0,
+              0,
+              4
+            ],
+            [
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              0,
+              0,
+              14
+            ]
+          ],
+          "class_order": [
+            "positive",
+            "neutral",
+            "negative",
+            "not_mentioned"
+          ],
+          "support_gold": {
+            "positive": 7,
+            "neutral": 1,
+            "negative": 3,
+            "not_mentioned": 14
+          },
+          "support_pred": {
+            "positive": 4,
+            "neutral": 0,
+            "negative": 1,
+            "not_mentioned": 20
+          }
+        },
+        "harga": {
+          "precision_per_class": {
+            "positive": 0.6923,
+            "neutral": 0.0,
+            "negative": 1.0,
+            "not_mentioned": 0.9
+          },
+          "recall_per_class": {
+            "positive": 1.0,
+            "neutral": 0.0,
+            "negative": 0.6667,
+            "not_mentioned": 0.6923
+          },
+          "f1_per_class": {
+            "positive": 0.8182,
+            "neutral": 0.0,
+            "negative": 0.8,
+            "not_mentioned": 0.7826
+          },
+          "macro_f1": 0.8003,
+          "macro_f1_classes": [
+            "positive",
+            "negative",
+            "not_mentioned"
+          ],
+          "macro_f1_note": "Macro-F1 averaged over classes present in gold and/or predictions (scikit-learn convention); classes absent from both are excluded.",
+          "confusion_matrix": [
+            [
+              9,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              1
+            ],
+            [
+              4,
+              0,
+              0,
+              9
+            ]
+          ],
+          "class_order": [
+            "positive",
+            "neutral",
+            "negative",
+            "not_mentioned"
+          ],
+          "support_gold": {
+            "positive": 9,
+            "neutral": 0,
+            "negative": 3,
+            "not_mentioned": 13
+          },
+          "support_pred": {
+            "positive": 13,
+            "neutral": 0,
+            "negative": 2,
+            "not_mentioned": 10
+          }
+        },
+        "kemasan": {
+          "precision_per_class": {
+            "positive": 1.0,
+            "neutral": 0.0,
+            "negative": 1.0,
+            "not_mentioned": 0.7619
+          },
+          "recall_per_class": {
+            "positive": 0.5,
+            "neutral": 0.0,
+            "negative": 0.3333,
+            "not_mentioned": 1.0
+          },
+          "f1_per_class": {
+            "positive": 0.6667,
+            "neutral": 0.0,
+            "negative": 0.5,
+            "not_mentioned": 0.8649
+          },
+          "macro_f1": 0.6772,
+          "macro_f1_classes": [
+            "positive",
+            "negative",
+            "not_mentioned"
+          ],
+          "macro_f1_note": "Macro-F1 averaged over classes present in gold and/or predictions (scikit-learn convention); classes absent from both are excluded.",
+          "confusion_matrix": [
+            [
+              3,
+              0,
+              0,
+              3
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              0,
+              0,
+              16
+            ]
+          ],
+          "class_order": [
+            "positive",
+            "neutral",
+            "negative",
+            "not_mentioned"
+          ],
+          "support_gold": {
+            "positive": 6,
+            "neutral": 0,
+            "negative": 3,
+            "not_mentioned": 16
+          },
+          "support_pred": {
+            "positive": 3,
+            "neutral": 0,
+            "negative": 1,
+            "not_mentioned": 21
+          }
+        },
+        "pelayanan": {
+          "precision_per_class": {
+            "positive": 0.7143,
+            "neutral": 0.0,
+            "negative": 0.6667,
+            "not_mentioned": 1.0
+          },
+          "recall_per_class": {
+            "positive": 1.0,
+            "neutral": 0.0,
+            "negative": 0.5,
+            "not_mentioned": 0.7273
+          },
+          "f1_per_class": {
+            "positive": 0.8333,
+            "neutral": 0.0,
+            "negative": 0.5714,
+            "not_mentioned": 0.8421
+          },
+          "macro_f1": 0.7489,
+          "macro_f1_classes": [
+            "positive",
+            "negative",
+            "not_mentioned"
+          ],
+          "macro_f1_note": "Macro-F1 averaged over classes present in gold and/or predictions (scikit-learn convention); classes absent from both are excluded.",
+          "confusion_matrix": [
+            [
+              10,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              2,
+              0
+            ],
+            [
+              2,
+              0,
+              1,
+              8
+            ]
+          ],
+          "class_order": [
+            "positive",
+            "neutral",
+            "negative",
+            "not_mentioned"
+          ],
+          "support_gold": {
+            "positive": 10,
+            "neutral": 0,
+            "negative": 4,
+            "not_mentioned": 11
+          },
+          "support_pred": {
+            "positive": 14,
+            "neutral": 0,
+            "negative": 3,
+            "not_mentioned": 8
+          }
+        }
+      },
+      "overall_macro_f1": 0.5924,
+      "source": "predictions file: predictions_indobert_base.csv"
+    }
+  },
+  "generated_at": "2026-10-23T02:17:58+07:00",
+  "holdout": {
+    "n": 25,
+    "seed": 42,
+    "ids_file": "data/holdout_ids.json"
+  }
+}

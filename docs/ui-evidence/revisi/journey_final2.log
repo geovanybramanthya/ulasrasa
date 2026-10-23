@@ -1,0 +1,9 @@
+PASS landing_loaded       keadaan awal adalah landing (tanpa sapaan dashboard, 5 nama resto terlihat)
+PASS enter_ayam           sapaan='Halo, Ayam Geprek Sambal Korek Barokah' KHS tampil=55.8 (baseline 55.84) status='KRITIS (Audit Segera)'
+PASS ganti_akun_back      klik Ganti Akun mengembalikan tampilan landing
+PASS panel_ganti_data     panel Data Ulasan terbuka dari dashboard Ayam
+PASS upload_csv           sapaan='Halo, Outlet Kustom' total ulasan tampil=3 (harap 3 dari CSV uji)
+PASS back_to_preset       sapaan='Halo, Ayam Geprek Sambal Korek Barokah' KHS=55.8 (baseline 55.84) total=25 (harap 25)
+PASS add_review           total ulasan 25 -> 26 (harap +1) sesudah simpan ulasan negatif kemasan
+RINGKASAN journey_revisi (final2): 7/7 PASS - overall PASS
+JSON -> C:\Users\geova\Downloads\BOOTCAMP\PROJECTS\ulasrasa\docs\ui-evidence\revisi\journey_revisi_final2.json

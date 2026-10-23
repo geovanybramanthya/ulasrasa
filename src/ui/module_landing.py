@@ -38,9 +38,17 @@ def _fmt_khs(khs: float) -> str:
     return f"{khs:.2f}".replace(".", ",")
 
 
+@st.cache_data(show_spinner=False)
+def _img_data_uri(path: str) -> str:
+    import base64
+
+    with open(path, "rb") as fh:
+        return "data:image/jpeg;base64," + base64.b64encode(fh.read()).decode("ascii")
+
+
 def _asset_path() -> str:
     repo_root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-    return os.path.join(repo_root, "assets", "ilustrasi-landing.png")
+    return os.path.join(repo_root, "assets", "ilustrasi-landing.jpg")
 
 
 def render(pipeline) -> None:
@@ -107,7 +115,10 @@ def render(pipeline) -> None:
         with st.container(key="landing_visual"):
             img_path = _asset_path()
             if os.path.exists(img_path):
-                st.image(img_path, use_container_width=True)
+                st.markdown(
+                    f"<img src='{_img_data_uri(img_path)}' style='width:100%;display:block'/>",
+                    unsafe_allow_html=True,
+                )
             st.markdown(
                 f"""
 <div class='landing-glass'>

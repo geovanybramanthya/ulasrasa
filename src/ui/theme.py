@@ -285,6 +285,57 @@ div[data-baseweb="select"] > div { border-radius: 12px !important; border-color:
 [data-testid="stProgress"] > div > div > div { background-color: #22C55E !important; }
 [data-testid="stCheckbox"] label p { font-size: 0.9rem; }
 
+/* ---------- kartu statistik mini (Rincian, Tahap 3) ---------- */
+.stat-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 16px; }
+.stat-card { background: #FFFFFF; border: 1px solid #EDF1EE; border-radius: 16px; padding: 14px 16px; box-shadow: 0 8px 24px rgba(20,40,30,0.05); }
+.stat-value { font-family: 'JetBrains Mono', Consolas, monospace; font-weight: 600; font-size: 1.45rem; color: #14231B; line-height: 1.15; }
+.stat-label { font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #64756B; margin-top: 2px; }
+
+/* ---------- kartu contoh ulasan (Rincian, Tahap 3) ---------- */
+.review-card { border: 1px solid #EDF1EE; border-radius: 14px; padding: 12px 14px; margin-bottom: 10px; background: #FFFFFF; }
+.review-text { font-size: 0.88rem; color: #14231B; line-height: 1.5; }
+.review-meta { font-size: 0.74rem; color: #64756B; margin-top: 6px; }
+
+/* ---------- tabel semua ulasan (Rincian, Tahap 3) ---------- */
+.table-wrap { overflow-x: auto; }
+.data-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; min-width: 660px; }
+.data-table th { text-align: left; color: #64756B; font-weight: 600; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.06em; border-bottom: 1px solid #EDF1EE; padding: 6px 8px; white-space: nowrap; }
+.data-table td { border-bottom: 1px solid #F3F6F4; padding: 8px; color: #14231B; vertical-align: top; }
+.data-table tr:last-child td { border-bottom: none; }
+.mini-pill { display: inline-block; border-radius: 999px; padding: 1px 8px; font-size: 0.7rem; font-weight: 600; white-space: nowrap; }
+
+/* ---------- akar masalah & daftar aksi (Rencana, Tahap 4) ---------- */
+.rca-num { width: 24px; height: 24px; border-radius: 50%; background: #B42318; color: #FFFFFF; font-size: 0.78rem; font-weight: 700; text-align: center; line-height: 24px; flex-shrink: 0; font-family: 'JetBrains Mono', Consolas, monospace; }
+.rca-row { display: flex; gap: 10px; align-items: flex-start; padding: 10px 0; border-bottom: 1px solid #F3F6F4; }
+.rca-row:last-child { border-bottom: none; }
+.rca-text { font-size: 0.9rem; color: #14231B; line-height: 1.5; }
+.sop-row { display: flex; gap: 10px; align-items: flex-start; padding: 9px 0; border-bottom: 1px solid #F3F6F4; }
+.sop-row:last-child { border-bottom: none; }
+.sop-num { font-family: 'JetBrains Mono', Consolas, monospace; font-weight: 600; font-size: 0.85rem; color: #15803D; min-width: 22px; }
+.stDownloadButton > button[kind="primary"], .stDownloadButton > button[data-testid="baseButton-primary"] {
+    background: linear-gradient(135deg, #22C55E 0%, #16A34A 100%) !important;
+    color: #FFFFFF !important; border: 1px solid #15803D !important;
+    box-shadow: 0 8px 20px rgba(34,197,94,0.30) !important;
+}
+
+/* ---------- baris hasil analisis (Coba, Tahap 5) ---------- */
+.aspect-row { display: flex; align-items: center; gap: 12px; padding: 10px 0; border-bottom: 1px solid #F3F6F4; }
+.aspect-row:last-child { border-bottom: none; }
+.aspect-chip { width: 32px; height: 32px; border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.aspect-name { font-weight: 600; font-size: 0.92rem; min-width: 84px; color: #14231B; }
+.conf-track { flex: 1; background: #EFF3F0; border-radius: 6px; height: 8px; overflow: hidden; }
+.conf-fill { height: 100%; border-radius: 6px; }
+.conf-val { font-family: 'JetBrains Mono', Consolas, monospace; font-weight: 600; font-size: 0.8rem; min-width: 54px; text-align: right; color: #14231B; }
+.not-mentioned-line { font-size: 0.84rem; color: #64756B; padding-top: 10px; }
+
+/* ---------- wadah kartu generik berkunci card_* (Tahap 3-5) ---------- */
+div[class*="st-key-card_"] {
+    background: #FFFFFF; border: 1px solid #EDF1EE; border-radius: 20px;
+    padding: 18px 22px 12px 22px; margin-bottom: 16px;
+    box-shadow: 0 8px 24px rgba(20,40,30,0.06);
+    animation: fadeUp 0.4s ease both;
+}
+
 /* ---------- loading bermerek ---------- */
 .loading-card {
     background: #FFFFFF; border: 1px solid #EDF1EE; border-radius: 20px;
@@ -306,6 +357,9 @@ div[data-baseweb="select"] > div { border-radius: 12px !important; border-color:
 /* ---------- responsif (<=640px) ---------- */
 @media (max-width: 640px) {
     .kpi-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+    .stat-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+    .aspect-name { min-width: 64px; font-size: 0.86rem; }
+    .conf-val { min-width: 46px; }
     .greeting { font-size: 1.35rem; }
     .ulas-card, .panel-data { padding: 16px; border-radius: 16px; }
     .hero-card { padding: 18px; }

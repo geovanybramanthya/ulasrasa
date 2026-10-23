@@ -7,6 +7,14 @@ di sini ditandai INSPEKSI dengan petunjuk buktinya.
 
 Jalankan dari root repo:  py docs/ui-evidence/parity_check.py
 Urutan impor meniru app.py: pandas/numpy sebelum engine (torch).
+
+Adaptasi revisi landing (2026-10-23, branch revisi-landing): app kini
+berpintu landing akun demo - dashboard hanya render bila
+session_state["active_account"] terisi. run_module() di bawah menyetel
+active_account = RESTO (konteks yang memang diasumsikan seluruh skrip
+ini sejak awal) sebelum run. TIDAK ADA butir, angka, atau bukti yang
+diubah - hanya cara harness masuk ke dashboard yang disesuaikan dengan
+alur UI baru.
 """
 import ast
 import hashlib
@@ -237,6 +245,7 @@ MOD_COBA = "Single Review Simulator (Live Demo)"
 def run_module(module_name, seed=None):
     at = AppTest.from_file(os.path.join(ROOT, "app.py"), default_timeout=600)
     at.session_state["active_module_name"] = module_name
+    at.session_state["active_account"] = RESTO  # gerbang landing revisi 2026-10-23
     for k, v in (seed or {}).items():
         at.session_state[k] = v
     at.run(timeout=600)
@@ -474,7 +483,7 @@ emoji_re = re.compile("[\U0001F000-\U0001FAFF\u2600-\u27BF\uFE0F]")
 hits = []
 for rel in ("src/ui/theme.py", "src/ui/core.py", "src/ui/components.py", "src/ui/charts.py",
             "src/ui/labels.py", "src/ui/module_ringkasan.py", "src/ui/module_rincian.py",
-            "src/ui/module_rencana.py", "src/ui/module_coba.py", "app.py"):
+            "src/ui/module_rencana.py", "src/ui/module_coba.py", "src/ui/module_landing.py", "app.py"):
     if emoji_re.search(read(rel)):
         hits.append(rel)
 report("P-G5 nol emoji di file UI", "PASS" if not hits else "FAIL",

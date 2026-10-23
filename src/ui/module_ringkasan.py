@@ -96,7 +96,7 @@ def render(ctx, pipeline, action_engine):
 <div class='kpi-icon-chip'>{_ICONS['neg']}</div>
 <div class='kpi-label'>{labels.KPI_NEG_LABEL}</div>
 <div class='kpi-value'>{pct_neg:.1f}%</div>
-<div class='kpi-micro'>dari {n_total} ulasan</div>
+<div class='kpi-micro'>Dari {n_total} ulasan</div>
 </div>
 <div class='kpi-card' style='background: {w_tint};'>
 <div class='kpi-icon-chip'>{w_icon}</div>

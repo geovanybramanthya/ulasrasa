@@ -282,7 +282,8 @@ div.st-key-paneldata {
 }
 .stDownloadButton > button:hover { border-color: #22C55E !important; color: #15803D !important; }
 div[data-baseweb="select"] > div { border-radius: 12px !important; border-color: #DDE5DF !important; }
-[data-testid="stProgress"] > div > div > div { background-color: #22C55E !important; }
+[data-testid="stProgress"] [data-baseweb="progress-bar"] > div > div { background-color: #EFF3F0 !important; }
+[data-testid="stProgress"] [data-baseweb="progress-bar"] > div > div > div { background-color: #22C55E !important; }
 [data-testid="stCheckbox"] label p { font-size: 0.9rem; }
 
 /* ---------- kartu statistik mini (Rincian, Tahap 3) ---------- */
@@ -358,7 +359,9 @@ div[class*="st-key-card_"] {
 @media (max-width: 640px) {
     .kpi-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
     .stat-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
-    .aspect-name { min-width: 64px; font-size: 0.86rem; }
+    .aspect-name { min-width: 64px; font-size: 0.86rem; flex: 1; }
+    .aspect-row { flex-wrap: wrap; row-gap: 6px; }
+    .conf-track { order: 5; flex: 1 1 100%; }
     .conf-val { min-width: 46px; }
     .greeting { font-size: 1.35rem; }
     .ulas-card, .panel-data { padding: 16px; border-radius: 16px; }

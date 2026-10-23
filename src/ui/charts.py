@@ -136,7 +136,7 @@ def build_satisfaction_bar_figure(breakdown: dict):
     # tidak menabrak label nilai batang teratas.
     fig.add_annotation(
         x=70, y=1.04, xref="x", yref="paper",
-        text="Batas kritis", showarrow=False, xanchor="left",
+        text="Batas kritis", showarrow=False, xanchor="right",
         font=dict(size=11, color="#64756B", family="Inter, sans-serif"),
     )
     fig.update_layout(

@@ -55,6 +55,26 @@ def render(ctx, pipeline, action_engine):
             all_checklist.append(custom_item)
     custom_checklist = all_checklist[len(plan_checklist):]
 
+    # ---------------- Persistensi centang selama sesi ----------------
+    # Nilai widget st.checkbox terhapus dari session_state saat widget
+    # tidak dirender (pengguna pindah modul), padahal DESIGN.md meminta
+    # kotak centang persisten selama sesi. Cerminkan tiap nilai ke kunci
+    # non-widget action_chk_saved_<resto>_<idx> lewat on_change, lalu
+    # pulihkan ke kunci widget (pola P-D9 tetap sama) sebelum widget
+    # dibuat lagi pada run ini.
+    _chk_prefix = f"action_chk_{selected_resto}_"
+    _saved_prefix = f"action_chk_saved_{selected_resto}_"
+    for _idx in range(len(all_checklist)):
+        _wk = f"{_chk_prefix}{_idx}"
+        _mk = f"{_saved_prefix}{_idx}"
+        if _wk not in st.session_state and _mk in st.session_state:
+            st.session_state[_wk] = st.session_state[_mk]
+
+    def _save_chk(idx):
+        st.session_state[f"{_saved_prefix}{idx}"] = st.session_state.get(
+            f"{_chk_prefix}{idx}", False
+        )
+
     # ---------------- ProgressAksi (puncak modul) ----------------
     with st.container(key="card_rencana_progress"):
         st.markdown(
@@ -74,6 +94,7 @@ def render(ctx, pipeline, action_engine):
         if st.button(labels.RENCANA_RESET_BTN):
             for idx in range(len(all_checklist)):
                 st.session_state[f"action_chk_{selected_resto}_{idx}"] = False
+                st.session_state[f"action_chk_saved_{selected_resto}_{idx}"] = False
             st.rerun()
 
     # ---------------- KartuAkarMasalah ----------------
@@ -101,7 +122,7 @@ def render(ctx, pipeline, action_engine):
             unsafe_allow_html=True,
         )
         for idx, item in enumerate(plan_checklist):
-            is_checked = st.checkbox(item, key=f"action_chk_{selected_resto}_{idx}")
+            is_checked = st.checkbox(item, key=f"action_chk_{selected_resto}_{idx}", on_change=_save_chk, args=(idx,))
             checked_status[idx] = is_checked
 
     if custom_checklist:
@@ -113,7 +134,7 @@ def render(ctx, pipeline, action_engine):
             )
             for offset, item in enumerate(custom_checklist):
                 idx = len(plan_checklist) + offset
-                is_checked = st.checkbox(item, key=f"action_chk_{selected_resto}_{idx}")
+                is_checked = st.checkbox(item, key=f"action_chk_{selected_resto}_{idx}", on_change=_save_chk, args=(idx,))
                 checked_status[idx] = is_checked
 
     # ---------------- FormTambahAksi ----------------

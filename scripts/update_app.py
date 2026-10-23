@@ -4,7 +4,7 @@ import os
 APP_CODE = '''"""Aplikasi Web UlasRasa: Asisten Diagnostik Ulasan Kuliner & Rekomendasi Evaluasi Dapur UMKM.
 Prototype Interaktif Berbasis NLP (IndoBERT ABSA) dan LLM Generatif.
 Dirancang untuk demonstrasi langsung (live demo) dan pitching di hadapan mentor.
-Ruangguru AI Engineering Bootcamp - Batch 13 | Student: Azura
+Ruangguru AI Engineering Bootcamp - Batch 13 | Student: Geovany Bramanthya Samuel Sihombing
 """
 
 import os
@@ -1187,7 +1187,7 @@ st.markdown("---")
 st.markdown(
     \"\"\"
     <div style='display: flex; justify-content: space-between; align-items: center; font-size: 0.78rem; color: #78716C;'>
-        <span><b>UlasRasa</b> - AI Engineering Final Project (Batch 13) | Student ID: <b>REAENG13TQJLN</b> (Azura)</span>
+        <span><b>UlasRasa</b> - AI Engineering Final Project (Batch 13) | Student ID: <b>REAENG13TQJLN</b> (Geovany Bramanthya Samuel Sihombing)</span>
         <span>Arsitektur: <b>IndoBERT Base (ABSA) + Generative LLM Action Engine</b></span>
     </div>
     \"\"\",

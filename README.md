@@ -12,7 +12,7 @@ license: mit
 # UlasRasa - AI Kitchen Intelligence & Sentiment Dashboard
 
 **Ruangguru AI Engineering Bootcamp - Batch 13 Final Project**
-*Student ID:* `REAENG13TQJLN` | *Author:* Azura
+*Student ID:* `REAENG13TQJLN` | *Author:* Geovany Bramanthya Samuel Sihombing
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://huggingface.co/spaces/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)

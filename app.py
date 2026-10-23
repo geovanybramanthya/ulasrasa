@@ -1,7 +1,7 @@
 """Aplikasi Web UlasRasa: Asisten Diagnostik Ulasan Kuliner & Rekomendasi Evaluasi Dapur UMKM.
 Prototype Interaktif Berbasis NLP (IndoBERT ABSA) dan LLM Generatif.
 Dirancang untuk demonstrasi langsung (live demo) dan pitching di hadapan mentor.
-Ruangguru AI Engineering Bootcamp - Batch 13 | Student: Azura
+Ruangguru AI Engineering Bootcamp - Batch 13 | Student: Geovany Bramanthya Samuel Sihombing
 
 Entry point ramping (PRD Implementasi UI): tampilan dan logika UI tinggal
 di src/ui/. File ini mengorkestrasi urutan run: konfigurasi halaman ->

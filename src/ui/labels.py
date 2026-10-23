@@ -103,7 +103,7 @@ STATUS_SENTENCE_BENCHMARK = (
 
 FOOTER_LINE = (
     "<b>UlasRasa</b> &bull; Tugas Akhir AI Engineering Batch 13 &bull; "
-    "Student ID: <b>REAENG13TQJLN</b> (Azura) &bull; "
+    "Student ID: <b>REAENG13TQJLN</b> (Geovany Bramanthya Samuel Sihombing) &bull; "
     "Mesin: <b>IndoBERT ABSA + Rencana Aksi LLM</b>"
 )
 

@@ -20,12 +20,17 @@ def render(ctx, pipeline, action_engine):
     st.markdown("### Deep-Dive Analisis Sentimen & Keluhan Pelanggan")
     st.caption("Bedah distribusi sentimen lintas aspek, frekuensi kata kunci komplain, dan kutipan ulasan langsung.")
 
+    # Tahap 2: aspek awal mengikuti rincian_aspect (diisi klik RelKeluhan
+    # di Modul Ringkasan). Hanya nilai awal selectbox; logika modul utuh.
+    _rincian_opts = ["Rasa", "Porsi", "Harga", "Kemasan", "Pelayanan"]
+    _rincian_awal = str(st.session_state.get("rincian_aspect", "rasa")).capitalize()
+    _rincian_idx = _rincian_opts.index(_rincian_awal) if _rincian_awal in _rincian_opts else 0
     col_selector, col_empty = st.columns([1, 2])
     with col_selector:
         selected_aspect = st.selectbox(
             "Pilih Aspek Diagnostik:",
-            ["Rasa", "Porsi", "Harga", "Kemasan", "Pelayanan"],
-            index=0
+            _rincian_opts,
+            index=_rincian_idx
         ).lower()
 
     aspect_data = breakdown.get(selected_aspect, {})

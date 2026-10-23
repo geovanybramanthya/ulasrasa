@@ -43,12 +43,30 @@ def _on_nav_change() -> None:
 def sync_nav_pills() -> None:
     """Selaraskan nilai st.pills dengan active_module_name (sumber kebenaran).
 
-    Dipanggil sebelum TopBar dirender, mis. sesudah modul lain (CTA hero)
-    mengubah active_module_name secara programatis.
+    Dipanggil di app.py SEBELUM TopBar dirender. Navigasi programatis dari
+    dalam modul (CTA hero, tombol rel) TIDAK boleh menulis nav_pills pada
+    run yang sama (widget sudah terinstansiasi -> StreamlitAPIException);
+    modul memakai request_nav() yang menaruh label tujuan di kunci
+    nav_pending, dan fungsi inilah yang menerapkannya sebelum widget
+    dibuat pada run berikutnya.
     """
+    pending = st.session_state.pop("nav_pending", None)
+    if pending is not None:
+        st.session_state["nav_pills"] = pending
+        return
     desired = MODULE_LABELS.get(st.session_state.get("active_module_name"), MODULE_LABELS[MODULE_CHOICES[0]])
     if st.session_state.get("nav_pills") != desired:
         st.session_state["nav_pills"] = desired
+
+
+def request_nav(module_id: str) -> None:
+    """Minta pindah modul secara programatis (dipakai CTA & tombol rel).
+
+    Hanya menulis active_module_name + nav_pending; pemanggil menjalankan
+    st.rerun() sesudahnya.
+    """
+    st.session_state.active_module_name = module_id
+    st.session_state["nav_pending"] = MODULE_LABELS[module_id]
 
 
 def render_topbar(engine_label: str) -> None:
@@ -69,11 +87,13 @@ def render_topbar(engine_label: str) -> None:
                 unsafe_allow_html=True,
             )
         with c_nav:
+            # Tanpa argumen default: nilai datang dari session_state yang
+            # sudah diselaraskan sync_nav_pills() sebelum TopBar dirender
+            # (memberi default + set session sekaligus memicu warning).
             st.pills(
                 "Navigasi modul",
                 options=[MODULE_LABELS[m] for m in MODULE_CHOICES],
                 selection_mode="single",
-                default=MODULE_LABELS[st.session_state.active_module_name],
                 label_visibility="collapsed",
                 key="nav_pills",
                 on_change=_on_nav_change,
@@ -204,8 +224,7 @@ def render_data_header(pipeline) -> dict:
         if st.button(toggle_label, key="ui_toggle_panel", use_container_width=True):
             st.session_state.ui_panel_open = not st.session_state.ui_panel_open
             if st.session_state.ui_panel_open and st.session_state.active_module_name != MODULE_CHOICES[0]:
-                st.session_state.active_module_name = MODULE_CHOICES[0]
-                sync_nav_pills()
+                request_nav(MODULE_CHOICES[0])
             st.rerun()
     with col_left:
         st.markdown(f"<div class='greeting'>Halo, {greet_name}</div>", unsafe_allow_html=True)

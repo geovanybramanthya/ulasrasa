@@ -1,19 +1,23 @@
-"""Modul Ringkasan - Tahap 1: kerangka ber-data asli.
+"""Modul Ringkasan (DESIGN.md Bag. 8) - penentu tone perombakan UI.
 
-Kerangka kartu sesuai DESIGN.md Bag. 8 dengan nilai sesungguhnya dari
-konteks (tidak ada angka tiruan): 4 KartuKPI pastel, HeroKHS ringkas
-(donat Plotly + CTA resmi dibangun Tahap 2; CTA di sini sudah berfungsi),
-bar skor aspek sederhana dari breakdown, dan rel keluhan terbaru.
-Figur-figur Plotly resmi menggantikan bar sederhana pada Tahap 2.
+Susunan: 4 KartuKPI pastel bermicrocopy faktual -> HeroKHS (donat Plotly
+di kartu gradasi hijau + label status persis + cip aspek prioritas +
+peringatan aspek terlemah + CTA ke Rencana Aksi) -> grafik batang
+horizontal skor kepuasan 5 aspek berwarna per aspek dengan garis batas
+kritis 70 -> RelKeluhan interaktif maks 5 (klik membuka Modul Rincian
+dengan aspek negatif pertama ulasan itu) -> KartuRincianAspekMini.
 
-Catatan teknis: seluruh literal HTML ditulis rata kiri (kolom 0) karena
-baris terindentasi >= 4 spasi di dalam markdown Streamlit terbaca
-sebagai blok kode dan tampil mentah.
+Semua angka dibaca dari ctx hasil compute_context (dihitung engine,
+identik baseline); modul ini tidak menghitung ulang skor apa pun kecuali
+persentase Ulasan Negatif sesuai definisi mengikat PRD 4.2.
+Seluruh literal HTML ditulis rata kiri: baris terindentasi >= 4 spasi
+di dalam markdown Streamlit terbaca sebagai blok kode.
 """
 
 import streamlit as st
 
-from src.ui import labels
+from src.config import ASPECT_WEIGHTS
+from src.ui import charts, labels
 from src.ui.labels import ASPECT_ORDER
 from src.ui.theme import ASPECT_COLORS
 
@@ -33,6 +37,28 @@ def _pct_negative(filtered_df) -> float:
         return 0.0
     mask = filtered_df[cols].eq("negative").any(axis=1)
     return float(mask.mean() * 100.0)
+
+
+def _keluhan_rows(filtered_df):
+    """Baris rel keluhan (PRD 4.2): >=1 aspek negatif, review_id menurun, maks 5.
+
+    Menghasilkan list (review_id, teks, aspek_negatif_pertama).
+    """
+    if filtered_df is None or filtered_df.empty:
+        return []
+    cols = [c for c in ASPECT_ORDER if c in filtered_df.columns]
+    if not cols:
+        return []
+    neg_rows = filtered_df[filtered_df[cols].eq("negative").any(axis=1)]
+    if "review_id" in neg_rows.columns:
+        neg_rows = neg_rows.sort_values("review_id", ascending=False)
+    hasil = []
+    for rid, row in neg_rows.head(5).iterrows():
+        first_neg = next((c for c in ASPECT_ORDER if str(row.get(c, "")) == "negative"), None)
+        if first_neg is None:
+            continue
+        hasil.append((row.get("review_id", rid), str(row.get("review_text", "")), first_neg))
+    return hasil
 
 
 def render(ctx, pipeline, action_engine):
@@ -81,82 +107,105 @@ def render(ctx, pipeline, action_engine):
 </div>"""
     st.markdown(kpi_html, unsafe_allow_html=True)
 
-    # ---------------- Hero KHS (kerangka: angka + status + CTA berfungsi) ----------------
-    neg_rate_w = breakdown.get(weakest_aspect, {}).get("negative_rate", 0.0)
+    # ---------------- Hero KHS ----------------
+    neg_rate_w = float(breakdown.get(weakest_aspect, {}).get("negative_rate", 0.0))
     with st.container(key="hero"):
-        h_left, h_right = st.columns([1.0, 1.6])
-        with h_left:
-            st.markdown("<div class='label-caps'>Skor Kesehatan Dapur</div>", unsafe_allow_html=True)
-            st.markdown(f"<div class='hero-score-big'>{khs:.1f}%</div>", unsafe_allow_html=True)
-        with h_right:
-            st.markdown(f"<div class='hero-status'>{status_label}</div>", unsafe_allow_html=True)
-            st.markdown(
-                f"<div class='hero-note'>Aspek <b>{weakest_aspect.capitalize()}</b> paling butuh perhatian: "
-                f"skor kepuasan {weakest_score:.1f}% dengan tingkat keluhan {neg_rate_w:.1f}%.</div>",
-                unsafe_allow_html=True,
+        h_donut, h_detail = st.columns([0.85, 1.9])
+        with h_donut:
+            st.plotly_chart(
+                charts.build_khs_donut_figure(khs),
+                width="stretch",
+                config={"displayModeBar": False},
             )
+        with h_detail:
+            st.markdown("<div class='label-caps'>Skor Kesehatan Dapur</div>", unsafe_allow_html=True)
+            st.markdown(f"<div class='hero-status'>{status_label}</div>", unsafe_allow_html=True)
+            if weakest_score < 75.0:
+                st.markdown(
+                    f"<div class='hero-note'>Perhatian: aspek <b>{weakest_aspect.capitalize()}</b> berada di bawah "
+                    f"batas aman - skor kepuasan <b>{weakest_score:.1f}%</b> dengan tingkat keluhan "
+                    f"<b>{neg_rate_w:.1f}%</b>.</div>",
+                    unsafe_allow_html=True,
+                )
+            else:
+                st.markdown(
+                    f"<div class='hero-note'>Semua aspek berada di atas batas aman. Aspek terendah saat ini "
+                    f"<b>{weakest_aspect.capitalize()}</b> dengan skor {weakest_score:.1f}%.</div>",
+                    unsafe_allow_html=True,
+                )
             st.markdown(
                 f"<span class='hero-chip'>Prioritas: {weakest_aspect.capitalize()}</span>",
                 unsafe_allow_html=True,
             )
             if st.button(labels.HERO_CTA, key="hero_cta_rencana", type="primary"):
-                from src.ui.components import sync_nav_pills
-                st.session_state.active_module_name = "AI Kitchen Action Checklist"
-                sync_nav_pills()
+                from src.ui.components import request_nav
+                request_nav("AI Kitchen Action Checklist")
                 st.rerun()
 
-    # ---------------- Grafik aspek (kerangka bar sederhana) + Rel keluhan ----------------
+    # ---------------- Grafik batang aspek + Rel keluhan ----------------
     col_main, col_rel = st.columns([1.55, 1.0])
     with col_main:
+        with st.container(key="chartcard"):
+            st.markdown(
+                f"<div class='card-title'>{labels.CHART_ASPEK_TITLE}</div>"
+                f"<div class='card-sub'>{labels.CHART_ASPEK_SUB}</div>",
+                unsafe_allow_html=True,
+            )
+            st.plotly_chart(
+                charts.build_satisfaction_bar_figure(breakdown),
+                width="stretch",
+                config={"displayModeBar": False},
+            )
+        # Kartu rincian aspek mini (menjaga data P-M1 tetap terlihat)
         baris = []
         for asp in ASPECT_ORDER:
             m = breakdown.get(asp, {})
-            score = float(m.get("satisfaction_score", 0.0))
             accent, _tint = ASPECT_COLORS[asp]
             baris.append(
-                f"<div style='margin-bottom: 13px;'>"
-                f"<div style='display: flex; justify-content: space-between; font-size: 0.85rem; margin-bottom: 4px;'>"
-                f"<b>{asp.capitalize()}</b><span class='num'>{score:.1f}%</span></div>"
-                f"<div class='mini-bar-track'><div class='mini-bar-fill' style='width: {min(score, 100):.1f}%; background: {accent};'></div></div>"
-                f"</div>"
+                f"<tr><td><span class='asp-dot' style='background: {accent};'></span><b>{asp.capitalize()}</b></td>"
+                f"<td class='num'>{float(m.get('satisfaction_score', 0.0)):.1f}%</td>"
+                f"<td class='num'>{ASPECT_WEIGHTS.get(asp.capitalize(), 0.15) * 100:.0f}%</td>"
+                f"<td class='num'>{int(m.get('total_mentioned', 0))}</td>"
+                f"<td class='num'>{int(m.get('positive', 0))}</td>"
+                f"<td class='num'>{int(m.get('neutral', 0))}</td>"
+                f"<td class='num'>{int(m.get('negative', 0))}</td></tr>"
             )
-        chart_html = (
+        mini_html = (
             "<div class='ulas-card'>"
-            f"<div class='card-title'>{labels.CHART_ASPEK_TITLE}</div>"
-            f"<div class='card-sub'>{labels.CHART_ASPEK_SUB}</div>"
-            "<div style='height: 10px;'></div>"
+            "<div class='card-title'>Angka Rincian per Aspek</div>"
+            "<div class='card-sub'>Skor, bobot, dan jumlah ulasan yang menyebut tiap aspek.</div>"
+            "<table class='mini-table'><tr><th>Aspek</th><th>Skor</th><th>Bobot</th>"
+            "<th>Disebut</th><th>Positif</th><th>Netral</th><th>Negatif</th></tr>"
             + "".join(baris)
-            + "</div>"
+            + "</table></div>"
         )
-        st.markdown(chart_html, unsafe_allow_html=True)
+        st.markdown(mini_html, unsafe_allow_html=True)
+
     with col_rel:
-        items = []
-        if not filtered_df.empty:
-            cols = [c for c in ASPECT_ORDER if c in filtered_df.columns]
-            neg_rows = filtered_df[filtered_df[cols].eq("negative").any(axis=1)] if cols else filtered_df.iloc[0:0]
-            if "review_id" in neg_rows.columns:
-                neg_rows = neg_rows.sort_values("review_id", ascending=False)
-            for _, row in neg_rows.head(5).iterrows():
-                first_neg = next((c for c in ASPECT_ORDER if str(row.get(c, "")) == "negative"), None)
-                if first_neg is None:
-                    continue
-                accent, tint = ASPECT_COLORS[first_neg]
-                text = str(row.get("review_text", ""))
-                text = (text[:140] + "...") if len(text) > 140 else text
-                items.append(
-                    f"<div class='rel-item'>"
-                    f"<div class='rel-text'>&quot;{text}&quot;</div>"
-                    f"<span class='chip' style='background: {tint}; color: {accent}; border: 1px solid {tint};'>{first_neg.capitalize()}</span> "
-                    f"<span class='chip pill-neg'>Negatif</span>"
-                    f"</div>"
+        with st.container(key="relcard"):
+            st.markdown(
+                f"<div class='card-title'>{labels.REL_KELUHAN_TITLE}</div>"
+                f"<div class='card-sub'>{labels.REL_KELUHAN_SUB}</div>",
+                unsafe_allow_html=True,
+            )
+            daftar = _keluhan_rows(filtered_df)
+            if not daftar:
+                st.markdown(
+                    "<div class='card-sub'>Belum ada ulasan negatif pada data aktif. "
+                    "Pertahankan kualitas dapurnya.</div>",
+                    unsafe_allow_html=True,
                 )
-        body = "".join(items) if items else "<div class='card-sub'>Belum ada ulasan negatif pada data aktif. Pertahankan kualitas dapurnya.</div>"
-        rel_html = (
-            "<div class='ulas-card'>"
-            f"<div class='card-title'>{labels.REL_KELUHAN_TITLE}</div>"
-            f"<div class='card-sub'>{labels.REL_KELUHAN_SUB}</div>"
-            "<div style='height: 10px;'></div>"
-            + body
-            + "</div>"
-        )
-        st.markdown(rel_html, unsafe_allow_html=True)
+            for rid, text, first_neg in daftar:
+                accent, tint = ASPECT_COLORS[first_neg]
+                potong = (text[:140] + "...") if len(text) > 140 else text
+                st.markdown(
+                    f"<div class='rel-item'><div class='rel-text'>&quot;{potong}&quot;</div>"
+                    f"<span class='chip' style='background: {tint}; color: {accent}; border: 1px solid {tint};'>{first_neg.capitalize()}</span> "
+                    f"<span class='chip pill-neg'>Negatif</span></div>",
+                    unsafe_allow_html=True,
+                )
+                if st.button("Lihat di Rincian Aspek", key=f"rel_btn_{rid}"):
+                    from src.ui.components import request_nav
+                    st.session_state.rincian_aspect = first_neg
+                    request_nav("Deep-Dive Aspek & Sentimen")
+                    st.rerun()

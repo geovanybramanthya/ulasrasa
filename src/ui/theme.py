@@ -201,6 +201,30 @@ div.st-key-hero .label-caps { color: rgba(255,255,255,0.85); }
 .rel-item { border: 1px solid #EDF1EE; border-radius: 14px; padding: 12px 14px; margin-bottom: 10px; background: #FFFFFF; }
 .rel-text { font-size: 0.86rem; color: #14231B; line-height: 1.45; margin-bottom: 8px; }
 
+/* kartu grafik & rel keluhan sebagai container berkunci (Tahap 2) */
+div.st-key-chartcard, div.st-key-relcard {
+    background: #FFFFFF; border: 1px solid #EDF1EE; border-radius: 20px;
+    padding: 18px 20px 10px 20px;
+    box-shadow: 0 8px 24px rgba(20,40,30,0.06);
+    animation: fadeUp 0.4s ease both; margin-bottom: 16px;
+}
+div.st-key-relcard button {
+    padding: 2px 10px !important; font-size: 0.78rem !important; min-height: 28px !important;
+    border-radius: 999px !important;
+}
+div.st-key-hero [data-testid="stPlotlyChart"] { margin-top: -6px; margin-bottom: -8px; }
+
+/* tabel mini rincian aspek */
+.mini-table { width: 100%; border-collapse: collapse; font-size: 0.87rem; }
+.mini-table th {
+    text-align: left; color: #64756B; font-weight: 600; font-size: 0.72rem;
+    text-transform: uppercase; letter-spacing: 0.06em;
+    border-bottom: 1px solid #EDF1EE; padding: 6px 8px;
+}
+.mini-table td { border-bottom: 1px solid #F3F6F4; padding: 8px; color: #14231B; }
+.mini-table tr:last-child td { border-bottom: none; }
+.asp-dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 7px; }
+
 /* panel data sebagai container berkunci */
 div.st-key-paneldata {
     background: #FFFFFF; border: 1px solid #EDF1EE; border-radius: 20px;

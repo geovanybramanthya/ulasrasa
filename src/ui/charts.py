@@ -149,3 +149,112 @@ def build_satisfaction_bar_figure(breakdown: dict):
         bargap=0.35,
     )
     return fig
+
+
+def build_distribution_donut_figure(positive, neutral, negative):
+    """Donat distribusi sentimen aspek terpilih (DESIGN.md Bag. 8).
+
+    Warna sentimen tetap: positif hijau brand, netral amber, negatif
+    merah token. Anotasi tengah = total disebut (jumlah ketiga nilai),
+    ditampilkan dengan JetBrains Mono. Hanya visual: angka berasal
+    dari breakdown di ctx, tidak dihitung ulang di sini.
+    """
+    values = [int(positive), int(neutral), int(negative)]
+    total = sum(values)
+    fig = go.Figure(
+        data=[
+            go.Pie(
+                labels=["Positif", "Netral", "Negatif"],
+                values=values,
+                hole=0.62,
+                sort=False,
+                marker=dict(
+                    colors=["#22C55E", "#D97706", "#B42318"],
+                    line=dict(width=0),
+                ),
+                textinfo="percent",
+                textfont=dict(size=11, color="#FFFFFF"),
+                hovertemplate="%{label}: %{value} (%{percent})<extra></extra>",
+            )
+        ]
+    )
+    fig.update_layout(
+        showlegend=True,
+        legend=dict(orientation="h", y=-0.12, x=0.5, xanchor="center", yanchor="top"),
+        paper_bgcolor="rgba(0,0,0,0)",
+        plot_bgcolor="rgba(0,0,0,0)",
+        margin=dict(l=10, r=10, t=10, b=40),
+        height=280,
+        annotations=[
+            dict(
+                text=f"<b>{total}</b>",
+                x=0.5, y=0.5, showarrow=False,
+                font=dict(family="JetBrains Mono, Consolas, monospace",
+                          size=26, color="#14231B"),
+            )
+        ],
+    )
+    return fig
+
+
+def build_keyword_figure(top_words, accent_hex):
+    """Batang horizontal kata keluhan teratas (DESIGN.md Bag. 8).
+
+    top_words adalah list (kata, frekuensi) dari Counter.most_common;
+    urutan dibalik persis cara lama agar frekuensi terbesar tampil
+    paling atas. Warna batang mengikuti aksen aspek terpilih.
+    """
+    fig = go.Figure(go.Bar(
+        x=[item[1] for item in top_words][::-1],
+        y=[item[0] for item in top_words][::-1],
+        orientation="h",
+        marker=dict(color=accent_hex, line=dict(color=accent_hex, width=1)),
+        hovertemplate="%{y}: %{x}<extra></extra>",
+    ))
+    fig.update_layout(
+        paper_bgcolor="rgba(0,0,0,0)",
+        plot_bgcolor="rgba(0,0,0,0)",
+        xaxis=dict(gridcolor="#EAE6DE", title="Frekuensi Kemunculan"),
+        yaxis=dict(gridcolor="#EAE6DE", title=""),
+        height=280,
+        margin=dict(l=70, r=20, t=10, b=20),
+    )
+    return fig
+
+
+def build_composition_figure(breakdown):
+    """Batang bertumpuk komposisi sentimen 5 aspek (DESIGN.md Bag. 8).
+
+    Urutan aspek mengikuti ASPECT_ORDER dan setiap seri (Positif,
+    Netral, Negatif) membaca hitungan breakdown apa adanya (paritas
+    P-M4); warna seri sama seperti donat distribusi.
+    """
+    from src.ui.labels import ASPECT_ORDER
+
+    nama = [a.capitalize() for a in ASPECT_ORDER]
+    seri = [
+        ("Positif", "positive", "#22C55E"),
+        ("Netral", "neutral", "#D97706"),
+        ("Negatif", "negative", "#B42318"),
+    ]
+    fig = go.Figure()
+    for label, kunci, warna in seri:
+        fig.add_trace(go.Bar(
+            name=label,
+            x=nama,
+            y=[int(breakdown.get(a, {}).get(kunci, 0)) for a in ASPECT_ORDER],
+            marker=dict(color=warna, line=dict(width=0)),
+            hovertemplate="%{x} - " + label + ": %{y}<extra></extra>",
+        ))
+    fig.update_layout(
+        barmode="stack",
+        paper_bgcolor="rgba(0,0,0,0)",
+        plot_bgcolor="rgba(0,0,0,0)",
+        xaxis=dict(gridcolor="#EAE6DE", title=""),
+        yaxis=dict(gridcolor="#EAE6DE", title="Jumlah Ulasan"),
+        margin=dict(l=20, r=20, t=10, b=40),
+        height=300,
+        showlegend=True,
+        legend=dict(orientation="h", y=-0.15, x=0.5, xanchor="center", yanchor="top"),
+    )
+    return fig

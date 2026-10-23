@@ -101,6 +101,27 @@ p, span, label, li, td, th { color: #14231B; }
     font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif !important;
 }
 
+/* ---------- font isi elemen HTML kustom (perbaikan D1 putaran 2) ---------- */
+/* Audit ulang menemukan sisa "Source Sans" pada div/span HTML KUSTOM di dalam
+   wadah markdown (subjudul kartu, microcopy KPI, teks ulasan, teks akar
+   masalah, dst). Akar masalahnya: wadah markdown Streamlit menetapkan
+   "Source Sans" yang diwarisi div/span kustom, dan kelas-kelas teks isi di
+   tema ini semula tidak menyatakan font-family sendiri. Perbaikan berlapis:
+   (a) setiap kelas teks isi di bawah menyatakan Inter secara eksplisit pada
+       definisinya masing-masing (lihat .card-sub, .kpi-micro, .review-text,
+       .rca-text, dan kawan-kawannya);
+   (b) jaring pengaman keturunan di sini menangkap div/span kustom lain yang
+       belum berkelas peran. :where() membuat spesifisitas aturan ini NOL,
+       jadi aturan kelas eksplisit mana pun selalu menang; daftar :not()
+       mengecualikan pembawa kelas berperan Jakarta/Mono DAN keturunannya
+       (mis. span persen di dalam .stat-value yang harus tetap Mono). */
+:where(
+  [data-testid="stMarkdownContainer"] div:not(.greeting):not(.card-title):not(.kpi-label):not(.label-caps):not(.brand-name):not(.brand-sub):not(.hero-status):not(.stat-label):not(.num):not(.kpi-value):not(.hero-score):not(.hero-score-big):not(.stat-value):not(.conf-val):not(.sop-num):not(.rca-num):not(.greeting *):not(.card-title *):not(.kpi-label *):not(.label-caps *):not(.brand-name *):not(.brand-sub *):not(.hero-status *):not(.stat-label *):not(.num *):not(.kpi-value *):not(.hero-score *):not(.hero-score-big *):not(.stat-value *):not(.conf-val *):not(.sop-num *):not(.rca-num *),
+  [data-testid="stMarkdownContainer"] span:not(.greeting):not(.card-title):not(.kpi-label):not(.label-caps):not(.brand-name):not(.brand-sub):not(.hero-status):not(.stat-label):not(.num):not(.kpi-value):not(.hero-score):not(.hero-score-big):not(.stat-value):not(.conf-val):not(.sop-num):not(.rca-num):not(.greeting *):not(.card-title *):not(.kpi-label *):not(.label-caps *):not(.brand-name *):not(.brand-sub *):not(.hero-status *):not(.stat-label *):not(.num *):not(.kpi-value *):not(.hero-score *):not(.hero-score-big *):not(.stat-value *):not(.conf-val *):not(.sop-num *):not(.rca-num *)
+) {
+    font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
 /* ---------- chrome streamlit disembunyikan ---------- */
 [data-testid="stSidebar"], [data-testid="stSidebarCollapsedControl"] { display: none !important; }
 [data-testid="stHeader"] { display: none !important; }
@@ -138,8 +159,9 @@ div.st-key-topbar {
     box-shadow: 0 6px 16px rgba(34,197,94,0.35);
 }
 .brand-name { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 1.18rem; color: #14231B; line-height: 1.05; }
-.brand-sub { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; color: #64756B; }
+.brand-sub { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 0.68rem; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; color: #64756B; }
 .engine-chip {
+    font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
     display: inline-flex; align-items: center; gap: 6px;
     background: #E8F9F0; color: #15803D;
     border: 1px solid #CDEEDB; border-radius: 999px;
@@ -169,7 +191,7 @@ div.st-key-topbar {
     font-weight: 800; font-size: 1.72rem; color: #14231B;
     letter-spacing: -0.02em; line-height: 1.15; margin-bottom: 2px;
 }
-.status-line { font-size: 0.92rem; color: #64756B; line-height: 1.45; }
+.status-line { font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif; font-size: 0.92rem; color: #64756B; line-height: 1.45; }
 .status-line b { color: #14231B; }
 
 /* ---------- kartu generik ---------- */
@@ -184,7 +206,7 @@ div.st-key-topbar {
     font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700;
     font-size: 1.02rem; color: #14231B; margin-bottom: 4px;
 }
-.card-sub { font-size: 0.83rem; color: #64756B; line-height: 1.45; }
+.card-sub { font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif; font-size: 0.83rem; color: #64756B; line-height: 1.45; }
 
 /* ---------- kartu KPI pastel ---------- */
 .kpi-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 16px; }
@@ -204,7 +226,7 @@ div.st-key-topbar {
     text-transform: uppercase; letter-spacing: 0.08em; color: #64756B; margin-bottom: 4px;
 }
 .kpi-value { font-size: 1.9rem; line-height: 1.1; color: #14231B; }
-.kpi-micro { font-size: 0.78rem; color: #64756B; margin-top: 4px; line-height: 1.4; }
+.kpi-micro { font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif; font-size: 0.78rem; color: #64756B; margin-top: 4px; line-height: 1.4; }
 
 /* ---------- hero KHS ---------- */
 .hero-card {
@@ -214,8 +236,9 @@ div.st-key-topbar {
 }
 .hero-card .label-caps { color: rgba(255,255,255,0.85); }
 .hero-status { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 1.5rem; color: #FFFFFF; line-height: 1.2; }
-.hero-note { font-size: 0.88rem; color: rgba(255,255,255,0.92); line-height: 1.5; }
+.hero-note { font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif; font-size: 0.88rem; color: rgba(255,255,255,0.92); line-height: 1.5; }
 .hero-chip {
+    font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
     display: inline-flex; align-items: center; gap: 6px;
     background: rgba(255,255,255,0.18); border: 1px solid rgba(255,255,255,0.35);
     color: #FFFFFF; border-radius: 999px; padding: 4px 12px;
@@ -239,7 +262,7 @@ div.st-key-hero .label-caps { color: rgba(255,255,255,0.85); }
 .mini-bar-track { background: #EFF3F0; border-radius: 6px; height: 8px; overflow: hidden; }
 .mini-bar-fill { height: 100%; border-radius: 6px; }
 .rel-item { border: 1px solid #EDF1EE; border-radius: 14px; padding: 12px 14px; margin-bottom: 10px; background: #FFFFFF; }
-.rel-text { font-size: 0.86rem; color: #14231B; line-height: 1.45; margin-bottom: 8px; }
+.rel-text { font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif; font-size: 0.86rem; color: #14231B; line-height: 1.45; margin-bottom: 8px; }
 
 /* kartu grafik & rel keluhan sebagai container berkunci (Tahap 2) */
 div.st-key-chartcard, div.st-key-relcard {
@@ -255,7 +278,7 @@ div.st-key-relcard button {
 div.st-key-hero [data-testid="stPlotlyChart"] { margin-top: -6px; margin-bottom: -8px; }
 
 /* tabel mini rincian aspek */
-.mini-table { width: 100%; border-collapse: collapse; font-size: 0.87rem; }
+.mini-table { font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif; width: 100%; border-collapse: collapse; font-size: 0.87rem; }
 .mini-table th {
     text-align: left; color: #64756B; font-weight: 600; font-size: 0.72rem;
     text-transform: uppercase; letter-spacing: 0.06em;
@@ -275,6 +298,7 @@ div.st-key-paneldata {
 
 /* ---------- chip & pill ---------- */
 .chip {
+    font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
     display: inline-flex; align-items: center; gap: 6px;
     border-radius: 999px; padding: 3px 10px;
     font-size: 0.74rem; font-weight: 600;
@@ -330,26 +354,26 @@ div[data-baseweb="select"] > div { border-radius: 12px !important; border-color:
 .stat-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 16px; }
 .stat-card { background: #FFFFFF; border: 1px solid #EDF1EE; border-radius: 16px; padding: 14px 16px; box-shadow: 0 8px 24px rgba(20,40,30,0.05); }
 .stat-value { font-family: 'JetBrains Mono', Consolas, monospace; font-weight: 600; font-size: 1.45rem; color: #14231B; line-height: 1.15; }
-.stat-label { font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #64756B; margin-top: 2px; }
+.stat-label { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #64756B; margin-top: 2px; }
 
 /* ---------- kartu contoh ulasan (Rincian, Tahap 3) ---------- */
 .review-card { border: 1px solid #EDF1EE; border-radius: 14px; padding: 12px 14px; margin-bottom: 10px; background: #FFFFFF; }
-.review-text { font-size: 0.88rem; color: #14231B; line-height: 1.5; }
-.review-meta { font-size: 0.74rem; color: #64756B; margin-top: 6px; }
+.review-text { font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif; font-size: 0.88rem; color: #14231B; line-height: 1.5; }
+.review-meta { font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif; font-size: 0.74rem; color: #64756B; margin-top: 6px; }
 
 /* ---------- tabel semua ulasan (Rincian, Tahap 3) ---------- */
 .table-wrap { overflow-x: auto; }
-.data-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; min-width: 660px; }
+.data-table { font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif; width: 100%; border-collapse: collapse; font-size: 0.85rem; min-width: 660px; }
 .data-table th { text-align: left; color: #64756B; font-weight: 600; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.06em; border-bottom: 1px solid #EDF1EE; padding: 6px 8px; white-space: nowrap; }
 .data-table td { border-bottom: 1px solid #F3F6F4; padding: 8px; color: #14231B; vertical-align: top; }
 .data-table tr:last-child td { border-bottom: none; }
-.mini-pill { display: inline-block; border-radius: 999px; padding: 1px 8px; font-size: 0.7rem; font-weight: 600; white-space: nowrap; }
+.mini-pill { font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif; display: inline-block; border-radius: 999px; padding: 1px 8px; font-size: 0.7rem; font-weight: 600; white-space: nowrap; }
 
 /* ---------- akar masalah & daftar aksi (Rencana, Tahap 4) ---------- */
 .rca-num { width: 24px; height: 24px; border-radius: 50%; background: #B42318; color: #FFFFFF; font-size: 0.78rem; font-weight: 700; text-align: center; line-height: 24px; flex-shrink: 0; font-family: 'JetBrains Mono', Consolas, monospace; }
 .rca-row { display: flex; gap: 10px; align-items: flex-start; padding: 10px 0; border-bottom: 1px solid #F3F6F4; }
 .rca-row:last-child { border-bottom: none; }
-.rca-text { font-size: 0.9rem; color: #14231B; line-height: 1.5; }
+.rca-text { font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif; font-size: 0.9rem; color: #14231B; line-height: 1.5; }
 .sop-row { display: flex; gap: 10px; align-items: flex-start; padding: 9px 0; border-bottom: 1px solid #F3F6F4; }
 .sop-row:last-child { border-bottom: none; }
 .sop-num { font-family: 'JetBrains Mono', Consolas, monospace; font-weight: 600; font-size: 0.85rem; color: #15803D; min-width: 22px; }
@@ -363,11 +387,11 @@ div[data-baseweb="select"] > div { border-radius: 12px !important; border-color:
 .aspect-row { display: flex; align-items: center; gap: 12px; padding: 10px 0; border-bottom: 1px solid #F3F6F4; }
 .aspect-row:last-child { border-bottom: none; }
 .aspect-chip { width: 32px; height: 32px; border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-.aspect-name { font-weight: 600; font-size: 0.92rem; min-width: 84px; color: #14231B; }
+.aspect-name { font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif; font-weight: 600; font-size: 0.92rem; min-width: 84px; color: #14231B; }
 .conf-track { flex: 1; background: #EFF3F0; border-radius: 6px; height: 8px; overflow: hidden; }
 .conf-fill { height: 100%; border-radius: 6px; }
 .conf-val { font-family: 'JetBrains Mono', Consolas, monospace; font-weight: 600; font-size: 0.8rem; min-width: 54px; text-align: right; color: #14231B; }
-.not-mentioned-line { font-size: 0.84rem; color: #64756B; padding-top: 10px; }
+.not-mentioned-line { font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif; font-size: 0.84rem; color: #64756B; padding-top: 10px; }
 
 /* ---------- wadah kartu generik berkunci card_* (Tahap 3-5) ---------- */
 div[class*="st-key-card_"] {
@@ -379,6 +403,7 @@ div[class*="st-key-card_"] {
 
 /* ---------- loading bermerek ---------- */
 .loading-card {
+    font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
     background: #FFFFFF; border: 1px solid #EDF1EE; border-radius: 20px;
     padding: 34px 28px; text-align: center;
     box-shadow: 0 8px 24px rgba(20,40,30,0.06); margin-top: 60px;
@@ -392,7 +417,7 @@ div[class*="st-key-card_"] {
 @keyframes lpulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.07); } }
 
 /* ---------- footer ---------- */
-.footer-line { font-size: 0.76rem; color: #64756B; text-align: center; padding: 10px 0 2px 0; }
+.footer-line { font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif; font-size: 0.76rem; color: #64756B; text-align: center; padding: 10px 0 2px 0; }
 .footer-line b { color: #14231B; }
 
 /* ---------- responsif (<=640px) ---------- */

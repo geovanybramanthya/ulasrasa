@@ -1,0 +1,8 @@
+Ringkasan        total= 108 source_sans=  0 fonts={'Plus Jakarta Sans': 20, 'Inter': 53, 'JetBrains Mono': 35}
+Rincian          total= 103 source_sans=  0 fonts={'Plus Jakarta Sans': 15, 'Inter': 82, 'JetBrains Mono': 6}
+Rencana          total=  67 source_sans=  0 fonts={'Plus Jakarta Sans': 15, 'Inter': 43, 'JetBrains Mono': 8, 'Material Symbols Rounded': 1}
+Coba (awal)      total=  33 source_sans=  0 fonts={'Plus Jakarta Sans': 13, 'Inter': 20}
+Coba (hasil)     total=  47 source_sans=  0 fonts={'Plus Jakarta Sans': 15, 'Inter': 30, 'JetBrains Mono': 2}
+role_samples: {"greeting_jakarta": {"font": "\"Plus Jakarta Sans\", sans-serif", "text": "Halo, Ayam Geprek Sambal Korek Barokah"}, "kpi_value_mono": null, "stat_value_mono": null, "card_title_jakarta": {"font": "\"Plus Jakarta Sans\", sans-serif", "text": "Tulis Ulasan Pelanggan"}, "button_label_jakarta": {"font": "\"Plus Jakarta Sans\", Inter, sans-serif", "text": "Ganti Data"}, "first_paragraph": {"font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif", "text": "Navigasi modul"}, "card_sub": {"font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif", "text": "Tempel satu ulasan pelanggan, lalu jalankan analis"}, "stat_label": null, "brand_sub": {"font": "\"Plus Jakarta Sans\", sans-serif", "text": "Kesehatan Dapur dari Ulasan"}}
+TOTAL Source Sans (after): 0
+JSON -> C:\Users\geova\Downloads\BOOTCAMP\PROJECTS\ulasrasa\docs\ui-evidence\audit-fix2\font_sweep_after.json

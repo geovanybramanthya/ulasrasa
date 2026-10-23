@@ -1,0 +1,3855 @@
+{
+ "url": "http://localhost:8516",
+ "tag": "before",
+ "modules": [
+  {
+   "label": "Ringkasan",
+   "total_text_elements": 108,
+   "by_primary_font": {
+    "Plus Jakarta Sans": 19,
+    "Source Sans": 47,
+    "Inter": 7,
+    "JetBrains Mono": 35
+   },
+   "source_sans_count": 47,
+   "source_sans_elements": [
+    {
+     "tag": "DIV",
+     "cls": "brand-sub",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Kesehatan Dapur dari Ulasan"
+    },
+    {
+     "tag": "DIV",
+     "cls": "status-line",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Skor Kesehatan Dapur restoran ini berstatus . Perhatian utam"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "KRITIS (Audit Segera)"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Kemasan"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "33.3%"
+    },
+    {
+     "tag": "DIV",
+     "cls": "kpi-micro",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Status saat ini: KRITIS (Audit Segera)"
+    },
+    {
+     "tag": "DIV",
+     "cls": "kpi-micro",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Dari data yang sedang aktif"
+    },
+    {
+     "tag": "DIV",
+     "cls": "kpi-micro",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Dari 25 ulasan"
+    },
+    {
+     "tag": "DIV",
+     "cls": "kpi-micro",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Skor kepuasan  - terendah dari 5 aspek"
+    },
+    {
+     "tag": "DIV",
+     "cls": "hero-note",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Perhatian: aspek  berada di bawah batas aman - skor kepuasan"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Kemasan"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "33.3%"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "66.7%"
+    },
+    {
+     "tag": "DIV",
+     "cls": "card-sub",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Skor kepuasan pelanggan untuk lima aspek dapur. Garis putus-"
+    },
+    {
+     "tag": "DIV",
+     "cls": "card-sub",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Skor, bobot, dan jumlah ulasan yang menyebut tiap aspek."
+    },
+    {
+     "tag": "TH",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Aspek"
+    },
+    {
+     "tag": "TH",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Skor"
+    },
+    {
+     "tag": "TH",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Bobot"
+    },
+    {
+     "tag": "TH",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Disebut"
+    },
+    {
+     "tag": "TH",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Positif"
+    },
+    {
+     "tag": "TH",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Netral"
+    },
+    {
+     "tag": "TH",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Rasa"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Porsi"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Harga"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Kemasan"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Pelayanan"
+    },
+    {
+     "tag": "DIV",
+     "cls": "card-sub",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Ulasan negatif paling akhir. Klik tombolnya untuk membuka ri"
+    },
+    {
+     "tag": "DIV",
+     "cls": "rel-text",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "\"Ayam dingin alot kulitnya lemes kena uap. Sayang banget pad"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "chip",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Kemasan"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "chip pill-neg",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "DIV",
+     "cls": "rel-text",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "\"Pelayan jutek pas ditanya soal pesanan takeaway, nunggunya "
+    },
+    {
+     "tag": "SPAN",
+     "cls": "chip",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Pelayanan"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "chip pill-neg",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "DIV",
+     "cls": "rel-text",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "\"Rasa juara langganan keluarga, tapi hari ini sambalnya ence"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "chip",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Kemasan"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "chip pill-neg",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "DIV",
+     "cls": "rel-text",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "\"Keasinan parah bumbunya hari ini, ga kemakan sama sekali. T"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "chip",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Rasa"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "chip pill-neg",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "DIV",
+     "cls": "rel-text",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "\"Porsinya makin ciut ayamnya kecil banget seukuran burung pu"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "chip",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Porsi"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "chip pill-neg",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "DIV",
+     "cls": "footer-line",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "• Tugas Akhir AI Engineering Batch 13 • Student ID:  (Azura)"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "UlasRasa"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "REAENG13TQJLN"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "IndoBERT ABSA + Rencana Aksi LLM"
+    }
+   ],
+   "elements": [
+    {
+     "tag": "DIV",
+     "cls": "brand-name",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "UlasRasa"
+    },
+    {
+     "tag": "DIV",
+     "cls": "brand-sub",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Kesehatan Dapur dari Ulasan"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Ringkasan"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Rincian Aspek"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Rencana Aksi"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Coba Ulasan"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "engine-chip",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Engine ABSA: IndoBERT (fine-tuned)"
+    },
+    {
+     "tag": "DIV",
+     "cls": "greeting",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Halo, Ayam Geprek Sambal Korek Barokah"
+    },
+    {
+     "tag": "DIV",
+     "cls": "status-line",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Skor Kesehatan Dapur restoran ini berstatus . Perhatian utam"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "KRITIS (Audit Segera)"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Kemasan"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "33.3%"
+    },
+    {
+     "tag": "DIV",
+     "cls": "label-caps",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Restoran"
+    },
+    {
+     "tag": "DIV",
+     "cls": "st-bv st-at st-bw st-bx st-by st-b0 st-bz st-c0 st-c1",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Ayam Geprek Sambal Korek Barokah"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Ganti Data"
+    },
+    {
+     "tag": "DIV",
+     "cls": "kpi-label",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Skor Kesehatan Dapur"
+    },
+    {
+     "tag": "DIV",
+     "cls": "kpi-value",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "55.8%"
+    },
+    {
+     "tag": "DIV",
+     "cls": "kpi-micro",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Status saat ini: KRITIS (Audit Segera)"
+    },
+    {
+     "tag": "DIV",
+     "cls": "kpi-label",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Total Ulasan Dianalisis"
+    },
+    {
+     "tag": "DIV",
+     "cls": "kpi-value",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "25"
+    },
+    {
+     "tag": "DIV",
+     "cls": "kpi-micro",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Dari data yang sedang aktif"
+    },
+    {
+     "tag": "DIV",
+     "cls": "kpi-label",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Ulasan Negatif"
+    },
+    {
+     "tag": "DIV",
+     "cls": "kpi-value",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "76.0%"
+    },
+    {
+     "tag": "DIV",
+     "cls": "kpi-micro",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Dari 25 ulasan"
+    },
+    {
+     "tag": "DIV",
+     "cls": "kpi-label",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Aspek Paling Kritis"
+    },
+    {
+     "tag": "DIV",
+     "cls": "kpi-value",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "Kemasan"
+    },
+    {
+     "tag": "DIV",
+     "cls": "kpi-micro",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Skor kepuasan  - terendah dari 5 aspek"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "33.3%"
+    },
+    {
+     "tag": "DIV",
+     "cls": "label-caps",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Skor Kesehatan Dapur"
+    },
+    {
+     "tag": "DIV",
+     "cls": "hero-status",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "KRITIS (Audit Segera)"
+    },
+    {
+     "tag": "DIV",
+     "cls": "hero-note",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Perhatian: aspek  berada di bawah batas aman - skor kepuasan"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Kemasan"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "33.3%"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "66.7%"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "hero-chip",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Prioritas: Kemasan"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Lihat Rencana Aksi"
+    },
+    {
+     "tag": "DIV",
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Kepuasan per Aspek"
+    },
+    {
+     "tag": "DIV",
+     "cls": "card-sub",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Skor kepuasan pelanggan untuk lima aspek dapur. Garis putus-"
+    },
+    {
+     "tag": "DIV",
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Angka Rincian per Aspek"
+    },
+    {
+     "tag": "DIV",
+     "cls": "card-sub",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Skor, bobot, dan jumlah ulasan yang menyebut tiap aspek."
+    },
+    {
+     "tag": "TH",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Aspek"
+    },
+    {
+     "tag": "TH",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Skor"
+    },
+    {
+     "tag": "TH",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Bobot"
+    },
+    {
+     "tag": "TH",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Disebut"
+    },
+    {
+     "tag": "TH",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Positif"
+    },
+    {
+     "tag": "TH",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Netral"
+    },
+    {
+     "tag": "TH",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Rasa"
+    },
+    {
+     "tag": "TD",
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "71.7%"
+    },
+    {
+     "tag": "TD",
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "35%"
+    },
+    {
+     "tag": "TD",
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "23"
+    },
+    {
+     "tag": "TD",
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "15"
+    },
+    {
+     "tag": "TD",
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "3"
+    },
+    {
+     "tag": "TD",
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "5"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Porsi"
+    },
+    {
+     "tag": "TD",
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "54.5%"
+    },
+    {
+     "tag": "TD",
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "20%"
+    },
+    {
+     "tag": "TD",
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "11"
+    },
+    {
+     "tag": "TD",
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "5"
+    },
+    {
+     "tag": "TD",
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "2"
+    },
+    {
+     "tag": "TD",
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "4"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Harga"
+    },
+    {
+     "tag": "TD",
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "57.1%"
+    },
+    {
+     "tag": "TD",
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "15%"
+    },
+    {
+     "tag": "TD",
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "7"
+    },
+    {
+     "tag": "TD",
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "4"
+    },
+    {
+     "tag": "TD",
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "0"
+    },
+    {
+     "tag": "TD",
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "3"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Kemasan"
+    },
+    {
+     "tag": "TD",
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "33.3%"
+    },
+    {
+     "tag": "TD",
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "15%"
+    },
+    {
+     "tag": "TD",
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "12"
+    },
+    {
+     "tag": "TD",
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "4"
+    },
+    {
+     "tag": "TD",
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "0"
+    },
+    {
+     "tag": "TD",
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "8"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Pelayanan"
+    },
+    {
+     "tag": "TD",
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "41.7%"
+    },
+    {
+     "tag": "TD",
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "15%"
+    },
+    {
+     "tag": "TD",
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "12"
+    },
+    {
+     "tag": "TD",
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "5"
+    },
+    {
+     "tag": "TD",
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "0"
+    },
+    {
+     "tag": "TD",
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "7"
+    },
+    {
+     "tag": "DIV",
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Keluhan Terbaru"
+    },
+    {
+     "tag": "DIV",
+     "cls": "card-sub",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Ulasan negatif paling akhir. Klik tombolnya untuk membuka ri"
+    },
+    {
+     "tag": "DIV",
+     "cls": "rel-text",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "\"Ayam dingin alot kulitnya lemes kena uap. Sayang banget pad"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "chip",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Kemasan"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "chip pill-neg",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Lihat di Rincian Aspek"
+    },
+    {
+     "tag": "DIV",
+     "cls": "rel-text",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "\"Pelayan jutek pas ditanya soal pesanan takeaway, nunggunya "
+    },
+    {
+     "tag": "SPAN",
+     "cls": "chip",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Pelayanan"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "chip pill-neg",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Lihat di Rincian Aspek"
+    },
+    {
+     "tag": "DIV",
+     "cls": "rel-text",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "\"Rasa juara langganan keluarga, tapi hari ini sambalnya ence"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "chip",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Kemasan"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "chip pill-neg",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Lihat di Rincian Aspek"
+    },
+    {
+     "tag": "DIV",
+     "cls": "rel-text",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "\"Keasinan parah bumbunya hari ini, ga kemakan sama sekali. T"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "chip",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Rasa"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "chip pill-neg",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Lihat di Rincian Aspek"
+    },
+    {
+     "tag": "DIV",
+     "cls": "rel-text",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "\"Porsinya makin ciut ayamnya kecil banget seukuran burung pu"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "chip",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Porsi"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "chip pill-neg",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Lihat di Rincian Aspek"
+    },
+    {
+     "tag": "DIV",
+     "cls": "footer-line",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "• Tugas Akhir AI Engineering Batch 13 • Student ID:  (Azura)"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "UlasRasa"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "REAENG13TQJLN"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "IndoBERT ABSA + Rencana Aksi LLM"
+    }
+   ]
+  },
+  {
+   "label": "Rincian",
+   "total_text_elements": 103,
+   "by_primary_font": {
+    "Plus Jakarta Sans": 10,
+    "Source Sans": 70,
+    "Inter": 17,
+    "JetBrains Mono": 6
+   },
+   "source_sans_count": 70,
+   "source_sans_elements": [
+    {
+     "tag": "DIV",
+     "cls": "brand-sub",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Kesehatan Dapur dari Ulasan"
+    },
+    {
+     "tag": "DIV",
+     "cls": "status-line",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Skor Kesehatan Dapur restoran ini berstatus . Perhatian utam"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "KRITIS (Audit Segera)"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Kemasan"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "33.3%"
+    },
+    {
+     "tag": "DIV",
+     "cls": "stat-label",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Total Disebut"
+    },
+    {
+     "tag": "DIV",
+     "cls": "stat-label",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Positif"
+    },
+    {
+     "tag": "DIV",
+     "cls": "stat-label",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Netral"
+    },
+    {
+     "tag": "DIV",
+     "cls": "stat-label",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "DIV",
+     "cls": "card-sub",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Perbandingan ulasan positif, netral, dan negatif untuk aspek"
+    },
+    {
+     "tag": "DIV",
+     "cls": "card-sub",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Kata yang paling sering muncul pada ulasan negatif aspek ini"
+    },
+    {
+     "tag": "DIV",
+     "cls": "card-sub",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Jumlah ulasan positif, netral, dan negatif pada kelima aspek"
+    },
+    {
+     "tag": "DIV",
+     "cls": "review-text",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Ayamnya gurih renyah bumbunya mantap meresap, tapi kemasan m"
+    },
+    {
+     "tag": "DIV",
+     "cls": "review-meta",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Menu: Paket Kulit Ayam Crispy - ID #1"
+    },
+    {
+     "tag": "DIV",
+     "cls": "review-text",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Rasa sambal koreknya nampol bikin nagih, ayam crispy bgt, sa"
+    },
+    {
+     "tag": "DIV",
+     "cls": "review-meta",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Menu: Paket Geprek Dada Sambal Korek - ID #2"
+    },
+    {
+     "tag": "DIV",
+     "cls": "review-text",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Ayam geprek terenak di area ini bumbu medok, tapi sambalnya "
+    },
+    {
+     "tag": "DIV",
+     "cls": "review-meta",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Menu: Nasi Ayam Geprek Keju Lumer - ID #3"
+    },
+    {
+     "tag": "DIV",
+     "cls": "review-text",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Ayam gepreknya agak keasinan hari ini, ga kayak biasanya. Sa"
+    },
+    {
+     "tag": "DIV",
+     "cls": "review-meta",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Menu: Nasi Ayam Geprek Keju Lumer - ID #7"
+    },
+    {
+     "tag": "DIV",
+     "cls": "review-text",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Lama banget proses di dapurnya, nunggu makanan 40 menit pada"
+    },
+    {
+     "tag": "DIV",
+     "cls": "review-meta",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Menu: Nasi Ayam Geprek Keju Lumer - ID #8"
+    },
+    {
+     "tag": "DIV",
+     "cls": "review-text",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Rasa biasa aja bumbu kurang meresap, ayam terasa hambar di b"
+    },
+    {
+     "tag": "DIV",
+     "cls": "review-meta",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Menu: Ayam Geprek Sambal Bawang - ID #11"
+    },
+    {
+     "tag": "DIV",
+     "cls": "card-sub",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Seluruh ulasan pada data aktif beserta label sentimen tiap a"
+    },
+    {
+     "tag": "TH",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Ulasan"
+    },
+    {
+     "tag": "TH",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Rasa"
+    },
+    {
+     "tag": "TH",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Porsi"
+    },
+    {
+     "tag": "TH",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Harga"
+    },
+    {
+     "tag": "TH",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Kemasan"
+    },
+    {
+     "tag": "TH",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Pelayanan"
+    },
+    {
+     "tag": "DIV",
+     "cls": "review-text",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Ayam gepreknya agak keasinan hari ini, ga kayak biasanya. Sa"
+    },
+    {
+     "tag": "DIV",
+     "cls": "review-meta",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Menu: Nasi Ayam Geprek Keju Lumer - Outlet: Ayam Geprek Samb"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "mini-pill pill-neg",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "mini-pill pill-neg",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "mini-pill pill-neg",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "mini-pill pill-muted",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "-"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "mini-pill pill-muted",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "-"
+    },
+    {
+     "tag": "DIV",
+     "cls": "review-text",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Lama banget proses di dapurnya, nunggu makanan 40 menit pada"
+    },
+    {
+     "tag": "DIV",
+     "cls": "review-meta",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Menu: Nasi Ayam Geprek Keju Lumer - Outlet: Ayam Geprek Samb"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "mini-pill pill-neg",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "mini-pill pill-muted",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "-"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "mini-pill pill-muted",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "-"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "mini-pill pill-muted",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "-"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "mini-pill pill-neg",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "DIV",
+     "cls": "review-text",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Rasa biasa aja bumbu kurang meresap, ayam terasa hambar di b"
+    },
+    {
+     "tag": "DIV",
+     "cls": "review-meta",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Menu: Ayam Geprek Sambal Bawang - Outlet: Ayam Geprek Sambal"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "mini-pill pill-neg",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "mini-pill pill-neg",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "mini-pill pill-muted",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "-"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "mini-pill pill-muted",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "-"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "mini-pill pill-muted",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "-"
+    },
+    {
+     "tag": "DIV",
+     "cls": "review-text",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Ayamnya bau apek kayak minyak jelantah bekas goreng berkali-"
+    },
+    {
+     "tag": "DIV",
+     "cls": "review-meta",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Menu: Nasi Ayam Geprek Keju Lumer - Outlet: Ayam Geprek Samb"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "mini-pill pill-neg",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "mini-pill pill-muted",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "-"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "mini-pill pill-neg",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "mini-pill pill-muted",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "-"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "mini-pill pill-muted",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "-"
+    },
+    {
+     "tag": "DIV",
+     "cls": "review-text",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Keasinan parah bumbunya hari ini, ga kemakan sama sekali. To"
+    },
+    {
+     "tag": "DIV",
+     "cls": "review-meta",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Menu: Nasi Ayam Geprek Keju Lumer - Outlet: Ayam Geprek Samb"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "mini-pill pill-neg",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "mini-pill pill-muted",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "-"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "mini-pill pill-muted",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "-"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "mini-pill pill-muted",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "-"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "mini-pill pill-muted",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "-"
+    },
+    {
+     "tag": "DIV",
+     "cls": "footer-line",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "• Tugas Akhir AI Engineering Batch 13 • Student ID:  (Azura)"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "UlasRasa"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "REAENG13TQJLN"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "IndoBERT ABSA + Rencana Aksi LLM"
+    }
+   ],
+   "elements": [
+    {
+     "tag": "DIV",
+     "cls": "brand-name",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "UlasRasa"
+    },
+    {
+     "tag": "DIV",
+     "cls": "brand-sub",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Kesehatan Dapur dari Ulasan"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Ringkasan"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Rincian Aspek"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Rencana Aksi"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Coba Ulasan"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "engine-chip",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Engine ABSA: IndoBERT (fine-tuned)"
+    },
+    {
+     "tag": "DIV",
+     "cls": "greeting",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Halo, Ayam Geprek Sambal Korek Barokah"
+    },
+    {
+     "tag": "DIV",
+     "cls": "status-line",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Skor Kesehatan Dapur restoran ini berstatus . Perhatian utam"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "KRITIS (Audit Segera)"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Kemasan"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "33.3%"
+    },
+    {
+     "tag": "DIV",
+     "cls": "label-caps",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Restoran"
+    },
+    {
+     "tag": "DIV",
+     "cls": "st-bv st-at st-bw st-bx st-by st-b0 st-bz st-c0 st-c1",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Ayam Geprek Sambal Korek Barokah"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Ganti Data"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Pilih aspek yang mau dibedah:"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Rasa"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Porsi"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Harga"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Kemasan"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Pelayanan"
+    },
+    {
+     "tag": "DIV",
+     "cls": "stat-value",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "23"
+    },
+    {
+     "tag": "DIV",
+     "cls": "stat-label",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Total Disebut"
+    },
+    {
+     "tag": "DIV",
+     "cls": "stat-value",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "15"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "(65%)"
+    },
+    {
+     "tag": "DIV",
+     "cls": "stat-label",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Positif"
+    },
+    {
+     "tag": "DIV",
+     "cls": "stat-value",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "3"
+    },
+    {
+     "tag": "DIV",
+     "cls": "stat-label",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Netral"
+    },
+    {
+     "tag": "DIV",
+     "cls": "stat-value",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "5"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "(22%)"
+    },
+    {
+     "tag": "DIV",
+     "cls": "stat-label",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "DIV",
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Distribusi Sentimen Aspek Ini"
+    },
+    {
+     "tag": "DIV",
+     "cls": "card-sub",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Perbandingan ulasan positif, netral, dan negatif untuk aspek"
+    },
+    {
+     "tag": "DIV",
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Kata yang Sering Muncul di Keluhan"
+    },
+    {
+     "tag": "DIV",
+     "cls": "card-sub",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Kata yang paling sering muncul pada ulasan negatif aspek ini"
+    },
+    {
+     "tag": "DIV",
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Komposisi Sentimen Semua Aspek"
+    },
+    {
+     "tag": "DIV",
+     "cls": "card-sub",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Jumlah ulasan positif, netral, dan negatif pada kelima aspek"
+    },
+    {
+     "tag": "DIV",
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Contoh Ulasan Positif"
+    },
+    {
+     "tag": "DIV",
+     "cls": "review-text",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Ayamnya gurih renyah bumbunya mantap meresap, tapi kemasan m"
+    },
+    {
+     "tag": "DIV",
+     "cls": "review-meta",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Menu: Paket Kulit Ayam Crispy - ID #1"
+    },
+    {
+     "tag": "DIV",
+     "cls": "review-text",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Rasa sambal koreknya nampol bikin nagih, ayam crispy bgt, sa"
+    },
+    {
+     "tag": "DIV",
+     "cls": "review-meta",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Menu: Paket Geprek Dada Sambal Korek - ID #2"
+    },
+    {
+     "tag": "DIV",
+     "cls": "review-text",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Ayam geprek terenak di area ini bumbu medok, tapi sambalnya "
+    },
+    {
+     "tag": "DIV",
+     "cls": "review-meta",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Menu: Nasi Ayam Geprek Keju Lumer - ID #3"
+    },
+    {
+     "tag": "DIV",
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Contoh Ulasan Negatif"
+    },
+    {
+     "tag": "DIV",
+     "cls": "review-text",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Ayam gepreknya agak keasinan hari ini, ga kayak biasanya. Sa"
+    },
+    {
+     "tag": "DIV",
+     "cls": "review-meta",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Menu: Nasi Ayam Geprek Keju Lumer - ID #7"
+    },
+    {
+     "tag": "DIV",
+     "cls": "review-text",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Lama banget proses di dapurnya, nunggu makanan 40 menit pada"
+    },
+    {
+     "tag": "DIV",
+     "cls": "review-meta",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Menu: Nasi Ayam Geprek Keju Lumer - ID #8"
+    },
+    {
+     "tag": "DIV",
+     "cls": "review-text",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Rasa biasa aja bumbu kurang meresap, ayam terasa hambar di b"
+    },
+    {
+     "tag": "DIV",
+     "cls": "review-meta",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Menu: Ayam Geprek Sambal Bawang - ID #11"
+    },
+    {
+     "tag": "DIV",
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Semua Ulasan"
+    },
+    {
+     "tag": "DIV",
+     "cls": "card-sub",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Seluruh ulasan pada data aktif beserta label sentimen tiap a"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Saring polaritas:"
+    },
+    {
+     "tag": "DIV",
+     "cls": "st-bv st-at st-bw st-bx st-by st-b0 st-bz st-c0 st-c1",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Hanya Negatif (Komplain)"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Saring menu:"
+    },
+    {
+     "tag": "DIV",
+     "cls": "st-bv st-at st-bw st-bx st-by st-b0 st-bz st-c0 st-c1",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Semua Menu"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Menampilkan 5 ulasan yang cocok:"
+    },
+    {
+     "tag": "TH",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Ulasan"
+    },
+    {
+     "tag": "TH",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Rasa"
+    },
+    {
+     "tag": "TH",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Porsi"
+    },
+    {
+     "tag": "TH",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Harga"
+    },
+    {
+     "tag": "TH",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Kemasan"
+    },
+    {
+     "tag": "TH",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Pelayanan"
+    },
+    {
+     "tag": "DIV",
+     "cls": "review-text",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Ayam gepreknya agak keasinan hari ini, ga kayak biasanya. Sa"
+    },
+    {
+     "tag": "DIV",
+     "cls": "review-meta",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Menu: Nasi Ayam Geprek Keju Lumer - Outlet: Ayam Geprek Samb"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "mini-pill pill-neg",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "mini-pill pill-neg",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "mini-pill pill-neg",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "mini-pill pill-muted",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "-"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "mini-pill pill-muted",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "-"
+    },
+    {
+     "tag": "DIV",
+     "cls": "review-text",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Lama banget proses di dapurnya, nunggu makanan 40 menit pada"
+    },
+    {
+     "tag": "DIV",
+     "cls": "review-meta",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Menu: Nasi Ayam Geprek Keju Lumer - Outlet: Ayam Geprek Samb"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "mini-pill pill-neg",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "mini-pill pill-muted",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "-"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "mini-pill pill-muted",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "-"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "mini-pill pill-muted",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "-"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "mini-pill pill-neg",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "DIV",
+     "cls": "review-text",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Rasa biasa aja bumbu kurang meresap, ayam terasa hambar di b"
+    },
+    {
+     "tag": "DIV",
+     "cls": "review-meta",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Menu: Ayam Geprek Sambal Bawang - Outlet: Ayam Geprek Sambal"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "mini-pill pill-neg",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "mini-pill pill-neg",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "mini-pill pill-muted",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "-"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "mini-pill pill-muted",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "-"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "mini-pill pill-muted",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "-"
+    },
+    {
+     "tag": "DIV",
+     "cls": "review-text",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Ayamnya bau apek kayak minyak jelantah bekas goreng berkali-"
+    },
+    {
+     "tag": "DIV",
+     "cls": "review-meta",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Menu: Nasi Ayam Geprek Keju Lumer - Outlet: Ayam Geprek Samb"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "mini-pill pill-neg",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "mini-pill pill-muted",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "-"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "mini-pill pill-neg",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "mini-pill pill-muted",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "-"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "mini-pill pill-muted",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "-"
+    },
+    {
+     "tag": "DIV",
+     "cls": "review-text",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Keasinan parah bumbunya hari ini, ga kemakan sama sekali. To"
+    },
+    {
+     "tag": "DIV",
+     "cls": "review-meta",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Menu: Nasi Ayam Geprek Keju Lumer - Outlet: Ayam Geprek Samb"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "mini-pill pill-neg",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "mini-pill pill-muted",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "-"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "mini-pill pill-muted",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "-"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "mini-pill pill-muted",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "-"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "mini-pill pill-muted",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "-"
+    },
+    {
+     "tag": "DIV",
+     "cls": "footer-line",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "• Tugas Akhir AI Engineering Batch 13 • Student ID:  (Azura)"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "UlasRasa"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "REAENG13TQJLN"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "IndoBERT ABSA + Rencana Aksi LLM"
+    }
+   ]
+  },
+  {
+   "label": "Rencana",
+   "total_text_elements": 67,
+   "by_primary_font": {
+    "Plus Jakarta Sans": 14,
+    "Source Sans": 24,
+    "Inter": 20,
+    "JetBrains Mono": 8,
+    "Material Symbols Rounded": 1
+   },
+   "source_sans_count": 24,
+   "source_sans_elements": [
+    {
+     "tag": "DIV",
+     "cls": "brand-sub",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Kesehatan Dapur dari Ulasan"
+    },
+    {
+     "tag": "DIV",
+     "cls": "status-line",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Skor Kesehatan Dapur restoran ini berstatus . Perhatian utam"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "KRITIS (Audit Segera)"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Kemasan"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "33.3%"
+    },
+    {
+     "tag": "DIV",
+     "cls": "card-sub",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "0 dari 12 aksi selesai (0%)"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "chip pill-muted",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Mode rekomendasi: Template (offline)"
+    },
+    {
+     "tag": "DIV",
+     "cls": "card-sub",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Ringkasan penyebab keluhan pelanggan terjadi, disusun dari d"
+    },
+    {
+     "tag": "DIV",
+     "cls": "rca-text",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Aspek Kemasan: Kerapian penutupan wadah berkuah tidak tersta"
+    },
+    {
+     "tag": "DIV",
+     "cls": "rca-text",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Aspek Pelayanan: Bottleneck pada antrean kitchen order saat "
+    },
+    {
+     "tag": "DIV",
+     "cls": "rca-text",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Aspek Porsi: Penakaran bahan baku (nasi dan lauk) masih meng"
+    },
+    {
+     "tag": "DIV",
+     "cls": "rca-text",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Aspek Harga: Ketidaksesuaian persepsi nilai (perceived value"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "chip pill-pos",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Fokus perbaikan: Kemasan"
+    },
+    {
+     "tag": "DIV",
+     "cls": "card-sub",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Centang setiap tindakan yang sudah dikerjakan dan diperiksa "
+    },
+    {
+     "tag": "DIV",
+     "cls": "card-sub",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Prosedur standar yang disarankan untuk ditempel di area kerj"
+    },
+    {
+     "tag": "DIV",
+     "cls": "rca-text",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "SOP Pengemasan Anti-Bocor: Koki wajib melakukan tilt-test 5 "
+    },
+    {
+     "tag": "DIV",
+     "cls": "rca-text",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "SOP Dispatch & Packing: Verifikasi 3 poin (Jumlah item, Cata"
+    },
+    {
+     "tag": "DIV",
+     "cls": "rca-text",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "SOP Standard Yield & Portioning: Timbangan presisi untuk sem"
+    },
+    {
+     "tag": "DIV",
+     "cls": "rca-text",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "SOP Pricing & Value Perception: Review berkala harga jual di"
+    },
+    {
+     "tag": "DIV",
+     "cls": "card-sub",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Simpan daftar aksi untuk dicetak dan ditempel di dapur, atau"
+    },
+    {
+     "tag": "DIV",
+     "cls": "footer-line",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "• Tugas Akhir AI Engineering Batch 13 • Student ID:  (Azura)"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "UlasRasa"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "REAENG13TQJLN"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "IndoBERT ABSA + Rencana Aksi LLM"
+    }
+   ],
+   "elements": [
+    {
+     "tag": "DIV",
+     "cls": "brand-name",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "UlasRasa"
+    },
+    {
+     "tag": "DIV",
+     "cls": "brand-sub",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Kesehatan Dapur dari Ulasan"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Ringkasan"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Rincian Aspek"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Rencana Aksi"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Coba Ulasan"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "engine-chip",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Engine ABSA: IndoBERT (fine-tuned)"
+    },
+    {
+     "tag": "DIV",
+     "cls": "greeting",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Halo, Ayam Geprek Sambal Korek Barokah"
+    },
+    {
+     "tag": "DIV",
+     "cls": "status-line",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Skor Kesehatan Dapur restoran ini berstatus . Perhatian utam"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "KRITIS (Audit Segera)"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Kemasan"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "33.3%"
+    },
+    {
+     "tag": "DIV",
+     "cls": "label-caps",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Restoran"
+    },
+    {
+     "tag": "DIV",
+     "cls": "st-bv st-at st-bw st-bx st-by st-b0 st-bz st-c0 st-c1",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Ayam Geprek Sambal Korek Barokah"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Ganti Data"
+    },
+    {
+     "tag": "DIV",
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Kemajuan Daftar Aksi"
+    },
+    {
+     "tag": "DIV",
+     "cls": "card-sub",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "0 dari 12 aksi selesai (0%)"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Atur Ulang Centang"
+    },
+    {
+     "tag": "DIV",
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Akar Masalah"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "chip pill-muted",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Mode rekomendasi: Template (offline)"
+    },
+    {
+     "tag": "DIV",
+     "cls": "card-sub",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Ringkasan penyebab keluhan pelanggan terjadi, disusun dari d"
+    },
+    {
+     "tag": "DIV",
+     "cls": "rca-num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "1"
+    },
+    {
+     "tag": "DIV",
+     "cls": "rca-text",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Aspek Kemasan: Kerapian penutupan wadah berkuah tidak tersta"
+    },
+    {
+     "tag": "DIV",
+     "cls": "rca-num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "2"
+    },
+    {
+     "tag": "DIV",
+     "cls": "rca-text",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Aspek Pelayanan: Bottleneck pada antrean kitchen order saat "
+    },
+    {
+     "tag": "DIV",
+     "cls": "rca-num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "3"
+    },
+    {
+     "tag": "DIV",
+     "cls": "rca-text",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Aspek Porsi: Penakaran bahan baku (nasi dan lauk) masih meng"
+    },
+    {
+     "tag": "DIV",
+     "cls": "rca-num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "4"
+    },
+    {
+     "tag": "DIV",
+     "cls": "rca-text",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Aspek Harga: Ketidaksesuaian persepsi nilai (perceived value"
+    },
+    {
+     "tag": "DIV",
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Daftar Aksi Dapur"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "chip pill-pos",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Fokus perbaikan: Kemasan"
+    },
+    {
+     "tag": "DIV",
+     "cls": "card-sub",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Centang setiap tindakan yang sudah dikerjakan dan diperiksa "
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Wajib gunakan isolasi / sealing tape silang pada setiap tutu"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Pisahkan kuah dan kondimen kering ke dalam wadah terpisah (d"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Gunakan kardus tebal bersertifikasi food-grade khusus pesana"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Terapkan sistem double-check tiket pesanan: Koki centang che"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Siapkan pre-pack sendok, garpu, dan sambal dalam pouch higie"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Batasi estimasi slot terima pesanan delivery maksimal 12 men"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Wajib sediakan timbangan digital per workstation dapur (targ"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Gunakan centong ukur berstandar volume untuk porsi sambal da"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Audit acak 3 porsi per shift kerja oleh kepala dapur (Head C"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Tambahkan nilai tambah visual berupa garnish, kondimen grati"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Evaluasi margin fee aplikasi delivery agar tidak menaikkan h"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Buat paket bundling hemat untuk meningkatkan persepsi nilai "
+    },
+    {
+     "tag": "SPAN",
+     "cls": "st-emotion-cache-1c9yjad ed4y4ls0",
+     "testid": "stIconMaterial",
+     "font": "\"Material Symbols Rounded\"",
+     "text": "keyboard_arrow_right"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Tambah Tindakan Kustom"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Tindakan baru:"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Tambahkan ke Daftar Aksi"
+    },
+    {
+     "tag": "DIV",
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Rekomendasi SOP Dapur"
+    },
+    {
+     "tag": "DIV",
+     "cls": "card-sub",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Prosedur standar yang disarankan untuk ditempel di area kerj"
+    },
+    {
+     "tag": "DIV",
+     "cls": "sop-num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "1"
+    },
+    {
+     "tag": "DIV",
+     "cls": "rca-text",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "SOP Pengemasan Anti-Bocor: Koki wajib melakukan tilt-test 5 "
+    },
+    {
+     "tag": "DIV",
+     "cls": "sop-num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "2"
+    },
+    {
+     "tag": "DIV",
+     "cls": "rca-text",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "SOP Dispatch & Packing: Verifikasi 3 poin (Jumlah item, Cata"
+    },
+    {
+     "tag": "DIV",
+     "cls": "sop-num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "3"
+    },
+    {
+     "tag": "DIV",
+     "cls": "rca-text",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "SOP Standard Yield & Portioning: Timbangan presisi untuk sem"
+    },
+    {
+     "tag": "DIV",
+     "cls": "sop-num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "4"
+    },
+    {
+     "tag": "DIV",
+     "cls": "rca-text",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "SOP Pricing & Value Perception: Review berkala harga jual di"
+    },
+    {
+     "tag": "DIV",
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Unduh Daftar Aksi"
+    },
+    {
+     "tag": "DIV",
+     "cls": "card-sub",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Simpan daftar aksi untuk dicetak dan ditempel di dapur, atau"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Unduh PDF"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Unduh Teks (.txt)"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Unduh CSV"
+    },
+    {
+     "tag": "DIV",
+     "cls": "footer-line",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "• Tugas Akhir AI Engineering Batch 13 • Student ID:  (Azura)"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "UlasRasa"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "REAENG13TQJLN"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "IndoBERT ABSA + Rencana Aksi LLM"
+    }
+   ]
+  },
+  {
+   "label": "Coba (awal)",
+   "total_text_elements": 33,
+   "by_primary_font": {
+    "Plus Jakarta Sans": 12,
+    "Source Sans": 13,
+    "Inter": 8
+   },
+   "source_sans_count": 13,
+   "source_sans_elements": [
+    {
+     "tag": "DIV",
+     "cls": "brand-sub",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Kesehatan Dapur dari Ulasan"
+    },
+    {
+     "tag": "DIV",
+     "cls": "status-line",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Skor Kesehatan Dapur restoran ini berstatus . Perhatian utam"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "KRITIS (Audit Segera)"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Kemasan"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "33.3%"
+    },
+    {
+     "tag": "DIV",
+     "cls": "card-sub",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Tempel satu ulasan pelanggan, lalu jalankan analisis untuk m"
+    },
+    {
+     "tag": "DIV",
+     "cls": "card-sub",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Atau coba contoh ulasan:"
+    },
+    {
+     "tag": "DIV",
+     "cls": "card-sub",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Nilai sentimen per aspek dari mesin yang sedang aktif: IndoB"
+    },
+    {
+     "tag": "DIV",
+     "cls": "card-sub",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Hasil analisis akan tampil di sini: aspek apa saja yang dise"
+    },
+    {
+     "tag": "DIV",
+     "cls": "footer-line",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "• Tugas Akhir AI Engineering Batch 13 • Student ID:  (Azura)"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "UlasRasa"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "REAENG13TQJLN"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "IndoBERT ABSA + Rencana Aksi LLM"
+    }
+   ],
+   "elements": [
+    {
+     "tag": "DIV",
+     "cls": "brand-name",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "UlasRasa"
+    },
+    {
+     "tag": "DIV",
+     "cls": "brand-sub",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Kesehatan Dapur dari Ulasan"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Ringkasan"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Rincian Aspek"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Rencana Aksi"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Coba Ulasan"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "engine-chip",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Engine ABSA: IndoBERT (fine-tuned)"
+    },
+    {
+     "tag": "DIV",
+     "cls": "greeting",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Halo, Ayam Geprek Sambal Korek Barokah"
+    },
+    {
+     "tag": "DIV",
+     "cls": "status-line",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Skor Kesehatan Dapur restoran ini berstatus . Perhatian utam"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "KRITIS (Audit Segera)"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Kemasan"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "33.3%"
+    },
+    {
+     "tag": "DIV",
+     "cls": "label-caps",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Restoran"
+    },
+    {
+     "tag": "DIV",
+     "cls": "st-bv st-at st-bw st-bx st-by st-b0 st-bz st-c0 st-c1",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Ayam Geprek Sambal Korek Barokah"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Ganti Data"
+    },
+    {
+     "tag": "DIV",
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Tulis Ulasan Pelanggan"
+    },
+    {
+     "tag": "DIV",
+     "cls": "card-sub",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Tempel satu ulasan pelanggan, lalu jalankan analisis untuk m"
+    },
+    {
+     "tag": "DIV",
+     "cls": "card-sub",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Atau coba contoh ulasan:"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Mixed: Rasa vs Kemasan"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Porsi & Harga"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Pelayanan & Suhu"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Puas Bintang 5"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Teks ulasan:"
+    },
+    {
+     "tag": "TEXTAREA",
+     "cls": "st-at st-c3 st-ed st-ee st-ef st-eg st-c4 st-c6 st-c5 st-c7 st-c9 st-av st-eh st-by st-b2 ",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Ayamnya gurih renyah bumbunya mantap meresap, tapi kemasan m"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Analisis Ulasan"
+    },
+    {
+     "tag": "DIV",
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Hasil Analisis"
+    },
+    {
+     "tag": "DIV",
+     "cls": "card-sub",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Nilai sentimen per aspek dari mesin yang sedang aktif: IndoB"
+    },
+    {
+     "tag": "DIV",
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Belum ada hasil"
+    },
+    {
+     "tag": "DIV",
+     "cls": "card-sub",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Hasil analisis akan tampil di sini: aspek apa saja yang dise"
+    },
+    {
+     "tag": "DIV",
+     "cls": "footer-line",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "• Tugas Akhir AI Engineering Batch 13 • Student ID:  (Azura)"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "UlasRasa"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "REAENG13TQJLN"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "IndoBERT ABSA + Rencana Aksi LLM"
+    }
+   ]
+  },
+  {
+   "label": "Coba (hasil)",
+   "total_text_elements": 47,
+   "by_primary_font": {
+    "Plus Jakarta Sans": 14,
+    "Source Sans": 23,
+    "Inter": 8,
+    "JetBrains Mono": 2
+   },
+   "source_sans_count": 23,
+   "source_sans_elements": [
+    {
+     "tag": "DIV",
+     "cls": "brand-sub",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Kesehatan Dapur dari Ulasan"
+    },
+    {
+     "tag": "DIV",
+     "cls": "status-line",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Skor Kesehatan Dapur restoran ini berstatus . Perhatian utam"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "KRITIS (Audit Segera)"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Kemasan"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "33.3%"
+    },
+    {
+     "tag": "DIV",
+     "cls": "card-sub",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Tempel satu ulasan pelanggan, lalu jalankan analisis untuk m"
+    },
+    {
+     "tag": "DIV",
+     "cls": "card-sub",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Atau coba contoh ulasan:"
+    },
+    {
+     "tag": "DIV",
+     "cls": "card-sub",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Nilai sentimen per aspek dari mesin yang sedang aktif: IndoB"
+    },
+    {
+     "tag": "DIV",
+     "cls": "aspect-name",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Rasa"
+    },
+    {
+     "tag": "DIV",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Pelanggan puas dengan aspek ini."
+    },
+    {
+     "tag": "SPAN",
+     "cls": "chip pill-pos",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Positif"
+    },
+    {
+     "tag": "DIV",
+     "cls": "aspect-name",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Kemasan"
+    },
+    {
+     "tag": "DIV",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Ada keluhan pada aspek ini."
+    },
+    {
+     "tag": "SPAN",
+     "cls": "chip pill-neg",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "DIV",
+     "cls": "not-mentioned-line",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Tidak disebut: Porsi, Harga, Pelayanan"
+    },
+    {
+     "tag": "DIV",
+     "cls": "review-text",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Nasi gorengnya enak banget dan bumbunya meresap, tapi kemasa"
+    },
+    {
+     "tag": "DIV",
+     "cls": "review-text",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "nasi gorengnya enak banget dan bumbunya meresap , tapi kemas"
+    },
+    {
+     "tag": "DIV",
+     "cls": "card-sub",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Ada keluhan pada aspek . Periksa kembali cara kerja dapur un"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Kemasan"
+    },
+    {
+     "tag": "DIV",
+     "cls": "footer-line",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "• Tugas Akhir AI Engineering Batch 13 • Student ID:  (Azura)"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "UlasRasa"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "REAENG13TQJLN"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "IndoBERT ABSA + Rencana Aksi LLM"
+    }
+   ],
+   "elements": [
+    {
+     "tag": "DIV",
+     "cls": "brand-name",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "UlasRasa"
+    },
+    {
+     "tag": "DIV",
+     "cls": "brand-sub",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Kesehatan Dapur dari Ulasan"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Ringkasan"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Rincian Aspek"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Rencana Aksi"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Coba Ulasan"
+    },
+    {
+     "tag": "SPAN",
+     "cls": "engine-chip",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Engine ABSA: IndoBERT (fine-tuned)"
+    },
+    {
+     "tag": "DIV",
+     "cls": "greeting",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Halo, Ayam Geprek Sambal Korek Barokah"
+    },
+    {
+     "tag": "DIV",
+     "cls": "status-line",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Skor Kesehatan Dapur restoran ini berstatus . Perhatian utam"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "KRITIS (Audit Segera)"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Kemasan"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "33.3%"
+    },
+    {
+     "tag": "DIV",
+     "cls": "label-caps",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Restoran"
+    },
+    {
+     "tag": "DIV",
+     "cls": "st-bv st-at st-bw st-bx st-by st-b0 st-bz st-c0 st-c1",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Ayam Geprek Sambal Korek Barokah"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Ganti Data"
+    },
+    {
+     "tag": "DIV",
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Tulis Ulasan Pelanggan"
+    },
+    {
+     "tag": "DIV",
+     "cls": "card-sub",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Tempel satu ulasan pelanggan, lalu jalankan analisis untuk m"
+    },
+    {
+     "tag": "DIV",
+     "cls": "card-sub",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Atau coba contoh ulasan:"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Mixed: Rasa vs Kemasan"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Porsi & Harga"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Pelayanan & Suhu"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Puas Bintang 5"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Teks ulasan:"
+    },
+    {
+     "tag": "TEXTAREA",
+     "cls": "st-at st-c3 st-ed st-ee st-ef st-eg st-c4 st-c6 st-c5 st-c7 st-c9 st-av st-eh st-by st-b2 ",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Nasi gorengnya enak banget dan bumbunya meresap, tapi kemasa"
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Analisis Ulasan"
+    },
+    {
+     "tag": "DIV",
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Hasil Analisis"
+    },
+    {
+     "tag": "DIV",
+     "cls": "card-sub",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Nilai sentimen per aspek dari mesin yang sedang aktif: IndoB"
+    },
+    {
+     "tag": "DIV",
+     "cls": "aspect-name",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Rasa"
+    },
+    {
+     "tag": "DIV",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Pelanggan puas dengan aspek ini."
+    },
+    {
+     "tag": "SPAN",
+     "cls": "chip pill-pos",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Positif"
+    },
+    {
+     "tag": "DIV",
+     "cls": "conf-val",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "53%"
+    },
+    {
+     "tag": "DIV",
+     "cls": "aspect-name",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Kemasan"
+    },
+    {
+     "tag": "DIV",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Ada keluhan pada aspek ini."
+    },
+    {
+     "tag": "SPAN",
+     "cls": "chip pill-neg",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "DIV",
+     "cls": "conf-val",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "93%"
+    },
+    {
+     "tag": "DIV",
+     "cls": "not-mentioned-line",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Tidak disebut: Porsi, Harga, Pelayanan"
+    },
+    {
+     "tag": "DIV",
+     "cls": "label-caps",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Teks Asli"
+    },
+    {
+     "tag": "DIV",
+     "cls": "review-text",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Nasi gorengnya enak banget dan bumbunya meresap, tapi kemasa"
+    },
+    {
+     "tag": "DIV",
+     "cls": "label-caps",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Teks Setelah Dibersihkan"
+    },
+    {
+     "tag": "DIV",
+     "cls": "review-text",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "nasi gorengnya enak banget dan bumbunya meresap , tapi kemas"
+    },
+    {
+     "tag": "DIV",
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Saran Tindak Lanjut"
+    },
+    {
+     "tag": "DIV",
+     "cls": "card-sub",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Ada keluhan pada aspek . Periksa kembali cara kerja dapur un"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "Kemasan"
+    },
+    {
+     "tag": "DIV",
+     "cls": "footer-line",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "• Tugas Akhir AI Engineering Batch 13 • Student ID:  (Azura)"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "UlasRasa"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "REAENG13TQJLN"
+    },
+    {
+     "tag": "B",
+     "cls": "",
+     "testid": "",
+     "font": "\"Source Sans\", sans-serif",
+     "text": "IndoBERT ABSA + Rencana Aksi LLM"
+    }
+   ]
+  }
+ ],
+ "role_samples": {
+  "greeting_jakarta": {
+   "font": "\"Plus Jakarta Sans\", sans-serif",
+   "text": "Halo, Ayam Geprek Sambal Korek Barokah"
+  },
+  "kpi_value_mono": null,
+  "stat_value_mono": null,
+  "card_title_jakarta": {
+   "font": "\"Plus Jakarta Sans\", sans-serif",
+   "text": "Tulis Ulasan Pelanggan"
+  },
+  "button_label_jakarta": {
+   "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+   "text": "Ganti Data"
+  },
+  "first_paragraph": {
+   "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+   "text": "Navigasi modul"
+  },
+  "card_sub": {
+   "font": "\"Source Sans\", sans-serif",
+   "text": "Tempel satu ulasan pelanggan, lalu jalankan analis"
+  },
+  "stat_label": null,
+  "brand_sub": {
+   "font": "\"Source Sans\", sans-serif",
+   "text": "Kesehatan Dapur dari Ulasan"
+  }
+ }
+}

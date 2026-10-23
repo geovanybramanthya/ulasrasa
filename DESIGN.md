@@ -121,3 +121,20 @@ Di bawah ±640 px: *pill* navigasi membungkus dua baris; kartu KPI menjadi grid 
 2. Bangun Modul Ringkasan lebih dulu sebagai penentu *tone*; ambil tangkapan layar bukti (desktop + 390 px); user menilai.
 3. Setelah Ringkasan disetujui, wariskan token + komponen ke Rincian Aspek, Rencana Aksi, Coba Ulasan.
 4. Selesai semua modul: tinjauan visual independen (protokol *oil-ui*) + uji fungsi penuh (alur unggah -> analisis -> daftar aksi -> unduh) sebelum dinyatakan selesai.
+
+## Adendum Revisi Landing - 2026-10-23
+
+Keputusan terkunci hasil *grill* 2026-10-23 malam (Ronde 1 Q1-Q6 + Ronde 2 Q7-Q12), menyusul keluhan user: *dropdown* resto terasa *default*, *font* panel Ganti Data beda sendiri, dan semua resto tercampur dalam satu sesi. Daftar lengkap keputusan tersimpan di sandbox (`~/workspace/ulasrasa-design/ADENDUM-REVISI-LANDING.md`); bagian ini adalah versi ringkas yang mengikat pembangunan. Dikerjakan di *branch* `revisi-landing` (dari `main` `1ba73bf`); `main` tidak disentuh selama revisi berjalan.
+
+1. Satu akun demo = satu resto. *Landing* adalah pintu masuk; *dashboard* hanya menampilkan resto akun aktif. *Dropdown*/*selectbox* ganti resto di *dashboard* dihapus.
+2. "Semua Outlet (Benchmark Industri)" menjadi akun kelima di *landing* (dataset gabungan 100 ulasan).
+3. Masuk = klik kartu akun, tanpa *password*/PIN. Kartu berlabel "Akun Demo".
+4. *Layout landing* meniru struktur referensi BCS-ESG: kiri = *brand* + judul + daftar akun; kanan = panel visual besar. Kulit tetap identitas UlasRasa: hijau `#22C55E`, pastel, latar `#F6F7F9`, *font* Plus Jakarta Sans/Inter/JetBrains Mono.
+5. Kartu akun berisi: nama resto + jumlah ulasan contoh (25 per resto; 100 untuk Benchmark) + cip status Skor Kesehatan Dapur yang dihitung riil dari data lewat *pipeline* yang ada (bukan angka *hardcode*). Target kecocokan: Ayam Geprek Sambal Korek Barokah 55,84 KRITIS; Bakso Rusuk Solo Pak Ndut 68,24 WASPADA; Bebek Goreng Madura Cak Roni 83,00 PRIMA; Kopi Susu Senja & Toast 59,55 KRITIS; Benchmark 67,27 WASPADA.
+6. Paket penataan *widget*: *popover dropdown* BaseWeb di-*style* penuh; semua *widget* panel Ganti Data + *widget* bawaan lain diselaraskan (*font* + gaya). Audit wajib menyertakan keadaan panel/*popover* terbuka.
+7. Panel "Ganti Data" tetap di *dashboard*. Mode Preset mengembalikan data akun aktif (bukan lagi pilihan resto); mode Upload CSV berperilaku persis seperti lama: dataset aktif sementara (batas 200 baris, wajib kolom `review_text`), sapaan "Outlet Kustom" saat unggahan aktif, dan Preset adalah jalan balik.
+8. Fitur "Input Ulasan Baru ke Outlet Ini" dipertahankan di panel Ganti Data.
+9. Panel visual kanan *landing*: ilustrasi dari aset `assets/ilustrasi-landing.webp` + satu kartu kaca berisi satu kalimat nilai aplikasi (semi-formal, tanpa angka karangan).
+10. Kepala *dashboard*: area *selectbox* lama diganti kartu identitas akun statis (nama resto + cip "Akun Demo"); tombol "Ganti Data" tetap di bawahnya. Tombol "Ganti Akun" (*ghost*) di *top bar* paling kanan: kembali ke *landing* + bersihkan *state* akun dan dataset aktif sesi (unggahan/input ulasan sesi hilang, kembali murni).
+11. *Mobile* 390 px: *landing* bertumpuk - *brand* + daftar akun dulu, panel visual menjadi *strip* di bawah.
+12. Sapaan "Halo, [nama resto]" dan seluruh angka *dashboard* tidak berubah; perhitungan bersama (*eval_results*/KHS/*breakdown*) tidak bergeser. Kebijakan *merge*: hanya sesudah audit PASS + user melihat *screenshot*; bila mepet *deadline*, *deploy* memakai `main` versi sekarang (URL Space tidak berubah saat di-*update*).

@@ -133,7 +133,19 @@ def main():
                     if ga.count() == 0:
                         ga = page.get_by_text("Ganti Akun", exact=True)
                     ga.first.click(timeout=15000)
-                    page.wait_for_timeout(2500)
+                    # Tunggu berbasis KONDISI (perbaikan harness 2026-10-23):
+                    # render landing pasca-logout menghitung ulang KHS 5 akun
+                    # (inferensi CPU) dan bisa melebihi tunggu tetap 2,5 dtk lama -
+                    # lari "final" pertama sempat FAIL di sini padahal logout bekerja
+                    # (terbukti AppTest + journey_logout_upload 5/5).
+                    try:
+                        page.wait_for_function(
+                            """() => document.body && document.body.innerText
+                               .includes('Pilih restoran untuk masuk ke dashboard')""",
+                            timeout=90000)
+                    except Exception:
+                        pass
+                    page.wait_for_timeout(1000)
                     land2 = detect_landing(page)
                     ok3 = bool(land2["landing_likely"])
                     step("ganti_akun_back", "PASS" if ok3 else "FAIL",

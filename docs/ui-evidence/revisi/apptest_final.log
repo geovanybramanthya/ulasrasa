@@ -1,0 +1,25 @@
+2026-10-23 20:33:44.914 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+Loading weights:   0%|          | 0/201 [00:00<?, ?it/s]Loading weights: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 201/201 [00:00<00:00, 21553.24it/s]
+2026-10-23 20:33:52.243 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+[PASS] landing_no_exception: run segar tanpa state akun (active_account=None): exception=0
+[PASS] landing_gate_present: landing tampil: judul=True nama resto di markdown=4 tombol 'Masuk Dashboard' ada=True sapaan dashboard ada=False
+2026-10-23 20:33:52.351 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-10-23 20:33:52.352 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-10-23 20:33:52.352 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-10-23 20:33:52.352 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-10-23 20:33:52.352 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-10-23 20:33:52.352 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+[PASS] dashboard_Ayam Geprek Sambal: exception=0 sapaan_ok=True KHS '55.8%' tampil=True status 'KRITIS (Audit Segera)' tampil=True (seed active_account='Ayam Geprek Sambal Korek Barokah')
+2026-10-23 20:33:52.426 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-10-23 20:33:52.426 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-10-23 20:33:52.426 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-10-23 20:33:52.426 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-10-23 20:33:52.426 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-10-23 20:33:52.426 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+[PASS] dashboard_Semua Outlet: exception=0 sapaan_ok=True KHS '67.3%' tampil=True status 'WASPADA (Perhatian)' tampil=True (seed active_account='Semua Outlet (Benchmark Industri)')
+RINGKASAN apptest_revisi: 4 PASS, 0 FAIL dari 4
+JSON -> C:\Users\geova\Downloads\BOOTCAMP\PROJECTS\ulasrasa\docs\ui-evidence\revisi\apptest_revisi_result.json

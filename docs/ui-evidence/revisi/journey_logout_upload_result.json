@@ -1,0 +1,93 @@
+{
+ "url": "http://localhost:8525",
+ "steps": [
+  {
+   "name": "landing_awal",
+   "status": "PASS",
+   "evidence": "deteksi landing: {'has_greeting_div': True, 'greeting_text': 'Pilih restoran untuk masuk ke dashboard', 'has_kpi': False, 'has_landing_cards': True, 'landing_card_count': 5, 'has_landing_title': True, 'has_topbar': True, 'has_ganti_akun': False, 'has_ganti_data': False, 'has_module_pills': False, 'resto_mentions': {'Ayam Geprek Sambal Korek Barokah': 1, 'Bakso Rusuk Solo Pak Ndut': 1, 'Bebek Goreng Madura Cak Roni': 1, 'Kopi Susu Senja & Toast': 1, 'Semua Outlet (Benchmark Industri)': 1}, 'body_excerpt': 'UlasRasa\\nKESEHATAN DAPUR DARI ULASAN\\nPilih restoran untuk masuk ke dashboard\\nSetiap akun demo menampilkan data ulasan satu restoran, lengkap dengan Skor Kesehatan Dapur dan rencana aksi perbaikannya.\\nPILIH AKUN DEMO\\nAyam Geprek Sambal Korek Barokah\\nAkun Demo\\n25 ulasan contoh\\nSKOR KESEHATAN DAPUR\\n55,84\\nKRITIS\\n\\nMasuk Dashboard\\n\\nBakso Rusuk Solo Pak Ndut\\nAkun Demo\\n25 ulasan contoh\\nSKOR KESEHATAN DAPUR\\n68,24\\nWASPADA\\n\\nMasuk Dashboard\\n\\nBebek Goreng Madura Cak Roni\\nAkun Demo\\n25 ulasan contoh\\nSKOR KESEHATAN DAPUR\\n83,00\\nPRIMA\\n\\nMasuk Dashboard\\n\\nKopi Susu Senja & Toast\\nAkun Demo\\n25 ulasan contoh\\nSKOR KES', 'distinct_resto_names_visible': 5, 'landing_likely': True}"
+  },
+  {
+   "name": "masuk_ayam",
+   "status": "PASS",
+   "evidence": "sapaan='Halo, Ayam Geprek Sambal Korek Barokah' total=25 (harap 25)",
+   "hero": {
+    "greeting": "Halo, Ayam Geprek Sambal Korek Barokah",
+    "khs_display_1dp": 55.8,
+    "kpi_values": [
+     "55.8%",
+     "25",
+     "76.0%",
+     "Kemasan"
+    ],
+    "status_text": "KRITIS (Audit Segera)",
+    "total_reviews": 25
+   }
+  },
+  {
+   "name": "upload_aktif",
+   "status": "PASS",
+   "evidence": "sapaan='Halo, Outlet Kustom' total=3 (harap 3)",
+   "hero": {
+    "greeting": "Halo, Outlet Kustom",
+    "khs_display_1dp": 67.5,
+    "kpi_values": [
+     "67.5%",
+     "3",
+     "0.0%",
+     "Kemasan"
+    ],
+    "status_text": "WASPADA (Perhatian)",
+    "total_reviews": 3
+   }
+  },
+  {
+   "name": "ganti_akun_saat_upload",
+   "status": "PASS",
+   "evidence": "landing lagi=True exception-di-halaman=False",
+   "detection": {
+    "has_greeting_div": true,
+    "greeting_text": "Pilih restoran untuk masuk ke dashboard",
+    "has_kpi": false,
+    "has_landing_cards": true,
+    "landing_card_count": 5,
+    "has_landing_title": true,
+    "has_topbar": true,
+    "has_ganti_akun": false,
+    "has_ganti_data": false,
+    "has_module_pills": false,
+    "resto_mentions": {
+     "Ayam Geprek Sambal Korek Barokah": 1,
+     "Bakso Rusuk Solo Pak Ndut": 1,
+     "Bebek Goreng Madura Cak Roni": 1,
+     "Kopi Susu Senja & Toast": 1,
+     "Semua Outlet (Benchmark Industri)": 1
+    },
+    "body_excerpt": "UlasRasa\nKESEHATAN DAPUR DARI ULASAN\nPilih restoran untuk masuk ke dashboard\nSetiap akun demo menampilkan data ulasan satu restoran, lengkap dengan Skor Kesehatan Dapur dan rencana aksi perbaikannya.\nPILIH AKUN DEMO\nAyam Geprek Sambal Korek Barokah\nAkun Demo\n25 ulasan contoh\nSKOR KESEHATAN DAPUR\n55,84\nKRITIS\n\nMasuk Dashboard\n\nBakso Rusuk Solo Pak Ndut\nAkun Demo\n25 ulasan contoh\nSKOR KESEHATAN DAPUR\n68,24\nWASPADA\n\nMasuk Dashboard\n\nBebek Goreng Madura Cak Roni\nAkun Demo\n25 ulasan contoh\nSKOR KESEHATAN DAPUR\n83,00\nPRIMA\n\nMasuk Dashboard\n\nKopi Susu Senja & Toast\nAkun Demo\n25 ulasan contoh\nSKOR KES",
+    "distinct_resto_names_visible": 5,
+    "landing_likely": true
+   }
+  },
+  {
+   "name": "masuk_lagi_dataset_murni",
+   "status": "PASS",
+   "evidence": "sapaan='Halo, Ayam Geprek Sambal Korek Barokah' total=25 (harap 25) KHS=55.8 (baseline 55.84)",
+   "hero": {
+    "greeting": "Halo, Ayam Geprek Sambal Korek Barokah",
+    "khs_display_1dp": 55.8,
+    "kpi_values": [
+     "55.8%",
+     "25",
+     "76.0%",
+     "Kemasan"
+    ],
+    "status_text": "KRITIS (Audit Segera)",
+    "total_reviews": 25
+   }
+  }
+ ],
+ "summary": {
+  "pass": 5,
+  "total": 5,
+  "overall": "PASS"
+ }
+}

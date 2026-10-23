@@ -1,0 +1,69 @@
+Loading weights:   0%|          | 0/201 [00:00<?, ?it/s]Loading weights: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 201/201 [00:00<00:00, 10043.66it/s]
+2026-10-23 20:33:27.314 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-10-23 20:33:27.315 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+Loading weights:   0%|          | 0/201 [00:00<?, ?it/s]Loading weights: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 201/201 [00:00<00:00, 11741.39it/s]
+2026-10-23 20:33:27.426 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-10-23 20:33:27.426 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+[PASS    ] P-D1 engine label IndoBERT: engine sekarang=IndoBERT (fine-tuned) baseline=IndoBERT (fine-tuned)
+[PASS    ] P-D2 KHS 5 konteks identik: benchmark_semua_outlet KHS 67.27->67.27; Ayam Geprek Sambal Korek Barokah KHS 55.84->55.84; Bakso Rusuk Solo Pak Ndut KHS 68.24->68.24; Bebek Goreng Madura Cak Roni KHS 83.0->83.0; Kopi Susu Senja & Toast KHS 59.55->59.55
+[PASS    ] P-D3 skor per aspek 5 konteks identik: 25 skor aspek dibandingkan pada 2 desimal
+[PASS    ] P-D4 breakdown counts identik: total/pos/neu/neg per aspek per konteks sama persis
+[PASS    ] P-D5 penjaga unggah (201 baris ditolak, kolom wajib, format): 201 baris -> File berisi 201 baris, melebihi batas ma...; kolom hilang -> CSV wajib memiliki kolom 'review_text'; valid -> resto Resto Uji; mode data=['Outlet Bawaan (Preset)', 'Upload Dataset Real (CSV)'] (sama seperti app lama)
+[PASS    ] P-D6 tombol Ganti Data + PanelData terpasang: components.py: tombol BTN_GANTI_DATA + panel inline (ui_panel_open, PANEL_DATA_TITLE, file_uploader); buka panel dibuktikan journey Tahap 6
+[PASS    ] P-D7 dataset tidak berubah sejak 461e646: git diff dataset kosong; sha256 sekarang=6625145c119fae68
+[PASS    ] P-D8 dataset bawaan 4 resto + tanpa sidebar: resto=['Ayam Geprek Sambal Korek Barokah', 'Bakso Rusuk Solo Pak Ndut', 'Bebek Goreng Madura Cak Roni', 'Kopi Susu Senja & Toast']; st.sidebar di app.py: False
+[PASS    ] P-D9 kunci sesi dipertahankan: init_session_state (5 kunci) + pola action_chk_<resto>_<idx> + sim_input/sim_res
+[PASS    ] P-E1 caption Engine ABSA IndoBERT: engine_label app=IndoBERT (fine-tuned)
+[PASS    ] P-E2 mode rekomendasi + cip di modul: generation_mode=template llm_provider=None
+[PASS    ] P-E3 jalur pipeline sama (transformer): kelas pipeline=TransformerABSAPipeline
+[INSPEKSI] P-E4 ranking resto terurut skor menurun: eval_results tanpa kunci ranking (keys=['aspect_breakdown', 'evaluated_df', 'kitchen_health_score', 'total_reviews']); angka ranking = KHS per resto (P-D2)
+[PASS    ] P-E5 file logika non-UI tidak berubah vs 461e646: git diff kosong: True (0 char)
+[PASS    ] P-N1 KHS tampil 1 desimal + persen: KartuKPI + donat memakai format khs:.1f diikuti %
+[PASS    ] P-N2 label Skor Kesehatan Dapur pada hero donat: HERO_TITLE='Skor Kesehatan Dapur' menjadi judul kartu hero; tengah donat memuat nilai % (render Fase 1 yang disetujui user)
+[PASS    ] P-N3 ambang status konsisten aturan: thresholds={'PRIMA': 80.0, 'WASPADA': 65.0, 'KRITIS': 0.0}; 5 status baseline konsisten
+[PASS    ] P-N4 format skor aspek + laju negatif 1 desimal: rel-tabel skor '...:.1f}%' + kalimat keluhan '{neg_rate_w:.1f}%' di module_ringkasan
+[PASS    ] P-N5 KHS = rata-rata tertimbang skor aspek: hitung ulang=55.8400 ctx=55.8400
+2026-10-23 20:33:28.201 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-10-23 20:33:28.201 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-10-23 20:33:28.201 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+[PASS    ] P-M1 Ringkasan utuh + cip engine: exception=0 tombol_rel=True cip_engine=True
+[PASS    ] P-M14 sapaan Halo + status: header sapaan ter-render di Ringkasan
+[PASS    ] P-M15 widget unggah CSV bisa dibuka: klik Ganti Data -> panel terbuka; radio mode=Upload -> file_uploader=1, exception=0
+2026-10-23 20:33:28.773 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-10-23 20:33:28.773 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-10-23 20:33:28.773 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+[PASS    ] P-M2 Rincian utuh (donat, kata, komposisi, contoh, tabel): exception=0 caption hitung=True
+[PASS    ] P-M3 AngkaHitungAspek == breakdown rasa (konteks awal): total=23 pos=15 neu=3 neg=5
+[PASS    ] P-M4 komposisi bertumpuk == breakdown: 3 seri x 5 aspek dibandingkan ke breakdown
+[PASS    ] P-M5 kata keluhan: stop_set identik + figur == Counter top-6: stop_set sama=True; top6 kemasan=[('ayamnya', 5), ('sambal', 5), ('tapi', 4)]...
+[PASS    ] P-M6 donat distribusi == breakdown: values=[15, 3, 5]
+2026-10-23 20:33:28.891 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-10-23 20:33:28.891 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-10-23 20:33:28.891 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+[PASS    ] P-M7 Rencana utuh + progress + cip mode + 3 unduhan: exception=0 download_button=3
+[PASS    ] P-M9 SOP tampil: judul SOP ter-render di Rencana
+2026-10-23 20:33:29.911 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-10-23 20:33:29.911 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-10-23 20:33:29.911 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-10-23 20:33:29.911 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+[PASS    ] P-M8 centang persisten -> progress berubah: kunci 'action_chk_Ayam Geprek Sambal Korek Barokah_0'=True -> garis '1 dari N aksi selesai' ter-render: True
+2026-10-23 20:33:30.558 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-10-23 20:33:30.558 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-10-23 20:33:30.558 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+[PASS    ] P-M11 empty state Coba sebelum analisis: exception=0 empty-state=True
+2026-10-23 20:33:30.572 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+[PASS    ] P-M10 hasil Coba: baris aspek + confidence + tindak lanjut: exception=0 hasil=True tidak-disebut=True
+[PASS    ] P-M12 4 teks preset identik karakter per karakter: preset_texts (lokal) app.py@461e646 vs PRESET_TEXTS module_coba via AST literal_eval
+[PASS    ] P-M13 konstruksi argumen exporter identik (AST): TXT dump identik=True; PDF argumen setara=True (critical_alerts dibuktikan di P-X2)
+[PASS    ] P-X1 TXT berisi semua butir aksi (instruksi utuh) + status: panjang TXT=3718 char; 12 butir; semua instruksi utuh di dalamnya: True
+[PASS    ] P-X2 PDF ter-generate valid (%PDF): ukuran=4481 byte; teks terekstrak 2603 char
+[PASS    ] P-X3 CSV kolom + baris sesuai: header ok; baris data=12 == jumlah aksi 12
+[PASS    ] P-X4 nama file unduhan sama seperti lama: template file_name lama=["checklist_dapur_{selected_resto.lower().replace(' ', '_')}.csv", "checklist_dapur_{selected_resto.lower().replace(' ', '_')}.pdf", "checklist_dapur_{selected_resto.lower().replace(' ', '_')}.txt"] baru=["checklist_dapur_{selected_resto.lower().replace(' ', '_')}.csv", "checklist_dapur_{selected_resto.lower().replace(' ', '_')}.pdf", "checklist_dapur_{selected_resto.lower().replace(' ', '_')}.txt"]
+[PASS    ] P-M16 batang kepuasan == skor aspek + garis 70: x=[41.7, 33.3, 57.1, 54.5, 71.7] shapes=1
+[PASS    ] P-G1 judul aplikasi + favicon: APP_TITLE=UlasRasa - Kesehatan Dapur dari Ulasan; favicon ada; page_title di app.py
+[PASS    ] P-G2 sidebar disembunyikan via CSS: aturan stSidebar display:none ada di theme.py
+[PASS    ] P-G3 empat modul tanpa exception (AppTest): exceptions ringkasan/rincian/rencana/coba = [0, 0, 0, 0]
+[PASS    ] P-G5 nol emoji di file UI: file ber-emoji: tidak ada
+[INSPEKSI] P-G4 pytest 13 passed: dijalankan terpisah oleh Executor (py -m pytest tests/ -q) pada pohon yang sama
+
+RINGKASAN: 42 PASS, 0 FAIL, 2 INSPEKSI dari 44 butir terprogram

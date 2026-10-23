@@ -18,6 +18,7 @@ import streamlit as st
 from src.absa_pipeline import ABSAPipeline
 from src.action_engine import ActionPlanEngine
 from src.config import HEALTH_THRESHOLDS
+from src.ui import labels
 
 
 @st.cache_resource
@@ -76,8 +77,73 @@ def init_session_state() -> None:
     if "ui_resto_select" not in st.session_state:
         st.session_state.ui_resto_select = None
 
+    # Akun demo aktif (Adendum Revisi Landing 2026-10-23): None = belum
+    # masuk (landing tampil); string = nama resto akun aktif atau
+    # labels.BENCHMARK_LABEL untuk akun "Semua Outlet (Benchmark Industri)".
+    if "active_account" not in st.session_state:
+        st.session_state.active_account = None
+
     if "rincian_aspect" not in st.session_state:
         st.session_state.rincian_aspect = "Rasa"
+
+
+def list_demo_accounts() -> list:
+    """Daftar akun demo landing: 4 resto (alfabetis) + Benchmark terakhir.
+
+    Mengembalikan list dict {name, count, df} dari dataset bawaan murni
+    (load_default_dataset), BUKAN dari dataset sesi, agar landing selalu
+    menampilkan data contoh asli (25 ulasan per resto, 100 gabungan).
+    """
+    df = load_default_dataset()
+    accounts = []
+    if not df.empty and "restaurant_name" in df.columns:
+        for name in sorted(df["restaurant_name"].unique()):
+            accounts.append({
+                "name": name,
+                "count": int((df["restaurant_name"] == name).sum()),
+                "df": df[df["restaurant_name"] == name].copy(),
+            })
+    accounts.append({"name": labels.BENCHMARK_LABEL, "count": int(len(df)), "df": df.copy()})
+    return accounts
+
+
+def enter_account(name: str) -> None:
+    """Callback klik kartu akun di landing: jadikan akun aktif.
+
+    Dipakai sebagai on_click st.button (berjalan sebelum widget run
+    berikutnya dibuat, jadi aman menulis kunci widget sesi). Dataset sesi
+    direset ke dataset bawaan murni agar dashboard mulai bersih.
+    """
+    st.session_state.active_account = name
+    st.session_state.ui_resto_select = name
+    st.session_state.custom_reviews_df = load_default_dataset()
+    st.session_state.custom_checklist_items = []
+    st.session_state.ui_data_mode = labels.DATA_MODE_PRESET
+    st.session_state.ui_panel_open = False
+    st.session_state.active_module_name = labels.MODULE_CHOICES[0]
+    st.session_state.pop("nav_pending", None)
+
+
+def clear_account_session() -> None:
+    """Callback tombol Ganti Akun: kembali ke landing, sesi kembali murni.
+
+    Membersihkan akun aktif DAN dataset aktif sesi: unggahan CSV, ulasan
+    hasil input manual, tindakan kustom, dan centang daftar aksi sesi
+    hilang; dataset bawaan dimuat ulang dari CSV contoh.
+    """
+    for key in list(st.session_state.keys()):
+        if key.startswith("action_chk_"):
+            st.session_state.pop(key, None)
+    st.session_state.pop("ui_csv_uploader", None)
+    st.session_state.pop("nav_pending", None)
+    st.session_state.pop("nav_pills", None)
+    st.session_state.active_account = None
+    st.session_state.ui_resto_select = None
+    st.session_state.custom_reviews_df = load_default_dataset()
+    st.session_state.custom_checklist_items = []
+    st.session_state.ui_data_mode = labels.DATA_MODE_PRESET
+    st.session_state.ui_panel_open = False
+    st.session_state.active_module_name = labels.MODULE_CHOICES[0]
 
 
 def compute_context(filtered_df: pd.DataFrame, pipeline) -> dict:

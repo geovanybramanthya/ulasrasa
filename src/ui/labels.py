@@ -61,6 +61,28 @@ LOADING_BODY = (
 GREETING_BENCHMARK_NAME = "Semua Outlet"
 BTN_GANTI_DATA = "Ganti Data"
 BTN_TUTUP_PANEL = "Tutup Panel"
+BTN_GANTI_AKUN = "Ganti Akun"
+DEMO_CHIP = "Akun Demo"
+PRESET_CAPTION = (
+    "Menampilkan data contoh untuk akun yang sedang aktif. "
+    "Untuk berpindah restoran, gunakan tombol Ganti Akun di kanan atas."
+)
+
+# ---------------------------------------------------------------- teks Landing (Adendum 2026-10-23)
+LANDING_TITLE = "Pilih restoran untuk masuk ke dashboard"
+LANDING_SUB = (
+    "Setiap akun demo menampilkan data ulasan satu restoran, lengkap dengan "
+    "Skor Kesehatan Dapur dan rencana aksi perbaikannya."
+)
+LANDING_ACCOUNTS_LABEL = "Pilih Akun Demo"
+LANDING_REVIEWS_LINE = "{n} ulasan contoh"
+LANDING_KHS_LABEL = "Skor Kesehatan Dapur"
+LANDING_ENTER_BTN = "Masuk Dashboard"
+LANDING_VISUAL_TITLE = "UlasRasa untuk UMKM Kuliner"
+LANDING_VALUE = (
+    "UlasRasa membantu pemilik usaha kuliner memahami keluhan pelanggan dari "
+    "ulasan dan mengubahnya menjadi langkah perbaikan dapur yang jelas."
+)
 PANEL_DATA_TITLE = "Data Ulasan"
 PANEL_DATA_SUB = (
     "Pakai data contoh restoran atau unggah file ulasan milik Anda sendiri "

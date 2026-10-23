@@ -1,0 +1,257 @@
+{
+  "engine_label": "IndoBERT (fine-tuned)",
+  "engine_load_error": null,
+  "app_py_sha256": "8c8d4f24adaa634a127d156bd286db9e73a23c599a6f22d3d8032287dc8a9f49",
+  "contexts": {
+    "benchmark_semua_outlet": {
+      "n_reviews": 100,
+      "khs": 67.27,
+      "khs_2dp": 67.27,
+      "status_label": "WASPADA (Perhatian)",
+      "weakest_aspect": "kemasan",
+      "weakest_score": 54.29,
+      "aspects": {
+        "rasa": {
+          "satisfaction_score": 69.75,
+          "total_mentioned": 81,
+          "positive": 52,
+          "neutral": 9,
+          "negative": 20,
+          "negative_rate": 24.69
+        },
+        "porsi": {
+          "satisfaction_score": 68.18,
+          "total_mentioned": 44,
+          "positive": 29,
+          "neutral": 2,
+          "negative": 13,
+          "negative_rate": 29.55
+        },
+        "harga": {
+          "satisfaction_score": 70.0,
+          "total_mentioned": 50,
+          "positive": 35,
+          "neutral": 0,
+          "negative": 15,
+          "negative_rate": 30.0
+        },
+        "kemasan": {
+          "satisfaction_score": 54.29,
+          "total_mentioned": 35,
+          "positive": 19,
+          "neutral": 0,
+          "negative": 16,
+          "negative_rate": 45.71
+        },
+        "pelayanan": {
+          "satisfaction_score": 70.49,
+          "total_mentioned": 61,
+          "positive": 43,
+          "neutral": 0,
+          "negative": 18,
+          "negative_rate": 29.51
+        }
+      }
+    },
+    "Ayam Geprek Sambal Korek Barokah": {
+      "n_reviews": 25,
+      "khs": 55.84,
+      "khs_2dp": 55.84,
+      "status_label": "KRITIS (Audit Segera)",
+      "weakest_aspect": "kemasan",
+      "weakest_score": 33.33,
+      "aspects": {
+        "rasa": {
+          "satisfaction_score": 71.74,
+          "total_mentioned": 23,
+          "positive": 15,
+          "neutral": 3,
+          "negative": 5,
+          "negative_rate": 21.74
+        },
+        "porsi": {
+          "satisfaction_score": 54.55,
+          "total_mentioned": 11,
+          "positive": 5,
+          "neutral": 2,
+          "negative": 4,
+          "negative_rate": 36.36
+        },
+        "harga": {
+          "satisfaction_score": 57.14,
+          "total_mentioned": 7,
+          "positive": 4,
+          "neutral": 0,
+          "negative": 3,
+          "negative_rate": 42.86
+        },
+        "kemasan": {
+          "satisfaction_score": 33.33,
+          "total_mentioned": 12,
+          "positive": 4,
+          "neutral": 0,
+          "negative": 8,
+          "negative_rate": 66.67
+        },
+        "pelayanan": {
+          "satisfaction_score": 41.67,
+          "total_mentioned": 12,
+          "positive": 5,
+          "neutral": 0,
+          "negative": 7,
+          "negative_rate": 58.33
+        }
+      }
+    },
+    "Bakso Rusuk Solo Pak Ndut": {
+      "n_reviews": 25,
+      "khs": 68.24,
+      "khs_2dp": 68.24,
+      "status_label": "WASPADA (Perhatian)",
+      "weakest_aspect": "kemasan",
+      "weakest_score": 37.5,
+      "aspects": {
+        "rasa": {
+          "satisfaction_score": 63.89,
+          "total_mentioned": 18,
+          "positive": 11,
+          "neutral": 1,
+          "negative": 6,
+          "negative_rate": 33.33
+        },
+        "porsi": {
+          "satisfaction_score": 90.0,
+          "total_mentioned": 10,
+          "positive": 9,
+          "neutral": 0,
+          "negative": 1,
+          "negative_rate": 10.0
+        },
+        "harga": {
+          "satisfaction_score": 75.0,
+          "total_mentioned": 12,
+          "positive": 9,
+          "neutral": 0,
+          "negative": 3,
+          "negative_rate": 25.0
+        },
+        "kemasan": {
+          "satisfaction_score": 37.5,
+          "total_mentioned": 8,
+          "positive": 3,
+          "neutral": 0,
+          "negative": 5,
+          "negative_rate": 62.5
+        },
+        "pelayanan": {
+          "satisfaction_score": 73.33,
+          "total_mentioned": 15,
+          "positive": 11,
+          "neutral": 0,
+          "negative": 4,
+          "negative_rate": 26.67
+        }
+      }
+    },
+    "Bebek Goreng Madura Cak Roni": {
+      "n_reviews": 25,
+      "khs": 83.0,
+      "khs_2dp": 83.0,
+      "status_label": "PRIMA (Optimal)",
+      "weakest_aspect": "kemasan",
+      "weakest_score": 75.0,
+      "aspects": {
+        "rasa": {
+          "satisfaction_score": 82.61,
+          "total_mentioned": 23,
+          "positive": 18,
+          "neutral": 2,
+          "negative": 3,
+          "negative_rate": 13.04
+        },
+        "porsi": {
+          "satisfaction_score": 91.67,
+          "total_mentioned": 12,
+          "positive": 11,
+          "neutral": 0,
+          "negative": 1,
+          "negative_rate": 8.33
+        },
+        "harga": {
+          "satisfaction_score": 83.33,
+          "total_mentioned": 18,
+          "positive": 15,
+          "neutral": 0,
+          "negative": 3,
+          "negative_rate": 16.67
+        },
+        "kemasan": {
+          "satisfaction_score": 75.0,
+          "total_mentioned": 8,
+          "positive": 6,
+          "neutral": 0,
+          "negative": 2,
+          "negative_rate": 25.0
+        },
+        "pelayanan": {
+          "satisfaction_score": 80.0,
+          "total_mentioned": 20,
+          "positive": 16,
+          "neutral": 0,
+          "negative": 4,
+          "negative_rate": 20.0
+        }
+      }
+    },
+    "Kopi Susu Senja & Toast": {
+      "n_reviews": 25,
+      "khs": 59.55,
+      "khs_2dp": 59.55,
+      "status_label": "KRITIS (Audit Segera)",
+      "weakest_aspect": "porsi",
+      "weakest_score": 36.36,
+      "aspects": {
+        "rasa": {
+          "satisfaction_score": 55.88,
+          "total_mentioned": 17,
+          "positive": 8,
+          "neutral": 3,
+          "negative": 6,
+          "negative_rate": 35.29
+        },
+        "porsi": {
+          "satisfaction_score": 36.36,
+          "total_mentioned": 11,
+          "positive": 4,
+          "neutral": 0,
+          "negative": 7,
+          "negative_rate": 63.64
+        },
+        "harga": {
+          "satisfaction_score": 53.85,
+          "total_mentioned": 13,
+          "positive": 7,
+          "neutral": 0,
+          "negative": 6,
+          "negative_rate": 46.15
+        },
+        "kemasan": {
+          "satisfaction_score": 85.71,
+          "total_mentioned": 7,
+          "positive": 6,
+          "neutral": 0,
+          "negative": 1,
+          "negative_rate": 14.29
+        },
+        "pelayanan": {
+          "satisfaction_score": 78.57,
+          "total_mentioned": 14,
+          "positive": 11,
+          "neutral": 0,
+          "negative": 3,
+          "negative_rate": 21.43
+        }
+      }
+    }
+  }
+}

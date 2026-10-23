@@ -1,0 +1,7 @@
+PASS Ayam Geprek Sambal Korek Barokah       khs_hero=55.8 khs_card=55.84 diag_card_match=True | KHS + status + sapaan cocok baseline
+PASS Bakso Rusuk Solo Pak Ndut              khs_hero=68.2 khs_card=68.24 diag_card_match=True | KHS + status + sapaan cocok baseline
+PASS Bebek Goreng Madura Cak Roni           khs_hero=83.0 khs_card=83.0 diag_card_match=True | KHS + status + sapaan cocok baseline
+PASS Kopi Susu Senja & Toast                khs_hero=59.5 khs_card=59.55 diag_card_match=True | KHS + status + sapaan cocok baseline
+PASS Semua Outlet                           khs_hero=67.3 khs_card=67.27 diag_card_match=True | KHS + status + sapaan cocok baseline
+RINGKASAN account_parity (awal): 5 PASS, 0 FAIL
+JSON -> C:\Users\geova\Downloads\BOOTCAMP\PROJECTS\ulasrasa\docs\ui-evidence\revisi\account_parity_awal.json

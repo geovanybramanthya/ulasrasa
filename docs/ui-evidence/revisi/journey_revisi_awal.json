@@ -1,0 +1,155 @@
+{
+ "url": "http://localhost:8525",
+ "tag": "awal",
+ "steps": [
+  {
+   "step": "landing_loaded",
+   "status": "PASS",
+   "reason": "keadaan awal adalah landing (tanpa sapaan dashboard, 5 nama resto terlihat)",
+   "detection": {
+    "has_greeting_div": true,
+    "greeting_text": "Pilih restoran untuk masuk ke dashboard",
+    "has_kpi": false,
+    "has_landing_cards": true,
+    "landing_card_count": 5,
+    "has_landing_title": true,
+    "has_topbar": true,
+    "has_ganti_akun": false,
+    "has_ganti_data": false,
+    "has_module_pills": false,
+    "resto_mentions": {
+     "Ayam Geprek Sambal Korek Barokah": 1,
+     "Bakso Rusuk Solo Pak Ndut": 1,
+     "Bebek Goreng Madura Cak Roni": 1,
+     "Kopi Susu Senja & Toast": 1,
+     "Semua Outlet (Benchmark Industri)": 1
+    },
+    "body_excerpt": "UlasRasa\nKESEHATAN DAPUR DARI ULASAN\nPilih restoran untuk masuk ke dashboard\nSetiap akun demo menampilkan data ulasan satu restoran, lengkap dengan Skor Kesehatan Dapur dan rencana aksi perbaikannya.\nPILIH AKUN DEMO\nAyam Geprek Sambal Korek Barokah\nAkun Demo\n25 ulasan contoh\nSKOR KESEHATAN DAPUR\n55,84\nKRITIS\n\nMasuk Dashboard\n\nBakso Rusuk Solo Pak Ndut\nAkun Demo\n25 ulasan contoh\nSKOR KESEHATAN DAPUR\n68,24\nWASPADA\n\nMasuk Dashboard\n\nBebek Goreng Madura Cak Roni\nAkun Demo\n25 ulasan contoh\nSKOR KESEHATAN DAPUR\n83,00\nPRIMA\n\nMasuk Dashboard\n\nKopi Susu Senja & Toast\nAkun Demo\n25 ulasan contoh\nSKOR KES",
+    "distinct_resto_names_visible": 5,
+    "landing_likely": true
+   }
+  },
+  {
+   "step": "enter_ayam",
+   "status": "PASS",
+   "reason": "sapaan='Halo, Ayam Geprek Sambal Korek Barokah' KHS tampil=55.8 (baseline 55.84) status='KRITIS (Audit Segera)'",
+   "hero": {
+    "greeting": "Halo, Ayam Geprek Sambal Korek Barokah",
+    "khs_display_1dp": 55.8,
+    "kpi_values": [
+     "55.8%",
+     "25",
+     "76.0%",
+     "Kemasan"
+    ],
+    "status_text": "KRITIS (Audit Segera)",
+    "total_reviews": 25
+   }
+  },
+  {
+   "step": "ganti_akun_back",
+   "status": "PASS",
+   "reason": "klik Ganti Akun mengembalikan tampilan landing",
+   "detection": {
+    "has_greeting_div": true,
+    "greeting_text": "Pilih restoran untuk masuk ke dashboard",
+    "has_kpi": false,
+    "has_landing_cards": true,
+    "landing_card_count": 5,
+    "has_landing_title": true,
+    "has_topbar": true,
+    "has_ganti_akun": false,
+    "has_ganti_data": false,
+    "has_module_pills": false,
+    "resto_mentions": {
+     "Ayam Geprek Sambal Korek Barokah": 1,
+     "Bakso Rusuk Solo Pak Ndut": 1,
+     "Bebek Goreng Madura Cak Roni": 1,
+     "Kopi Susu Senja & Toast": 1,
+     "Semua Outlet (Benchmark Industri)": 1
+    },
+    "body_excerpt": "UlasRasa\nKESEHATAN DAPUR DARI ULASAN\nPilih restoran untuk masuk ke dashboard\nSetiap akun demo menampilkan data ulasan satu restoran, lengkap dengan Skor Kesehatan Dapur dan rencana aksi perbaikannya.\nPILIH AKUN DEMO\nAyam Geprek Sambal Korek Barokah\nAkun Demo\n25 ulasan contoh\nSKOR KESEHATAN DAPUR\n55,84\nKRITIS\n\nMasuk Dashboard\n\nBakso Rusuk Solo Pak Ndut\nAkun Demo\n25 ulasan contoh\nSKOR KESEHATAN DAPUR\n68,24\nWASPADA\n\nMasuk Dashboard\n\nBebek Goreng Madura Cak Roni\nAkun Demo\n25 ulasan contoh\nSKOR KESEHATAN DAPUR\n83,00\nPRIMA\n\nMasuk Dashboard\n\nKopi Susu Senja & Toast\nAkun Demo\n25 ulasan contoh\nSKOR KES",
+    "distinct_resto_names_visible": 5,
+    "landing_likely": true
+   }
+  },
+  {
+   "step": "panel_ganti_data",
+   "status": "PASS",
+   "reason": "panel Data Ulasan terbuka dari dashboard Ayam",
+   "context": "dari_landing"
+  },
+  {
+   "step": "upload_csv",
+   "status": "PASS",
+   "reason": "sapaan='Halo, Outlet Kustom' total ulasan tampil=3 (harap 3 dari CSV uji)",
+   "context": "dari_landing",
+   "hero": {
+    "greeting": "Halo, Outlet Kustom",
+    "khs_display_1dp": 67.5,
+    "kpi_values": [
+     "67.5%",
+     "3",
+     "0.0%",
+     "Kemasan"
+    ],
+    "status_text": "WASPADA (Perhatian)",
+    "total_reviews": 3
+   }
+  },
+  {
+   "step": "back_to_preset",
+   "status": "PASS",
+   "reason": "sapaan='Halo, Ayam Geprek Sambal Korek Barokah' KHS=55.8 (baseline 55.84) total=25 (harap 25)",
+   "context": "dari_landing",
+   "hero": {
+    "greeting": "Halo, Ayam Geprek Sambal Korek Barokah",
+    "khs_display_1dp": 55.8,
+    "kpi_values": [
+     "55.8%",
+     "25",
+     "76.0%",
+     "Kemasan"
+    ],
+    "status_text": "KRITIS (Audit Segera)",
+    "total_reviews": 25
+   }
+  },
+  {
+   "step": "add_review",
+   "status": "PASS",
+   "reason": "total ulasan 25 -> 26 (harap +1) sesudah simpan ulasan negatif kemasan",
+   "context": "dari_landing",
+   "hero_before": {
+    "greeting": "Halo, Ayam Geprek Sambal Korek Barokah",
+    "khs_display_1dp": 55.8,
+    "kpi_values": [
+     "55.8%",
+     "25",
+     "76.0%",
+     "Kemasan"
+    ],
+    "status_text": "KRITIS (Audit Segera)",
+    "total_reviews": 25
+   },
+   "hero_after": {
+    "greeting": "Halo, Ayam Geprek Sambal Korek Barokah",
+    "khs_display_1dp": 55.1,
+    "kpi_values": [
+     "55.1%",
+     "26",
+     "76.9%",
+     "Kemasan"
+    ],
+    "status_text": "KRITIS (Audit Segera)",
+    "total_reviews": 26
+   }
+  }
+ ],
+ "summary": {
+  "pass": 7,
+  "fail": 0,
+  "total": 7,
+  "overall": "PASS"
+ }
+}

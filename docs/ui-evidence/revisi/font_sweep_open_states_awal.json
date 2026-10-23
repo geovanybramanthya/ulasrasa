@@ -1,0 +1,8170 @@
+{
+ "url": "http://localhost:8525",
+ "tag": "awal",
+ "server_started_by_script": true,
+ "states": [
+  {
+   "label": "a_landing_or_initial",
+   "total_text_elements": 42,
+   "chart_text_elements": 0,
+   "by_primary_font": {
+    "Plus Jakarta Sans": 20,
+    "Inter": 17,
+    "JetBrains Mono": 5
+   },
+   "source_sans_count": 0,
+   "violations": [],
+   "role_samples": {
+    "greeting_jakarta": {
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Pilih restoran untuk masuk ke dashboard"
+    },
+    "hero_status_jakarta": null,
+    "card_title_jakarta": {
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Ayam Geprek Sambal Korek Barokah"
+    },
+    "kpi_value_mono": null,
+    "stat_value_mono": null,
+    "num_mono": {
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "55,84"
+    },
+    "first_paragraph": {
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Masuk Dashboard"
+    },
+    "card_sub": {
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "25 ulasan contoh"
+    },
+    "brand_name_jakarta": {
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "UlasRasa"
+    }
+   },
+   "elements": [
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "brand-name",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "UlasRasa"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "brand-sub",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Kesehatan Dapur dari Ulasan"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "greeting",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Pilih restoran untuk masuk ke dashboard"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "status-line",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Setiap akun demo menampilkan data ulasan satu restoran, leng"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "label-caps",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Pilih Akun Demo"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Ayam Geprek Sambal Korek Barokah"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "chip pill-pos",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Akun Demo"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-sub",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "25 ulasan contoh"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "label-caps",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Skor Kesehatan Dapur"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "landing-khs-num num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "55,84"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "chip pill-neg",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "KRITIS"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Masuk Dashboard"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Bakso Rusuk Solo Pak Ndut"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "chip pill-pos",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Akun Demo"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-sub",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "25 ulasan contoh"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "label-caps",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Skor Kesehatan Dapur"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "landing-khs-num num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "68,24"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "chip pill-neu",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "WASPADA"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Masuk Dashboard"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Bebek Goreng Madura Cak Roni"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "chip pill-pos",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Akun Demo"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-sub",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "25 ulasan contoh"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "label-caps",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Skor Kesehatan Dapur"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "landing-khs-num num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "83,00"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "chip pill-pos",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "PRIMA"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Masuk Dashboard"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Kopi Susu Senja & Toast"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "chip pill-pos",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Akun Demo"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-sub",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "25 ulasan contoh"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "label-caps",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Skor Kesehatan Dapur"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "landing-khs-num num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "59,55"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "chip pill-neg",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "KRITIS"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Masuk Dashboard"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Semua Outlet (Benchmark Industri)"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "chip pill-pos",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Akun Demo"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-sub",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "100 ulasan contoh"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "label-caps",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Skor Kesehatan Dapur"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "landing-khs-num num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "67,27"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "chip pill-neu",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "WASPADA"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Masuk Dashboard"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "UlasRasa untuk UMKM Kuliner"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-sub",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "UlasRasa membantu pemilik usaha kuliner memahami keluhan pel"
+    }
+   ],
+   "note": "landing terdeteksi",
+   "role_verdicts": {
+    "greeting_jakarta": {
+     "expected": "Plus Jakarta Sans",
+     "found": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Pilih restoran untuk masuk ke dashboard",
+     "ok": true
+    },
+    "hero_status_jakarta": {
+     "expected": "Plus Jakarta Sans",
+     "found": null,
+     "ok": null,
+     "note": "elemen tidak ada di keadaan ini"
+    },
+    "card_title_jakarta": {
+     "expected": "Plus Jakarta Sans",
+     "found": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Ayam Geprek Sambal Korek Barokah",
+     "ok": true
+    },
+    "brand_name_jakarta": {
+     "expected": "Plus Jakarta Sans",
+     "found": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "UlasRasa",
+     "ok": true
+    },
+    "kpi_value_mono": {
+     "expected": "JetBrains Mono",
+     "found": null,
+     "ok": null,
+     "note": "elemen tidak ada di keadaan ini"
+    },
+    "stat_value_mono": {
+     "expected": "JetBrains Mono",
+     "found": null,
+     "ok": null,
+     "note": "elemen tidak ada di keadaan ini"
+    },
+    "num_mono": {
+     "expected": "JetBrains Mono",
+     "found": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "55,84",
+     "ok": true
+    }
+   }
+  },
+  {
+   "label": "b_panel_ganti_data_open",
+   "total_text_elements": 133,
+   "chart_text_elements": 12,
+   "by_primary_font": {
+    "Plus Jakarta Sans": 24,
+    "Inter": 67,
+    "Material Symbols Rounded": 1,
+    "JetBrains Mono": 41
+   },
+   "source_sans_count": 0,
+   "violations": [],
+   "role_samples": {
+    "greeting_jakarta": {
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Halo, Ayam Geprek Sambal Korek Barokah"
+    },
+    "hero_status_jakarta": {
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "KRITIS (Audit Segera)"
+    },
+    "card_title_jakarta": {
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Ayam Geprek Sambal Korek Barokah"
+    },
+    "kpi_value_mono": {
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "55.8%"
+    },
+    "stat_value_mono": null,
+    "num_mono": {
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "33.3%"
+    },
+    "first_paragraph": {
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Navigasi modul"
+    },
+    "card_sub": {
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "25 ulasan dianalisis"
+    },
+    "brand_name_jakarta": {
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "UlasRasa"
+    }
+   },
+   "elements": [
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "brand-name",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "UlasRasa"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "brand-sub",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Kesehatan Dapur dari Ulasan"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Ringkasan"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Rincian Aspek"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Rencana Aksi"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Coba Ulasan"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "engine-chip",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Engine ABSA: IndoBERT (fine-tuned)"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Ganti Akun"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "greeting",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Halo, Ayam Geprek Sambal Korek Barokah"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "status-line",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Skor Kesehatan Dapur restoran ini berstatus . Perhatian utam"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "KRITIS (Audit Segera)"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Kemasan"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "33.3%"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Ayam Geprek Sambal Korek Barokah"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "chip pill-pos",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Akun Demo"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-sub",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "25 ulasan dianalisis"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Tutup Panel"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Data Ulasan"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-sub",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Pakai data contoh restoran atau unggah file ulasan milik And"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Outlet Bawaan (Preset)"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Upload Dataset Real (CSV)"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Menampilkan data contoh untuk akun yang sedang aktif. Untuk "
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "st-emotion-cache-1c9yjad ed4y4ls0",
+     "testid": "stIconMaterial",
+     "font": "\"Material Symbols Rounded\"",
+     "text": "keyboard_arrow_right"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Input Ulasan Baru ke Outlet Ini"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Uji coba menambahkan komplain baru secara live ke database a"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Kalimat Ulasan Konsumen:"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Menu Terkait:"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Simpan & Perbarui Dashboard"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "kpi-label",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Skor Kesehatan Dapur"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "kpi-value",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "55.8%"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "kpi-micro",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Status saat ini: KRITIS (Audit Segera)"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "kpi-label",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Total Ulasan Dianalisis"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "kpi-value",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "25"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "kpi-micro",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Dari data yang sedang aktif"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "kpi-label",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Ulasan Negatif"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "kpi-value",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "76.0%"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "kpi-micro",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Dari 25 ulasan"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "kpi-label",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Aspek Paling Kritis"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "kpi-value",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "Kemasan"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "kpi-micro",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Skor kepuasan  - terendah dari 5 aspek"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "33.3%"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 0,
+     "cls": "annotation-text",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "55.8%"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "label-caps",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Skor Kesehatan Dapur"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "hero-status",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "KRITIS (Audit Segera)"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "hero-note",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Perhatian: aspek  berada di bawah batas aman - skor kepuasan"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Kemasan"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "33.3%"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "66.7%"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "hero-chip",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Prioritas: Kemasan"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Lihat Rencana Aksi"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Kepuasan per Aspek"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-sub",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Skor kepuasan pelanggan untuk lima aspek dapur. Garis putus-"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 1,
+     "cls": "bartext bartext-outside",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "41.7%"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 1,
+     "cls": "bartext bartext-outside",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "33.3%"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 1,
+     "cls": "bartext bartext-outside",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "57.1%"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 1,
+     "cls": "bartext bartext-outside",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "54.5%"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 1,
+     "cls": "bartext bartext-outside",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "71.7%"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, sans-serif",
+     "text": "Pelayanan"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, sans-serif",
+     "text": "Kemasan"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, sans-serif",
+     "text": "Harga"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, sans-serif",
+     "text": "Porsi"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, sans-serif",
+     "text": "Rasa"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 1,
+     "cls": "annotation-text",
+     "testid": "",
+     "font": "Inter, sans-serif",
+     "text": "Batas kritis"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Angka Rincian per Aspek"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-sub",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Skor, bobot, dan jumlah ulasan yang menyebut tiap aspek."
+    },
+    {
+     "tag": "TH",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Aspek"
+    },
+    {
+     "tag": "TH",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Skor"
+    },
+    {
+     "tag": "TH",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Bobot"
+    },
+    {
+     "tag": "TH",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Disebut"
+    },
+    {
+     "tag": "TH",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Positif"
+    },
+    {
+     "tag": "TH",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Netral"
+    },
+    {
+     "tag": "TH",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Rasa"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "71.7%"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "35%"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "23"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "15"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "3"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "5"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Porsi"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "54.5%"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "20%"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "11"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "5"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "2"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "4"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Harga"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "57.1%"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "15%"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "7"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "4"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "0"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "3"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Kemasan"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "33.3%"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "15%"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "12"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "4"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "0"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "8"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Pelayanan"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "41.7%"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "15%"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "12"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "5"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "0"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "7"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Keluhan Terbaru"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-sub",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Ulasan negatif paling akhir. Klik tombolnya untuk membuka ri"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "rel-text",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "\"Ayam dingin alot kulitnya lemes kena uap. Sayang banget pad"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "chip",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Kemasan"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "chip pill-neg",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Lihat di Rincian Aspek"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "rel-text",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "\"Pelayan jutek pas ditanya soal pesanan takeaway, nunggunya "
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "chip",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Pelayanan"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "chip pill-neg",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Lihat di Rincian Aspek"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "rel-text",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "\"Rasa juara langganan keluarga, tapi hari ini sambalnya ence"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "chip",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Kemasan"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "chip pill-neg",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Lihat di Rincian Aspek"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "rel-text",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "\"Keasinan parah bumbunya hari ini, ga kemakan sama sekali. T"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "chip",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Rasa"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "chip pill-neg",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Lihat di Rincian Aspek"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "rel-text",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "\"Porsinya makin ciut ayamnya kecil banget seukuran burung pu"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "chip",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Porsi"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "chip pill-neg",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Lihat di Rincian Aspek"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "footer-line",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "• Tugas Akhir AI Engineering Batch 13 • Student ID:  (Azura)"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "UlasRasa"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "REAENG13TQJLN"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "IndoBERT ABSA + Rencana Aksi LLM"
+    }
+   ],
+   "note": "",
+   "expander_state_observed": {
+    "details_open": false,
+    "summary_aria_expanded": null,
+    "has_textarea": true
+   },
+   "role_verdicts": {
+    "greeting_jakarta": {
+     "expected": "Plus Jakarta Sans",
+     "found": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Halo, Ayam Geprek Sambal Korek Barokah",
+     "ok": true
+    },
+    "hero_status_jakarta": {
+     "expected": "Plus Jakarta Sans",
+     "found": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "KRITIS (Audit Segera)",
+     "ok": true
+    },
+    "card_title_jakarta": {
+     "expected": "Plus Jakarta Sans",
+     "found": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Ayam Geprek Sambal Korek Barokah",
+     "ok": true
+    },
+    "brand_name_jakarta": {
+     "expected": "Plus Jakarta Sans",
+     "found": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "UlasRasa",
+     "ok": true
+    },
+    "kpi_value_mono": {
+     "expected": "JetBrains Mono",
+     "found": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "55.8%",
+     "ok": true
+    },
+    "stat_value_mono": {
+     "expected": "JetBrains Mono",
+     "found": null,
+     "ok": null,
+     "note": "elemen tidak ada di keadaan ini"
+    },
+    "num_mono": {
+     "expected": "JetBrains Mono",
+     "found": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "33.3%",
+     "ok": true
+    }
+   }
+  },
+  {
+   "label": "c_expander_input_ulasan_open",
+   "total_text_elements": 133,
+   "chart_text_elements": 12,
+   "by_primary_font": {
+    "Plus Jakarta Sans": 24,
+    "Inter": 67,
+    "Material Symbols Rounded": 1,
+    "JetBrains Mono": 41
+   },
+   "source_sans_count": 0,
+   "violations": [],
+   "role_samples": {
+    "greeting_jakarta": {
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Halo, Ayam Geprek Sambal Korek Barokah"
+    },
+    "hero_status_jakarta": {
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "KRITIS (Audit Segera)"
+    },
+    "card_title_jakarta": {
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Ayam Geprek Sambal Korek Barokah"
+    },
+    "kpi_value_mono": {
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "55.8%"
+    },
+    "stat_value_mono": null,
+    "num_mono": {
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "33.3%"
+    },
+    "first_paragraph": {
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Navigasi modul"
+    },
+    "card_sub": {
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "25 ulasan dianalisis"
+    },
+    "brand_name_jakarta": {
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "UlasRasa"
+    }
+   },
+   "elements": [
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "brand-name",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "UlasRasa"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "brand-sub",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Kesehatan Dapur dari Ulasan"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Ringkasan"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Rincian Aspek"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Rencana Aksi"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Coba Ulasan"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "engine-chip",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Engine ABSA: IndoBERT (fine-tuned)"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Ganti Akun"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "greeting",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Halo, Ayam Geprek Sambal Korek Barokah"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "status-line",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Skor Kesehatan Dapur restoran ini berstatus . Perhatian utam"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "KRITIS (Audit Segera)"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Kemasan"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "33.3%"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Ayam Geprek Sambal Korek Barokah"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "chip pill-pos",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Akun Demo"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-sub",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "25 ulasan dianalisis"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Tutup Panel"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Data Ulasan"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-sub",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Pakai data contoh restoran atau unggah file ulasan milik And"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Outlet Bawaan (Preset)"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Upload Dataset Real (CSV)"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Menampilkan data contoh untuk akun yang sedang aktif. Untuk "
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "st-emotion-cache-1c9yjad ed4y4ls0",
+     "testid": "stIconMaterial",
+     "font": "\"Material Symbols Rounded\"",
+     "text": "keyboard_arrow_down"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Input Ulasan Baru ke Outlet Ini"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Uji coba menambahkan komplain baru secara live ke database a"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Kalimat Ulasan Konsumen:"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Menu Terkait:"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Simpan & Perbarui Dashboard"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "kpi-label",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Skor Kesehatan Dapur"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "kpi-value",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "55.8%"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "kpi-micro",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Status saat ini: KRITIS (Audit Segera)"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "kpi-label",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Total Ulasan Dianalisis"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "kpi-value",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "25"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "kpi-micro",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Dari data yang sedang aktif"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "kpi-label",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Ulasan Negatif"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "kpi-value",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "76.0%"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "kpi-micro",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Dari 25 ulasan"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "kpi-label",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Aspek Paling Kritis"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "kpi-value",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "Kemasan"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "kpi-micro",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Skor kepuasan  - terendah dari 5 aspek"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "33.3%"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 0,
+     "cls": "annotation-text",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "55.8%"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "label-caps",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Skor Kesehatan Dapur"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "hero-status",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "KRITIS (Audit Segera)"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "hero-note",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Perhatian: aspek  berada di bawah batas aman - skor kepuasan"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Kemasan"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "33.3%"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "66.7%"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "hero-chip",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Prioritas: Kemasan"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Lihat Rencana Aksi"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Kepuasan per Aspek"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-sub",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Skor kepuasan pelanggan untuk lima aspek dapur. Garis putus-"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 1,
+     "cls": "bartext bartext-outside",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "41.7%"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 1,
+     "cls": "bartext bartext-outside",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "33.3%"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 1,
+     "cls": "bartext bartext-outside",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "57.1%"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 1,
+     "cls": "bartext bartext-outside",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "54.5%"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 1,
+     "cls": "bartext bartext-outside",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "71.7%"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, sans-serif",
+     "text": "Pelayanan"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, sans-serif",
+     "text": "Kemasan"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, sans-serif",
+     "text": "Harga"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, sans-serif",
+     "text": "Porsi"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, sans-serif",
+     "text": "Rasa"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 1,
+     "cls": "annotation-text",
+     "testid": "",
+     "font": "Inter, sans-serif",
+     "text": "Batas kritis"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Angka Rincian per Aspek"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-sub",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Skor, bobot, dan jumlah ulasan yang menyebut tiap aspek."
+    },
+    {
+     "tag": "TH",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Aspek"
+    },
+    {
+     "tag": "TH",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Skor"
+    },
+    {
+     "tag": "TH",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Bobot"
+    },
+    {
+     "tag": "TH",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Disebut"
+    },
+    {
+     "tag": "TH",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Positif"
+    },
+    {
+     "tag": "TH",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Netral"
+    },
+    {
+     "tag": "TH",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Rasa"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "71.7%"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "35%"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "23"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "15"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "3"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "5"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Porsi"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "54.5%"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "20%"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "11"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "5"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "2"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "4"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Harga"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "57.1%"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "15%"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "7"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "4"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "0"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "3"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Kemasan"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "33.3%"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "15%"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "12"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "4"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "0"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "8"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Pelayanan"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "41.7%"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "15%"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "12"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "5"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "0"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "7"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Keluhan Terbaru"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-sub",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Ulasan negatif paling akhir. Klik tombolnya untuk membuka ri"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "rel-text",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "\"Ayam dingin alot kulitnya lemes kena uap. Sayang banget pad"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "chip",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Kemasan"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "chip pill-neg",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Lihat di Rincian Aspek"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "rel-text",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "\"Pelayan jutek pas ditanya soal pesanan takeaway, nunggunya "
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "chip",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Pelayanan"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "chip pill-neg",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Lihat di Rincian Aspek"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "rel-text",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "\"Rasa juara langganan keluarga, tapi hari ini sambalnya ence"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "chip",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Kemasan"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "chip pill-neg",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Lihat di Rincian Aspek"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "rel-text",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "\"Keasinan parah bumbunya hari ini, ga kemakan sama sekali. T"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "chip",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Rasa"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "chip pill-neg",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Lihat di Rincian Aspek"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "rel-text",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "\"Porsinya makin ciut ayamnya kecil banget seukuran burung pu"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "chip",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Porsi"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "chip pill-neg",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Lihat di Rincian Aspek"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "footer-line",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "• Tugas Akhir AI Engineering Batch 13 • Student ID:  (Azura)"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "UlasRasa"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "REAENG13TQJLN"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "IndoBERT ABSA + Rencana Aksi LLM"
+    }
+   ],
+   "note": "expander teramati: {'details_open': True, 'summary_aria_expanded': None, 'has_textarea': True}",
+   "expander_state_observed": {
+    "details_open": true,
+    "summary_aria_expanded": null,
+    "has_textarea": true
+   },
+   "role_verdicts": {
+    "greeting_jakarta": {
+     "expected": "Plus Jakarta Sans",
+     "found": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Halo, Ayam Geprek Sambal Korek Barokah",
+     "ok": true
+    },
+    "hero_status_jakarta": {
+     "expected": "Plus Jakarta Sans",
+     "found": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "KRITIS (Audit Segera)",
+     "ok": true
+    },
+    "card_title_jakarta": {
+     "expected": "Plus Jakarta Sans",
+     "found": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Ayam Geprek Sambal Korek Barokah",
+     "ok": true
+    },
+    "brand_name_jakarta": {
+     "expected": "Plus Jakarta Sans",
+     "found": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "UlasRasa",
+     "ok": true
+    },
+    "kpi_value_mono": {
+     "expected": "JetBrains Mono",
+     "found": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "55.8%",
+     "ok": true
+    },
+    "stat_value_mono": {
+     "expected": "JetBrains Mono",
+     "found": null,
+     "ok": null,
+     "note": "elemen tidak ada di keadaan ini"
+    },
+    "num_mono": {
+     "expected": "JetBrains Mono",
+     "found": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "33.3%",
+     "ok": true
+    }
+   }
+  },
+  {
+   "label": "e_module_ringkasan",
+   "total_text_elements": 122,
+   "chart_text_elements": 12,
+   "by_primary_font": {
+    "Plus Jakarta Sans": 21,
+    "Inter": 60,
+    "JetBrains Mono": 41
+   },
+   "source_sans_count": 0,
+   "violations": [],
+   "role_samples": {
+    "greeting_jakarta": {
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Halo, Ayam Geprek Sambal Korek Barokah"
+    },
+    "hero_status_jakarta": {
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "KRITIS (Audit Segera)"
+    },
+    "card_title_jakarta": {
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Ayam Geprek Sambal Korek Barokah"
+    },
+    "kpi_value_mono": {
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "55.8%"
+    },
+    "stat_value_mono": null,
+    "num_mono": {
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "33.3%"
+    },
+    "first_paragraph": {
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Navigasi modul"
+    },
+    "card_sub": {
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "25 ulasan dianalisis"
+    },
+    "brand_name_jakarta": {
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "UlasRasa"
+    }
+   },
+   "elements": [
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "brand-name",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "UlasRasa"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "brand-sub",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Kesehatan Dapur dari Ulasan"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Ringkasan"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Rincian Aspek"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Rencana Aksi"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Coba Ulasan"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "engine-chip",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Engine ABSA: IndoBERT (fine-tuned)"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Ganti Akun"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "greeting",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Halo, Ayam Geprek Sambal Korek Barokah"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "status-line",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Skor Kesehatan Dapur restoran ini berstatus . Perhatian utam"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "KRITIS (Audit Segera)"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Kemasan"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "33.3%"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Ayam Geprek Sambal Korek Barokah"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "chip pill-pos",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Akun Demo"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-sub",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "25 ulasan dianalisis"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Ganti Data"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "kpi-label",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Skor Kesehatan Dapur"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "kpi-value",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "55.8%"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "kpi-micro",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Status saat ini: KRITIS (Audit Segera)"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "kpi-label",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Total Ulasan Dianalisis"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "kpi-value",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "25"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "kpi-micro",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Dari data yang sedang aktif"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "kpi-label",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Ulasan Negatif"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "kpi-value",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "76.0%"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "kpi-micro",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Dari 25 ulasan"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "kpi-label",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Aspek Paling Kritis"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "kpi-value",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "Kemasan"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "kpi-micro",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Skor kepuasan  - terendah dari 5 aspek"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "33.3%"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 0,
+     "cls": "annotation-text",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "55.8%"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "label-caps",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Skor Kesehatan Dapur"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "hero-status",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "KRITIS (Audit Segera)"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "hero-note",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Perhatian: aspek  berada di bawah batas aman - skor kepuasan"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Kemasan"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "33.3%"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "66.7%"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "hero-chip",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Prioritas: Kemasan"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Lihat Rencana Aksi"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Kepuasan per Aspek"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-sub",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Skor kepuasan pelanggan untuk lima aspek dapur. Garis putus-"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 1,
+     "cls": "bartext bartext-outside",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "41.7%"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 1,
+     "cls": "bartext bartext-outside",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "33.3%"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 1,
+     "cls": "bartext bartext-outside",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "57.1%"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 1,
+     "cls": "bartext bartext-outside",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "54.5%"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 1,
+     "cls": "bartext bartext-outside",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "71.7%"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, sans-serif",
+     "text": "Pelayanan"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, sans-serif",
+     "text": "Kemasan"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, sans-serif",
+     "text": "Harga"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, sans-serif",
+     "text": "Porsi"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, sans-serif",
+     "text": "Rasa"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 1,
+     "cls": "annotation-text",
+     "testid": "",
+     "font": "Inter, sans-serif",
+     "text": "Batas kritis"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Angka Rincian per Aspek"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-sub",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Skor, bobot, dan jumlah ulasan yang menyebut tiap aspek."
+    },
+    {
+     "tag": "TH",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Aspek"
+    },
+    {
+     "tag": "TH",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Skor"
+    },
+    {
+     "tag": "TH",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Bobot"
+    },
+    {
+     "tag": "TH",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Disebut"
+    },
+    {
+     "tag": "TH",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Positif"
+    },
+    {
+     "tag": "TH",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Netral"
+    },
+    {
+     "tag": "TH",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Rasa"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "71.7%"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "35%"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "23"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "15"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "3"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "5"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Porsi"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "54.5%"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "20%"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "11"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "5"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "2"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "4"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Harga"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "57.1%"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "15%"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "7"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "4"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "0"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "3"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Kemasan"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "33.3%"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "15%"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "12"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "4"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "0"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "8"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Pelayanan"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "41.7%"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "15%"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "12"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "5"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "0"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "7"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Keluhan Terbaru"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-sub",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Ulasan negatif paling akhir. Klik tombolnya untuk membuka ri"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "rel-text",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "\"Ayam dingin alot kulitnya lemes kena uap. Sayang banget pad"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "chip",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Kemasan"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "chip pill-neg",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Lihat di Rincian Aspek"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "rel-text",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "\"Pelayan jutek pas ditanya soal pesanan takeaway, nunggunya "
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "chip",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Pelayanan"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "chip pill-neg",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Lihat di Rincian Aspek"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "rel-text",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "\"Rasa juara langganan keluarga, tapi hari ini sambalnya ence"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "chip",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Kemasan"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "chip pill-neg",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Lihat di Rincian Aspek"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "rel-text",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "\"Keasinan parah bumbunya hari ini, ga kemakan sama sekali. T"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "chip",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Rasa"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "chip pill-neg",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Lihat di Rincian Aspek"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "rel-text",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "\"Porsinya makin ciut ayamnya kecil banget seukuran burung pu"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "chip",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Porsi"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "chip pill-neg",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Lihat di Rincian Aspek"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "footer-line",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "• Tugas Akhir AI Engineering Batch 13 • Student ID:  (Azura)"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "UlasRasa"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "REAENG13TQJLN"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "IndoBERT ABSA + Rencana Aksi LLM"
+    }
+   ],
+   "note": "",
+   "role_verdicts": {
+    "greeting_jakarta": {
+     "expected": "Plus Jakarta Sans",
+     "found": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Halo, Ayam Geprek Sambal Korek Barokah",
+     "ok": true
+    },
+    "hero_status_jakarta": {
+     "expected": "Plus Jakarta Sans",
+     "found": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "KRITIS (Audit Segera)",
+     "ok": true
+    },
+    "card_title_jakarta": {
+     "expected": "Plus Jakarta Sans",
+     "found": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Ayam Geprek Sambal Korek Barokah",
+     "ok": true
+    },
+    "brand_name_jakarta": {
+     "expected": "Plus Jakarta Sans",
+     "found": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "UlasRasa",
+     "ok": true
+    },
+    "kpi_value_mono": {
+     "expected": "JetBrains Mono",
+     "found": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "55.8%",
+     "ok": true
+    },
+    "stat_value_mono": {
+     "expected": "JetBrains Mono",
+     "found": null,
+     "ok": null,
+     "note": "elemen tidak ada di keadaan ini"
+    },
+    "num_mono": {
+     "expected": "JetBrains Mono",
+     "found": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "33.3%",
+     "ok": true
+    }
+   }
+  },
+  {
+   "label": "e_module_rincian",
+   "total_text_elements": 151,
+   "chart_text_elements": 35,
+   "by_primary_font": {
+    "Plus Jakarta Sans": 22,
+    "Inter": 77,
+    "JetBrains Mono": 52
+   },
+   "source_sans_count": 0,
+   "violations": [],
+   "role_samples": {
+    "greeting_jakarta": {
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Halo, Ayam Geprek Sambal Korek Barokah"
+    },
+    "hero_status_jakarta": null,
+    "card_title_jakarta": {
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Ayam Geprek Sambal Korek Barokah"
+    },
+    "kpi_value_mono": null,
+    "stat_value_mono": {
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "23"
+    },
+    "num_mono": {
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "71.7%"
+    },
+    "first_paragraph": {
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Navigasi modul"
+    },
+    "card_sub": {
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "25 ulasan dianalisis"
+    },
+    "brand_name_jakarta": {
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "UlasRasa"
+    }
+   },
+   "elements": [
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "brand-name",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "UlasRasa"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "brand-sub",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Kesehatan Dapur dari Ulasan"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Ringkasan"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Rincian Aspek"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Rencana Aksi"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Coba Ulasan"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "engine-chip",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Engine ABSA: IndoBERT (fine-tuned)"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Ganti Akun"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "greeting",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Halo, Ayam Geprek Sambal Korek Barokah"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "status-line",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Skor Kesehatan Dapur restoran ini berstatus . Perhatian utam"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "KRITIS (Audit Segera)"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Kemasan"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "33.3%"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Ayam Geprek Sambal Korek Barokah"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "chip pill-pos",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Akun Demo"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-sub",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "25 ulasan dianalisis"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Ganti Data"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Pilih aspek yang mau dibedah:"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Rasa"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Porsi"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Harga"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Kemasan"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Pelayanan"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "stat-value",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "23"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "stat-label",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Total Disebut"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "stat-value",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "15"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "(65%)"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "stat-label",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Positif"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "stat-value",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "3"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "stat-label",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Netral"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "stat-value",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "5"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "(22%)"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "stat-label",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Distribusi Sentimen Aspek Ini"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-sub",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Perbandingan ulasan positif, netral, dan negatif untuk aspek"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 0,
+     "cls": "slicetext",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "65.2%"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 0,
+     "cls": "slicetext",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "13%"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 0,
+     "cls": "slicetext",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "21.7%"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 0,
+     "cls": "legendtext",
+     "testid": "",
+     "font": "Inter, sans-serif",
+     "text": "Positif"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 0,
+     "cls": "legendtext",
+     "testid": "",
+     "font": "Inter, sans-serif",
+     "text": "Netral"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 0,
+     "cls": "legendtext",
+     "testid": "",
+     "font": "Inter, sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 0,
+     "cls": "annotation-text",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "23"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Angka Rincian per Aspek"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-sub",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Skor, bobot, dan jumlah ulasan yang menyebut tiap aspek."
+    },
+    {
+     "tag": "TH",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Aspek"
+    },
+    {
+     "tag": "TH",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Skor"
+    },
+    {
+     "tag": "TH",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Bobot"
+    },
+    {
+     "tag": "TH",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Disebut"
+    },
+    {
+     "tag": "TH",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Positif"
+    },
+    {
+     "tag": "TH",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Netral"
+    },
+    {
+     "tag": "TH",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Rasa"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "71.7%"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "35%"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "23"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "15"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "3"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "5"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Porsi"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "54.5%"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "20%"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "11"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "5"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "2"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "4"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Harga"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "57.1%"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "15%"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "7"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "4"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "0"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "3"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Kemasan"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "33.3%"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "15%"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "12"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "4"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "0"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "8"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Pelayanan"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "41.7%"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "15%"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "12"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "5"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "0"
+    },
+    {
+     "tag": "TD",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "7"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Kata yang Sering Muncul di Keluhan"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-sub",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Kata yang paling sering muncul pada ulasan negatif aspek ini"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 1,
+     "cls": "",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "0"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 1,
+     "cls": "",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "0.5"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 1,
+     "cls": "",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "1"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 1,
+     "cls": "",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "1.5"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 1,
+     "cls": "",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "2"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 1,
+     "cls": "",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "2.5"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 1,
+     "cls": "",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "3"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, sans-serif",
+     "text": "sedikit"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, sans-serif",
+     "text": "sambal"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, sans-serif",
+     "text": "kayak"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, sans-serif",
+     "text": "hari"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, sans-serif",
+     "text": "keasinan"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, sans-serif",
+     "text": "ayam"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 1,
+     "cls": "xtitle",
+     "testid": "",
+     "font": "Inter, sans-serif",
+     "text": "Frekuensi Kemunculan"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Lihat di Rincian Aspek"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "rel-text",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "\"Pelayan jutek pas ditanya soal pesanan takeaway, nunggunya "
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "chip",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Pelayanan"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "chip pill-neg",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Lihat di Rincian Aspek"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "rel-text",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "\"Rasa juara langganan keluarga, tapi hari ini sambalnya ence"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "chip",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Kemasan"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "chip pill-neg",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Lihat di Rincian Aspek"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "rel-text",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "\"Keasinan parah bumbunya hari ini, ga kemakan sama sekali. T"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "chip",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Rasa"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "chip pill-neg",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Lihat di Rincian Aspek"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "rel-text",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "\"Porsinya makin ciut ayamnya kecil banget seukuran burung pu"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "chip",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Porsi"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "chip pill-neg",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Lihat di Rincian Aspek"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Komposisi Sentimen Semua Aspek"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-sub",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Jumlah ulasan positif, netral, dan negatif pada kelima aspek"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 2,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, sans-serif",
+     "text": "Rasa"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 2,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, sans-serif",
+     "text": "Porsi"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 2,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, sans-serif",
+     "text": "Harga"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 2,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, sans-serif",
+     "text": "Kemasan"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 2,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, sans-serif",
+     "text": "Pelayanan"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 2,
+     "cls": "",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "0"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 2,
+     "cls": "",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "5"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 2,
+     "cls": "",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "10"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 2,
+     "cls": "",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "15"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 2,
+     "cls": "",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "20"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 2,
+     "cls": "legendtext",
+     "testid": "",
+     "font": "Inter, sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 2,
+     "cls": "legendtext",
+     "testid": "",
+     "font": "Inter, sans-serif",
+     "text": "Netral"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 2,
+     "cls": "legendtext",
+     "testid": "",
+     "font": "Inter, sans-serif",
+     "text": "Positif"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 2,
+     "cls": "ytitle",
+     "testid": "",
+     "font": "Inter, sans-serif",
+     "text": "Jumlah Ulasan"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Contoh Ulasan Positif"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "review-text",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Ayamnya gurih renyah bumbunya mantap meresap, tapi kemasan m"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "review-meta",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Menu: Paket Kulit Ayam Crispy - ID #1"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "review-text",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Rasa sambal koreknya nampol bikin nagih, ayam crispy bgt, sa"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "review-meta",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Menu: Paket Geprek Dada Sambal Korek - ID #2"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "review-text",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Ayam geprek terenak di area ini bumbu medok, tapi sambalnya "
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "review-meta",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Menu: Nasi Ayam Geprek Keju Lumer - ID #3"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Contoh Ulasan Negatif"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "review-text",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Ayam gepreknya agak keasinan hari ini, ga kayak biasanya. Sa"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "review-meta",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Menu: Nasi Ayam Geprek Keju Lumer - ID #7"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "review-text",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Lama banget proses di dapurnya, nunggu makanan 40 menit pada"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "review-meta",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Menu: Nasi Ayam Geprek Keju Lumer - ID #8"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "review-text",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Rasa biasa aja bumbu kurang meresap, ayam terasa hambar di b"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "review-meta",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Menu: Ayam Geprek Sambal Bawang - ID #11"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Semua Ulasan"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-sub",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Seluruh ulasan pada data aktif beserta label sentimen tiap a"
+    }
+   ],
+   "note": "",
+   "role_verdicts": {
+    "greeting_jakarta": {
+     "expected": "Plus Jakarta Sans",
+     "found": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Halo, Ayam Geprek Sambal Korek Barokah",
+     "ok": true
+    },
+    "hero_status_jakarta": {
+     "expected": "Plus Jakarta Sans",
+     "found": null,
+     "ok": null,
+     "note": "elemen tidak ada di keadaan ini"
+    },
+    "card_title_jakarta": {
+     "expected": "Plus Jakarta Sans",
+     "found": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Ayam Geprek Sambal Korek Barokah",
+     "ok": true
+    },
+    "brand_name_jakarta": {
+     "expected": "Plus Jakarta Sans",
+     "found": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "UlasRasa",
+     "ok": true
+    },
+    "kpi_value_mono": {
+     "expected": "JetBrains Mono",
+     "found": null,
+     "ok": null,
+     "note": "elemen tidak ada di keadaan ini"
+    },
+    "stat_value_mono": {
+     "expected": "JetBrains Mono",
+     "found": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "23",
+     "ok": true
+    },
+    "num_mono": {
+     "expected": "JetBrains Mono",
+     "found": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "71.7%",
+     "ok": true
+    }
+   }
+  },
+  {
+   "label": "e_module_rencana",
+   "total_text_elements": 62,
+   "chart_text_elements": 0,
+   "by_primary_font": {
+    "Plus Jakarta Sans": 14,
+    "Inter": 39,
+    "JetBrains Mono": 8,
+    "Material Symbols Rounded": 1
+   },
+   "source_sans_count": 0,
+   "violations": [],
+   "role_samples": {
+    "greeting_jakarta": {
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Halo, Ayam Geprek Sambal Korek Barokah"
+    },
+    "hero_status_jakarta": null,
+    "card_title_jakarta": {
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Ayam Geprek Sambal Korek Barokah"
+    },
+    "kpi_value_mono": null,
+    "stat_value_mono": null,
+    "num_mono": null,
+    "first_paragraph": {
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Navigasi modul"
+    },
+    "card_sub": {
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "25 ulasan dianalisis"
+    },
+    "brand_name_jakarta": {
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "UlasRasa"
+    }
+   },
+   "elements": [
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "brand-name",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "UlasRasa"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "brand-sub",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Kesehatan Dapur dari Ulasan"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Ringkasan"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Rincian Aspek"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Rencana Aksi"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Coba Ulasan"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "engine-chip",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Engine ABSA: IndoBERT (fine-tuned)"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Ganti Akun"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "greeting",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Halo, Ayam Geprek Sambal Korek Barokah"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "status-line",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Skor Kesehatan Dapur restoran ini berstatus . Perhatian utam"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "KRITIS (Audit Segera)"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Kemasan"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "33.3%"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Ayam Geprek Sambal Korek Barokah"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "chip pill-pos",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Akun Demo"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-sub",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "25 ulasan dianalisis"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Ganti Data"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Kemajuan Daftar Aksi"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-sub",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "0 dari 12 aksi selesai (0%)"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Atur Ulang Centang"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Akar Masalah"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "chip pill-muted",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Mode rekomendasi: Template (offline)"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-sub",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Ringkasan penyebab keluhan pelanggan terjadi, disusun dari d"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "rca-num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "1"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "rca-text",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Aspek Kemasan: Kerapian penutupan wadah berkuah tidak tersta"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "rca-num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "2"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "rca-text",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Aspek Pelayanan: Bottleneck pada antrean kitchen order saat "
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "rca-num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "3"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "rca-text",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Aspek Porsi: Penakaran bahan baku (nasi dan lauk) masih meng"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "rca-num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "4"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "rca-text",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Aspek Harga: Ketidaksesuaian persepsi nilai (perceived value"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Daftar Aksi Dapur"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "chip pill-pos",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Fokus perbaikan: Kemasan"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-sub",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Centang setiap tindakan yang sudah dikerjakan dan diperiksa "
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Wajib gunakan isolasi / sealing tape silang pada setiap tutu"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Pisahkan kuah dan kondimen kering ke dalam wadah terpisah (d"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Gunakan kardus tebal bersertifikasi food-grade khusus pesana"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Terapkan sistem double-check tiket pesanan: Koki centang che"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Siapkan pre-pack sendok, garpu, dan sambal dalam pouch higie"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Batasi estimasi slot terima pesanan delivery maksimal 12 men"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Wajib sediakan timbangan digital per workstation dapur (targ"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Gunakan centong ukur berstandar volume untuk porsi sambal da"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Audit acak 3 porsi per shift kerja oleh kepala dapur (Head C"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Tambahkan nilai tambah visual berupa garnish, kondimen grati"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Evaluasi margin fee aplikasi delivery agar tidak menaikkan h"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Buat paket bundling hemat untuk meningkatkan persepsi nilai "
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "st-emotion-cache-1c9yjad ed4y4ls0",
+     "testid": "stIconMaterial",
+     "font": "\"Material Symbols Rounded\"",
+     "text": "keyboard_arrow_right"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Tambah Tindakan Kustom"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Tindakan baru:"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Tambahkan ke Daftar Aksi"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Rekomendasi SOP Dapur"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-sub",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Prosedur standar yang disarankan untuk ditempel di area kerj"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "sop-num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "1"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "rca-text",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "SOP Pengemasan Anti-Bocor: Koki wajib melakukan tilt-test 5 "
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "sop-num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "2"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "rca-text",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "SOP Dispatch & Packing: Verifikasi 3 poin (Jumlah item, Cata"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "sop-num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "3"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "rca-text",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "SOP Standard Yield & Portioning: Timbangan presisi untuk sem"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "sop-num",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "4"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "rca-text",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "SOP Pricing & Value Perception: Review berkala harga jual di"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Unduh Daftar Aksi"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-sub",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Simpan daftar aksi untuk dicetak dan ditempel di dapur, atau"
+    }
+   ],
+   "note": "",
+   "role_verdicts": {
+    "greeting_jakarta": {
+     "expected": "Plus Jakarta Sans",
+     "found": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Halo, Ayam Geprek Sambal Korek Barokah",
+     "ok": true
+    },
+    "hero_status_jakarta": {
+     "expected": "Plus Jakarta Sans",
+     "found": null,
+     "ok": null,
+     "note": "elemen tidak ada di keadaan ini"
+    },
+    "card_title_jakarta": {
+     "expected": "Plus Jakarta Sans",
+     "found": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Ayam Geprek Sambal Korek Barokah",
+     "ok": true
+    },
+    "brand_name_jakarta": {
+     "expected": "Plus Jakarta Sans",
+     "found": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "UlasRasa",
+     "ok": true
+    },
+    "kpi_value_mono": {
+     "expected": "JetBrains Mono",
+     "found": null,
+     "ok": null,
+     "note": "elemen tidak ada di keadaan ini"
+    },
+    "stat_value_mono": {
+     "expected": "JetBrains Mono",
+     "found": null,
+     "ok": null,
+     "note": "elemen tidak ada di keadaan ini"
+    },
+    "num_mono": {
+     "expected": "JetBrains Mono",
+     "found": null,
+     "ok": null,
+     "note": "elemen tidak ada di keadaan ini"
+    }
+   }
+  },
+  {
+   "label": "e_module_coba",
+   "total_text_elements": 35,
+   "chart_text_elements": 0,
+   "by_primary_font": {
+    "Plus Jakarta Sans": 14,
+    "Inter": 21
+   },
+   "source_sans_count": 0,
+   "violations": [],
+   "role_samples": {
+    "greeting_jakarta": {
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Halo, Ayam Geprek Sambal Korek Barokah"
+    },
+    "hero_status_jakarta": null,
+    "card_title_jakarta": {
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Ayam Geprek Sambal Korek Barokah"
+    },
+    "kpi_value_mono": null,
+    "stat_value_mono": null,
+    "num_mono": null,
+    "first_paragraph": {
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Navigasi modul"
+    },
+    "card_sub": {
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "25 ulasan dianalisis"
+    },
+    "brand_name_jakarta": {
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "UlasRasa"
+    }
+   },
+   "elements": [
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "brand-name",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "UlasRasa"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "brand-sub",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Kesehatan Dapur dari Ulasan"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Ringkasan"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Rincian Aspek"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Rencana Aksi"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Coba Ulasan"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "engine-chip",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Engine ABSA: IndoBERT (fine-tuned)"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Ganti Akun"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "greeting",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Halo, Ayam Geprek Sambal Korek Barokah"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "status-line",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Skor Kesehatan Dapur restoran ini berstatus . Perhatian utam"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "KRITIS (Audit Segera)"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Kemasan"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "33.3%"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Ayam Geprek Sambal Korek Barokah"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "chip pill-pos",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Akun Demo"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-sub",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "25 ulasan dianalisis"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Ganti Data"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Tulis Ulasan Pelanggan"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-sub",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Tempel satu ulasan pelanggan, lalu jalankan analisis untuk m"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-sub",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Atau coba contoh ulasan:"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Mixed: Rasa vs Kemasan"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Porsi & Harga"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Pelayanan & Suhu"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Puas Bintang 5"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Teks ulasan:"
+    },
+    {
+     "tag": "TEXTAREA",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "st-ct st-de st-df st-dg st-dh st-di st-dj st-dk st-dl st-dm st-bz st-cv st-dn st-do st-dp ",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Ayamnya gurih renyah bumbunya mantap meresap, tapi kemasan m"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Analisis Ulasan"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Hasil Analisis"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-sub",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Nilai sentimen per aspek dari mesin yang sedang aktif: IndoB"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Belum ada hasil"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-sub",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Hasil analisis akan tampil di sini: aspek apa saja yang dise"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "footer-line",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "• Tugas Akhir AI Engineering Batch 13 • Student ID:  (Azura)"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "UlasRasa"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "REAENG13TQJLN"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "IndoBERT ABSA + Rencana Aksi LLM"
+    }
+   ],
+   "note": "",
+   "role_verdicts": {
+    "greeting_jakarta": {
+     "expected": "Plus Jakarta Sans",
+     "found": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Halo, Ayam Geprek Sambal Korek Barokah",
+     "ok": true
+    },
+    "hero_status_jakarta": {
+     "expected": "Plus Jakarta Sans",
+     "found": null,
+     "ok": null,
+     "note": "elemen tidak ada di keadaan ini"
+    },
+    "card_title_jakarta": {
+     "expected": "Plus Jakarta Sans",
+     "found": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Ayam Geprek Sambal Korek Barokah",
+     "ok": true
+    },
+    "brand_name_jakarta": {
+     "expected": "Plus Jakarta Sans",
+     "found": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "UlasRasa",
+     "ok": true
+    },
+    "kpi_value_mono": {
+     "expected": "JetBrains Mono",
+     "found": null,
+     "ok": null,
+     "note": "elemen tidak ada di keadaan ini"
+    },
+    "stat_value_mono": {
+     "expected": "JetBrains Mono",
+     "found": null,
+     "ok": null,
+     "note": "elemen tidak ada di keadaan ini"
+    },
+    "num_mono": {
+     "expected": "JetBrains Mono",
+     "found": null,
+     "ok": null,
+     "note": "elemen tidak ada di keadaan ini"
+    }
+   }
+  },
+  {
+   "label": "d_popover_selectbox_open",
+   "total_text_elements": 144,
+   "chart_text_elements": 35,
+   "by_primary_font": {
+    "Plus Jakarta Sans": 16,
+    "Inter": 106,
+    "JetBrains Mono": 22
+   },
+   "source_sans_count": 0,
+   "violations": [],
+   "role_samples": {
+    "greeting_jakarta": {
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Halo, Ayam Geprek Sambal Korek Barokah"
+    },
+    "hero_status_jakarta": null,
+    "card_title_jakarta": {
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Ayam Geprek Sambal Korek Barokah"
+    },
+    "kpi_value_mono": null,
+    "stat_value_mono": {
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "23"
+    },
+    "num_mono": null,
+    "first_paragraph": {
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Navigasi modul"
+    },
+    "card_sub": {
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "25 ulasan dianalisis"
+    },
+    "brand_name_jakarta": {
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "UlasRasa"
+    }
+   },
+   "elements": [
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "brand-name",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "UlasRasa"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "brand-sub",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Kesehatan Dapur dari Ulasan"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Ringkasan"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Rincian Aspek"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Rencana Aksi"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Coba Ulasan"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "engine-chip",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Engine ABSA: IndoBERT (fine-tuned)"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Ganti Akun"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "greeting",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Halo, Ayam Geprek Sambal Korek Barokah"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "status-line",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Skor Kesehatan Dapur restoran ini berstatus . Perhatian utam"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "KRITIS (Audit Segera)"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Kemasan"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "33.3%"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Ayam Geprek Sambal Korek Barokah"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "chip pill-pos",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Akun Demo"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-sub",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "25 ulasan dianalisis"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+     "text": "Ganti Data"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Pilih aspek yang mau dibedah:"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Rasa"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Porsi"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Harga"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Kemasan"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Pelayanan"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "stat-value",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "23"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "stat-label",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Total Disebut"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "stat-value",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "15"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "(65%)"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "stat-label",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Positif"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "stat-value",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "3"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "stat-label",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Netral"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "stat-value",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "5"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "(22%)"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "stat-label",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Distribusi Sentimen Aspek Ini"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-sub",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Perbandingan ulasan positif, netral, dan negatif untuk aspek"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 0,
+     "cls": "slicetext",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "65.2%"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 0,
+     "cls": "slicetext",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "13%"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 0,
+     "cls": "slicetext",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "21.7%"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 0,
+     "cls": "legendtext",
+     "testid": "",
+     "font": "Inter, sans-serif",
+     "text": "Positif"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 0,
+     "cls": "legendtext",
+     "testid": "",
+     "font": "Inter, sans-serif",
+     "text": "Netral"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 0,
+     "cls": "legendtext",
+     "testid": "",
+     "font": "Inter, sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 0,
+     "cls": "annotation-text",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "23"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Kata yang Sering Muncul di Keluhan"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-sub",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Kata yang paling sering muncul pada ulasan negatif aspek ini"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 1,
+     "cls": "",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "0"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 1,
+     "cls": "",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "0.5"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 1,
+     "cls": "",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "1"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 1,
+     "cls": "",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "1.5"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 1,
+     "cls": "",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "2"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 1,
+     "cls": "",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "2.5"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 1,
+     "cls": "",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "3"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, sans-serif",
+     "text": "sedikit"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, sans-serif",
+     "text": "sambal"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, sans-serif",
+     "text": "kayak"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, sans-serif",
+     "text": "hari"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, sans-serif",
+     "text": "keasinan"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, sans-serif",
+     "text": "ayam"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 1,
+     "cls": "xtitle",
+     "testid": "",
+     "font": "Inter, sans-serif",
+     "text": "Frekuensi Kemunculan"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Komposisi Sentimen Semua Aspek"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-sub",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Jumlah ulasan positif, netral, dan negatif pada kelima aspek"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 2,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, sans-serif",
+     "text": "Rasa"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 2,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, sans-serif",
+     "text": "Porsi"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 2,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, sans-serif",
+     "text": "Harga"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 2,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, sans-serif",
+     "text": "Kemasan"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 2,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, sans-serif",
+     "text": "Pelayanan"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 2,
+     "cls": "",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "0"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 2,
+     "cls": "",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "5"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 2,
+     "cls": "",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "10"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 2,
+     "cls": "",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "15"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 2,
+     "cls": "",
+     "testid": "",
+     "font": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "20"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 2,
+     "cls": "legendtext",
+     "testid": "",
+     "font": "Inter, sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 2,
+     "cls": "legendtext",
+     "testid": "",
+     "font": "Inter, sans-serif",
+     "text": "Netral"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 2,
+     "cls": "legendtext",
+     "testid": "",
+     "font": "Inter, sans-serif",
+     "text": "Positif"
+    },
+    {
+     "tag": "text",
+     "svg": true,
+     "plot_idx": 2,
+     "cls": "ytitle",
+     "testid": "",
+     "font": "Inter, sans-serif",
+     "text": "Jumlah Ulasan"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Contoh Ulasan Positif"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "review-text",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Ayamnya gurih renyah bumbunya mantap meresap, tapi kemasan m"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "review-meta",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Menu: Paket Kulit Ayam Crispy - ID #1"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "review-text",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Rasa sambal koreknya nampol bikin nagih, ayam crispy bgt, sa"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "review-meta",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Menu: Paket Geprek Dada Sambal Korek - ID #2"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "review-text",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Ayam geprek terenak di area ini bumbu medok, tapi sambalnya "
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "review-meta",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Menu: Nasi Ayam Geprek Keju Lumer - ID #3"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Contoh Ulasan Negatif"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "review-text",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Ayam gepreknya agak keasinan hari ini, ga kayak biasanya. Sa"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "review-meta",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Menu: Nasi Ayam Geprek Keju Lumer - ID #7"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "review-text",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Lama banget proses di dapurnya, nunggu makanan 40 menit pada"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "review-meta",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Menu: Nasi Ayam Geprek Keju Lumer - ID #8"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "review-text",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Rasa biasa aja bumbu kurang meresap, ayam terasa hambar di b"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "review-meta",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Menu: Ayam Geprek Sambal Bawang - ID #11"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-title",
+     "testid": "",
+     "font": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Semua Ulasan"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "card-sub",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Seluruh ulasan pada data aktif beserta label sentimen tiap a"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Saring polaritas:"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "st-fc st-ct st-by st-ed st-do st-cu st-fd st-fe st-ff",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Hanya Negatif (Komplain)"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Saring menu:"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "st-fc st-ct st-by st-ed st-do st-cu st-fd st-fe st-ff",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Semua Menu"
+    },
+    {
+     "tag": "P",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Menampilkan 5 ulasan yang cocok:"
+    },
+    {
+     "tag": "TH",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Ulasan"
+    },
+    {
+     "tag": "TH",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Rasa"
+    },
+    {
+     "tag": "TH",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Porsi"
+    },
+    {
+     "tag": "TH",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Harga"
+    },
+    {
+     "tag": "TH",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Kemasan"
+    },
+    {
+     "tag": "TH",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Pelayanan"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "review-text",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Ayam gepreknya agak keasinan hari ini, ga kayak biasanya. Sa"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "review-meta",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Menu: Nasi Ayam Geprek Keju Lumer - Outlet: Ayam Geprek Samb"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "mini-pill pill-neg",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "mini-pill pill-neg",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "mini-pill pill-neg",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "mini-pill pill-muted",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "-"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "mini-pill pill-muted",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "-"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "review-text",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Lama banget proses di dapurnya, nunggu makanan 40 menit pada"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "review-meta",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Menu: Nasi Ayam Geprek Keju Lumer - Outlet: Ayam Geprek Samb"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "mini-pill pill-neg",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "mini-pill pill-muted",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "-"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "mini-pill pill-muted",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "-"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "mini-pill pill-muted",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "-"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "mini-pill pill-neg",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "review-text",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Rasa biasa aja bumbu kurang meresap, ayam terasa hambar di b"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "review-meta",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Menu: Ayam Geprek Sambal Bawang - Outlet: Ayam Geprek Sambal"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "mini-pill pill-neg",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "mini-pill pill-neg",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "mini-pill pill-muted",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "-"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "mini-pill pill-muted",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "-"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "mini-pill pill-muted",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "-"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "review-text",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Ayamnya bau apek kayak minyak jelantah bekas goreng berkali-"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "review-meta",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Menu: Nasi Ayam Geprek Keju Lumer - Outlet: Ayam Geprek Samb"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "mini-pill pill-neg",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "mini-pill pill-muted",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "-"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "mini-pill pill-neg",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "mini-pill pill-muted",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "-"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "mini-pill pill-muted",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "-"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "review-text",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Keasinan parah bumbunya hari ini, ga kemakan sama sekali. To"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "review-meta",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Menu: Nasi Ayam Geprek Keju Lumer - Outlet: Ayam Geprek Samb"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "mini-pill pill-neg",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Negatif"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "mini-pill pill-muted",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "-"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "mini-pill pill-muted",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "-"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "mini-pill pill-muted",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "-"
+    },
+    {
+     "tag": "SPAN",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "mini-pill pill-muted",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "-"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "footer-line",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "• Tugas Akhir AI Engineering Batch 13 • Student ID:  (Azura)"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "UlasRasa"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "REAENG13TQJLN"
+    },
+    {
+     "tag": "B",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "IndoBERT ABSA + Rencana Aksi LLM"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "st-emotion-cache-qiev7j e1bi6yfx1",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Semua Sentimen"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "st-emotion-cache-qiev7j e1bi6yfx1",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Hanya Negatif (Komplain)"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "st-emotion-cache-qiev7j e1bi6yfx1",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Hanya Positif"
+    },
+    {
+     "tag": "DIV",
+     "svg": false,
+     "plot_idx": -1,
+     "cls": "st-emotion-cache-qiev7j e1bi6yfx1",
+     "testid": "",
+     "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+     "text": "Hanya Netral"
+    }
+   ],
+   "note": "popover BaseWeb (portal di akhir body) ikut tersapu",
+   "role_verdicts": {
+    "greeting_jakarta": {
+     "expected": "Plus Jakarta Sans",
+     "found": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Halo, Ayam Geprek Sambal Korek Barokah",
+     "ok": true
+    },
+    "hero_status_jakarta": {
+     "expected": "Plus Jakarta Sans",
+     "found": null,
+     "ok": null,
+     "note": "elemen tidak ada di keadaan ini"
+    },
+    "card_title_jakarta": {
+     "expected": "Plus Jakarta Sans",
+     "found": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "Ayam Geprek Sambal Korek Barokah",
+     "ok": true
+    },
+    "brand_name_jakarta": {
+     "expected": "Plus Jakarta Sans",
+     "found": "\"Plus Jakarta Sans\", sans-serif",
+     "text": "UlasRasa",
+     "ok": true
+    },
+    "kpi_value_mono": {
+     "expected": "JetBrains Mono",
+     "found": null,
+     "ok": null,
+     "note": "elemen tidak ada di keadaan ini"
+    },
+    "stat_value_mono": {
+     "expected": "JetBrains Mono",
+     "found": "\"JetBrains Mono\", Consolas, monospace",
+     "text": "23",
+     "ok": true
+    },
+    "num_mono": {
+     "expected": "JetBrains Mono",
+     "found": null,
+     "ok": null,
+     "note": "elemen tidak ada di keadaan ini"
+    }
+   },
+   "popover_option_elements_seen": 5
+  }
+ ],
+ "errors": [],
+ "landing_detection_initial": {
+  "has_greeting_div": true,
+  "greeting_text": "Pilih restoran untuk masuk ke dashboard",
+  "has_kpi": false,
+  "has_landing_cards": true,
+  "landing_card_count": 5,
+  "has_landing_title": true,
+  "has_topbar": true,
+  "has_ganti_akun": false,
+  "has_ganti_data": false,
+  "has_module_pills": false,
+  "resto_mentions": {
+   "Ayam Geprek Sambal Korek Barokah": 1,
+   "Bakso Rusuk Solo Pak Ndut": 1,
+   "Bebek Goreng Madura Cak Roni": 1,
+   "Kopi Susu Senja & Toast": 1,
+   "Semua Outlet (Benchmark Industri)": 1
+  },
+  "body_excerpt": "UlasRasa\nKESEHATAN DAPUR DARI ULASAN\nPilih restoran untuk masuk ke dashboard\nSetiap akun demo menampilkan data ulasan satu restoran, lengkap dengan Skor Kesehatan Dapur dan rencana aksi perbaikannya.\nPILIH AKUN DEMO\nAyam Geprek Sambal Korek Barokah\nAkun Demo\n25 ulasan contoh\nSKOR KESEHATAN DAPUR\n55,84\nKRITIS\n\nMasuk Dashboard\n\nBakso Rusuk Solo Pak Ndut\nAkun Demo\n25 ulasan contoh\nSKOR KESEHATAN DAPUR\n68,24\nWASPADA\n\nMasuk Dashboard\n\nBebek Goreng Madura Cak Roni\nAkun Demo\n25 ulasan contoh\nSKOR KESEHATAN DAPUR\n83,00\nPRIMA\n\nMasuk Dashboard\n\nKopi Susu Senja & Toast\nAkun Demo\n25 ulasan contoh\nSKOR KES",
+  "distinct_resto_names_visible": 5,
+  "landing_likely": true
+ },
+ "landing_enter_ayam": {
+  "ok": true,
+  "label": "Ayam Geprek Sambal Korek Barokah [card-button]",
+  "error": null
+ },
+ "panel_close_after_c": {
+  "closed": true
+ },
+ "total_source_sans": 0,
+ "target_met": true
+}

@@ -1,0 +1,30 @@
+{
+ "checks": [
+  {
+   "check": "landing_no_exception",
+   "status": "PASS",
+   "evidence": "run segar tanpa state akun (active_account=None): exception=0"
+  },
+  {
+   "check": "landing_gate_present",
+   "status": "PASS",
+   "evidence": "landing tampil: judul=True nama resto di markdown=4 tombol 'Masuk Dashboard' ada=True sapaan dashboard ada=False"
+  },
+  {
+   "check": "dashboard_Ayam Geprek Sambal",
+   "status": "PASS",
+   "evidence": "exception=0 sapaan_ok=True KHS '55.8%' tampil=True status 'KRITIS (Audit Segera)' tampil=True (seed active_account='Ayam Geprek Sambal Korek Barokah')"
+  },
+  {
+   "check": "dashboard_Semua Outlet",
+   "status": "PASS",
+   "evidence": "exception=0 sapaan_ok=True KHS '67.3%' tampil=True status 'WASPADA (Perhatian)' tampil=True (seed active_account='Semua Outlet (Benchmark Industri)')"
+  }
+ ],
+ "account_key": "active_account",
+ "summary": {
+  "pass": 4,
+  "fail": 0,
+  "total": 4
+ }
+}

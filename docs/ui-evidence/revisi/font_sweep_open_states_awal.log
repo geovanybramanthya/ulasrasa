@@ -1,0 +1,12 @@
+LANDING detected=True kpi=False cards=5 distinct_resto=5
+a_landing_or_initial         total=  42 chart_text=  0 source_sans=  0 fonts={'Plus Jakarta Sans': 20, 'Inter': 17, 'JetBrains Mono': 5}
+b_panel_ganti_data_open      total= 133 chart_text= 12 source_sans=  0 fonts={'Plus Jakarta Sans': 24, 'Inter': 67, 'Material Symbols Rounded': 1, 'JetBrains Mono': 41}
+c_expander_input_ulasan_open total= 133 chart_text= 12 source_sans=  0 fonts={'Plus Jakarta Sans': 24, 'Inter': 67, 'Material Symbols Rounded': 1, 'JetBrains Mono': 41}
+PANEL CLOSE after (c): closed=True
+e_module_ringkasan           total= 122 chart_text= 12 source_sans=  0 fonts={'Plus Jakarta Sans': 21, 'Inter': 60, 'JetBrains Mono': 41}
+e_module_rincian             total= 151 chart_text= 35 source_sans=  0 fonts={'Plus Jakarta Sans': 22, 'Inter': 77, 'JetBrains Mono': 52}
+e_module_rencana             total=  62 chart_text=  0 source_sans=  0 fonts={'Plus Jakarta Sans': 14, 'Inter': 39, 'JetBrains Mono': 8, 'Material Symbols Rounded': 1}
+e_module_coba                total=  35 chart_text=  0 source_sans=  0 fonts={'Plus Jakarta Sans': 14, 'Inter': 21}
+d_popover_selectbox_open     total= 144 chart_text= 35 source_sans=  0 fonts={'Plus Jakarta Sans': 16, 'Inter': 106, 'JetBrains Mono': 22}
+TOTAL Source Sans (awal): 0 dari 8 keadaan; errors=0
+JSON -> C:\Users\geova\Downloads\BOOTCAMP\PROJECTS\ulasrasa\docs\ui-evidence\revisi\font_sweep_open_states_awal.json

@@ -1,0 +1,241 @@
+{
+ "url": "http://localhost:8525",
+ "tag": "awal",
+ "accounts": [
+  {
+   "account": "Ayam Geprek Sambal Korek Barokah",
+   "journey_status": "PASS",
+   "reason": "KHS + status + sapaan cocok baseline",
+   "hero": {
+    "greeting": "Halo, Ayam Geprek Sambal Korek Barokah",
+    "khs_display_1dp": 55.8,
+    "khs_expected_2dp": 55.84,
+    "status_text": "KRITIS (Audit Segera)",
+    "status_expected": "KRITIS (Audit Segera)",
+    "total_reviews_shown": 25,
+    "total_expected": 25,
+    "greeting_ok": true,
+    "khs_ok": true,
+    "status_ok": true
+   },
+   "diagnostic_via_landing_card": {
+    "khs_on_card": 55.84,
+    "khs_expected_2dp": 55.84,
+    "card_text_excerpt": "Ayam Geprek Sambal Korek Barokah\nAkun Demo\n\n25 ulasan contoh\nSkor Kesehatan Dapur\n\n55,84\nKRITIS\nMasuk Dashboard",
+    "numbers_match_baseline": true
+   },
+   "landing_detection": {
+    "has_greeting_div": true,
+    "greeting_text": "Pilih restoran untuk masuk ke dashboard",
+    "has_kpi": false,
+    "has_landing_cards": true,
+    "landing_card_count": 5,
+    "has_landing_title": true,
+    "has_topbar": true,
+    "has_ganti_akun": false,
+    "has_ganti_data": false,
+    "has_module_pills": false,
+    "resto_mentions": {
+     "Ayam Geprek Sambal Korek Barokah": 1,
+     "Bakso Rusuk Solo Pak Ndut": 1,
+     "Bebek Goreng Madura Cak Roni": 1,
+     "Kopi Susu Senja & Toast": 1,
+     "Semua Outlet (Benchmark Industri)": 1
+    },
+    "body_excerpt": "UlasRasa\nKESEHATAN DAPUR DARI ULASAN\nPilih restoran untuk masuk ke dashboard\nSetiap akun demo menampilkan data ulasan satu restoran, lengkap dengan Skor Kesehatan Dapur dan rencana aksi perbaikannya.\nPILIH AKUN DEMO\nAyam Geprek Sambal Korek Barokah\nAkun Demo\n25 ulasan contoh\nSKOR KESEHATAN DAPUR\n55,84\nKRITIS\n\nMasuk Dashboard\n\nBakso Rusuk Solo Pak Ndut\nAkun Demo\n25 ulasan contoh\nSKOR KESEHATAN DAPUR\n68,24\nWASPADA\n\nMasuk Dashboard\n\nBebek Goreng Madura Cak Roni\nAkun Demo\n25 ulasan contoh\nSKOR KESEHATAN DAPUR\n83,00\nPRIMA\n\nMasuk Dashboard\n\nKopi Susu Senja & Toast\nAkun Demo\n25 ulasan contoh\nSKOR KES",
+    "distinct_resto_names_visible": 5,
+    "landing_likely": true
+   },
+   "clicked_label": "Ayam Geprek Sambal Korek Barokah [card-button]"
+  },
+  {
+   "account": "Bakso Rusuk Solo Pak Ndut",
+   "journey_status": "PASS",
+   "reason": "KHS + status + sapaan cocok baseline",
+   "hero": {
+    "greeting": "Halo, Bakso Rusuk Solo Pak Ndut",
+    "khs_display_1dp": 68.2,
+    "khs_expected_2dp": 68.24,
+    "status_text": "WASPADA (Perhatian)",
+    "status_expected": "WASPADA (Perhatian)",
+    "total_reviews_shown": 25,
+    "total_expected": 25,
+    "greeting_ok": true,
+    "khs_ok": true,
+    "status_ok": true
+   },
+   "diagnostic_via_landing_card": {
+    "khs_on_card": 68.24,
+    "khs_expected_2dp": 68.24,
+    "card_text_excerpt": "Bakso Rusuk Solo Pak Ndut\nAkun Demo\n\n25 ulasan contoh\nSkor Kesehatan Dapur\n\n68,24\nWASPADA\nMasuk Dashboard",
+    "numbers_match_baseline": true
+   },
+   "landing_detection": {
+    "has_greeting_div": true,
+    "greeting_text": "Pilih restoran untuk masuk ke dashboard",
+    "has_kpi": false,
+    "has_landing_cards": true,
+    "landing_card_count": 5,
+    "has_landing_title": true,
+    "has_topbar": true,
+    "has_ganti_akun": false,
+    "has_ganti_data": false,
+    "has_module_pills": false,
+    "resto_mentions": {
+     "Ayam Geprek Sambal Korek Barokah": 1,
+     "Bakso Rusuk Solo Pak Ndut": 1,
+     "Bebek Goreng Madura Cak Roni": 1,
+     "Kopi Susu Senja & Toast": 1,
+     "Semua Outlet (Benchmark Industri)": 1
+    },
+    "body_excerpt": "UlasRasa\nKESEHATAN DAPUR DARI ULASAN\nPilih restoran untuk masuk ke dashboard\nSetiap akun demo menampilkan data ulasan satu restoran, lengkap dengan Skor Kesehatan Dapur dan rencana aksi perbaikannya.\nPILIH AKUN DEMO\nAyam Geprek Sambal Korek Barokah\nAkun Demo\n25 ulasan contoh\nSKOR KESEHATAN DAPUR\n55,84\nKRITIS\n\nMasuk Dashboard\n\nBakso Rusuk Solo Pak Ndut\nAkun Demo\n25 ulasan contoh\nSKOR KESEHATAN DAPUR\n68,24\nWASPADA\n\nMasuk Dashboard\n\nBebek Goreng Madura Cak Roni\nAkun Demo\n25 ulasan contoh\nSKOR KESEHATAN DAPUR\n83,00\nPRIMA\n\nMasuk Dashboard\n\nKopi Susu Senja & Toast\nAkun Demo\n25 ulasan contoh\nSKOR KES",
+    "distinct_resto_names_visible": 5,
+    "landing_likely": true
+   },
+   "clicked_label": "Bakso Rusuk Solo Pak Ndut [card-button]"
+  },
+  {
+   "account": "Bebek Goreng Madura Cak Roni",
+   "journey_status": "PASS",
+   "reason": "KHS + status + sapaan cocok baseline",
+   "hero": {
+    "greeting": "Halo, Bebek Goreng Madura Cak Roni",
+    "khs_display_1dp": 83.0,
+    "khs_expected_2dp": 83.0,
+    "status_text": "PRIMA (Optimal)",
+    "status_expected": "PRIMA (Optimal)",
+    "total_reviews_shown": 25,
+    "total_expected": 25,
+    "greeting_ok": true,
+    "khs_ok": true,
+    "status_ok": true
+   },
+   "diagnostic_via_landing_card": {
+    "khs_on_card": 83.0,
+    "khs_expected_2dp": 83.0,
+    "card_text_excerpt": "Bebek Goreng Madura Cak Roni\nAkun Demo\n\n25 ulasan contoh\nSkor Kesehatan Dapur\n\n83,00\nPRIMA\nMasuk Dashboard",
+    "numbers_match_baseline": true
+   },
+   "landing_detection": {
+    "has_greeting_div": true,
+    "greeting_text": "Pilih restoran untuk masuk ke dashboard",
+    "has_kpi": false,
+    "has_landing_cards": true,
+    "landing_card_count": 5,
+    "has_landing_title": true,
+    "has_topbar": true,
+    "has_ganti_akun": false,
+    "has_ganti_data": false,
+    "has_module_pills": false,
+    "resto_mentions": {
+     "Ayam Geprek Sambal Korek Barokah": 1,
+     "Bakso Rusuk Solo Pak Ndut": 1,
+     "Bebek Goreng Madura Cak Roni": 1,
+     "Kopi Susu Senja & Toast": 1,
+     "Semua Outlet (Benchmark Industri)": 1
+    },
+    "body_excerpt": "UlasRasa\nKESEHATAN DAPUR DARI ULASAN\nPilih restoran untuk masuk ke dashboard\nSetiap akun demo menampilkan data ulasan satu restoran, lengkap dengan Skor Kesehatan Dapur dan rencana aksi perbaikannya.\nPILIH AKUN DEMO\nAyam Geprek Sambal Korek Barokah\nAkun Demo\n25 ulasan contoh\nSKOR KESEHATAN DAPUR\n55,84\nKRITIS\n\nMasuk Dashboard\n\nBakso Rusuk Solo Pak Ndut\nAkun Demo\n25 ulasan contoh\nSKOR KESEHATAN DAPUR\n68,24\nWASPADA\n\nMasuk Dashboard\n\nBebek Goreng Madura Cak Roni\nAkun Demo\n25 ulasan contoh\nSKOR KESEHATAN DAPUR\n83,00\nPRIMA\n\nMasuk Dashboard\n\nKopi Susu Senja & Toast\nAkun Demo\n25 ulasan contoh\nSKOR KES",
+    "distinct_resto_names_visible": 5,
+    "landing_likely": true
+   },
+   "clicked_label": "Bebek Goreng Madura Cak Roni [card-button]"
+  },
+  {
+   "account": "Kopi Susu Senja & Toast",
+   "journey_status": "PASS",
+   "reason": "KHS + status + sapaan cocok baseline",
+   "hero": {
+    "greeting": "Halo, Kopi Susu Senja & Toast",
+    "khs_display_1dp": 59.5,
+    "khs_expected_2dp": 59.55,
+    "status_text": "KRITIS (Audit Segera)",
+    "status_expected": "KRITIS (Audit Segera)",
+    "total_reviews_shown": 25,
+    "total_expected": 25,
+    "greeting_ok": true,
+    "khs_ok": true,
+    "status_ok": true
+   },
+   "diagnostic_via_landing_card": {
+    "khs_on_card": 59.55,
+    "khs_expected_2dp": 59.55,
+    "card_text_excerpt": "Kopi Susu Senja & Toast\nAkun Demo\n\n25 ulasan contoh\nSkor Kesehatan Dapur\n\n59,55\nKRITIS\nMasuk Dashboard",
+    "numbers_match_baseline": true
+   },
+   "landing_detection": {
+    "has_greeting_div": true,
+    "greeting_text": "Pilih restoran untuk masuk ke dashboard",
+    "has_kpi": false,
+    "has_landing_cards": true,
+    "landing_card_count": 5,
+    "has_landing_title": true,
+    "has_topbar": true,
+    "has_ganti_akun": false,
+    "has_ganti_data": false,
+    "has_module_pills": false,
+    "resto_mentions": {
+     "Ayam Geprek Sambal Korek Barokah": 1,
+     "Bakso Rusuk Solo Pak Ndut": 1,
+     "Bebek Goreng Madura Cak Roni": 1,
+     "Kopi Susu Senja & Toast": 1,
+     "Semua Outlet (Benchmark Industri)": 1
+    },
+    "body_excerpt": "UlasRasa\nKESEHATAN DAPUR DARI ULASAN\nPilih restoran untuk masuk ke dashboard\nSetiap akun demo menampilkan data ulasan satu restoran, lengkap dengan Skor Kesehatan Dapur dan rencana aksi perbaikannya.\nPILIH AKUN DEMO\nAyam Geprek Sambal Korek Barokah\nAkun Demo\n25 ulasan contoh\nSKOR KESEHATAN DAPUR\n55,84\nKRITIS\n\nMasuk Dashboard\n\nBakso Rusuk Solo Pak Ndut\nAkun Demo\n25 ulasan contoh\nSKOR KESEHATAN DAPUR\n68,24\nWASPADA\n\nMasuk Dashboard\n\nBebek Goreng Madura Cak Roni\nAkun Demo\n25 ulasan contoh\nSKOR KESEHATAN DAPUR\n83,00\nPRIMA\n\nMasuk Dashboard\n\nKopi Susu Senja & Toast\nAkun Demo\n25 ulasan contoh\nSKOR KES",
+    "distinct_resto_names_visible": 5,
+    "landing_likely": true
+   },
+   "clicked_label": "Kopi Susu Senja & Toast [card-button]"
+  },
+  {
+   "account": "Semua Outlet",
+   "journey_status": "PASS",
+   "reason": "KHS + status + sapaan cocok baseline",
+   "hero": {
+    "greeting": "Halo, Semua Outlet",
+    "khs_display_1dp": 67.3,
+    "khs_expected_2dp": 67.27,
+    "status_text": "WASPADA (Perhatian)",
+    "status_expected": "WASPADA (Perhatian)",
+    "total_reviews_shown": 100,
+    "total_expected": 100,
+    "greeting_ok": true,
+    "khs_ok": true,
+    "status_ok": true
+   },
+   "diagnostic_via_landing_card": {
+    "khs_on_card": 67.27,
+    "khs_expected_2dp": 67.27,
+    "card_text_excerpt": "Semua Outlet (Benchmark Industri)\nAkun Demo\n\n100 ulasan contoh\nSkor Kesehatan Dapur\n\n67,27\nWASPADA\nMasuk Dashboard",
+    "numbers_match_baseline": true
+   },
+   "landing_detection": {
+    "has_greeting_div": true,
+    "greeting_text": "Pilih restoran untuk masuk ke dashboard",
+    "has_kpi": false,
+    "has_landing_cards": true,
+    "landing_card_count": 5,
+    "has_landing_title": true,
+    "has_topbar": true,
+    "has_ganti_akun": false,
+    "has_ganti_data": false,
+    "has_module_pills": false,
+    "resto_mentions": {
+     "Ayam Geprek Sambal Korek Barokah": 1,
+     "Bakso Rusuk Solo Pak Ndut": 1,
+     "Bebek Goreng Madura Cak Roni": 1,
+     "Kopi Susu Senja & Toast": 1,
+     "Semua Outlet (Benchmark Industri)": 1
+    },
+    "body_excerpt": "UlasRasa\nKESEHATAN DAPUR DARI ULASAN\nPilih restoran untuk masuk ke dashboard\nSetiap akun demo menampilkan data ulasan satu restoran, lengkap dengan Skor Kesehatan Dapur dan rencana aksi perbaikannya.\nPILIH AKUN DEMO\nAyam Geprek Sambal Korek Barokah\nAkun Demo\n25 ulasan contoh\nSKOR KESEHATAN DAPUR\n55,84\nKRITIS\n\nMasuk Dashboard\n\nBakso Rusuk Solo Pak Ndut\nAkun Demo\n25 ulasan contoh\nSKOR KESEHATAN DAPUR\n68,24\nWASPADA\n\nMasuk Dashboard\n\nBebek Goreng Madura Cak Roni\nAkun Demo\n25 ulasan contoh\nSKOR KESEHATAN DAPUR\n83,00\nPRIMA\n\nMasuk Dashboard\n\nKopi Susu Senja & Toast\nAkun Demo\n25 ulasan contoh\nSKOR KES",
+    "distinct_resto_names_visible": 5,
+    "landing_likely": true
+   },
+   "clicked_label": "Semua Outlet (Benchmark Industri) [card-button]"
+  }
+ ],
+ "summary": {
+  "pass": 5,
+  "fail": 0,
+  "total": 5
+ }
+}

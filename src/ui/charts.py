@@ -5,6 +5,12 @@ Tahap 0: figur radar Modul Ringkasan dipindah verbatim dari app.py lama.
 
 import plotly.graph_objects as go
 
+# Sistem font grafik (DESIGN.md Bag. 5): label selalu Inter, nilai angka
+# selalu JetBrains Mono. Figur yang tidak menetapkan family akan
+# mewarisi "Source Sans" dari tema Streamlit (defect D1).
+FONT_LABEL = "Inter, sans-serif"
+FONT_MONO = "JetBrains Mono, Consolas, monospace"
+
 
 def build_radar_figure(breakdown):
     """Spider chart keseimbangan 5 aspek (verbatim dari app.py lama)."""
@@ -173,14 +179,17 @@ def build_distribution_donut_figure(positive, neutral, negative):
                     line=dict(width=0),
                 ),
                 textinfo="percent",
-                textfont=dict(size=11, color="#FFFFFF"),
+                textfont=dict(family=FONT_MONO, size=11, color="#FFFFFF"),
                 hovertemplate="%{label}: %{value} (%{percent})<extra></extra>",
             )
         ]
     )
     fig.update_layout(
+        font=dict(family=FONT_LABEL),
+        hoverlabel=dict(font=dict(family=FONT_LABEL)),
         showlegend=True,
-        legend=dict(orientation="h", y=-0.12, x=0.5, xanchor="center", yanchor="top"),
+        legend=dict(orientation="h", y=-0.12, x=0.5, xanchor="center", yanchor="top",
+                    font=dict(family=FONT_LABEL)),
         paper_bgcolor="rgba(0,0,0,0)",
         plot_bgcolor="rgba(0,0,0,0)",
         margin=dict(l=10, r=10, t=10, b=40),
@@ -212,10 +221,16 @@ def build_keyword_figure(top_words, accent_hex):
         hovertemplate="%{y}: %{x}<extra></extra>",
     ))
     fig.update_layout(
+        font=dict(family=FONT_LABEL),
+        hoverlabel=dict(font=dict(family=FONT_LABEL)),
         paper_bgcolor="rgba(0,0,0,0)",
         plot_bgcolor="rgba(0,0,0,0)",
-        xaxis=dict(gridcolor="#EAE6DE", title="Frekuensi Kemunculan"),
-        yaxis=dict(gridcolor="#EAE6DE", title=""),
+        xaxis=dict(gridcolor="#EAE6DE",
+                   title=dict(text="Frekuensi Kemunculan",
+                              font=dict(family=FONT_LABEL)),
+                   tickfont=dict(family=FONT_MONO)),
+        yaxis=dict(gridcolor="#EAE6DE", title="",
+                   tickfont=dict(family=FONT_LABEL)),
         height=280,
         margin=dict(l=70, r=20, t=10, b=20),
     )
@@ -247,14 +262,21 @@ def build_composition_figure(breakdown):
             hovertemplate="%{x} - " + label + ": %{y}<extra></extra>",
         ))
     fig.update_layout(
+        font=dict(family=FONT_LABEL),
+        hoverlabel=dict(font=dict(family=FONT_LABEL)),
         barmode="stack",
         paper_bgcolor="rgba(0,0,0,0)",
         plot_bgcolor="rgba(0,0,0,0)",
-        xaxis=dict(gridcolor="#EAE6DE", title=""),
-        yaxis=dict(gridcolor="#EAE6DE", title="Jumlah Ulasan"),
+        xaxis=dict(gridcolor="#EAE6DE", title="",
+                   tickfont=dict(family=FONT_LABEL)),
+        yaxis=dict(gridcolor="#EAE6DE",
+                   title=dict(text="Jumlah Ulasan",
+                              font=dict(family=FONT_LABEL)),
+                   tickfont=dict(family=FONT_MONO)),
         margin=dict(l=20, r=20, t=10, b=40),
         height=300,
         showlegend=True,
-        legend=dict(orientation="h", y=-0.15, x=0.5, xanchor="center", yanchor="top"),
+        legend=dict(orientation="h", y=-0.15, x=0.5, xanchor="center", yanchor="top",
+                    font=dict(family=FONT_LABEL)),
     )
     return fig

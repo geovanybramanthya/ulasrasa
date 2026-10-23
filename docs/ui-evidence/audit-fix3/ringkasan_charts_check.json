@@ -1,0 +1,66 @@
+{
+ "module": "Ringkasan",
+ "chart_texts": [
+  {
+   "plot_idx": 0,
+   "font": "\"JetBrains Mono\", Consolas, monospace",
+   "text": "55.8%"
+  },
+  {
+   "plot_idx": 1,
+   "font": "\"JetBrains Mono\", Consolas, monospace",
+   "text": "41.7%"
+  },
+  {
+   "plot_idx": 1,
+   "font": "\"JetBrains Mono\", Consolas, monospace",
+   "text": "33.3%"
+  },
+  {
+   "plot_idx": 1,
+   "font": "\"JetBrains Mono\", Consolas, monospace",
+   "text": "57.1%"
+  },
+  {
+   "plot_idx": 1,
+   "font": "\"JetBrains Mono\", Consolas, monospace",
+   "text": "54.5%"
+  },
+  {
+   "plot_idx": 1,
+   "font": "\"JetBrains Mono\", Consolas, monospace",
+   "text": "71.7%"
+  },
+  {
+   "plot_idx": 1,
+   "font": "Inter, sans-serif",
+   "text": "Pelayanan"
+  },
+  {
+   "plot_idx": 1,
+   "font": "Inter, sans-serif",
+   "text": "Kemasan"
+  },
+  {
+   "plot_idx": 1,
+   "font": "Inter, sans-serif",
+   "text": "Harga"
+  },
+  {
+   "plot_idx": 1,
+   "font": "Inter, sans-serif",
+   "text": "Porsi"
+  },
+  {
+   "plot_idx": 1,
+   "font": "Inter, sans-serif",
+   "text": "Rasa"
+  },
+  {
+   "plot_idx": 1,
+   "font": "Inter, sans-serif",
+   "text": "Batas kritis"
+  }
+ ],
+ "source_sans": 0
+}

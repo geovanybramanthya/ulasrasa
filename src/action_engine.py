@@ -17,6 +17,8 @@ import json
 import os
 from typing import Dict, Any, List, Optional, Tuple, Union
 
+import time
+
 import requests
 
 try:
@@ -24,7 +26,7 @@ try:
 except Exception:  # pragma: no cover - fallback bila struktur paket berubah
     ASPECT_KEYWORDS = {}
 
-GEMINI_DEFAULT_MODEL = "gemini-3.5-flash"
+GEMINI_DEFAULT_MODEL = "gemini-3.5-flash-lite"
 GROQ_DEFAULT_MODEL = "llama-3.3-70b-versatile"
 GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
 GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions"
@@ -153,22 +155,30 @@ class ActionPlanEngine:
     # ------------------------------------------------------------------
     def _call_gemini(self, api_key: str, prompt: str) -> Optional[Dict[str, List[str]]]:
         model = os.getenv("GEMINI_MODEL", GEMINI_DEFAULT_MODEL)
-        response = requests.post(
-            GEMINI_API_URL.format(model=model),
-            headers={"x-goog-api-key": api_key, "Content-Type": "application/json"},
-            json={
-                "contents": [{"parts": [{"text": prompt}]}],
-                "generationConfig": {
-                    "temperature": LLM_TEMPERATURE,
-                    "responseMimeType": "application/json",
-                },
-            },
-            timeout=LLM_TIMEOUT_SECONDS,
-        )
-        if response.status_code != 200:
-            return None
-        text = response.json()["candidates"][0]["content"]["parts"][0]["text"]
-        return self._parse_and_validate(text)
+        # Google kerap membalas 503 (high demand) untuk sesaat; coba sampai
+        # 3 kali dengan jeda singkat sebelum menyerah ke fallback.
+        for attempt in range(3):
+            try:
+                response = requests.post(
+                    GEMINI_API_URL.format(model=model),
+                    headers={"x-goog-api-key": api_key, "Content-Type": "application/json"},
+                    json={
+                        "contents": [{"parts": [{"text": prompt}]}],
+                        "generationConfig": {
+                            "temperature": LLM_TEMPERATURE,
+                            "responseMimeType": "application/json",
+                        },
+                    },
+                    timeout=LLM_TIMEOUT_SECONDS,
+                )
+            except Exception:
+                response = None
+            if response is not None and response.status_code == 200:
+                text = response.json()["candidates"][0]["content"]["parts"][0]["text"]
+                return self._parse_and_validate(text)
+            if attempt < 2:
+                time.sleep(3)
+        return None
 
     def _call_groq(self, api_key: str, prompt: str) -> Optional[Dict[str, List[str]]]:
         model = os.getenv("GROQ_MODEL", GROQ_DEFAULT_MODEL)

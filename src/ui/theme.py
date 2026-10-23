@@ -71,6 +71,36 @@ p, span, label, li, td, th { color: #14231B; }
     color: #64756B;
 }
 
+/* ---------- font isi elemen bawaan Streamlit/BaseWeb (perbaikan D1) ---------- */
+/* Streamlit/BaseWeb menetapkan "Source Sans" langsung pada elemen-elemen ini,
+   sehingga aturan font di html/body tidak menjangkaunya. Paksa Inter di sini.
+   Aturan sengaja sempit (tipe elemen di dalam wadah markdown, textarea, input,
+   select) agar tidak menimpa peran font lain: judul tetap Plus Jakarta Sans
+   (aturan h1-h6 + kelas kustom) dan angka tetap JetBrains Mono (kelas .num dsb.
+   berbasis <div>/<span> kustom, bukan target aturan ini). */
+[data-testid="stMarkdownContainer"] p,
+[data-testid="stMarkdownContainer"] li,
+[data-testid="stMarkdownContainer"] blockquote,
+[data-testid="stWidgetLabel"] p,
+[data-testid="stCaptionContainer"] p {
+    font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif !important;
+}
+/* label tombol Streamlit juga <p> di dalam wadah markdown - pertahankan Jakarta */
+.stButton [data-testid="stMarkdownContainer"] p,
+.stDownloadButton [data-testid="stMarkdownContainer"] p {
+    font-family: 'Plus Jakarta Sans', 'Inter', sans-serif !important;
+}
+[data-testid="stTextArea"] textarea,
+[data-testid="stTextInput"] input,
+[data-testid="stNumberInput"] input {
+    font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif !important;
+}
+[data-baseweb="select"], [data-baseweb="select"] *,
+[data-baseweb="popover"], [data-baseweb="popover"] *,
+[data-baseweb="menu"], [data-baseweb="menu"] * {
+    font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif !important;
+}
+
 /* ---------- chrome streamlit disembunyikan ---------- */
 [data-testid="stSidebar"], [data-testid="stSidebarCollapsedControl"] { display: none !important; }
 [data-testid="stHeader"] { display: none !important; }
@@ -81,14 +111,24 @@ p, span, label, li, td, th { color: #14231B; }
 .ulas-card, .kpi-card, .hero-card { animation: fadeUp 0.4s ease both; }
 
 /* ---------- top bar ---------- */
+/* Perbaikan D2: position: sticky GAGAL di Streamlit 1.57 karena pembungkus
+   stLayoutWrapper hanya setinggi top bar itu sendiri (sticky kehabisan ruang
+   gerak di dalam induknya). Solusi yang terbukti bekerja: position: fixed +
+   kompensasi padding-top pada kontainer utama (lihat aturan
+   stMainBlockContainer di bawah) supaya konten awal tidak tertutup. */
 div.st-key-topbar {
-    position: sticky; top: 0; z-index: 1000;
+    position: fixed; top: 14px; left: 80px; right: 80px; width: auto; z-index: 1000;
     background: rgba(255,255,255,0.92);
     backdrop-filter: blur(10px);
     border: 1px solid #E7ECE8; border-radius: 16px;
     padding: 10px 18px 4px 18px;
     box-shadow: 0 8px 24px rgba(20,40,30,0.06);
-    margin-bottom: 18px;
+    margin: 0;
+}
+/* kompensasi ruang yang dulu ditempati top bar di alur dokumen:
+   padding-top bawaan Streamlit (96px) + tinggi pembungkus top bar (66px) */
+[data-testid="stMainBlockContainer"] {
+    padding-top: 162px !important;
 }
 .brand-lockup { display: flex; align-items: center; gap: 10px; padding-top: 2px; }
 .brand-badge {
@@ -366,7 +406,9 @@ div[class*="st-key-card_"] {
     .greeting { font-size: 1.35rem; }
     .ulas-card, .panel-data { padding: 16px; border-radius: 16px; }
     .hero-card { padding: 18px; }
-    div.st-key-topbar { padding: 8px 12px 2px 12px; }
+    div.st-key-topbar { padding: 8px 12px 2px 12px; top: 10px; left: 16px; right: 16px; }
+    /* kompensasi D2 mobile: 96px bawaan + pembungkus top bar 186px */
+    [data-testid="stMainBlockContainer"] { padding-top: 282px !important; }
     .engine-chip { float: none; margin-top: 4px; }
 }
 </style>

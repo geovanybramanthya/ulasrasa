@@ -1,0 +1,97 @@
+{
+ "d1": {
+  "ringkasan_paragraph": {
+   "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+   "text": "Navigasi modul"
+  },
+  "select_value": {
+   "root_font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+   "inner_font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+   "text": "Ayam Geprek Sambal Korek Barokahopen"
+  },
+  "widget_label": {
+   "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+   "text": "Navigasi modul"
+  },
+  "rincian_paragraph": {
+   "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+   "text": "Pilih aspek yang mau dibedah:"
+  },
+  "rencana_paragraph": {
+   "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+   "text": "Navigasi modul"
+  },
+  "rencana_checkbox_label": {
+   "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+   "text": "Wajib gunakan isolasi / sealing tape silang pada setiap tutu"
+  },
+  "coba_textarea": {
+   "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif"
+  }
+ },
+ "d2": {
+  "desktop_before": {
+   "topbar": {
+    "top": 14,
+    "bottom": 62,
+    "left": 80,
+    "width": 1280,
+    "height": 48,
+    "position": "fixed"
+   },
+   "greeting_top": 194
+  },
+  "desktop_after_wheel1400": {
+   "topbar": {
+    "top": 14,
+    "bottom": 62,
+    "left": 80,
+    "width": 1280,
+    "height": 48,
+    "position": "fixed"
+   },
+   "main_scrollTop": 976
+  },
+  "mobile_before": {
+   "topbar": {
+    "top": 10,
+    "bottom": 178.421875,
+    "left": 16,
+    "width": 358,
+    "height": 168.421875,
+    "position": "fixed"
+   },
+   "greeting_top": 314
+  },
+  "mobile_after_wheel1400": {
+   "topbar": {
+    "top": 10,
+    "bottom": 178.421875,
+    "left": 16,
+    "width": 358,
+    "height": 168.421875,
+    "position": "fixed"
+   },
+   "main_scrollTop": 1400
+  },
+  "desktop_pass": true,
+  "desktop_no_overlap_at_rest": true,
+  "mobile_pass": true,
+  "mobile_no_overlap_at_rest": true
+ },
+ "font_roles": {
+  "greeting": "\"Plus Jakarta Sans\", sans-serif",
+  "button_label_p": {
+   "font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+   "text": "Ganti Data"
+  }
+ },
+ "d1_pass": {
+  "ringkasan_paragraph": true,
+  "select_value": true,
+  "rincian_paragraph": true,
+  "rencana_paragraph": true,
+  "rencana_checkbox_label": true,
+  "coba_textarea": true
+ }
+}

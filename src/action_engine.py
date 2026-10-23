@@ -24,7 +24,7 @@ try:
 except Exception:  # pragma: no cover - fallback bila struktur paket berubah
     ASPECT_KEYWORDS = {}
 
-GEMINI_DEFAULT_MODEL = "gemini-3.8-flash"
+GEMINI_DEFAULT_MODEL = "gemini-3.5-flash"
 GROQ_DEFAULT_MODEL = "llama-3.3-70b-versatile"
 GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
 GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions"

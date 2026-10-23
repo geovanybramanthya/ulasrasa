@@ -40,7 +40,7 @@ def _fmt_khs(khs: float) -> str:
 
 def _asset_path() -> str:
     repo_root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-    return os.path.join(repo_root, "assets", "ilustrasi-landing.webp")
+    return os.path.join(repo_root, "assets", "ilustrasi-landing.png")
 
 
 def render(pipeline) -> None:

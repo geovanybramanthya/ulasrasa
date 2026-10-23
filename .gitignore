@@ -13,3 +13,10 @@ training/wheels/
 /models/
 *.pyc
 .streamlit/secrets.toml
+ 
+# --- local only, jangan pernah ke-commit ---  
+gemini api key.txt 
+*.log 
+capture_main.py 
+main-shots/ 
+docs/ui-evidence/ 

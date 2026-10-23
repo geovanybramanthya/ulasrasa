@@ -7,10 +7,11 @@ unggah CSV / form tambah ulasan), LoadingBermerek, dan footer ringkas.
 Perilaku data di file ini adalah perilaku blok sidebar app.py lama yang
 berpindah rumah tanpa berubah aturan (PRD Implementasi UI Bag. 3.1):
 - dataset bawaan dari session_state.custom_reviews_df;
-- mode preset: resto terurut, pilihan awal resto pertama alfabetis;
+- mode preset (Adendum Revisi Landing 2026-10-23): dataset ditentukan
+  akun demo aktif di session_state.active_account (selectbox resto lama
+  dihapus; kepala dashboard menjadi kartu identitas akun statis);
 - mode unggah: guard 200 baris + wajib kolom review_text, pesan persis lama;
-- quirk mode unggah tanpa file (selected_resto "Semua Outlet (Benchmark)")
-  dipertahankan apa adanya sesuai catatan PRD;
+  tanpa file / unggahan ditolak, resto mengikuti akun aktif;
 - evaluate_dataframe tetap dipanggil satu kali per run lewat
   core.compute_context() sesudah filter final.
 """
@@ -19,7 +20,7 @@ import pandas as pd
 import streamlit as st
 
 from src.ui import labels
-from src.ui.core import compute_context
+from src.ui.core import clear_account_session, compute_context
 from src.ui.labels import MODULE_CHOICES, MODULE_LABELS, LABEL_TO_MODULE
 
 LOGO_SVG = """
@@ -70,9 +71,10 @@ def request_nav(module_id: str) -> None:
 
 
 def render_topbar(engine_label: str) -> None:
-    """Top bar lengket: brand, navigasi pill, cip engine (teks persis P-E2)."""
+    """Top bar lengket: brand, navigasi pill, cip engine (teks persis P-E2),
+    dan tombol Ganti Akun (ghost) paling kanan (Adendum 2026-10-23)."""
     with st.container(key="topbar"):
-        c_brand, c_nav, c_chip = st.columns([1.15, 2.2, 1.0])
+        c_brand, c_nav, c_chip, c_logout = st.columns([1.15, 2.2, 0.95, 0.55])
         with c_brand:
             st.markdown(
                 f"""
@@ -102,6 +104,16 @@ def render_topbar(engine_label: str) -> None:
             st.markdown(
                 f"<span class='engine-chip'>{labels.ENGINE_CHIP_PREFIX}: {engine_label}</span>",
                 unsafe_allow_html=True,
+            )
+        with c_logout:
+            # Callback on_click (bukan penulisan state pasca-render) agar
+            # pembersihan state akun + dataset sesi aman dari
+            # StreamlitAPIException; kembali ke landing pada run berikutnya.
+            st.button(
+                labels.BTN_GANTI_AKUN,
+                key="btn_ganti_akun",
+                on_click=clear_account_session,
+                use_container_width=True,
             )
 
 
@@ -164,31 +176,34 @@ def render_data_header(pipeline) -> dict:
     active_df = st.session_state.custom_reviews_df.copy()
     upload_messages = []
 
+    # Dataset ditentukan akun demo aktif dari landing (Adendum 2026-10-23):
+    # selectbox resto lama dihapus; akun = resto itu sendiri, atau
+    # BENCHMARK_LABEL untuk akun gabungan "Semua Outlet (Benchmark Industri)".
+    account = st.session_state.get("active_account") or labels.BENCHMARK_LABEL
+
     if mode == labels.DATA_MODE_UPLOAD:
         uploaded = st.session_state.get("ui_csv_uploader")
         new_df, up_resto, upload_messages = _process_upload(uploaded)
         if new_df is not None:
             active_df = new_df
             selected_resto = up_resto
-        elif uploaded is not None:
-            # unggahan ditolak guard: data aktif tidak berubah (P-D4);
-            # resto mengikuti dataset sesi seperti sebelum unggahan.
-            selected_resto = st.session_state.get("ui_resto_select") or labels.BENCHMARK_LABEL
-            if selected_resto == labels.BENCHMARK_LABEL:
-                active_df = st.session_state.custom_reviews_df.copy()
         else:
-            # Quirk lama dipertahankan: string tanpa kata "Industri".
-            selected_resto = "Semua Outlet (Benchmark)"
+            # Belum ada unggahan, atau unggahan ditolak guard: data aktif
+            # tidak berubah (P-D4) dan resto mengikuti akun aktif.
+            selected_resto = account
     else:
-        if not active_df.empty and "restaurant_name" in active_df.columns:
-            outlet_list = [labels.BENCHMARK_LABEL] + sorted(list(active_df["restaurant_name"].unique()))
-        else:
-            outlet_list = [labels.BENCHMARK_LABEL, "Ayam Geprek Sambal Korek Barokah"]
-        selected_resto = st.session_state.get("ui_resto_select")
-        if selected_resto not in outlet_list:
-            # Pilihan awal = resto pertama alfabetis (index 1) - P-D2.
-            selected_resto = outlet_list[1] if len(outlet_list) > 1 else outlet_list[0]
-            st.session_state.ui_resto_select = selected_resto
+        selected_resto = account
+        if (
+            selected_resto != labels.BENCHMARK_LABEL
+            and not active_df.empty
+            and "restaurant_name" in active_df.columns
+            and selected_resto not in set(active_df["restaurant_name"].unique())
+        ):
+            # Akun tidak ditemukan di dataset sesi (dataset berubah di luar
+            # alur normal): jatuh ke gabungan agar dashboard tidak kosong.
+            selected_resto = labels.BENCHMARK_LABEL
+    # Kompatibilitas kunci lama: ui_resto_select kini cermin akun aktif.
+    st.session_state.ui_resto_select = selected_resto
 
     # Filter dataframe aktif berdasarkan pilihan outlet (aturan lama persis).
     if selected_resto != labels.BENCHMARK_LABEL and "restaurant_name" in active_df.columns:
@@ -210,16 +225,22 @@ def render_data_header(pipeline) -> dict:
 
     col_left, col_right = st.columns([2.35, 1.0])
     with col_right:
-        if mode == labels.DATA_MODE_PRESET and not active_df.empty and "restaurant_name" in active_df.columns:
-            st.markdown("<div class='label-caps' style='margin-bottom: 4px;'>Restoran</div>", unsafe_allow_html=True)
-            st.selectbox(
-                labels.RESTO_SELECT_LABEL,
-                outlet_list,
-                index=outlet_list.index(selected_resto),
-                label_visibility="collapsed",
-                key="ui_resto_select",
-                help="Setiap outlet memiliki karakteristik komplain operasional riil yang berbeda.",
-            )
+        # Kartu identitas akun statis pengganti selectbox resto lama
+        # (Adendum 2026-10-23 keputusan 10). Kelas .account-identity milik
+        # theme.py; style inline menjadi penopang selama tema belum memuatnya.
+        identity_name = labels.BENCHMARK_LABEL if is_benchmark else selected_resto
+        st.markdown(
+            f"""
+<div class='account-identity' style='background: #FFFFFF; border: 1px solid #EDF1EE; border-radius: 16px; padding: 12px 16px; margin-bottom: 8px; box-shadow: 0 8px 24px rgba(20,40,30,0.06);'>
+<div style='display: flex; justify-content: space-between; align-items: flex-start; gap: 10px;'>
+<div class='card-title' style='margin-bottom: 2px;'>{identity_name}</div>
+<span class='chip pill-pos'>{labels.DEMO_CHIP}</span>
+</div>
+<div class='card-sub'>{len(filtered_df)} ulasan dianalisis</div>
+</div>
+""",
+            unsafe_allow_html=True,
+        )
         toggle_label = labels.BTN_TUTUP_PANEL if st.session_state.ui_panel_open else labels.BTN_GANTI_DATA
         if st.button(toggle_label, key="ui_toggle_panel", use_container_width=True):
             st.session_state.ui_panel_open = not st.session_state.ui_panel_open
@@ -255,7 +276,7 @@ def render_data_header(pipeline) -> dict:
                 if st.session_state.get("ui_csv_uploader") is None:
                     st.info("Menggunakan dataset aktif sementara.")
             else:
-                st.caption("Data contoh berisi 100 ulasan dari 4 restoran. Pilih restorannya lewat daftar di kanan atas.")
+                st.caption(labels.PRESET_CAPTION)
 
             # Form tambah ulasan (perilaku persis blok 4.6 versi lama - P-D7).
             with st.expander("Input Ulasan Baru ke Outlet Ini", expanded=False):

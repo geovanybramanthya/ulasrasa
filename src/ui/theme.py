@@ -350,6 +350,241 @@ div[data-baseweb="select"] > div { border-radius: 12px !important; border-color:
 [data-testid="stProgress"] [data-baseweb="progress-bar"] > div > div > div { background-color: #22C55E !important; }
 [data-testid="stCheckbox"] label p { font-size: 0.9rem; }
 
+/* ---------- penataan widget menyeluruh (revisi landing, paket T) ---------- */
+/* Celah audit sebelumnya: keadaan TERBUKA tidak pernah tersapu - popover menu
+   selectbox (lapisan BaseWeb yang dirender sebagai portal di <body>) dan isi
+   Panel "Ganti Data" (radio/uploader/expander/input/alert) masih membawa
+   gaya bawaan BaseWeb (teks slate #0F172A, aksen biru #2563EB, radius 8px,
+   latar slate-50) yang terasa "setelan default" di tengah tema. Aturan di
+   bawah menata semuanya ke token tema. Semua selector spesifik
+   BaseWeb/Streamlit 1.57 (data-baseweb / data-testid / role), TANPA selector
+   div/span generik, dan jaring pengaman D1 di atas tidak diubah. */
+
+/* --- selectbox tertutup: kotak selaras kartu --- */
+div[data-baseweb="select"] > div {
+    background-color: #FFFFFF !important;
+    color: #14231B !important;
+}
+div[data-baseweb="select"] > div:focus-within {
+    border-color: #22C55E !important;
+    box-shadow: 0 0 0 3px rgba(34,197,94,0.15) !important;
+}
+[data-baseweb="select"] [data-testid="stMarkdownContainer"] p,
+[data-testid="stSelectbox"] [data-testid="stWidgetLabel"] p {
+    color: #14231B !important;
+}
+
+/* --- popover / menu selectbox TERBUKA (BaseWeb) --- */
+[data-baseweb="popover"] > div {
+    border-radius: 16px !important;
+    border: 1px solid #E7ECE8 !important;
+    box-shadow: 0 16px 40px rgba(20,40,30,0.14) !important;
+    overflow: hidden !important;
+}
+[data-baseweb="menu"], ul[data-baseweb="menu"],
+[data-testid="stSelectboxVirtualDropdown"] {
+    border-radius: 16px !important;
+    background-color: transparent !important;
+    padding: 6px !important;
+}
+[data-baseweb="menu"] li, [data-baseweb="menu"] li *,
+[data-testid="stSelectboxVirtualDropdown"] li,
+[data-testid="stSelectboxVirtualDropdown"] li * {
+    font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif !important;
+    color: #14231B !important;
+}
+[data-baseweb="menu"] li[role="option"],
+[data-testid="stSelectboxVirtualDropdown"] li[role="option"] {
+    padding: 2px 4px !important;
+}
+[data-baseweb="menu"] li[role="option"] > div,
+[data-testid="stSelectboxVirtualDropdown"] li[role="option"] > div {
+    padding: 8px 12px !important;
+    border-radius: 10px !important;
+}
+/* Urutan penting: aturan :hover SETELAH [aria-selected] karena BaseWeb
+   ikut menandai item yang di-hover sebagai aria-selected="true";
+   dengan spesifisitas setara, aturan terakhir menang saat hover
+   (pastel terang), sedangkan item terpilih diam tampil lebih tegas. */
+[data-baseweb="menu"] li[role="option"][aria-selected="true"] > div,
+[data-testid="stSelectboxVirtualDropdown"] li[role="option"][aria-selected="true"] > div {
+    background-color: #CDEEDB !important;
+    font-weight: 600 !important;
+}
+[data-baseweb="menu"] li[role="option"]:hover > div,
+[data-testid="stSelectboxVirtualDropdown"] li[role="option"]:hover > div {
+    background-color: #E8F9F0 !important;
+}
+
+/* --- label widget konsisten --- */
+[data-testid="stWidgetLabel"] p {
+    font-weight: 500 !important;
+    color: #14231B !important;
+}
+
+/* --- radio: aksen hijau saat terpilih --- */
+/* Struktur 1.57: label > div lingkaran luar (16px) > div titik dalam.
+   Bawaan BaseWeb mewarnai lingkaran terpilih biru #2563EB. */
+[data-testid="stRadio"] label > div:first-child {
+    background-color: #C4D2C8 !important;
+}
+[data-testid="stRadio"] label:has(input:checked) > div:first-child {
+    background-color: #22C55E !important;
+}
+[data-testid="stRadio"] label:has(input:checked) > div:first-child > div {
+    background-color: #FFFFFF !important;
+}
+[data-testid="stRadio"] label [data-testid="stMarkdownContainer"] p {
+    font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif !important;
+    color: #14231B !important;
+}
+
+/* --- file uploader: dropzone + tombol Upload gaya ghost --- */
+/* Span ikon stIconMaterial DIKECUALIKAN dari aturan font di bawah:
+   font-nya "Material Symbols Rounded" (ligatur "upload" dsb.);
+   memaksakan Inter mengubah ikon menjadi teks literal tumpang tindih. */
+[data-testid="stFileUploader"] section,
+[data-testid="stFileUploaderDropzone"] {
+    border: 1.5px dashed #B9CFC0 !important;
+    border-radius: 16px !important;
+    background: #FAFCFB !important;
+}
+[data-testid="stFileUploaderDropzone"] div,
+[data-testid="stFileUploaderDropzone"] span:not([data-testid="stIconMaterial"]),
+[data-testid="stFileUploaderDropzoneInstructions"] div,
+[data-testid="stFileUploaderDropzoneInstructions"] span,
+[data-testid="stUploadedFile"] div, [data-testid="stUploadedFile"] span:not([data-testid="stIconMaterial"]) {
+    font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif !important;
+    color: #14231B !important;
+}
+[data-testid="stFileUploader"] button[kind="secondary"],
+[data-testid="stFileUploader"] button[data-testid="stBaseButton-secondary"] {
+    background: #FFFFFF !important;
+    color: #14231B !important;
+    border: 1.5px solid #DDE5DF !important;
+    border-radius: 12px !important;
+    box-shadow: none !important;
+}
+[data-testid="stFileUploader"] button[kind="secondary"]:hover,
+[data-testid="stFileUploader"] button[data-testid="stBaseButton-secondary"]:hover {
+    border-color: #22C55E !important;
+    color: #15803D !important;
+}
+[data-testid="stFileUploader"] button [data-testid="stMarkdownContainer"] p {
+    font-family: 'Plus Jakarta Sans', 'Inter', sans-serif !important;
+    font-weight: 700 !important;
+}
+
+/* --- expander: judul Jakarta, chevron + bingkai selaras --- */
+[data-testid="stExpander"] details {
+    border: 1px solid #E7ECE8 !important;
+    border-radius: 16px !important;
+    background: #FFFFFF !important;
+}
+[data-testid="stExpander"] summary {
+    border-radius: 16px !important;
+    padding: 10px 14px !important;
+}
+[data-testid="stExpander"] summary:hover {
+    background-color: #F2F9F4 !important;
+}
+[data-testid="stExpander"] summary [data-testid="stMarkdownContainer"] p {
+    font-family: 'Plus Jakarta Sans', 'Inter', sans-serif !important;
+    font-weight: 700 !important;
+    color: #14231B !important;
+}
+[data-testid="stExpander"] summary [data-testid="stIconMaterial"] {
+    color: #64756B !important;
+}
+[data-testid="stExpanderDetails"] {
+    border-top: 1px solid #EDF1EE !important;
+    font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif !important;
+}
+
+/* --- text area & text input: kotak putih + focus ring hijau lembut --- */
+[data-testid="stTextInputRootElement"], [data-testid="stTextAreaRootElement"] {
+    background-color: #FFFFFF !important;
+    border: 1px solid #DDE5DF !important;
+    border-radius: 12px !important;
+}
+[data-testid="stTextInputRootElement"]:focus-within,
+[data-testid="stTextAreaRootElement"]:focus-within {
+    border-color: #22C55E !important;
+    box-shadow: 0 0 0 3px rgba(34,197,94,0.15) !important;
+}
+[data-testid="stTextArea"] textarea, [data-testid="stTextInput"] input {
+    color: #14231B !important;
+    background-color: transparent !important;
+}
+
+/* --- alert / info box: radius kartu + Inter, tinta varian dipertahankan --- */
+[data-testid="stAlertContainer"] {
+    border-radius: 14px !important;
+    font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif !important;
+}
+[data-testid="stAlert"] [data-testid="stMarkdownContainer"] p {
+    font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif !important;
+    color: #14231B !important;
+}
+
+
+
+/* ---------- landing akun demo (revisi landing, relay Pekerja L) ---------- */
+/* Kelas untuk module_landing.py + kartu identitas di components.py.
+   Nama kelas/kunci persis dari kedua file itu: kontainer berkunci
+   st-key-landing_acct_* dan st-key-landing_visual; kelas .landing-khs-num,
+   .landing-khs-row, .landing-acct-head, .landing-glass, .account-identity.
+   Pola kartu mengikuti div[class*="st-key-card_"] yang sudah ada. */
+div[class*="st-key-landing_acct_"] {
+    background: #FFFFFF; border: 1px solid #EDF1EE; border-radius: 20px;
+    padding: 18px 22px 12px 22px; margin-bottom: 16px;
+    box-shadow: 0 8px 24px rgba(20,40,30,0.06);
+    animation: fadeUp 0.4s ease both;
+}
+div.st-key-landing_visual {
+    background: #FFFFFF; border: 1px solid #EDF1EE; border-radius: 20px;
+    padding: 14px;
+    box-shadow: 0 8px 24px rgba(20,40,30,0.06);
+    animation: fadeUp 0.4s ease both;
+}
+div.st-key-landing_visual img { border-radius: 14px; }
+.landing-khs-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 600; font-size: 1.5rem; color: #14231B; line-height: 1.1;
+}
+.landing-khs-row { display: flex; align-items: center; gap: 10px; margin: 2px 0 12px 0; }
+.landing-acct-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; }
+/* Kartu kaca MENIMPA bagian bawah gambar di dalam panel visual:
+   position relative + margin-top negatif menariknya naik ke atas gambar
+   (di dalam padding 14px panel), margin samping menyelaraskan tepi. */
+.landing-glass {
+    position: relative; z-index: 2;
+    background: rgba(255,255,255,0.72);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.65); border-radius: 16px;
+    padding: 16px 18px;
+    box-shadow: 0 8px 24px rgba(20,40,30,0.08);
+    margin-top: -56px; margin-left: 14px; margin-right: 14px;
+}
+/* kartu identitas akun di header dashboard (pengganti selectbox resto lama) */
+.account-identity {
+    background: #FFFFFF; border: 1px solid #EDF1EE; border-radius: 16px;
+    padding: 12px 16px; margin-bottom: 8px;
+    box-shadow: 0 8px 24px rgba(20,40,30,0.06);
+}
+/* Landing TIDAK punya top bar, jadi kompensasi padding-top D2 (162px) 
+   tidak boleh berlaku di sana (celah kosong ~180px di atas judul). 
+   Aturan :not(:has(...)) hanya aktif bila top bar absen; dashboard 
+   selalu merender top bar sehingga kompensasi D2 tidak berubah. */
+[data-testid="stMainBlockContainer"]:not(:has(div.st-key-topbar)) {
+    padding-top: 3rem !important;
+}
+
+/* top bar 4 kolom: tombol Ganti Akun (ghost) sejajar pill navigasi */
+div.st-key-topbar [data-testid="stButton"] button {
+    margin-top: 6px; white-space: nowrap;
+}
+
 /* ---------- kartu statistik mini (Rincian, Tahap 3) ---------- */
 .stat-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 16px; }
 .stat-card { background: #FFFFFF; border: 1px solid #EDF1EE; border-radius: 16px; padding: 14px 16px; box-shadow: 0 8px 24px rgba(20,40,30,0.05); }
@@ -435,6 +670,8 @@ div[class*="st-key-card_"] {
     /* kompensasi D2 mobile: 96px bawaan + pembungkus top bar 186px */
     [data-testid="stMainBlockContainer"] { padding-top: 282px !important; }
     .engine-chip { float: none; margin-top: 4px; }
+    .landing-khs-num { font-size: 1.3rem !important; }
+    div.st-key-landing_visual { margin-top: 4px; }
 }
 </style>
 """

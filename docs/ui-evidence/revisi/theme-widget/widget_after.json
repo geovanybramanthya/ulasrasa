@@ -1,0 +1,248 @@
+{
+ "landing_desktop": {
+  "acct_card": {
+   "bg": "rgb(255, 255, 255)",
+   "radius": "20px",
+   "shadow": "rgba(20, 40, 30, 0.06) 0px 8px 24px 0px",
+   "border": "1px solid rgb(237, 241, 238)",
+   "padding": "18px 22px 12px"
+  },
+  "visual": {
+   "bg": "rgb(255, 255, 255)",
+   "radius": "20px",
+   "padding": "14px",
+   "marginTop": "0px"
+  },
+  "img": {
+   "radius": "14px",
+   "top": 81.54606628417969,
+   "bottom": 445.4210662841797
+  },
+  "glass": {
+   "bg": "rgba(255, 255, 255, 0.72)",
+   "radius": "16px",
+   "position": "relative",
+   "marginTop": "-56px",
+   "top": 405.4210510253906,
+   "bottom": 508.0148010253906,
+   "backdrop": "blur(10px)"
+  },
+  "glass_overlaps_img": true,
+  "khs_num": {
+   "font": "\"JetBrains Mono\", Consolas, monospace",
+   "size": "24px",
+   "weight": "600"
+  },
+  "main_padding_top": "48px",
+  "first_content_top": 64
+ },
+ "ringkasan_sweep": {
+  "total": 110,
+  "source_sans": 0,
+  "ss_samples": []
+ },
+ "roles_topbar": {
+  "greeting": "\"Plus Jakarta Sans\", sans-serif",
+  "kpi_value": "\"JetBrains Mono\", Consolas, monospace",
+  "card_title": "\"Plus Jakarta Sans\", sans-serif",
+  "topbar_position": "fixed",
+  "topbar_top": 14,
+  "topbar_bottom": 76,
+  "topbar_height": 62,
+  "greeting_top": 194,
+  "main_padding_top": "162px",
+  "ganti_akun_btn": {
+   "marginTop": "6px",
+   "whiteSpace": "nowrap",
+   "text": "Ganti Akun"
+  }
+ },
+ "scroll_test": {
+  "scrollY": 0,
+  "topbar_top_after": 14,
+  "topbar_position": "fixed"
+ },
+ "select_closed_rincian": {
+  "bg": "rgb(255, 255, 255)",
+  "radius": "12px",
+  "border": "1px solid rgb(221, 229, 223)",
+  "color": "rgb(20, 35, 27)"
+ },
+ "popover": {
+  "present": true,
+  "body_radius": "16px",
+  "body_shadow": "rgba(20, 40, 30, 0.14) 0px 16px 40px 0px",
+  "ul_radius": "16px",
+  "items": [
+   {
+    "text": "Semua Sentimen",
+    "ariaSelected": "false",
+    "li_font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+    "li_color": "rgb(20, 35, 27)",
+    "li_padding": "2px 4px",
+    "inner_bg": "rgba(0, 0, 0, 0)",
+    "inner_padding": "8px 12px",
+    "inner_radius": "10px",
+    "inner_weight": "400"
+   },
+   {
+    "text": "Hanya Negatif (Komplain)",
+    "ariaSelected": "true",
+    "li_font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+    "li_color": "rgb(20, 35, 27)",
+    "li_padding": "2px 4px",
+    "inner_bg": "rgb(205, 238, 219)",
+    "inner_padding": "8px 12px",
+    "inner_radius": "10px",
+    "inner_weight": "600"
+   },
+   {
+    "text": "Hanya Positif",
+    "ariaSelected": "false",
+    "li_font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+    "li_color": "rgb(20, 35, 27)",
+    "li_padding": "2px 4px",
+    "inner_bg": "rgba(0, 0, 0, 0)",
+    "inner_padding": "8px 12px",
+    "inner_radius": "10px",
+    "inner_weight": "400"
+   },
+   {
+    "text": "Hanya Netral",
+    "ariaSelected": "false",
+    "li_font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+    "li_color": "rgb(20, 35, 27)",
+    "li_padding": "2px 4px",
+    "inner_bg": "rgba(0, 0, 0, 0)",
+    "inner_padding": "8px 12px",
+    "inner_radius": "10px",
+    "inner_weight": "400"
+   }
+  ]
+ },
+ "popover_hover": {
+  "text": "Semua Sentimen",
+  "inner_bg": "rgb(205, 238, 219)"
+ },
+ "radio": [
+  {
+   "text": "Outlet Bawaan (Preset)",
+   "checked": true,
+   "outer_bg": "rgb(34, 197, 94)",
+   "dot_bg": "rgb(255, 255, 255)"
+  },
+  {
+   "text": "Upload Dataset Real (CSV)",
+   "checked": false,
+   "outer_bg": "rgb(196, 210, 200)",
+   "dot_bg": "rgb(255, 255, 255)"
+  }
+ ],
+ "expander_form": {
+  "summary_font_p": "\"Plus Jakarta Sans\", Inter, sans-serif",
+  "details": {
+   "radius": "16px",
+   "border": "1px solid rgb(231, 236, 232)"
+  },
+  "textarea_root": {
+   "bg": "rgb(255, 255, 255)",
+   "radius": "12px",
+   "border": "1px solid rgb(221, 229, 223)",
+   "shadow": "none"
+  },
+  "textinput_root": {
+   "bg": "rgb(255, 255, 255)",
+   "radius": "12px",
+   "border": "1px solid rgb(221, 229, 223)",
+   "shadow": "none"
+  },
+  "primary_btn": {
+   "bgImage": "linear-gradient(135deg, rgb(34, 197, 94) 0%, rgb(22, 163, 74) 100%)",
+   "color": "rgb(255, 255, 255)",
+   "font": "\"Plus Jakarta Sans\", sans-serif",
+   "radius": "12px",
+   "text": "Simpan & Perbarui Dashboard"
+  }
+ },
+ "textarea_focus": {
+  "borderColor": "rgb(34, 197, 94)",
+  "shadow": "rgba(34, 197, 94, 0.15) 0px 0px 0px 3px"
+ },
+ "panel_sweep_preset_mode": {
+  "total": 11,
+  "source_sans": 0,
+  "ss_samples": []
+ },
+ "upload_mode": {
+  "dropzone": {
+   "border": "1px dashed rgb(185, 207, 192)",
+   "radius": "16px",
+   "bg": "rgb(250, 252, 251)"
+  },
+  "instructions_font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+  "upload_btn": {
+   "bg": "rgba(0, 0, 0, 0)",
+   "radius": "0px",
+   "color": "rgb(20, 35, 27)",
+   "border": "0px none rgb(20, 35, 27)",
+   "label_font": null,
+   "text": ""
+  },
+  "alert": {
+   "radius": "14px",
+   "bg": "rgba(28, 131, 255, 0.1)",
+   "container_font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+   "text_font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+   "text": "Menggunakan dataset aktif sementara."
+  }
+ },
+ "panel_sweep_upload_mode": {
+  "total": 15,
+  "source_sans": 0,
+  "ss_samples": []
+ },
+ "landing_mobile": {
+  "acct_card": {
+   "bg": "rgb(255, 255, 255)",
+   "radius": "20px",
+   "shadow": "rgba(20, 40, 30, 0.06) 0px 8px 24px 0px",
+   "border": "1px solid rgb(237, 241, 238)",
+   "padding": "18px 22px 12px"
+  },
+  "visual": {
+   "bg": "rgb(255, 255, 255)",
+   "radius": "20px",
+   "padding": "14px",
+   "marginTop": "4px"
+  },
+  "img": {
+   "radius": "14px",
+   "top": 1546.5955810546875,
+   "bottom": 1765.1737060546875
+  },
+  "glass": {
+   "bg": "rgba(255, 255, 255, 0.72)",
+   "radius": "16px",
+   "position": "relative",
+   "marginTop": "-56px",
+   "top": 1725.1737060546875,
+   "bottom": 1866.2674560546875,
+   "backdrop": "blur(10px)"
+  },
+  "glass_overlaps_img": true,
+  "khs_num": {
+   "font": "\"JetBrains Mono\", Consolas, monospace",
+   "size": "20.8px",
+   "weight": "600"
+  },
+  "main_padding_top": "48px",
+  "first_content_top": 64
+ },
+ "dashboard_mobile_topbar": {
+  "topbar_top": 10,
+  "topbar_bottom": 240.421875,
+  "topbar_height": 230.421875,
+  "greeting_top": 314,
+  "main_padding_top": "282px"
+ }
+}

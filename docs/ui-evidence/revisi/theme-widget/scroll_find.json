@@ -1,0 +1,33 @@
+{
+ "scrollables": {
+  "docScrollH": 900,
+  "bodyScrollH": 0,
+  "scrollingElement": "HTML",
+  "found": [
+   {
+    "tag": "SECTION",
+    "testid": "stMain",
+    "cls": "stMain st-emotion-cache-4rsbii eqt0gmo1",
+    "scrollHeight": 1942,
+    "clientHeight": 900,
+    "overflowY": "auto"
+   }
+  ]
+ },
+ "scroll_test2": {
+  "before": 14,
+  "target_desc": "stMain",
+  "target_scrollTop": 1042,
+  "windowY": 0,
+  "topbar_top_after": 14
+ },
+ "selected_resting": {
+  "text": "Hanya Negatif (Komplain)",
+  "inner_bg": "rgb(205, 238, 219)"
+ },
+ "hover_after_swap": {
+  "text": "Semua Sentimen",
+  "ariaSelected_now": "true",
+  "inner_bg": "rgb(232, 249, 240)"
+ }
+}

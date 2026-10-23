@@ -1,0 +1,32 @@
+{
+ "dropzone_icon": {
+  "icon_font": "\"Material Symbols Rounded\"",
+  "icon_text": "upload",
+  "btn_bg": "rgb(255, 255, 255)",
+  "btn_radius": "12px"
+ },
+ "rencana_checkbox": [
+  {
+   "text": "Wajib gunakan isolasi / sealin",
+   "checked": false,
+   "first_tag": "SPAN",
+   "first_bg": "rgb(255, 255, 255)"
+  },
+  {
+   "text": "Pisahkan kuah dan kondimen ker",
+   "checked": false,
+   "first_tag": "SPAN",
+   "first_bg": "rgb(255, 255, 255)"
+  },
+  {
+   "text": "Gunakan kardus tebal bersertif",
+   "checked": false,
+   "first_tag": "SPAN",
+   "first_bg": "rgb(255, 255, 255)"
+  }
+ ],
+ "rencana_sweep_ss": {
+  "total": 80,
+  "source_sans": 0
+ }
+}

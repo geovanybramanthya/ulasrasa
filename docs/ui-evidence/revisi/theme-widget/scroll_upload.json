@@ -1,0 +1,29 @@
+{
+ "scroll_container": {
+  "before": 14,
+  "used": null,
+  "scrollTop": 0,
+  "scrollHeight": 900,
+  "clientHeight": 900,
+  "topbar_top_after": 14,
+  "topbar_position_after": "fixed"
+ },
+ "upload_btn_real": {
+  "found": true,
+  "testid": "stBaseButton-secondary",
+  "kind": "secondary",
+  "bg": "rgb(255, 255, 255)",
+  "bgImage": "none",
+  "radius": "12px",
+  "color": "rgb(20, 35, 27)",
+  "border": "1px solid rgb(221, 229, 223)",
+  "label_font": "\"Plus Jakarta Sans\", Inter, sans-serif",
+  "text": "uploadUpload"
+ },
+ "hover_clarify": {
+  "text": "Semua Sentimen",
+  "ariaSelected_now": "true",
+  "matches_hover": true,
+  "inner_bg": "rgb(205, 238, 219)"
+ }
+}

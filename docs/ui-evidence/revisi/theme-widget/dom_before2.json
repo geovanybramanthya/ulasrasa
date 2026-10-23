@@ -1,0 +1,840 @@
+{
+ "select_chain": [
+  {
+   "cls": "st-an st-ao st-ap st-aq st-ar st-as st-at st-au st-av",
+   "bg": "rgba(0, 0, 0, 0)",
+   "radius": "0px",
+   "border": "0px none rgb(20, 35, 27)",
+   "shadow": "none"
+  },
+  {
+   "cls": "st-aw st-ax st-ay st-az st-at st-b0 st-av st-ae st-b1 st-b2 st-b3 st-b4 st-b5 st",
+   "bg": "rgb(248, 250, 252)",
+   "radius": "12px",
+   "border": "1px solid rgb(221, 229, 223)",
+   "shadow": "none"
+  },
+  {
+   "cls": "st-at st-au st-bl st-bm st-bn st-ae st-bo st-bp st-b0 st-bq st-br st-bs st-bt st",
+   "bg": "rgba(0, 0, 0, 0)",
+   "radius": "0px",
+   "border": "0px none rgb(15, 23, 42)",
+   "shadow": "none"
+  },
+  {
+   "cls": "st-bv st-at st-bw st-bx st-by st-b0 st-bz st-c0 st-c1",
+   "bg": "rgba(0, 0, 0, 0)",
+   "radius": "0px",
+   "border": "0px none rgb(15, 23, 42)",
+   "shadow": "none"
+  },
+  {
+   "cls": "st-au st-c2 st-by st-c3 st-c4 st-c5 st-c6 st-c7 st-c8 st-at st-c9 st-ca st-cb st",
+   "bg": "rgba(0, 0, 0, 0)",
+   "radius": "0px",
+   "border": "0px none rgb(15, 23, 42)",
+   "shadow": "none"
+  },
+  {
+   "cls": "st-an st-ao st-cl st-aq st-ar st-as st-cq st-cr st-cs st-ct st-cu st-cv st-cw st",
+   "bg": "rgba(0, 0, 0, 0)",
+   "radius": "0px",
+   "border": "0px none rgb(15, 23, 42)",
+   "shadow": "none"
+  },
+  {
+   "cls": "st-at st-au st-ae st-cx st-bo st-cy st-bt",
+   "bg": "rgba(0, 0, 0, 0)",
+   "radius": "0px",
+   "border": "0px none rgb(15, 23, 42)",
+   "shadow": "none"
+  }
+ ],
+ "radio_labels": [
+  {
+   "checked": null,
+   "text": "Sumber data:",
+   "divs": [
+    {
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": "0px none rgb(20, 35, 27)",
+     "radius": "0px",
+     "w": "auto",
+     "h": "auto"
+    }
+   ]
+  },
+  {
+   "checked": true,
+   "text": "Outlet Bawaan (Preset)",
+   "divs": [
+    {
+     "bg": "rgb(37, 99, 235)",
+     "border": "0px none rgb(20, 35, 27)",
+     "radius": "50%",
+     "w": "16px",
+     "h": "16px"
+    },
+    {
+     "bg": "rgb(240, 242, 246)",
+     "border": "0px none rgb(20, 35, 27)",
+     "radius": "50%",
+     "w": "6px",
+     "h": "6px"
+    },
+    {
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": "0px none rgb(15, 23, 42)",
+     "radius": "0px",
+     "w": "182.328px",
+     "h": "25.5938px"
+    }
+   ]
+  },
+  {
+   "checked": false,
+   "text": "Upload Dataset Real (CSV)",
+   "divs": [
+    {
+     "bg": "rgba(15, 23, 42, 0.2)",
+     "border": "0px none rgb(20, 35, 27)",
+     "radius": "50%",
+     "w": "16px",
+     "h": "16px"
+    },
+    {
+     "bg": "rgb(255, 255, 255)",
+     "border": "0px none rgb(20, 35, 27)",
+     "radius": "50%",
+     "w": "14px",
+     "h": "14px"
+    },
+    {
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": "0px none rgb(15, 23, 42)",
+     "radius": "0px",
+     "w": "210.516px",
+     "h": "25.5938px"
+    }
+   ]
+  }
+ ],
+ "uploader": {
+  "self": {
+   "tag": "DIV",
+   "testid": "stFileUploader",
+   "cls": "stFileUploader st-emotion-cache-1nfo11o e3v525e8",
+   "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+   "bg": "rgba(0, 0, 0, 0)",
+   "radius": "0px"
+  },
+  "kids": [
+   {
+    "tag": "LABEL",
+    "testid": "stWidgetLabel",
+    "baseweb": "",
+    "kind": "",
+    "cls": "st-emotion-cache-ufqaar e1kt9bl70",
+    "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(15, 23, 42)",
+    "radius": "0px",
+    "border": "0px none rgb(15, 23, 42)",
+    "shadow": "none",
+    "text": "Unggah file CSV ulasan:"
+   },
+   {
+    "tag": "SPAN",
+    "testid": "",
+    "baseweb": "",
+    "kind": "",
+    "cls": "",
+    "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(20, 35, 27)",
+    "radius": "0px",
+    "border": "0px none rgb(20, 35, 27)",
+    "shadow": "none",
+    "text": "Unggah file CSV ulasan:"
+   },
+   {
+    "tag": "DIV",
+    "testid": "stMarkdownContainer",
+    "baseweb": "",
+    "kind": "",
+    "cls": "st-emotion-cache-vtafy0 en7m6i60",
+    "font": "\"Source Sans\", sans-serif",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(20, 35, 27)",
+    "radius": "0px",
+    "border": "0px none rgb(20, 35, 27)",
+    "shadow": "none",
+    "text": "Unggah file CSV ulasan:"
+   },
+   {
+    "tag": "P",
+    "testid": "",
+    "baseweb": "",
+    "kind": "",
+    "cls": "",
+    "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(20, 35, 27)",
+    "radius": "0px",
+    "border": "0px none rgb(20, 35, 27)",
+    "shadow": "none",
+    "text": "Unggah file CSV ulasan:"
+   },
+   {
+    "tag": "DIV",
+    "testid": "",
+    "baseweb": "",
+    "kind": "",
+    "cls": "st-emotion-cache-7e7wz2 e1kt9bl71",
+    "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(15, 23, 42)",
+    "radius": "0px",
+    "border": "0px none rgb(15, 23, 42)",
+    "shadow": "none",
+    "text": ""
+   },
+   {
+    "tag": "SPAN",
+    "testid": "stTooltipIcon",
+    "baseweb": "",
+    "kind": "",
+    "cls": "stTooltipIcon st-emotion-cache-w8dtd0 eqmt79k1",
+    "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(20, 35, 27)",
+    "radius": "0px",
+    "border": "0px none rgb(20, 35, 27)",
+    "shadow": "none",
+    "text": ""
+   },
+   {
+    "tag": "SPAN",
+    "testid": "stTooltipHoverTarget",
+    "baseweb": "",
+    "kind": "",
+    "cls": "stTooltipHoverTarget",
+    "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(20, 35, 27)",
+    "radius": "0px",
+    "border": "0px none rgb(20, 35, 27)",
+    "shadow": "none",
+    "text": ""
+   },
+   {
+    "tag": "BUTTON",
+    "testid": "",
+    "baseweb": "",
+    "kind": "",
+    "cls": "st-emotion-cache-16392iv eqmt79k0",
+    "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(20, 35, 27)",
+    "radius": "0px",
+    "border": "0px none rgb(20, 35, 27)",
+    "shadow": "none",
+    "text": ""
+   },
+   {
+    "tag": "svg",
+    "testid": "",
+    "baseweb": "",
+    "kind": "",
+    "cls": "",
+    "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(20, 35, 27)",
+    "radius": "0px",
+    "border": "0px none rgb(20, 35, 27)",
+    "shadow": "none",
+    "text": ""
+   },
+   {
+    "tag": "circle",
+    "testid": "",
+    "baseweb": "",
+    "kind": "",
+    "cls": "",
+    "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(20, 35, 27)",
+    "radius": "0px",
+    "border": "0px none rgb(20, 35, 27)",
+    "shadow": "none",
+    "text": ""
+   },
+   {
+    "tag": "path",
+    "testid": "",
+    "baseweb": "",
+    "kind": "",
+    "cls": "",
+    "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(20, 35, 27)",
+    "radius": "0px",
+    "border": "0px none rgb(20, 35, 27)",
+    "shadow": "none",
+    "text": ""
+   },
+   {
+    "tag": "line",
+    "testid": "",
+    "baseweb": "",
+    "kind": "",
+    "cls": "",
+    "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(20, 35, 27)",
+    "radius": "0px",
+    "border": "0px none rgb(20, 35, 27)",
+    "shadow": "none",
+    "text": ""
+   },
+   {
+    "tag": "SECTION",
+    "testid": "stFileUploaderDropzone",
+    "baseweb": "",
+    "kind": "",
+    "cls": "st-emotion-cache-1rpctgi e3v525e0",
+    "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+    "bg": "rgb(250, 252, 251)",
+    "color": "rgb(20, 35, 27)",
+    "radius": "16px",
+    "border": "1px dashed rgb(185, 207, 192)",
+    "shadow": "none",
+    "text": "uploadUpload25MB per file • CSV"
+   },
+   {
+    "tag": "INPUT",
+    "testid": "stFileUploaderDropzoneInput",
+    "baseweb": "",
+    "kind": "",
+    "cls": "",
+    "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(20, 35, 27)",
+    "radius": "0px",
+    "border": "0px none rgb(20, 35, 27)",
+    "shadow": "none",
+    "text": ""
+   },
+   {
+    "tag": "SPAN",
+    "testid": "",
+    "baseweb": "",
+    "kind": "",
+    "cls": "st-emotion-cache-epvm6 e3v525e6",
+    "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(20, 35, 27)",
+    "radius": "0px",
+    "border": "0px none rgb(20, 35, 27)",
+    "shadow": "none",
+    "text": "uploadUpload"
+   },
+   {
+    "tag": "BUTTON",
+    "testid": "stBaseButton-secondary",
+    "baseweb": "",
+    "kind": "secondary",
+    "cls": "st-emotion-cache-1gsxmcf e7msn5c2",
+    "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+    "bg": "rgba(136, 176, 215, 0.15)",
+    "color": "rgb(20, 35, 27)",
+    "radius": "8px",
+    "border": "1px solid rgba(15, 23, 42, 0.2)",
+    "shadow": "none",
+    "text": "uploadUpload"
+   },
+   {
+    "tag": "DIV",
+    "testid": "",
+    "baseweb": "",
+    "kind": "",
+    "cls": "st-emotion-cache-1lads1q e7msn5c22",
+    "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(20, 35, 27)",
+    "radius": "0px",
+    "border": "0px none rgb(20, 35, 27)",
+    "shadow": "none",
+    "text": "uploadUpload"
+   },
+   {
+    "tag": "SPAN",
+    "testid": "",
+    "baseweb": "",
+    "kind": "",
+    "cls": "st-emotion-cache-1kl7f1u e7msn5c23",
+    "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(20, 35, 27)",
+    "radius": "0px",
+    "border": "0px none rgb(20, 35, 27)",
+    "shadow": "none",
+    "text": "uploadUpload"
+   },
+   {
+    "tag": "SPAN",
+    "testid": "",
+    "baseweb": "",
+    "kind": "",
+    "cls": "st-emotion-cache-leahp2 epifhcv2",
+    "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(20, 35, 27)",
+    "radius": "0px",
+    "border": "0px none rgb(20, 35, 27)",
+    "shadow": "none",
+    "text": "upload"
+   },
+   {
+    "tag": "SPAN",
+    "testid": "stIconMaterial",
+    "baseweb": "",
+    "kind": "",
+    "cls": "st-emotion-cache-1c9yjad ed4y4ls0",
+    "font": "\"Material Symbols Rounded\"",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(20, 35, 27)",
+    "radius": "0px",
+    "border": "0px none rgb(20, 35, 27)",
+    "shadow": "none",
+    "text": "upload"
+   },
+   {
+    "tag": "DIV",
+    "testid": "stMarkdownContainer",
+    "baseweb": "",
+    "kind": "",
+    "cls": "st-emotion-cache-su9vuv en7m6i60",
+    "font": "\"Source Sans\", sans-serif",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(20, 35, 27)",
+    "radius": "0px",
+    "border": "0px none rgb(20, 35, 27)",
+    "shadow": "none",
+    "text": "Upload"
+   },
+   {
+    "tag": "P",
+    "testid": "",
+    "baseweb": "",
+    "kind": "",
+    "cls": "",
+    "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(20, 35, 27)",
+    "radius": "0px",
+    "border": "0px none rgb(20, 35, 27)",
+    "shadow": "none",
+    "text": "Upload"
+   },
+   {
+    "tag": "DIV",
+    "testid": "stFileUploaderDropzoneInstructions",
+    "baseweb": "",
+    "kind": "",
+    "cls": "st-emotion-cache-1ykwuyz e3v525e3",
+    "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(20, 35, 27)",
+    "radius": "0px",
+    "border": "0px none rgb(20, 35, 27)",
+    "shadow": "none",
+    "text": "25MB per file • CSV"
+   },
+   {
+    "tag": "DIV",
+    "testid": "",
+    "baseweb": "",
+    "kind": "",
+    "cls": "st-emotion-cache-kt79cc e3v525e5",
+    "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(20, 35, 27)",
+    "radius": "0px",
+    "border": "0px none rgb(20, 35, 27)",
+    "shadow": "none",
+    "text": "25MB per file • CSV"
+   },
+   {
+    "tag": "SPAN",
+    "testid": "",
+    "baseweb": "",
+    "kind": "",
+    "cls": "st-emotion-cache-1mz4il1 e3v525e4",
+    "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgba(15, 23, 42, 0.6)",
+    "radius": "0px",
+    "border": "0px none rgba(15, 23, 42, 0.6)",
+    "shadow": "none",
+    "text": "25MB per file • CSV"
+   }
+  ]
+ },
+ "alert": {
+  "self": {
+   "tag": "DIV",
+   "testid": "stAlert",
+   "cls": "stAlert",
+   "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+   "bg": "rgba(0, 0, 0, 0)",
+   "radius": "0px"
+  },
+  "kids": [
+   {
+    "tag": "DIV",
+    "testid": "stAlertContainer",
+    "baseweb": "notification",
+    "kind": "",
+    "cls": "stAlertContainer st-an st-ao st-ap st-dv st-ar st-as st-ek st-el st-ch st-em st-en st-eo s",
+    "font": "\"Source Sans\", sans-serif",
+    "bg": "rgba(28, 131, 255, 0.1)",
+    "color": "rgb(0, 84, 163)",
+    "radius": "8px",
+    "border": "0px none rgb(0, 84, 163)",
+    "shadow": "none",
+    "text": "Menggunakan dataset aktif sementara."
+   },
+   {
+    "tag": "DIV",
+    "testid": "",
+    "baseweb": "",
+    "kind": "",
+    "cls": "st-av st-ev",
+    "font": "\"Source Sans\", sans-serif",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(0, 84, 163)",
+    "radius": "0px",
+    "border": "0px none rgb(0, 84, 163)",
+    "shadow": "none",
+    "text": "Menggunakan dataset aktif sementara."
+   },
+   {
+    "tag": "DIV",
+    "testid": "stAlertContentInfo",
+    "baseweb": "",
+    "kind": "",
+    "cls": "st-emotion-cache-x17d07 e5p6yly0",
+    "font": "\"Source Sans\", sans-serif",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(0, 84, 163)",
+    "radius": "0px",
+    "border": "0px none rgb(0, 84, 163)",
+    "shadow": "none",
+    "text": "Menggunakan dataset aktif sementara."
+   },
+   {
+    "tag": "DIV",
+    "testid": "",
+    "baseweb": "",
+    "kind": "",
+    "cls": "st-emotion-cache-y6ks13 e1hft2uk0",
+    "font": "\"Source Sans\", sans-serif",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(0, 84, 163)",
+    "radius": "0px",
+    "border": "0px none rgb(0, 84, 163)",
+    "shadow": "none",
+    "text": "Menggunakan dataset aktif sementara."
+   },
+   {
+    "tag": "DIV",
+    "testid": "stMarkdownContainer",
+    "baseweb": "",
+    "kind": "",
+    "cls": "st-emotion-cache-3o718f en7m6i60",
+    "font": "\"Source Sans\", sans-serif",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(0, 84, 163)",
+    "radius": "0px",
+    "border": "0px none rgb(0, 84, 163)",
+    "shadow": "none",
+    "text": "Menggunakan dataset aktif sementara."
+   },
+   {
+    "tag": "P",
+    "testid": "",
+    "baseweb": "",
+    "kind": "",
+    "cls": "",
+    "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(20, 35, 27)",
+    "radius": "0px",
+    "border": "0px none rgb(20, 35, 27)",
+    "shadow": "none",
+    "text": "Menggunakan dataset aktif sementara."
+   }
+  ]
+ },
+ "expander_root": {
+  "self": {
+   "tag": "DIV",
+   "testid": "stExpander",
+   "cls": "stExpander st-emotion-cache-8atqhb eqw31fm0",
+   "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+   "bg": "rgba(0, 0, 0, 0)",
+   "radius": "0px"
+  },
+  "kids": [
+   {
+    "tag": "DETAILS",
+    "testid": "",
+    "baseweb": "",
+    "kind": "",
+    "cls": "st-emotion-cache-1ekljgc eqw31fm1",
+    "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(20, 35, 27)",
+    "radius": "8px",
+    "border": "1px solid rgba(15, 23, 42, 0.2)",
+    "shadow": "none",
+    "text": "keyboard_arrow_rightInput Ulasan Baru ke Out"
+   },
+   {
+    "tag": "SUMMARY",
+    "testid": "",
+    "baseweb": "",
+    "kind": "",
+    "cls": "st-emotion-cache-15ruvbm eqw31fm4",
+    "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(20, 35, 27)",
+    "radius": "8px",
+    "border": "0px none rgb(20, 35, 27)",
+    "shadow": "none",
+    "text": "keyboard_arrow_rightInput Ulasan Baru ke Out"
+   },
+   {
+    "tag": "SPAN",
+    "testid": "",
+    "baseweb": "",
+    "kind": "",
+    "cls": "st-emotion-cache-nwb5ao eqw31fm2",
+    "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(20, 35, 27)",
+    "radius": "0px",
+    "border": "0px none rgb(20, 35, 27)",
+    "shadow": "none",
+    "text": "keyboard_arrow_rightInput Ulasan Baru ke Out"
+   },
+   {
+    "tag": "SPAN",
+    "testid": "",
+    "baseweb": "",
+    "kind": "",
+    "cls": "st-emotion-cache-leahp2 epifhcv2",
+    "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(20, 35, 27)",
+    "radius": "0px",
+    "border": "0px none rgb(20, 35, 27)",
+    "shadow": "none",
+    "text": "keyboard_arrow_right"
+   },
+   {
+    "tag": "SPAN",
+    "testid": "stIconMaterial",
+    "baseweb": "",
+    "kind": "",
+    "cls": "st-emotion-cache-1c9yjad ed4y4ls0",
+    "font": "\"Material Symbols Rounded\"",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(20, 35, 27)",
+    "radius": "0px",
+    "border": "0px none rgb(20, 35, 27)",
+    "shadow": "none",
+    "text": "keyboard_arrow_right"
+   },
+   {
+    "tag": "DIV",
+    "testid": "",
+    "baseweb": "",
+    "kind": "",
+    "cls": "st-emotion-cache-11fa8fd eqw31fm3",
+    "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(20, 35, 27)",
+    "radius": "0px",
+    "border": "0px none rgb(20, 35, 27)",
+    "shadow": "none",
+    "text": "Input Ulasan Baru ke Outlet Ini"
+   },
+   {
+    "tag": "DIV",
+    "testid": "stMarkdownContainer",
+    "baseweb": "",
+    "kind": "",
+    "cls": "st-emotion-cache-su9vuv en7m6i60",
+    "font": "\"Source Sans\", sans-serif",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(20, 35, 27)",
+    "radius": "0px",
+    "border": "0px none rgb(20, 35, 27)",
+    "shadow": "none",
+    "text": "Input Ulasan Baru ke Outlet Ini"
+   },
+   {
+    "tag": "P",
+    "testid": "",
+    "baseweb": "",
+    "kind": "",
+    "cls": "",
+    "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(20, 35, 27)",
+    "radius": "0px",
+    "border": "0px none rgb(20, 35, 27)",
+    "shadow": "none",
+    "text": "Input Ulasan Baru ke Outlet Ini"
+   },
+   {
+    "tag": "DIV",
+    "testid": "stExpanderDetails",
+    "baseweb": "",
+    "kind": "",
+    "cls": "st-emotion-cache-dr8rbo eqw31fm5",
+    "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(20, 35, 27)",
+    "radius": "0px",
+    "border": "1px solid rgba(15, 23, 42, 0.2)",
+    "shadow": "none",
+    "text": "Uji coba menambahkan komplain baru secara li"
+   },
+   {
+    "tag": "DIV",
+    "testid": "stVerticalBlock",
+    "baseweb": "",
+    "kind": "",
+    "cls": "stVerticalBlock st-emotion-cache-wfksaw e1rw0b1u3",
+    "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(20, 35, 27)",
+    "radius": "0px",
+    "border": "0px none rgb(20, 35, 27)",
+    "shadow": "none",
+    "text": "Uji coba menambahkan komplain baru secara li"
+   },
+   {
+    "tag": "DIV",
+    "testid": "stElementContainer",
+    "baseweb": "",
+    "kind": "",
+    "cls": "stElementContainer element-container st-emotion-cache-3pwa5w e1rw0b1u1",
+    "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(20, 35, 27)",
+    "radius": "0px",
+    "border": "0px none rgb(20, 35, 27)",
+    "shadow": "none",
+    "text": "Uji coba menambahkan komplain baru secara li"
+   },
+   {
+    "tag": "DIV",
+    "testid": "stMarkdown",
+    "baseweb": "",
+    "kind": "",
+    "cls": "stMarkdown",
+    "font": "Inter, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(20, 35, 27)",
+    "radius": "0px",
+    "border": "0px none rgb(20, 35, 27)",
+    "shadow": "none",
+    "text": "Uji coba menambahkan komplain baru secara li"
+   }
+  ]
+ },
+ "primary_btn": {
+  "testid": "stBaseButton-primary",
+  "kind": "primary",
+  "bg": "rgba(0, 0, 0, 0)",
+  "bgImage": "linear-gradient(135deg, rgb(34, 197, 94) 0%, rgb(22, 163, 74) 100%)",
+  "color": "rgb(255, 255, 255)",
+  "font": "\"Plus Jakarta Sans\", sans-serif",
+  "radius": "12px",
+  "text": "Simpan & Perbarui Dashboard"
+ },
+ "input_chains": {
+  "textarea": [
+   {
+    "testid": "stTextArea",
+    "baseweb": "",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "border": "0px none rgb(20, 35, 27)",
+    "shadow": "none"
+   },
+   {
+    "testid": "stMarkdownContainer",
+    "baseweb": "",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "border": "0px none rgb(20, 35, 27)",
+    "shadow": "none"
+   },
+   {
+    "testid": "stTextAreaRootElement",
+    "baseweb": "textarea",
+    "bg": "rgb(248, 250, 252)",
+    "radius": "8px",
+    "border": "1px solid rgb(248, 250, 252)",
+    "shadow": "none"
+   },
+   {
+    "testid": "",
+    "baseweb": "base-input",
+    "bg": "rgb(248, 250, 252)",
+    "radius": "0px",
+    "border": "0px none rgb(15, 23, 42)",
+    "shadow": "none"
+   }
+  ],
+  "textinput": [
+   {
+    "testid": "stTextInput",
+    "baseweb": "",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "border": "0px none rgb(20, 35, 27)",
+    "shadow": "none"
+   },
+   {
+    "testid": "stMarkdownContainer",
+    "baseweb": "",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "border": "0px none rgb(20, 35, 27)",
+    "shadow": "none"
+   },
+   {
+    "testid": "stTextInputRootElement",
+    "baseweb": "input",
+    "bg": "rgb(248, 250, 252)",
+    "radius": "8px",
+    "border": "1px solid rgb(248, 250, 252)",
+    "shadow": "none"
+   },
+   {
+    "testid": "",
+    "baseweb": "base-input",
+    "bg": "rgb(248, 250, 252)",
+    "radius": "0px",
+    "border": "0px none rgb(15, 23, 42)",
+    "shadow": "none"
+   }
+  ]
+ }
+}

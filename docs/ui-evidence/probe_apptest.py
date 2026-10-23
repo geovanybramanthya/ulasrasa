@@ -25,6 +25,10 @@ for c in caps:
 titles = [str(getattr(t, "value", "")) for t in at.title]
 print("TITLES:", titles[:2])
 md_text = " ".join(str(getattr(m, "value", "")) for m in at.markdown)
-for needle in ["Kitchen Health Score", "Ringkasan Kesehatan Dapur"]:
+for needle in ["Kitchen Health Score", "Ringkasan Kesehatan Dapur", "Engine ABSA:"]:
     print(f"MARKDOWN contains '{needle}':", needle in md_text)
+try:
+    print("SESSION active_module_name =", at.session_state["active_module_name"])
+except Exception as ex:
+    print("SESSION active_module_name unreadable:", ex)
 sys.exit(0 if len(at.exception) == 0 else 1)

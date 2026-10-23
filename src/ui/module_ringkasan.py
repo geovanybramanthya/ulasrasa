@@ -1,13 +1,38 @@
-"""Modul 1: Ringkasan Eksekutif & Health Score.
+"""Modul Ringkasan - Tahap 1: kerangka ber-data asli.
 
-Tahap 0: blok modul dipindah VERBATIM dari app.py lama (tampilan lama
- dipertahankan; pembangunan ulang sesuai DESIGN.md dilakukan Tahap 2).
+Kerangka kartu sesuai DESIGN.md Bag. 8 dengan nilai sesungguhnya dari
+konteks (tidak ada angka tiruan): 4 KartuKPI pastel, HeroKHS ringkas
+(donat Plotly + CTA resmi dibangun Tahap 2; CTA di sini sudah berfungsi),
+bar skor aspek sederhana dari breakdown, dan rel keluhan terbaru.
+Figur-figur Plotly resmi menggantikan bar sederhana pada Tahap 2.
+
+Catatan teknis: seluruh literal HTML ditulis rata kiri (kolom 0) karena
+baris terindentasi >= 4 spasi di dalam markdown Streamlit terbaca
+sebagai blok kode dan tampil mentah.
 """
 
 import streamlit as st
 
-from src.config import ASPECT_WEIGHTS
-from src.ui.charts import build_radar_figure
+from src.ui import labels
+from src.ui.labels import ASPECT_ORDER
+from src.ui.theme import ASPECT_COLORS
+
+_ICONS = {
+    "khs": "<svg width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='#15803D' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M22 12h-4l-3 9L9 3l-3 9H2'></path></svg>",
+    "total": "<svg width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='#0284C7' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z'></path></svg>",
+    "neg": "<svg width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='#B42318' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z'></path><line x1='12' y1='9' x2='12' y2='13'></line><line x1='12' y1='17' x2='12.01' y2='17'></line></svg>",
+}
+
+
+def _pct_negative(filtered_df) -> float:
+    """Definisi mengikat PRD 4.2: proporsi baris dengan >=1 aspek 'negative'."""
+    if filtered_df is None or len(filtered_df) == 0:
+        return 0.0
+    cols = [c for c in ASPECT_ORDER if c in filtered_df.columns]
+    if not cols:
+        return 0.0
+    mask = filtered_df[cols].eq("negative").any(axis=1)
+    return float(mask.mean() * 100.0)
 
 
 def render(ctx, pipeline, action_engine):
@@ -15,142 +40,123 @@ def render(ctx, pipeline, action_engine):
     khs = ctx["khs"]
     breakdown = ctx["breakdown"]
     status_label = ctx["status_label"]
-    status_class = ctx["status_class"]
-    status_color = ctx["status_color"]
     weakest_aspect = ctx["weakest_aspect"]
     weakest_score = ctx["weakest_score"]
 
-    st.markdown("### Ringkasan Kesehatan Dapur (Executive Overview)")
-    st.caption("Visualisasi komprehensif kepuasan pelanggan lintas 5 aspek kunci dan evaluasi skor dapur.")
+    n_total = len(filtered_df)
+    pct_neg = _pct_negative(filtered_df)
+    w_accent, w_tint = ASPECT_COLORS.get(weakest_aspect, ("#B42318", "#FDECEC"))
+    w_icon = (
+        "<svg width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='" + w_accent + "' stroke-width='2' "
+        "stroke-linecap='round' stroke-linejoin='round'><circle cx='12' cy='12' r='9'></circle>"
+        "<circle cx='12' cy='12' r='4.5'></circle><circle cx='12' cy='12' r='1' fill='" + w_accent + "'></circle></svg>"
+    )
 
-    # 4 Kartu KPI Utama
-    kpi_col1, kpi_col2, kpi_col3, kpi_col4 = st.columns(4)
+    # ---------------- 4 Kartu KPI pastel ----------------
+    kpi_html = f"""<div class='kpi-grid'>
+<div class='kpi-card' style='background: #E8F9F0;'>
+<div class='kpi-icon-chip'>{_ICONS['khs']}</div>
+<div class='kpi-label'>{labels.KPI_KHS_LABEL}</div>
+<div class='kpi-value'>{khs:.1f}%</div>
+<div class='kpi-micro'>Status saat ini: {status_label}</div>
+</div>
+<div class='kpi-card' style='background: #E0F2FE;'>
+<div class='kpi-icon-chip'>{_ICONS['total']}</div>
+<div class='kpi-label'>{labels.KPI_TOTAL_LABEL}</div>
+<div class='kpi-value'>{n_total}</div>
+<div class='kpi-micro'>Dari data yang sedang aktif</div>
+</div>
+<div class='kpi-card' style='background: #FDECEC;'>
+<div class='kpi-icon-chip'>{_ICONS['neg']}</div>
+<div class='kpi-label'>{labels.KPI_NEG_LABEL}</div>
+<div class='kpi-value'>{pct_neg:.1f}%</div>
+<div class='kpi-micro'>dari {n_total} ulasan</div>
+</div>
+<div class='kpi-card' style='background: {w_tint};'>
+<div class='kpi-icon-chip'>{w_icon}</div>
+<div class='kpi-label'>{labels.KPI_KRITIS_LABEL}</div>
+<div class='kpi-value'>{weakest_aspect.capitalize()}</div>
+<div class='kpi-micro'>Skor kepuasan <span class='num'>{weakest_score:.1f}%</span> - terendah dari 5 aspek</div>
+</div>
+</div>"""
+    st.markdown(kpi_html, unsafe_allow_html=True)
 
-    with kpi_col1:
-        st.markdown(
-            f"""
-            <div class='kpi-container'>
-                <div class='kpi-title'>Kitchen Health Score</div>
-                <div class='kpi-value' style='color: {status_color};'>{khs:.1f}%</div>
-                <div class='kpi-subtitle'>
-                    {'Baseline tercapai (+5.0% aman)' if khs >= 75 else 'Di bawah ambang target 75%'}
-                </div>
-            </div>
-            """,
-            unsafe_allow_html=True
-        )
-
-    with kpi_col2:
-        st.markdown(
-            f"""
-            <div class='kpi-container'>
-                <div class='kpi-title'>Status Operasional</div>
-                <div style='margin-top: 8px; margin-bottom: 12px;'>
-                    <span class='{status_class}'>{status_label}</span>
-                </div>
-                <div class='kpi-subtitle'>Berdasarkan ambang industri F&B</div>
-            </div>
-            """,
-            unsafe_allow_html=True
-        )
-
-    with kpi_col3:
-        st.markdown(
-            f"""
-            <div class='kpi-container'>
-                <div class='kpi-title'>Aspek Paling Kritis</div>
-                <div class='kpi-value' style='font-size: 1.6rem; color: #B91C1C;'>{weakest_aspect.capitalize()}</div>
-                <div class='kpi-subtitle'>Kepuasan: {weakest_score:.1f}% (Komplain tinggi)</div>
-            </div>
-            """,
-            unsafe_allow_html=True
-        )
-
-    with kpi_col4:
-        st.markdown(
-            f"""
-            <div class='kpi-container'>
-                <div class='kpi-title'>Total Sampel Ulasan</div>
-                <div class='kpi-value'>{len(filtered_df)}</div>
-                <div class='kpi-subtitle'>Ulasan aktif GoFood/GrabFood</div>
-            </div>
-            """,
-            unsafe_allow_html=True
-        )
-
-    st.markdown("<div style='height: 12px;'></div>", unsafe_allow_html=True)
-
-    # Priority Kitchen Alert Banner jika di bawah ambang batas (Zero Emoji, Clean SVG)
-    if weakest_score < 75.0:
-        st.markdown(
-            f"""
-            <div class='ulas-card ulas-card-accent' style='border-left: 4px solid #B91C1C;'>
-                <div style='display: flex; justify-content: space-between; align-items: center;'>
-                    <div style='display: flex; gap: 12px; align-items: center;'>
-                        <div style='width: 36px; height: 36px; background: #FEE2E2; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;'>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B91C1C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
-                                <line x1="12" y1="9" x2="12" y2="13"></line>
-                                <line x1="12" y1="17" x2="12.01" y2="17"></line>
-                            </svg>
-                        </div>
-                        <div>
-                            <b style='color: #B91C1C; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.03em;'>Peringatan Prioritas Dapur: Aspek {weakest_aspect.capitalize()} Kritis</b>
-                            <p style='margin: 4px 0 0 0; font-size: 0.85rem; color: #57534E;'>
-                                Tingkat komplain pada aspek <b>{weakest_aspect.capitalize()}</b> mencapai 
-                                <b>{breakdown.get(weakest_aspect, {}).get('negative_rate', 0.0):.1f}%</b>. 
-                                Diperlukan tindakan segera di stasiun assembling/packing dapur agar rating toko tidak anjlok di aplikasi food delivery.
-                            </p>
-                        </div>
-                    </div>
-                    <span class='badge-kritis'>Tindakan Diperlukan</span>
-                </div>
-            </div>
-            """,
-            unsafe_allow_html=True
-        )
-
-    # Visualisasi Spider Radar Chart & Rincian Aspek
-    col_radar, col_breakdown_cards = st.columns([1.1, 1.3])
-
-    with col_radar:
-        st.markdown("#### Spider Chart: Keseimbangan 5 Aspek Dapur")
-        fig_radar = build_radar_figure(breakdown)
-        if fig_radar is not None:
-            st.plotly_chart(fig_radar, use_container_width=True)
-
-    with col_breakdown_cards:
-        st.markdown("#### Rincian Kinerja 5 Aspek Kunci")
-        st.caption("Tingkat kepuasan dihitung dengan formulasi: (Positif + 0.5 x Netral) / Total Disebut x 100%.")
-
-        for asp_name, m in breakdown.items():
-            asp_cap = asp_name.capitalize()
-            score = m["satisfaction_score"]
-            weight = ASPECT_WEIGHTS.get(asp_cap, 0.15) * 100
-            p_color = "#15803D" if score >= 80 else ("#B45309" if score >= 65 else "#B91C1C")
-
+    # ---------------- Hero KHS (kerangka: angka + status + CTA berfungsi) ----------------
+    neg_rate_w = breakdown.get(weakest_aspect, {}).get("negative_rate", 0.0)
+    with st.container(key="hero"):
+        h_left, h_right = st.columns([1.0, 1.6])
+        with h_left:
+            st.markdown("<div class='label-caps'>Skor Kesehatan Dapur</div>", unsafe_allow_html=True)
+            st.markdown(f"<div class='hero-score-big'>{khs:.1f}%</div>", unsafe_allow_html=True)
+        with h_right:
+            st.markdown(f"<div class='hero-status'>{status_label}</div>", unsafe_allow_html=True)
             st.markdown(
-                f"""
-                <div class='ulas-card' style='padding: 12px 16px; margin-bottom: 8px;'>
-                    <div style='display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;'>
-                        <div style='display: flex; align-items: center; gap: 8px;'>
-                            <b style='font-size: 0.95rem; color: #1C1917;'>{asp_cap}</b>
-                            <span class='badge-aspek'>Bobot: {weight:.0f}%</span>
-                        </div>
-                        <div style='font-size: 1.1rem; font-weight: 800; color: {p_color};'>
-                            {score:.1f}%
-                        </div>
-                    </div>
-                    <div style='background: #EAE6DE; border-radius: 6px; height: 7px; overflow: hidden; margin-bottom: 8px;'>
-                        <div style='background: {p_color}; width: {min(score, 100):.1f}%; height: 100%; border-radius: 6px;'></div>
-                    </div>
-                    <div style='display: flex; justify-content: space-between; font-size: 0.78rem; color: #78716C;'>
-                        <span>Disebut: <b>{m['total_mentioned']}</b> kali</span>
-                        <span class='metric-pill-pos'>Positif: <b>{m['positive']}</b></span>
-                        <span class='metric-pill-neu'>Netral: <b>{m['neutral']}</b></span>
-                        <span class='metric-pill-neg'>Komplain: <b>{m['negative']} ({m['negative_rate']:.0f}%)</b></span>
-                    </div>
-                </div>
-                """,
-                unsafe_allow_html=True
+                f"<div class='hero-note'>Aspek <b>{weakest_aspect.capitalize()}</b> paling butuh perhatian: "
+                f"skor kepuasan {weakest_score:.1f}% dengan tingkat keluhan {neg_rate_w:.1f}%.</div>",
+                unsafe_allow_html=True,
             )
+            st.markdown(
+                f"<span class='hero-chip'>Prioritas: {weakest_aspect.capitalize()}</span>",
+                unsafe_allow_html=True,
+            )
+            if st.button(labels.HERO_CTA, key="hero_cta_rencana", type="primary"):
+                from src.ui.components import sync_nav_pills
+                st.session_state.active_module_name = "AI Kitchen Action Checklist"
+                sync_nav_pills()
+                st.rerun()
+
+    # ---------------- Grafik aspek (kerangka bar sederhana) + Rel keluhan ----------------
+    col_main, col_rel = st.columns([1.55, 1.0])
+    with col_main:
+        baris = []
+        for asp in ASPECT_ORDER:
+            m = breakdown.get(asp, {})
+            score = float(m.get("satisfaction_score", 0.0))
+            accent, _tint = ASPECT_COLORS[asp]
+            baris.append(
+                f"<div style='margin-bottom: 13px;'>"
+                f"<div style='display: flex; justify-content: space-between; font-size: 0.85rem; margin-bottom: 4px;'>"
+                f"<b>{asp.capitalize()}</b><span class='num'>{score:.1f}%</span></div>"
+                f"<div class='mini-bar-track'><div class='mini-bar-fill' style='width: {min(score, 100):.1f}%; background: {accent};'></div></div>"
+                f"</div>"
+            )
+        chart_html = (
+            "<div class='ulas-card'>"
+            f"<div class='card-title'>{labels.CHART_ASPEK_TITLE}</div>"
+            f"<div class='card-sub'>{labels.CHART_ASPEK_SUB}</div>"
+            "<div style='height: 10px;'></div>"
+            + "".join(baris)
+            + "</div>"
+        )
+        st.markdown(chart_html, unsafe_allow_html=True)
+    with col_rel:
+        items = []
+        if not filtered_df.empty:
+            cols = [c for c in ASPECT_ORDER if c in filtered_df.columns]
+            neg_rows = filtered_df[filtered_df[cols].eq("negative").any(axis=1)] if cols else filtered_df.iloc[0:0]
+            if "review_id" in neg_rows.columns:
+                neg_rows = neg_rows.sort_values("review_id", ascending=False)
+            for _, row in neg_rows.head(5).iterrows():
+                first_neg = next((c for c in ASPECT_ORDER if str(row.get(c, "")) == "negative"), None)
+                if first_neg is None:
+                    continue
+                accent, tint = ASPECT_COLORS[first_neg]
+                text = str(row.get("review_text", ""))
+                text = (text[:140] + "...") if len(text) > 140 else text
+                items.append(
+                    f"<div class='rel-item'>"
+                    f"<div class='rel-text'>&quot;{text}&quot;</div>"
+                    f"<span class='chip' style='background: {tint}; color: {accent}; border: 1px solid {tint};'>{first_neg.capitalize()}</span> "
+                    f"<span class='chip pill-neg'>Negatif</span>"
+                    f"</div>"
+                )
+        body = "".join(items) if items else "<div class='card-sub'>Belum ada ulasan negatif pada data aktif. Pertahankan kualitas dapurnya.</div>"
+        rel_html = (
+            "<div class='ulas-card'>"
+            f"<div class='card-title'>{labels.REL_KELUHAN_TITLE}</div>"
+            f"<div class='card-sub'>{labels.REL_KELUHAN_SUB}</div>"
+            "<div style='height: 10px;'></div>"
+            + body
+            + "</div>"
+        )
+        st.markdown(rel_html, unsafe_allow_html=True)

@@ -1,643 +1,296 @@
-"""Tema UI UlasRasa.
+"""Tema UI UlasRasa - ditulis dari token DESIGN.md Bag. 4-6 (Tahap 1).
 
-Tahap 0: CSS lama dipindah apa adanya dari app.py (konstanta CUSTOM_CSS)
-tanpa perubahan isi, sesuai gerbang verbatim PRD Implementasi UI.
-Penulisan ulang dari token DESIGN.md dilakukan pada Tahap 1.
+Sumber kebenaran visual satu-satunya adalah DESIGN.md:
+- Warna: latar #F6F7F9, kartu putih, tinta #14231B, hijau brand #22C55E.
+- Font 3 peran: Plus Jakarta Sans (judul), Inter (isi), JetBrains Mono (angka).
+- Radius kartu 20 px, tombol 12 px, bayangan lembut token.
+Sidebar dan chrome bawaan Streamlit disembunyikan total (DESIGN.md Bag. 3).
 """
 
 import streamlit as st
 
-OLD_CSS = """
+# ---------------------------------------------------------------- token warna
+COLORS = {
+    "bg": "#F6F7F9",
+    "card": "#FFFFFF",
+    "ink": "#14231B",
+    "muted": "#64756B",
+    "green": "#22C55E",
+    "green_deep": "#15803D",
+    "green_tint": "#E8F9F0",
+    "neg_text": "#B42318",
+    "neg_tint": "#FDECEC",
+    "neu_text": "#B45309",
+    "neu_tint": "#FEF3C7",
+    "line": "#E7ECE8",
+}
+
+ASPECT_COLORS = {
+    "rasa": ("#E8833A", "#FFE8D6"),
+    "porsi": ("#0284C7", "#E0F2FE"),
+    "harga": ("#D97706", "#FEF3C7"),
+    "kemasan": ("#7C3AED", "#EDE9FE"),
+    "pelayanan": ("#0D9488", "#CCFBF1"),
+}
+
+FONT_DISPLAY = "'Plus Jakarta Sans', 'Inter', -apple-system, 'Segoe UI', sans-serif"
+FONT_BODY = "'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif"
+FONT_MONO = "'JetBrains Mono', 'SFMono-Regular', Consolas, monospace"
+
+SHADOW_CARD = "0 8px 24px rgba(20,40,30,0.06)"
+
+THEME_CSS = """
 <style>
-/* Import Font Modern */
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@600&display=swap');
 
-/* Global Reset & Base Canvas */
+/* ---------- basis ---------- */
 html, body, [data-testid="stAppViewContainer"] {
-    background-color: #FAF8F5 !important;
-    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
-    color: #1C1917 !important;
+    background-color: #F6F7F9 !important;
+    font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif !important;
+    color: #14231B !important;
 }
-
-[data-testid="stHeader"] {
-    background-color: rgba(250, 248, 245, 0.85) !important;
-    backdrop-filter: blur(10px) !important;
+[data-testid="stAppViewContainer"] .main .block-container {
+    padding-top: 1.1rem !important;
+    padding-bottom: 2.5rem !important;
+    max-width: 1400px !important;
 }
-
-/* Sidebar Styling Warm Neutral */
-[data-testid="stSidebar"] {
-    background-color: #F4F1EA !important;
-    border-right: 1px solid #E8E4DA !important;
-}
-
-[data-testid="stSidebar"] hr {
-    border-color: #E2DDD3 !important;
-    margin: 0.85rem 0 !important;
-}
-
-/* Typography Hierarchy */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Plus Jakarta Sans', sans-serif !important;
-    color: #1C1917 !important;
-    font-weight: 700 !important;
-    letter-spacing: -0.02em !important;
-}
-
-p, span, label {
-    color: #44403C;
-}
-
-/* Brand Header in Sidebar */
-.brand-container {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 6px 0 12px 0;
-}
-
-.brand-logo-badge {
-    width: 38px;
-    height: 38px;
-    background: #C84B2F;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 12px rgba(200, 75, 47, 0.25);
-    flex-shrink: 0;
-}
-
-.brand-text-title {
-    font-size: 1.15rem;
-    font-weight: 800;
-    color: #1C1917;
-    letter-spacing: -0.01em;
-    line-height: 1.1;
-}
-
-.brand-text-sub {
-    font-size: 0.72rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    color: #78716C;
-}
-
-/* Pulsing Status Dot (Living UI Effect) */
-.live-status-pill {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    background: #FFFFFF;
-    border: 1px solid #E2DDD3;
-    padding: 4px 10px;
-    border-radius: 20px;
-    font-size: 0.72rem;
-    font-weight: 600;
-    color: #15803D;
-    margin-bottom: 14px;
-    box-shadow: 0 1px 3px rgba(45, 35, 25, 0.03);
-}
-
-.pulse-dot {
-    width: 7px;
-    height: 7px;
-    background-color: #15803D;
-    border-radius: 50%;
-    box-shadow: 0 0 0 0 rgba(21, 128, 61, 0.5);
-    animation: pulse 1.8s infinite;
-}
-
-@keyframes pulse {
-    0% {
-        transform: scale(0.95);
-        box-shadow: 0 0 0 0 rgba(21, 128, 61, 0.6);
-    }
-    70% {
-        transform: scale(1);
-        box-shadow: 0 0 0 6px rgba(21, 128, 61, 0);
-    }
-    100% {
-        transform: scale(0.95);
-        box-shadow: 0 0 0 0 rgba(21, 128, 61, 0);
-    }
-}
-
-/* Section Header in Sidebar */
-.sidebar-section-header {
-    font-size: 0.75rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: #78716C;
-    margin: 14px 0 8px 0;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-}
-
-/* THE HIGHLIGHTER: Navigation Menu Styling */
-[data-testid="stSidebar"] [data-testid="stRadio"] div[role="radiogroup"] > label {
-    background: #FFFFFF !important;
-    border: 1px solid #EAE6DE !important;
-    border-radius: 10px !important;
-    padding: 10px 14px !important;
-    margin-bottom: 6px !important;
-    transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1) !important;
-    cursor: pointer !important;
-    box-shadow: 0 1px 3px rgba(45, 35, 25, 0.02) !important;
-}
-
-[data-testid="stSidebar"] [data-testid="stRadio"] div[role="radiogroup"] > label:hover {
-    border-color: #C84B2F !important;
-    background: #FFFDFB !important;
-    transform: translateX(4px) !important;
-    box-shadow: 0 4px 12px rgba(45, 35, 25, 0.05) !important;
-}
-
-/* HIGHLIGHTER AKTIF: Border Kiri Tebal & Background Lembut */
-[data-testid="stSidebar"] [data-testid="stRadio"] div[role="radiogroup"] > label:has(input:checked) {
-    background: linear-gradient(90deg, #FFF4EE 0%, #FAF0E8 100%) !important;
-    border-color: #C84B2F !important;
-    border-left: 5px solid #C84B2F !important;
-    box-shadow: 0 4px 14px rgba(200, 75, 47, 0.12) !important;
-    transform: translateX(4px) !important;
-}
-
-[data-testid="stSidebar"] [data-testid="stRadio"] div[role="radiogroup"] > label:has(input:checked) p {
-    color: #C84B2F !important;
-    font-weight: 700 !important;
+    font-family: 'Plus Jakarta Sans', 'Inter', sans-serif !important;
+    color: #14231B !important;
     letter-spacing: -0.01em !important;
 }
-
-[data-testid="stSidebar"] [data-testid="stRadio"] input[type="radio"]:checked + div {
-    background-color: #C84B2F !important;
-    border-color: #C84B2F !important;
+p, span, label, li, td, th { color: #14231B; }
+.num, .kpi-value, .hero-score {
+    font-family: 'JetBrains Mono', Consolas, monospace !important;
+    font-weight: 600 !important;
+}
+.label-caps {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 11px; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    color: #64756B;
 }
 
-/* Live Reactive Outlet Micro-Card in Sidebar */
-.sidebar-outlet-card {
-    background: #FFFFFF;
-    border: 1px solid #EAE6DE;
-    border-radius: 12px;
-    padding: 14px 16px;
-    margin-top: 10px;
-    margin-bottom: 12px;
-    box-shadow: 0 2px 8px rgba(45, 35, 25, 0.03);
-    position: relative;
-    border-left: 4px solid #C84B2F;
+/* ---------- chrome streamlit disembunyikan ---------- */
+[data-testid="stSidebar"], [data-testid="stSidebarCollapsedControl"] { display: none !important; }
+[data-testid="stHeader"] { display: none !important; }
+[data-testid="stToolbar"], [data-testid="stDecoration"], #MainMenu, footer { display: none !important; visibility: hidden !important; }
+
+/* ---------- gerak mikro ---------- */
+@keyframes fadeUp { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+.ulas-card, .kpi-card, .hero-card { animation: fadeUp 0.4s ease both; }
+
+/* ---------- top bar ---------- */
+div.st-key-topbar {
+    position: sticky; top: 0; z-index: 1000;
+    background: rgba(255,255,255,0.92);
+    backdrop-filter: blur(10px);
+    border: 1px solid #E7ECE8; border-radius: 16px;
+    padding: 10px 18px 4px 18px;
+    box-shadow: 0 8px 24px rgba(20,40,30,0.06);
+    margin-bottom: 18px;
+}
+.brand-lockup { display: flex; align-items: center; gap: 10px; padding-top: 2px; }
+.brand-badge {
+    width: 38px; height: 38px; border-radius: 12px; flex-shrink: 0;
+    background: linear-gradient(135deg, #22C55E 0%, #16A34A 100%);
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 6px 16px rgba(34,197,94,0.35);
+}
+.brand-name { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 1.18rem; color: #14231B; line-height: 1.05; }
+.brand-sub { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; color: #64756B; }
+.engine-chip {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: #E8F9F0; color: #15803D;
+    border: 1px solid #CDEEDB; border-radius: 999px;
+    padding: 4px 11px; font-size: 0.72rem; font-weight: 600;
+    float: right; margin-top: 8px; white-space: nowrap;
 }
 
-.sidebar-outlet-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 6px;
+/* st.pills navigasi */
+/* Streamlit 1.57: pills = stButtonGroup; aktif berkind="pillsActive" */
+[data-testid="stButtonGroup"] { justify-content: center; }
+[data-testid="stButtonGroup"] button {
+    border-radius: 999px !important;
+    border: 1px solid #E2E8E4 !important;
+    background: #FFFFFF !important;
+    color: #14231B !important;
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    font-weight: 600 !important;
+    padding: 6px 16px !important;
+}
+[data-testid="stButtonGroup"] button[kind="pillsActive"] {
+    background: #22C55E !important; border-color: #22C55E !important; color: #FFFFFF !important;
 }
 
-.sidebar-outlet-name {
-    font-size: 0.88rem;
-    font-weight: 700;
-    color: #1C1917;
-    line-height: 1.25;
+/* ---------- header sapaan ---------- */
+.greeting {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 800; font-size: 1.72rem; color: #14231B;
+    letter-spacing: -0.02em; line-height: 1.15; margin-bottom: 2px;
 }
+.status-line { font-size: 0.92rem; color: #64756B; line-height: 1.45; }
+.status-line b { color: #14231B; }
 
-.sidebar-outlet-score-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    margin-top: 8px;
-    margin-bottom: 4px;
-}
-
-.sidebar-score-label {
-    font-size: 0.72rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: #78716C;
-}
-
-.sidebar-score-val {
-    font-size: 1.25rem;
-    font-weight: 800;
-}
-
-.sidebar-progress-track {
-    background: #EAE6DE;
-    border-radius: 4px;
-    height: 5px;
-    overflow: hidden;
-    margin-bottom: 8px;
-}
-
-.sidebar-outlet-chips {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
-    margin-top: 8px;
-}
-
-.outlet-chip {
-    background: #F5F3ED;
-    border: 1px solid #E2DDD3;
-    padding: 2px 7px;
-    border-radius: 4px;
-    font-size: 0.7rem;
-    font-weight: 600;
-    color: #57534E;
-}
-
-.outlet-chip-alert {
-    background: #FEF2F2;
-    border-color: #FEE2E2;
-    color: #B91C1C;
-    font-weight: 700;
-}
-
-/* Sidebar Weighted Composition Card */
-.sidebar-weights-card {
-    background: #FFFFFF;
-    border: 1px solid #EAE6DE;
-    border-radius: 10px;
-    padding: 12px 14px;
-    margin-top: 8px;
-}
-
-.weights-bar-composite {
-    display: flex;
-    height: 6px;
-    border-radius: 4px;
-    overflow: hidden;
-    margin: 8px 0;
-}
-
-.weights-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 6px;
-    font-size: 0.72rem;
-    color: #57534E;
-}
-
-.weight-item {
-    background: #FAF8F5;
-    border: 1px solid #EAE6DE;
-    padding: 3px 6px;
-    border-radius: 4px;
-}
-
-/* Glass & Card Surfaces */
+/* ---------- kartu generik ---------- */
 .ulas-card {
-    background: #FFFFFF;
-    border: 1px solid #EAE6DE;
-    border-radius: 14px;
-    padding: 20px 24px;
-    margin-bottom: 16px;
-    box-shadow: 0 4px 20px -2px rgba(45, 35, 25, 0.04), 0 2px 6px -1px rgba(45, 35, 25, 0.02);
-    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    background: #FFFFFF; border: 1px solid #EDF1EE; border-radius: 20px;
+    padding: 20px 24px; margin-bottom: 16px;
+    box-shadow: 0 8px 24px rgba(20,40,30,0.06);
+    transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+.ulas-card:hover { transform: translateY(-2px); box-shadow: 0 14px 32px rgba(20,40,30,0.09); }
+.card-title {
+    font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700;
+    font-size: 1.02rem; color: #14231B; margin-bottom: 4px;
+}
+.card-sub { font-size: 0.83rem; color: #64756B; line-height: 1.45; }
+
+/* ---------- kartu KPI pastel ---------- */
+.kpi-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 16px; }
+.kpi-card {
+    border-radius: 20px; padding: 18px 20px;
+    box-shadow: 0 8px 24px rgba(20,40,30,0.05);
+    transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+.kpi-card:hover { transform: translateY(-2px); box-shadow: 0 14px 30px rgba(20,40,30,0.09); }
+.kpi-icon-chip {
+    width: 34px; height: 34px; border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    background: rgba(255,255,255,0.65); margin-bottom: 10px;
+}
+.kpi-label {
+    font-family: 'Plus Jakarta Sans', sans-serif; font-size: 11px; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.08em; color: #64756B; margin-bottom: 4px;
+}
+.kpi-value { font-size: 1.9rem; line-height: 1.1; color: #14231B; }
+.kpi-micro { font-size: 0.78rem; color: #64756B; margin-top: 4px; line-height: 1.4; }
+
+/* ---------- hero KHS ---------- */
+.hero-card {
+    background: linear-gradient(120deg, #22C55E 0%, #12994A 55%, #0D9488 130%);
+    border-radius: 20px; padding: 22px 26px; color: #FFFFFF;
+    box-shadow: 0 16px 36px rgba(21,128,61,0.25); margin-bottom: 16px;
+}
+.hero-card .label-caps { color: rgba(255,255,255,0.85); }
+.hero-status { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 1.5rem; color: #FFFFFF; line-height: 1.2; }
+.hero-note { font-size: 0.88rem; color: rgba(255,255,255,0.92); line-height: 1.5; }
+.hero-chip {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: rgba(255,255,255,0.18); border: 1px solid rgba(255,255,255,0.35);
+    color: #FFFFFF; border-radius: 999px; padding: 4px 12px;
+    font-size: 0.76rem; font-weight: 600;
 }
 
-.ulas-card:hover {
-    border-color: #DDD8CD;
-    box-shadow: 0 8px 30px -4px rgba(45, 35, 25, 0.08);
-    transform: translateY(-2px);
+/* hero sebagai container berkunci (agar tombol Streamlit bisa tinggal di dalamnya) */
+div.st-key-hero {
+    background: linear-gradient(120deg, #22C55E 0%, #12994A 55%, #0D9488 130%);
+    border-radius: 20px; padding: 10px 14px;
+    box-shadow: 0 16px 36px rgba(21,128,61,0.25); margin-bottom: 16px;
+    animation: fadeUp 0.4s ease both;
+}
+div.st-key-hero .hero-score-big {
+    font-family: 'JetBrains Mono', Consolas, monospace; font-weight: 600;
+    font-size: 3rem; color: #FFFFFF; line-height: 1.05;
+}
+div.st-key-hero .label-caps { color: rgba(255,255,255,0.85); }
+
+/* kerangka bar skor aspek (Tahap 1; figur Plotly resmi menyusul) */
+.mini-bar-track { background: #EFF3F0; border-radius: 6px; height: 8px; overflow: hidden; }
+.mini-bar-fill { height: 100%; border-radius: 6px; }
+.rel-item { border: 1px solid #EDF1EE; border-radius: 14px; padding: 12px 14px; margin-bottom: 10px; background: #FFFFFF; }
+.rel-text { font-size: 0.86rem; color: #14231B; line-height: 1.45; margin-bottom: 8px; }
+
+/* panel data sebagai container berkunci */
+div.st-key-paneldata {
+    background: #FFFFFF; border: 1px solid #EDF1EE; border-radius: 20px;
+    padding: 18px 22px 8px 22px; margin-bottom: 16px;
+    box-shadow: 0 8px 24px rgba(20,40,30,0.06);
+    animation: fadeUp 0.4s ease both;
 }
 
-.ulas-card-accent {
-    background: linear-gradient(135deg, #FFFDFB 0%, #FAF5EE 100%);
-    border-left: 4px solid #C84B2F;
+/* ---------- chip & pill ---------- */
+.chip {
+    display: inline-flex; align-items: center; gap: 6px;
+    border-radius: 999px; padding: 3px 10px;
+    font-size: 0.74rem; font-weight: 600;
+}
+.pill-pos { background: #E8F9F0; color: #15803D; border: 1px solid #CDEEDB; }
+.pill-neg { background: #FDECEC; color: #B42318; border: 1px solid #F8D2CF; }
+.pill-neu { background: #FEF3C7; color: #B45309; border: 1px solid #F3E3AC; }
+.pill-muted { background: #EFF3F0; color: #64756B; border: 1px solid #E2E8E4; }
+
+/* ---------- panel data / dropzone ---------- */
+.panel-data {
+    background: #FFFFFF; border: 1px solid #EDF1EE; border-radius: 20px;
+    padding: 20px 24px; margin-bottom: 16px;
+    box-shadow: 0 8px 24px rgba(20,40,30,0.06);
+}
+[data-testid="stFileUploader"] section {
+    border: 1.5px dashed #B9CFC0 !important; border-radius: 16px !important;
+    background: #FAFCFB !important;
 }
 
-/* Metric Display Hero */
-.kpi-container {
-    background: #FFFFFF;
-    border: 1px solid #EAE6DE;
-    border-radius: 12px;
-    padding: 16px 20px;
-    box-shadow: 0 2px 8px rgba(45, 35, 25, 0.03);
-    position: relative;
-    overflow: hidden;
-}
-
-.kpi-title {
-    font-size: 0.8rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    color: #78716C;
-    margin-bottom: 4px;
-}
-
-.kpi-value {
-    font-size: 2.1rem;
-    font-weight: 800;
-    color: #1C1917;
-    line-height: 1.1;
-    margin-bottom: 6px;
-}
-
-.kpi-subtitle {
-    font-size: 0.8rem;
-    color: #57534E;
-}
-
-/* Pill Badges (Semantic, Zero Emoji) */
-.badge-prima {
-    background-color: #F0FDF4;
-    color: #15803D;
-    border: 1px solid #DCFCE7;
-    padding: 4px 10px;
-    border-radius: 20px;
-    font-weight: 700;
-    font-size: 0.76rem;
-    display: inline-flex;
-    align-items: center;
-    letter-spacing: 0.02em;
-}
-
-.badge-waspada {
-    background-color: #FEFCE8;
-    color: #B45309;
-    border: 1px solid #FEF08A;
-    padding: 4px 10px;
-    border-radius: 20px;
-    font-weight: 700;
-    font-size: 0.76rem;
-    display: inline-flex;
-    align-items: center;
-    letter-spacing: 0.02em;
-}
-
-.badge-kritis {
-    background-color: #FEF2F2;
-    color: #B91C1C;
-    border: 1px solid #FEE2E2;
-    padding: 4px 10px;
-    border-radius: 20px;
-    font-weight: 700;
-    font-size: 0.76rem;
-    display: inline-flex;
-    align-items: center;
-    letter-spacing: 0.02em;
-}
-
-.badge-aspek {
-    background-color: #F5F3ED;
-    color: #44403C;
-    border: 1px solid #E2DDD3;
-    padding: 3px 8px;
-    border-radius: 6px;
-    font-weight: 600;
-    font-size: 0.74rem;
-}
-
-/* Micro-Pills for Breakdown Cards */
-.metric-pill-pos {
-    background: #F0FDF4;
-    color: #15803D;
-    border: 1px solid #DCFCE7;
-    padding: 2px 7px;
-    border-radius: 4px;
-    font-weight: 700;
-    font-size: 0.75rem;
-}
-
-.metric-pill-neu {
-    background: #FEFCE8;
-    color: #B45309;
-    border: 1px solid #FEF08A;
-    padding: 2px 7px;
-    border-radius: 4px;
-    font-weight: 700;
-    font-size: 0.75rem;
-}
-
-.metric-pill-neg {
-    background: #FEF2F2;
-    color: #B91C1C;
-    border: 1px solid #FEE2E2;
-    padding: 2px 7px;
-    border-radius: 4px;
-    font-weight: 700;
-    font-size: 0.75rem;
-}
-
-/* Interactive Workflow Step Indicator */
-.workflow-step {
-    background: #FFFFFF;
-    border: 1px solid #EAE6DE;
-    border-radius: 10px;
-    padding: 12px 14px;
-    text-align: center;
-    box-shadow: 0 2px 6px rgba(45, 35, 25, 0.02);
-    transition: transform 0.2s ease;
-}
-
-.workflow-step:hover {
-    border-color: #C84B2F;
-    transform: translateY(-2px);
-}
-
-.workflow-num {
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    background: #C84B2F;
-    color: #FFFFFF;
-    border-radius: 50%;
-    font-size: 0.75rem;
-    font-weight: 700;
-    line-height: 24px;
-    margin-bottom: 6px;
-}
-
-.workflow-title {
-    font-size: 0.8rem;
-    font-weight: 700;
-    color: #1C1917;
-    margin-bottom: 2px;
-}
-
-.workflow-desc {
-    font-size: 0.72rem;
-    color: #78716C;
-    line-height: 1.25;
-}
-
-/* Review Cards */
-.review-item {
-    background: #FFFFFF;
-    border: 1px solid #EAE6DE;
-    border-radius: 10px;
-    padding: 14px 18px;
-    margin-bottom: 10px;
-    border-left: 3px solid #EAE6DE;
-    transition: border-color 0.2s ease;
-}
-
-.review-item:hover {
-    border-left-color: #C84B2F;
-}
-
-/* Code Snippet Box */
-.clean-text-box {
-    background: #F5F3ED;
-    border: 1px solid #E2DDD3;
-    border-radius: 8px;
-    padding: 10px 14px;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.82rem;
-    color: #292524;
-}
-
-/* Buttons Styling */
+/* ---------- widget umum ---------- */
 .stButton > button {
-    border-radius: 10px !important;
-    padding: 10px 18px !important;
-    font-family: 'Plus Jakarta Sans', sans-serif !important;
-    transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1) !important;
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    letter-spacing: -0.01em !important;
+    border-radius: 12px !important;
+    font-family: 'Plus Jakarta Sans', sans-serif !important; font-weight: 700 !important;
+    transition: all 0.2s ease !important;
 }
-
-.stButton > button p,
-.stButton > button span,
-.stButton > button div {
-    color: inherit !important;
-    font-family: 'Plus Jakarta Sans', sans-serif !important;
-    font-size: inherit !important;
-    line-height: inherit !important;
+.stButton > button[kind="primary"], .stButton > button[data-testid="baseButton-primary"] {
+    background: linear-gradient(135deg, #22C55E 0%, #16A34A 100%) !important;
+    color: #FFFFFF !important; border: 1px solid #15803D !important;
+    box-shadow: 0 8px 20px rgba(34,197,94,0.30) !important;
 }
-
-/* PRIMARY BUTTON: The Active Menu Highlighter & Main Actions */
-.stButton > button[kind="primary"],
-.stButton > button[data-testid="baseButton-primary"] {
-    background: linear-gradient(135deg, #C84B2F 0%, #A8351D 100%) !important;
-    color: #FFFFFF !important;
-    border: 1px solid #8F2B15 !important;
-    font-weight: 800 !important;
-    box-shadow: 0 6px 20px -2px rgba(200, 75, 47, 0.45), 0 2px 6px -1px rgba(200, 75, 47, 0.25) !important;
-    transform: translateY(-2px) !important;
+.stButton > button[kind="primary"]:hover, .stButton > button[data-testid="baseButton-primary"]:hover {
+    background: linear-gradient(135deg, #1DB455 0%, #129244 100%) !important; color: #FFFFFF !important;
 }
-
-.stButton > button[kind="primary"] p,
-.stButton > button[data-testid="baseButton-primary"] p {
-    color: #FFFFFF !important;
-    font-weight: 800 !important;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25) !important;
+.stButton > button[kind="secondary"], .stButton > button[data-testid="baseButton-secondary"] {
+    background: #FFFFFF !important; color: #14231B !important; border: 1.5px solid #DDE5DF !important;
 }
-
-.stButton > button[kind="primary"]:hover,
-.stButton > button[data-testid="baseButton-primary"]:hover {
-    background: linear-gradient(135deg, #B33E24 0%, #942E17 100%) !important;
-    box-shadow: 0 8px 24px -2px rgba(200, 75, 47, 0.55), 0 3px 8px -1px rgba(200, 75, 47, 0.35) !important;
-    transform: translateY(-3px) !important;
+.stButton > button[kind="secondary"]:hover, .stButton > button[data-testid="baseButton-secondary"]:hover {
+    border-color: #22C55E !important; color: #15803D !important;
 }
-
-/* SECONDARY BUTTON: Inactive Navigation Menu Cards */
-.stButton > button[kind="secondary"],
-.stButton > button[data-testid="baseButton-secondary"] {
-    background-color: #FFFFFF !important;
-    color: #1C1917 !important;
-    border: 1.5px solid #DDD8CD !important;
-    font-weight: 700 !important;
-    box-shadow: 0 2px 8px -1px rgba(45, 35, 25, 0.06), 0 1px 3px rgba(45, 35, 25, 0.03) !important;
-}
-
-.stButton > button[kind="secondary"] p,
-.stButton > button[data-testid="baseButton-secondary"] p {
-    color: #1C1917 !important;
-    font-weight: 700 !important;
-}
-
-.stButton > button[kind="secondary"]:hover,
-.stButton > button[data-testid="baseButton-secondary"]:hover {
-    border-color: #C84B2F !important;
-    background-color: #FFFDFB !important;
-    color: #C84B2F !important;
-    box-shadow: 0 6px 18px -2px rgba(45, 35, 25, 0.12), 0 2px 6px -1px rgba(45, 35, 25, 0.06) !important;
-    transform: translateY(-2px) !important;
-}
-
-.stButton > button[kind="secondary"]:hover p,
-.stButton > button[data-testid="baseButton-secondary"]:hover p {
-    color: #C84B2F !important;
-}
-
-/* Download Buttons Styling */
 .stDownloadButton > button {
-    background-color: #FFFFFF !important;
-    color: #1C1917 !important;
-    border: 1.5px solid #DDD8CD !important;
-    border-radius: 10px !important;
-    font-weight: 700 !important;
-    padding: 10px 18px !important;
-    box-shadow: 0 2px 8px -1px rgba(45, 35, 25, 0.06) !important;
-    transition: all 0.22s ease !important;
+    border-radius: 12px !important; background: #FFFFFF !important; color: #14231B !important;
+    border: 1.5px solid #DDE5DF !important; font-weight: 700 !important;
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
 }
+.stDownloadButton > button:hover { border-color: #22C55E !important; color: #15803D !important; }
+div[data-baseweb="select"] > div { border-radius: 12px !important; border-color: #DDE5DF !important; }
+[data-testid="stProgress"] > div > div > div { background-color: #22C55E !important; }
+[data-testid="stCheckbox"] label p { font-size: 0.9rem; }
 
-.stDownloadButton > button p {
-    color: #1C1917 !important;
-    font-weight: 700 !important;
+/* ---------- loading bermerek ---------- */
+.loading-card {
+    background: #FFFFFF; border: 1px solid #EDF1EE; border-radius: 20px;
+    padding: 34px 28px; text-align: center;
+    box-shadow: 0 8px 24px rgba(20,40,30,0.06); margin-top: 60px;
 }
-
-.stDownloadButton > button:hover {
-    border-color: #C84B2F !important;
-    background-color: #FFFDFB !important;
-    box-shadow: 0 6px 18px -2px rgba(45, 35, 25, 0.12) !important;
-    transform: translateY(-2px) !important;
+.loading-pulse {
+    width: 54px; height: 54px; border-radius: 16px; margin: 0 auto 14px auto;
+    background: linear-gradient(135deg, #22C55E 0%, #16A34A 100%);
+    display: flex; align-items: center; justify-content: center;
+    animation: lpulse 1.6s ease-in-out infinite;
 }
+@keyframes lpulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.07); } }
 
-.stDownloadButton > button:hover p {
-    color: #C84B2F !important;
-}
+/* ---------- footer ---------- */
+.footer-line { font-size: 0.76rem; color: #64756B; text-align: center; padding: 10px 0 2px 0; }
+.footer-line b { color: #14231B; }
 
-/* Top Synchronized Navigation Bar */
-.top-nav-bar {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 8px;
-    background-color: #F4F1EA;
-    padding: 6px;
-    border-radius: 12px;
-    border: 1px solid #EAE6DE;
-    margin-bottom: 20px;
-}
-
-.top-nav-pill {
-    padding: 10px 14px;
-    border-radius: 8px;
-    text-align: center;
-    font-size: 0.85rem;
-    font-weight: 600;
-    color: #57534E;
-    background: transparent;
-    border: 1px solid transparent;
-    cursor: pointer;
-    transition: all 0.2s ease;
-}
-
-.top-nav-pill-active {
-    background: #FFFFFF !important;
-    color: #C84B2F !important;
-    border: 1px solid #EAE6DE !important;
-    font-weight: 700 !important;
-    box-shadow: 0 2px 8px rgba(45, 35, 25, 0.06) !important;
-}
-
-.active-nav-indicator {
-    display: inline-block;
-    width: 6px;
-    height: 6px;
-    background: #C84B2F;
-    border-radius: 50%;
-    margin-right: 6px;
+/* ---------- responsif (<=640px) ---------- */
+@media (max-width: 640px) {
+    .kpi-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+    .greeting { font-size: 1.35rem; }
+    .ulas-card, .panel-data { padding: 16px; border-radius: 16px; }
+    .hero-card { padding: 18px; }
+    div.st-key-topbar { padding: 8px 12px 2px 12px; }
+    .engine-chip { float: none; margin-top: 4px; }
 }
 </style>
 """
 
 
-def inject_old_css() -> None:
-    st.markdown(OLD_CSS, unsafe_allow_html=True)
+def inject_theme() -> None:
+    st.markdown(THEME_CSS, unsafe_allow_html=True)

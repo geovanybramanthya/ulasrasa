@@ -66,6 +66,19 @@ def init_session_state() -> None:
             "dan minyak sambal rembes ke kantong plastik. Driver nunggu 30 menit."
         )
 
+    # Kunci sesi khusus UI baru (Tahap 1; diizinkan PRD sebagai kunci UI).
+    if "ui_data_mode" not in st.session_state:
+        st.session_state.ui_data_mode = "Outlet Bawaan (Preset)"
+
+    if "ui_panel_open" not in st.session_state:
+        st.session_state.ui_panel_open = False
+
+    if "ui_resto_select" not in st.session_state:
+        st.session_state.ui_resto_select = None
+
+    if "rincian_aspect" not in st.session_state:
+        st.session_state.rincian_aspect = "Rasa"
+
 
 def compute_context(filtered_df: pd.DataFrame, pipeline) -> dict:
     """Blok evaluasi bersama (verbatim dari sidebar app.py lama).
